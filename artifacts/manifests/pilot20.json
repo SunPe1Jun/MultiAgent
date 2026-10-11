@@ -1,0 +1,198 @@
+{
+  "seed": 20260922,
+  "split": "existing evaluation pool (no supplied train/val/test split)",
+  "selection": "scene stratified seeded sampling with multi-reference / relation coverage; no accuracy-based filtering",
+  "samples": [
+    {
+      "scene_key": "scene1",
+      "row_index": 261,
+      "event_id": "scene1_262",
+      "instruction": "Ask this person to open the side door of the small building.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 694,
+      "event_id": "scene1_695",
+      "instruction": "Direct this person to transfer that cargo onto the platform, ensure they secure it near the low building.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 279,
+      "event_id": "scene1_280",
+      "instruction": "Ask these workers to inspect the window of the small building.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 663,
+      "event_id": "scene2_664",
+      "instruction": "Push that file close to the desk, then check that desk for clutter.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 473,
+      "event_id": "scene2_474",
+      "instruction": "Arrange that chair, then ask that colleague to move that chair in front of the desk.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 122,
+      "event_id": "scene2_123",
+      "instruction": "Ask the assistant nearby to slide that chair to there.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 147,
+      "event_id": "scene3_148",
+      "instruction": "Tell that colleague to attach that truck hood.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 720,
+      "event_id": "scene3_721",
+      "instruction": "Detach the door of that van and open the hood of that truck, then transport that van near that building.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 78,
+      "event_id": "scene3_79",
+      "instruction": "Observe that van.",
+      "selection_tags": [
+        "single_or_unmapped_gt"
+      ]
+    },
+    {
+      "scene_key": "scene4_room1",
+      "row_index": 28,
+      "event_id": "scene4_29",
+      "instruction": "Adjust the lamp near the red sofa.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room1",
+      "row_index": 46,
+      "event_id": "scene4_47",
+      "instruction": "Open the curtain near the sofa.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room2",
+      "row_index": 56,
+      "event_id": "scene4_57",
+      "instruction": "Turn off the switch near the door.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room2",
+      "row_index": 149,
+      "event_id": "scene4_150",
+      "instruction": "Pick up the chair, rotate it slightly, and place it near the small table.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room3",
+      "row_index": 102,
+      "event_id": "scene4_103",
+      "instruction": "Move the chair slightly toward the dining table and align it with the table's edge.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene4_room3",
+      "row_index": 103,
+      "event_id": "scene4_104",
+      "instruction": "Take the vase from the cabinet and set it on the rug in front of the sofa.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room4",
+      "row_index": 25,
+      "event_id": "scene4_26",
+      "instruction": "Move the bench toward the bedroom side. \u2b50",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene4_room4",
+      "row_index": 10,
+      "event_id": "scene4_11",
+      "instruction": "Inspect the curtains near the window.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 346,
+      "event_id": "scene5_347",
+      "instruction": "get this drone to spot the passage behind the lower coastal warehouse and then observe the ground there.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 432,
+      "event_id": "scene5_433",
+      "instruction": "Ask person1 to signal the crate area.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 291,
+      "event_id": "scene5_292",
+      "instruction": "Tell that volunteer to have that drone confirm the truck\u2019s orientation.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,748 @@
+{
+  "summary": {
+    "samples": 16,
+    "mentions": 49,
+    "unmapped_mentions": 3,
+    "gt_candidate_coverage": 40,
+    "gt_total": 40,
+    "clock_rejected": 12,
+    "nested_removed": 3,
+    "after_dedup_mentions": 46,
+    "note": "Inference metrics are pre-dedup v15. Dedup verification replays cached language outputs only; no new end-to-end inference."
+  },
+  "rows": [
+    {
+      "scene": "scene1",
+      "event": "scene1_262",
+      "instruction": "Ask this person to open the side door of the small building.",
+      "gt": [
+        "building6",
+        "person1"
+      ],
+      "pred": [],
+      "any_hit": false,
+      "exact": false,
+      "missing": [
+        "building6",
+        "person1"
+      ],
+      "extra": [],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 3,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 3.582287
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.444,
+        2.219,
+        4.437,
+        6.655,
+        8.43
+      ],
+      "dedup_removed": [
+        {
+          "text": "the small building",
+          "object_type": "building",
+          "component": "",
+          "parent_text": "",
+          "kind": "object",
+          "role": "source",
+          "relation": "",
+          "anchor_text": "",
+          "coreference_id": "r2",
+          "count": 1,
+          "mention_id": "m2",
+          "span": [
+            41,
+            59
+          ],
+          "candidate_ids": [
+            "building1",
+            "building10",
+            "building2",
+            "building3",
+            "building4",
+            "building5",
+            "building6",
+            "building7",
+            "building8",
+            "building9"
+          ],
+          "explicit_ids": [],
+          "canonical_types": [
+            "building"
+          ],
+          "spoken_head": "building",
+          "mapping_status": "mapped",
+          "candidate_mapping_reason": "type_or_alias",
+          "reason": "nested_component_parent",
+          "covered_by_mention_id": "m1"
+        }
+      ],
+      "after_dedup_count": 2,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene1",
+      "event": "scene1_695",
+      "instruction": "Direct this person to transfer that cargo onto the platform, ensure they secure it near the low building.",
+      "gt": [
+        "building5",
+        "cargo2",
+        "person2",
+        "platform1"
+      ],
+      "pred": [
+        "building10",
+        "cargo2",
+        "person1",
+        "platform1"
+      ],
+      "any_hit": true,
+      "exact": false,
+      "missing": [
+        "building5",
+        "person2"
+      ],
+      "extra": [
+        "building10",
+        "person1"
+      ],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 4,
+      "unmapped_mentions": [],
+      "clock_rejected": false,
+      "rejected_offsets": {},
+      "frame_count": 9,
+      "frame_times": [
+        3.569,
+        4.111,
+        4.569,
+        6.277,
+        7.945,
+        8.986,
+        11.373,
+        11.694,
+        13.861
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 4,
+      "unique_rgb_frames": 9
+    },
+    {
+      "scene": "scene2",
+      "event": "scene2_664",
+      "instruction": "Push that file close to the desk, then check that desk for clutter.",
+      "gt": [
+        "desk7",
+        "desk8",
+        "file1"
+      ],
+      "pred": [
+        "desk2",
+        "file1"
+      ],
+      "any_hit": true,
+      "exact": false,
+      "missing": [
+        "desk7",
+        "desk8"
+      ],
+      "extra": [
+        "desk2"
+      ],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 4,
+      "unmapped_mentions": [
+        "clutter"
+      ],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 2.929231
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.451,
+        2.256,
+        4.513,
+        6.769,
+        8.574
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 4,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene2",
+      "event": "scene2_474",
+      "instruction": "Arrange that chair, then ask that colleague to move that chair in front of the desk.",
+      "gt": [
+        "chair4",
+        "chair7",
+        "desk4",
+        "person1"
+      ],
+      "pred": [
+        "chair1",
+        "desk2",
+        "person1"
+      ],
+      "any_hit": true,
+      "exact": false,
+      "missing": [
+        "chair4",
+        "chair7",
+        "desk4"
+      ],
+      "extra": [
+        "chair1",
+        "desk2"
+      ],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 4,
+      "unmapped_mentions": [],
+      "clock_rejected": false,
+      "rejected_offsets": {},
+      "frame_count": 10,
+      "frame_times": [
+        1.887,
+        2.341,
+        4.16,
+        4.685,
+        6.434,
+        7.332,
+        8.405,
+        8.707,
+        9.225,
+        10.526
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 4,
+      "unique_rgb_frames": 10
+    },
+    {
+      "scene": "scene3",
+      "event": "scene3_148",
+      "instruction": "Tell that colleague to attach that truck hood.",
+      "gt": [
+        "person1",
+        "truck1"
+      ],
+      "pred": [
+        "person1",
+        "truck1"
+      ],
+      "any_hit": true,
+      "exact": true,
+      "missing": [],
+      "extra": [],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 2,
+      "unmapped_mentions": [],
+      "clock_rejected": false,
+      "rejected_offsets": {},
+      "frame_count": 7,
+      "frame_times": [
+        0.72,
+        1.081,
+        2.525,
+        4.037,
+        4.33,
+        6.134,
+        7.578
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 2,
+      "unique_rgb_frames": 7
+    },
+    {
+      "scene": "scene3",
+      "event": "scene3_721",
+      "instruction": "Detach the door of that van and open the hood of that truck, then transport that van near that building.",
+      "gt": [
+        "building2",
+        "truck1",
+        "van1"
+      ],
+      "pred": [
+        "building2",
+        "truck1",
+        "van1"
+      ],
+      "any_hit": true,
+      "exact": true,
+      "missing": [],
+      "extra": [],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 6,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 5.441648,
+        "wall_audio_to_video": -4.458494
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.487,
+        2.433,
+        4.867,
+        7.3,
+        9.247
+      ],
+      "dedup_removed": [
+        {
+          "text": "that van",
+          "object_type": "van",
+          "component": "",
+          "parent_text": "",
+          "kind": "object",
+          "role": "actor",
+          "relation": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "count": 1,
+          "mention_id": "m1",
+          "span": [
+            19,
+            27
+          ],
+          "candidate_ids": [
+            "van1"
+          ],
+          "explicit_ids": [],
+          "canonical_types": [
+            "van"
+          ],
+          "spoken_head": "van",
+          "mapping_status": "mapped",
+          "candidate_mapping_reason": "type_or_alias",
+          "reason": "nested_component_parent",
+          "covered_by_mention_id": "m0"
+        },
+        {
+          "text": "that truck",
+          "object_type": "truck",
+          "component": "",
+          "parent_text": "",
+          "kind": "object",
+          "role": "actor",
+          "relation": "",
+          "anchor_text": "",
+          "coreference_id": "r3",
+          "count": 1,
+          "mention_id": "m3",
+          "span": [
+            49,
+            59
+          ],
+          "candidate_ids": [
+            "truck1"
+          ],
+          "explicit_ids": [],
+          "canonical_types": [
+            "truck"
+          ],
+          "spoken_head": "truck",
+          "mapping_status": "mapped",
+          "candidate_mapping_reason": "type_or_alias",
+          "reason": "nested_component_parent",
+          "covered_by_mention_id": "m2"
+        }
+      ],
+      "after_dedup_count": 4,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene4_room1",
+      "event": "scene4_29",
+      "instruction": "Adjust the lamp near the red sofa.",
+      "gt": [
+        "lamp",
+        "sofa"
+      ],
+      "pred": [
+        "lamp",
+        "sofa"
+      ],
+      "any_hit": true,
+      "exact": true,
+      "missing": [],
+      "extra": [],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 2,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 7.549176,
+        "wall_audio_to_video": -5.087462
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.335,
+        1.673,
+        3.346,
+        5.019,
+        6.357
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 2,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene4_room1",
+      "event": "scene4_47",
+      "instruction": "Open the curtain near the sofa.",
+      "gt": [
+        "curtain1",
+        "sofa"
+      ],
+      "pred": [
+        "curtain2",
+        "sofa"
+      ],
+      "any_hit": true,
+      "exact": false,
+      "missing": [
+        "curtain1"
+      ],
+      "extra": [
+        "curtain2"
+      ],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 2,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 6.644791,
+        "wall_audio_to_video": -5.223104
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.257,
+        1.287,
+        2.574,
+        3.861,
+        4.891
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 2,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene4_room2",
+      "event": "scene4_57",
+      "instruction": "Turn off the switch near the door.",
+      "gt": [
+        "door",
+        "switch"
+      ],
+      "pred": [
+        "door",
+        "switch"
+      ],
+      "any_hit": true,
+      "exact": true,
+      "missing": [],
+      "extra": [],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 2,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 4.159006,
+        "wall_audio_to_video": -2.977227
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.26,
+        1.299,
+        2.598,
+        3.896,
+        4.935
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 2,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene4_room2",
+      "event": "scene4_150",
+      "instruction": "Pick up the chair, rotate it slightly, and place it near the small table.",
+      "gt": [
+        "chair2",
+        "table"
+      ],
+      "pred": [
+        "chair",
+        "table"
+      ],
+      "any_hit": true,
+      "exact": false,
+      "missing": [
+        "chair2"
+      ],
+      "extra": [
+        "chair"
+      ],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 2,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 4.449354,
+        "wall_audio_to_video": -2.725525
+      },
+      "frame_count": 7,
+      "frame_times": [
+        0.409,
+        1.365,
+        2.047,
+        4.094,
+        6.141,
+        6.823,
+        7.779
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 2,
+      "unique_rgb_frames": 7
+    },
+    {
+      "scene": "scene4_room3",
+      "event": "scene4_103",
+      "instruction": "Move the chair slightly toward the dining table and align it with the table's edge.",
+      "gt": [
+        "chair",
+        "dining_table"
+      ],
+      "pred": [
+        "chair",
+        "dining_table"
+      ],
+      "any_hit": true,
+      "exact": true,
+      "missing": [],
+      "extra": [],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 3,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "wall_audio_to_video": 3.820559
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.484,
+        2.422,
+        4.845,
+        7.267,
+        9.205
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 3,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene4_room3",
+      "event": "scene4_104",
+      "instruction": "Take the vase from the cabinet and set it on the rug in front of the sofa.",
+      "gt": [
+        "cabinet",
+        "rug",
+        "sofa",
+        "vase"
+      ],
+      "pred": [
+        "cabinet",
+        "rug",
+        "sofa",
+        "vase"
+      ],
+      "any_hit": true,
+      "exact": true,
+      "missing": [],
+      "extra": [],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 4,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "wall_audio_to_video": 3.912541
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.53,
+        2.651,
+        5.303,
+        7.954,
+        10.076
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 4,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene4_room4",
+      "event": "scene4_26",
+      "instruction": "Move the bench toward the bedroom side. ⭐",
+      "gt": [
+        "bedroom",
+        "bench"
+      ],
+      "pred": [
+        "bedroom",
+        "bench"
+      ],
+      "any_hit": true,
+      "exact": true,
+      "missing": [],
+      "extra": [],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 2,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 5.940774,
+        "wall_audio_to_video": -4.237107
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.318,
+        1.59,
+        3.18,
+        4.77,
+        6.042
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 2,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene4_room4",
+      "event": "scene4_11",
+      "instruction": "Inspect the curtains near the window.",
+      "gt": [
+        "curtains1",
+        "window"
+      ],
+      "pred": [
+        "curtains1",
+        "window2"
+      ],
+      "any_hit": true,
+      "exact": false,
+      "missing": [
+        "window"
+      ],
+      "extra": [
+        "window2"
+      ],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 2,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 6.676701,
+        "wall_audio_to_video": -3.954288
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.335,
+        1.673,
+        3.346,
+        5.018,
+        6.356
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 2,
+      "unique_rgb_frames": 5
+    },
+    {
+      "scene": "scene5",
+      "event": "scene5_347",
+      "instruction": "get this drone to spot the passage behind the lower coastal warehouse and then observe the ground there.",
+      "gt": [
+        "drone3",
+        "warehouseD"
+      ],
+      "pred": [
+        "drone4",
+        "warehouseA",
+        "yard_inland"
+      ],
+      "any_hit": false,
+      "exact": false,
+      "missing": [
+        "drone3",
+        "warehouseD"
+      ],
+      "extra": [
+        "drone4",
+        "warehouseA",
+        "yard_inland"
+      ],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 5,
+      "unmapped_mentions": [
+        "the passage",
+        "the ground"
+      ],
+      "clock_rejected": false,
+      "rejected_offsets": {},
+      "frame_count": 10,
+      "frame_times": [
+        3.61,
+        4.166,
+        5.675,
+        6.389,
+        7.235,
+        9.169,
+        11.051,
+        11.949,
+        14.173,
+        14.608
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 5,
+      "unique_rgb_frames": 10
+    },
+    {
+      "scene": "scene5",
+      "event": "scene5_433",
+      "instruction": "Ask person1 to signal the crate area.",
+      "gt": [
+        "crate",
+        "person1"
+      ],
+      "pred": [
+        "crate",
+        "person1"
+      ],
+      "any_hit": true,
+      "exact": true,
+      "missing": [],
+      "extra": [],
+      "gt_outside_candidate_pool": [],
+      "mention_count": 2,
+      "unmapped_mentions": [],
+      "clock_rejected": true,
+      "rejected_offsets": {
+        "telemetry_to_video": 4.395317,
+        "wall_audio_to_video": -2.321336
+      },
+      "frame_count": 5,
+      "frame_times": [
+        0.318,
+        1.59,
+        3.179,
+        4.769,
+        6.041
+      ],
+      "dedup_removed": [],
+      "after_dedup_count": 2,
+      "unique_rgb_frames": 5
+    }
+  ]
+}

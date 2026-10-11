@@ -1,0 +1,42 @@
+{
+  "version": "mention_focus_v2_labelled_frames",
+  "completed": 4,
+  "total": 4,
+  "frozen_inputs": [
+    "referential",
+    "temporal_plan",
+    "RGB",
+    "projection",
+    "hand"
+  ],
+  "baseline_metrics": {
+    "n": 4,
+    "evaluable": 4,
+    "coverage": 1.0,
+    "any_hit_count": 4,
+    "any_hit_accuracy": 1.0,
+    "exact_set_match_count": 2,
+    "exact_set_match": 0.5,
+    "set_true_positive": 8,
+    "set_false_positive": 3,
+    "set_false_negative": 5,
+    "micro_precision": 0.7272727272727273,
+    "micro_recall": 0.6153846153846154,
+    "micro_f1": 0.6666666666666667
+  },
+  "focus_metrics": {
+    "n": 4,
+    "evaluable": 4,
+    "coverage": 1.0,
+    "any_hit_count": 4,
+    "any_hit_accuracy": 1.0,
+    "exact_set_match_count": 2,
+    "exact_set_match": 0.5,
+    "set_true_positive": 8,
+    "set_false_positive": 4,
+    "set_false_negative": 5,
+    "micro_precision": 0.6666666666666666,
+    "micro_recall": 0.6153846153846154,
+    "micro_f1": 0.64
+  }
+}

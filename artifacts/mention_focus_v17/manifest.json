@@ -1,0 +1,45 @@
+{
+  "seed": 20260922,
+  "split": "cross-scene smoke; two pilot20 samples per scene",
+  "selection": "first two pilot20 rows per scene; diagnostic only",
+  "samples": [
+    {
+      "scene_key": "scene2",
+      "row_index": 663,
+      "event_id": "scene2_664",
+      "instruction": "Push that file close to the desk, then check that desk for clutter.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 473,
+      "event_id": "scene2_474",
+      "instruction": "Arrange that chair, then ask that colleague to move that chair in front of the desk.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 147,
+      "event_id": "scene3_148",
+      "instruction": "Tell that colleague to attach that truck hood.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene4_room3",
+      "row_index": 103,
+      "event_id": "scene4_104",
+      "instruction": "Take the vase from the cabinet and set it on the rug in front of the sofa.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    }
+  ]
+}

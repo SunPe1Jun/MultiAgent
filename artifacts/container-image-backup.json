@@ -1,0 +1,8 @@
+{
+  "archive_relative_to_workspace": "container-image-backups/131-vip-gpu45-sunpeijun-pre-reclaim-20260901-194731.tar.gz",
+  "bytes": 8034467368,
+  "sha256": "4d4cbcc983cc409c73c56c15df4cc624f15c2abc5f094254b7ab2b96ba73847b",
+  "archive_format": "gzip-compressed tar; local pre-reclaim container export",
+  "docker_cli_available_during_backup": false,
+  "note": "The archive is intentionally not committed to GitHub. Copy it separately."
+}

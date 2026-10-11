@@ -1,0 +1,6 @@
+name: trimodal
+channels:
+  - defaults
+dependencies:
+  - python=3.10
+prefix: /workspace/usr3/miniconda3/envs/trimodal
