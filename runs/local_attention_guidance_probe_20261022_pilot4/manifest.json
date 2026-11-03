@@ -1,0 +1,42 @@
+{
+  "seed": 20261022,
+  "selection": "pre-fixed sample keys in config; no GT or prediction filtering",
+  "samples": [
+    {
+      "scene_key": "scene1",
+      "row_index": 162,
+      "event_id": "scene1_163",
+      "instruction": "Turn toward that helicopter.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 34,
+      "event_id": "scene2_35",
+      "instruction": "Slide that chair toward there.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 14,
+      "event_id": "scene3_15",
+      "instruction": "tighten that car hood.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 28,
+      "event_id": "scene5_29",
+      "instruction": "Direct this drone to approach the front-middle tank.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    }
+  ]
+}

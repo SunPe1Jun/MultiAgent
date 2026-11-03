@@ -1,0 +1,130 @@
+{
+  "source_frame_id": "V051",
+  "source_sample": "/media/kunyu/16TB/spj/Multiagent/runs/local_visual_organization_guidance_probe_20261022_pilot2/samples/scene1/scene1_163",
+  "transforms": "flip the real unnormalized gaze heatmap 180 degrees; RGB unchanged; zero map is the no-gaze control",
+  "counterfactual_only_not_candidate_experiment": true,
+  "model_receives_transform_labels_or_expected_locations": false,
+  "ground_truth_loaded": false,
+  "groups": {
+    "heatmap": {
+      "input_order": [
+        {
+          "image_id": "X1",
+          "image_index": 1
+        },
+        {
+          "image_id": "X2",
+          "image_index": 2
+        },
+        {
+          "image_id": "X3",
+          "image_index": 3
+        }
+      ],
+      "expected_geometry_audit_only": {
+        "X1": {
+          "variant": "flipped_180",
+          "center_uv": [
+            0.2852586090659495,
+            0.3252918193710652
+          ],
+          "peak_uv": [
+            0.11979166666666667,
+            0.32068452380952384
+          ],
+          "peak_quadrant": "top_left",
+          "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/heatmap_X1.png",
+          "sha256": "bc23afef1c5b2a7ebdfe279e51762da6807e3c3cc0d7b1a0fdd20de230e6fa96"
+        },
+        "X2": {
+          "variant": "zero",
+          "center_uv": null,
+          "peak_uv": null,
+          "peak_quadrant": "none",
+          "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/heatmap_X2.png",
+          "sha256": "f932db3bbfa45d379601a10029f07760857f68eb220590d39fa45a25e089754a"
+        },
+        "X3": {
+          "variant": "original",
+          "center_uv": [
+            0.7147414283598984,
+            0.6747082133173883
+          ],
+          "peak_uv": [
+            0.8802083333333334,
+            0.6793154761904762
+          ],
+          "peak_quadrant": "bottom_right",
+          "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/heatmap_X3.png",
+          "sha256": "ce6ba948b6a0d87ab8aa8d5a6a388cfb21e81648712d7b34d9bf627b8a920a5a"
+        }
+      },
+      "prompt": "Inspect only the supplied image pixels. This is a visual encoding test, not a referring or target task. The images are grayscale saliency maps. Find the brightest actual blob in each. An image with no visible blob must return quadrant=none and center_uv=null. The images may differ. Do not assume the center is attended. Return JSON with an images array, exactly one row per listed image. Each row must contain image_id, detected (true/false), quadrant (top_left/top_right/bottom_left/bottom_right/none/unclear), center_uv ([u,v] at the brightest blob/sharp focus, top-left origin, or null), confidence (0..1), and a brief observation. No numerical location hints are provided. Image order: [{\"image_id\": \"X1\", \"image_index\": 1}, {\"image_id\": \"X2\", \"image_index\": 2}, {\"image_id\": \"X3\", \"image_index\": 3}]",
+      "paths": [
+        "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/heatmap_X1.png",
+        "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/heatmap_X2.png",
+        "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/heatmap_X3.png"
+      ]
+    },
+    "foveation": {
+      "input_order": [
+        {
+          "image_id": "X1",
+          "image_index": 1
+        },
+        {
+          "image_id": "X2",
+          "image_index": 2
+        },
+        {
+          "image_id": "X3",
+          "image_index": 3
+        }
+      ],
+      "expected_geometry_audit_only": {
+        "X1": {
+          "variant": "flipped_180",
+          "center_uv": [
+            0.2852586090659495,
+            0.3252918193710652
+          ],
+          "peak_uv": [
+            0.11979166666666667,
+            0.32068452380952384
+          ],
+          "peak_quadrant": "top_left",
+          "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/foveation_X1.png",
+          "sha256": "17162a024a7cb902b22ba169195dc77e1530f0ccaf280f4fd43d4103cba446d4"
+        },
+        "X2": {
+          "variant": "zero",
+          "center_uv": null,
+          "peak_uv": null,
+          "peak_quadrant": "none",
+          "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/foveation_X2.png",
+          "sha256": "3a4c60c53b62fd0cbcb8dfbb5c883a4b92fd66c2e51e1a8516559aa2c1410439"
+        },
+        "X3": {
+          "variant": "original",
+          "center_uv": [
+            0.7147414283598984,
+            0.6747082133173883
+          ],
+          "peak_uv": [
+            0.8802083333333334,
+            0.6793154761904762
+          ],
+          "peak_quadrant": "bottom_right",
+          "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/foveation_X3.png",
+          "sha256": "db9502bbff0ab2eccee47a9ddf0245b89b6d7f5a5d8281f736b5760596a58bee"
+        }
+      },
+      "prompt": "Inspect only the supplied image pixels. This is a visual encoding test, not a referring or target task. The images show the same RGB scene, possibly with soft foveation. Find any locally sharper retained region that differs from its blurred surroundings. A uniformly sharp image has no foveation focus: return quadrant=none and center_uv=null. Do not use scene object salience or image center as a substitute for a visible focus. The images may differ. Do not assume the center is attended. Return JSON with an images array, exactly one row per listed image. Each row must contain image_id, detected (true/false), quadrant (top_left/top_right/bottom_left/bottom_right/none/unclear), center_uv ([u,v] at the brightest blob/sharp focus, top-left origin, or null), confidence (0..1), and a brief observation. No numerical location hints are provided. Image order: [{\"image_id\": \"X1\", \"image_index\": 1}, {\"image_id\": \"X2\", \"image_index\": 2}, {\"image_id\": \"X3\", \"image_index\": 3}]",
+      "paths": [
+        "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/foveation_X1.png",
+        "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/foveation_X2.png",
+        "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/foveation_X3.png"
+      ]
+    }
+  }
+}

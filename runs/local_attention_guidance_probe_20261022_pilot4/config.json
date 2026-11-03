@@ -1,0 +1,81 @@
+{
+  "version": "local_attention_guidance_probe_20261022_v1",
+  "local_visual_source_run": "runs/local_dense_video_visual_8b_20261022_pilot100_v4",
+  "gaze_source_run": "runs/visual_evidence_8b_20261021/pilot100_relaxed_clock",
+  "sample_keys": [
+    [
+      "scene1",
+      "scene1_163"
+    ],
+    [
+      "scene2",
+      "scene2_35"
+    ],
+    [
+      "scene3",
+      "scene3_15"
+    ],
+    [
+      "scene5",
+      "scene5_29"
+    ],
+    [
+      "scene1",
+      "scene1_216"
+    ],
+    [
+      "scene2",
+      "scene2_72"
+    ],
+    [
+      "scene3",
+      "scene3_37"
+    ],
+    [
+      "scene5",
+      "scene5_191"
+    ]
+  ],
+  "mention_id": "m0",
+  "source_frame_count": 8,
+  "gaze_strategy": "local_history",
+  "gaze": {
+    "instant_max_delta_seconds": 0.18,
+    "local_history_seconds": 2.0,
+    "utterance_pre_seconds": 0.5,
+    "utterance_post_seconds": 0.5,
+    "max_gap_seconds": 0.25,
+    "decay": "uniform",
+    "kernel_sigma_degrees": 2.0,
+    "display_scale": 2.0,
+    "overlay_max_alpha": 0.28,
+    "foveation_min_clear_fraction": 0.55,
+    "foveation_max_blur_sigma_px": 18.0,
+    "foveation_downsample_factors": [
+      2,
+      4,
+      8
+    ]
+  },
+  "conditions": [
+    "R",
+    "H_local",
+    "F_local"
+  ],
+  "prompt_arms": [
+    "legacy_soft",
+    "paper_style_stepwise"
+  ],
+  "offline_full_interaction": true,
+  "ground_truth_loaded": false,
+  "paper_reference": "In the Eye of MLLM, arXiv:2509.07447",
+  "config_path": "/media/kunyu/16TB/spj/Multiagent/configs/local_attention_guidance_probe_20261022.json",
+  "model": "/media/kunyu/16TB/spj/Qwen3-VL-8B-Instruct",
+  "backend_namespace": "local_attention_guidance_probe_qwen8b_20261022",
+  "cache_dir": "/media/kunyu/16TB/spj/Multiagent/runs/local_attention_guidance_probe_20261022_cache",
+  "local_backend": true,
+  "frame_selection": "8 uniformly spaced existing actual PTS frames, same IDs in every condition",
+  "visual_processor_temporal_patch_size": 2,
+  "prompt_comparison": "legacy soft cue wording vs paper-inspired stepwise visual cue trace; same output schema",
+  "visual_tokens_are_processor_audited": true
+}
