@@ -1,0 +1,56 @@
+{
+  "seed": 20261021,
+  "split": "existing evaluation pool (no supplied train/val/test split)",
+  "selection": "pilot20 preserved; proportional scene quotas with seeded random supplements; no prediction-based filtering",
+  "base_manifest": "/media/kunyu/16TB/spj/Multiagent/runs/visual_evidence_8b_20261021/pilot20_corrected/manifest.json",
+  "scene_quotas": {
+    "scene1": 20,
+    "scene2": 20,
+    "scene3": 20,
+    "scene4_room1": 5,
+    "scene4_room2": 5,
+    "scene4_room3": 5,
+    "scene4_room4": 5,
+    "scene5": 20
+  },
+  "samples": [
+    {
+      "scene_key": "scene2",
+      "row_index": 122,
+      "event_id": "scene2_123",
+      "instruction": "Ask the assistant nearby to slide that chair to there.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 583,
+      "event_id": "scene3_584",
+      "instruction": "Instruct that colleague to pull that car here, then reverse that van there.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 346,
+      "event_id": "scene5_347",
+      "instruction": "get this drone to spot the passage behind the lower coastal warehouse and then observe the ground there.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 386,
+      "event_id": "scene5_387",
+      "instruction": "instruct this drone to identify the crate  beside the truck and then focus on its side panel.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    }
+  ],
+  "selection_note": "fixed prompt-bias pilot; four diagnostic events"
+}

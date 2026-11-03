@@ -1,0 +1,113 @@
+{
+  "real_calls": 961,
+  "model_wall_seconds_sum": 1630.1901050130582,
+  "visual_token_estimate_method": "merged 32px image grids, actual remote resize not observable; not total prompt tokens",
+  "visual_token_estimate": 1132488,
+  "stage_counts": {
+    "referential": 100,
+    "v3_hand_observation": 98,
+    "v3_visual": 490,
+    "v3_global_coordinator": 268,
+    "referential_validation_retry_1": 3,
+    "referential_validation_retry_2": 2
+  },
+  "usage": {
+    "prompt_tokens": 2840317,
+    "completion_tokens": 129377
+  },
+  "same_visual_source_frames_across_main_groups": true,
+  "same_visual_image_dimensions_across_main_groups": true,
+  "blur_claims_speedup": false,
+  "stage_budget": {
+    "referential": {
+      "logical_requests": 100,
+      "real_http_calls": 100,
+      "cache_hits": 0,
+      "image_count_logical": 0,
+      "image_count_real_http": 0,
+      "dimensions": [],
+      "estimated_visual_tokens_logical": 0,
+      "estimated_visual_tokens_real_http": 0,
+      "model_wall_seconds_real_http": 224.7865218700099,
+      "prompt_tokens_from_server": 40159,
+      "completion_tokens_from_server": 20201
+    },
+    "referential_validation_retry_1": {
+      "logical_requests": 3,
+      "real_http_calls": 3,
+      "cache_hits": 0,
+      "image_count_logical": 0,
+      "image_count_real_http": 0,
+      "dimensions": [],
+      "estimated_visual_tokens_logical": 0,
+      "estimated_visual_tokens_real_http": 0,
+      "model_wall_seconds_real_http": 3.965100237997831,
+      "prompt_tokens_from_server": 1414,
+      "completion_tokens_from_server": 353
+    },
+    "referential_validation_retry_2": {
+      "logical_requests": 2,
+      "real_http_calls": 2,
+      "cache_hits": 0,
+      "image_count_logical": 0,
+      "image_count_real_http": 0,
+      "dimensions": [],
+      "estimated_visual_tokens_logical": 0,
+      "estimated_visual_tokens_real_http": 0,
+      "model_wall_seconds_real_http": 0.20185601400226005,
+      "prompt_tokens_from_server": 943,
+      "completion_tokens_from_server": 10
+    },
+    "v3_global_coordinator": {
+      "logical_requests": 490,
+      "real_http_calls": 268,
+      "cache_hits": 222,
+      "image_count_logical": 1470,
+      "image_count_real_http": 804,
+      "dimensions": [
+        "672x672"
+      ],
+      "estimated_visual_tokens_logical": 648270,
+      "estimated_visual_tokens_real_http": 354564,
+      "model_wall_seconds_real_http": 389.44543843802603,
+      "prompt_tokens_from_server": 1222525,
+      "completion_tokens_from_server": 32103
+    },
+    "v3_hand_observation": {
+      "logical_requests": 98,
+      "real_http_calls": 98,
+      "cache_hits": 0,
+      "image_count_logical": 294,
+      "image_count_real_http": 294,
+      "dimensions": [
+        "672x672"
+      ],
+      "estimated_visual_tokens_logical": 129654,
+      "estimated_visual_tokens_real_http": 129654,
+      "model_wall_seconds_real_http": 92.0057930869807,
+      "prompt_tokens_from_server": 187786,
+      "completion_tokens_from_server": 6488
+    },
+    "v3_visual": {
+      "logical_requests": 490,
+      "real_http_calls": 490,
+      "cache_hits": 0,
+      "image_count_logical": 1470,
+      "image_count_real_http": 1470,
+      "dimensions": [
+        "672x672"
+      ],
+      "estimated_visual_tokens_logical": 648270,
+      "estimated_visual_tokens_real_http": 648270,
+      "model_wall_seconds_real_http": 919.7853953660415,
+      "prompt_tokens_from_server": 1387490,
+      "completion_tokens_from_server": 70222
+    }
+  },
+  "logical_requests": 1183,
+  "planned_samples": 100,
+  "successful_model_samples": 98,
+  "visual_calls_per_group": 98,
+  "estimated_visual_tokens_per_group": 129654,
+  "estimated_visual_tokens_per_group_method": "98 completed Visual calls x 3 images x 21x21 32px merged-grid estimate; remote resize may differ"
+}

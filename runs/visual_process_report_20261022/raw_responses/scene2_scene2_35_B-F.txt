@@ -1,0 +1,146 @@
+{
+  "attention_trace": [
+    {
+      "view_id": "V018",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V024",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V029",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V035",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V041",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V047",
+      "cue_type": "foveation",
+      "cue_center_uv": [
+        280,
+        700
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Foveation highlights a hand interacting with a chair near a desk."
+    },
+    {
+      "view_id": "V052",
+      "cue_type": "foveation",
+      "cue_center_uv": [
+        580,
+        850
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Foveation highlights a hand interacting with a chair near a desk."
+    },
+    {
+      "view_id": "V058",
+      "cue_type": "foveation",
+      "cue_center_uv": [
+        800,
+        900
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Foveation highlights a hand interacting with a chair near a desk."
+    }
+  ],
+  "evidence": [
+    {
+      "mention_id": "m0",
+      "candidate_id": "chair1",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V047",
+      "explanation": "Foveation centers on a hand interacting with a chair near a desk, consistent with sliding a chair."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "chair2",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V052",
+      "explanation": "Foveation centers on a hand interacting with a chair near a desk, consistent with sliding a chair."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "chair3",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V058",
+      "explanation": "Foveation centers on a hand interacting with a chair near a desk, consistent with sliding a chair."
+    }
+  ],
+  "visual_observations": [
+    {
+      "mention_id": "m0",
+      "frame_id": "V018",
+      "description": "An office scene with multiple chairs and desks. No specific chair is highlighted.",
+      "confidence": 0.1
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V024",
+      "description": "An office scene with multiple chairs and desks. No specific chair is highlighted.",
+      "confidence": 0.1
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V029",
+      "description": "An office scene with multiple chairs and desks. No specific chair is highlighted.",
+      "confidence": 0.1
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V035",
+      "description": "An office scene with multiple chairs and desks. No specific chair is highlighted.",
+      "confidence": 0.1
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V041",
+      "description": "An office scene with multiple chairs and desks. No specific chair is highlighted.",
+      "confidence": 0.1
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V047",
+      "description": "A hand is interacting with a chair near a desk, indicating an action consistent with sliding the chair.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V052",
+      "description": "A hand is interacting with a chair near a desk, indicating an action consistent with sliding the chair.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V058",
+      "description": "A hand is interacting with a chair near a desk, indicating an action consistent with sliding the chair.",
+      "confidence": 0.9
+    }
+  ],
+  "identity_status": "ambiguous"
+}

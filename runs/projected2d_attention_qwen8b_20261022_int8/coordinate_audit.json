@@ -1,0 +1,778 @@
+{
+  "protocol": "CPU numerical consistency audit, not RGB pixel calibration",
+  "ground_truth_loaded": false,
+  "ground_truth_used": false,
+  "coordinate_hypothesis": {
+    "gazePoint": "finite world intersection",
+    "gazeVector": "world direction",
+    "cameraHitPoint": "finite camera-coordinate intersection",
+    "cameraGazeDirection": "camera direction",
+    "rotation": "camera-to-world quaternion xyzw; inverse for world-to-camera"
+  },
+  "limitations": [
+    "Does not calibrate video/telemetry time alignment",
+    "Does not establish depth, visibility, anchor identity or recorded-camera equivalence"
+  ],
+  "events": [
+    {
+      "scene_key": "scene1",
+      "event_id": "scene1_706",
+      "telemetry_samples": 111,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 111,
+          "median": 1.2074182697257333e-06,
+          "p95": 4.182619578303747e-06,
+          "max": 5.915117333884395e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 111,
+          "median": 21.939591490634278,
+          "p95": 47.40759330154094,
+          "max": 48.22549690018156
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 95,
+          "median": 0.04822297322979202,
+          "p95": 0.14090058698169808,
+          "max": 0.15973130346625664
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 95,
+          "median": 2.5644237556923057e-06,
+          "p95": 6.478046165871412e-06,
+          "max": 1.4891611729171892e-05
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 111,
+          "median": 2.8954891555875575e-09,
+          "p95": 7.845760863485144e-09,
+          "max": 9.283997111267495e-09
+        }
+      }
+    },
+    {
+      "scene_key": "scene2",
+      "event_id": "scene2_593",
+      "telemetry_samples": 91,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 91,
+          "median": 1.2074182697257333e-06,
+          "p95": 5.3318147119265075e-06,
+          "max": 7.68396281626435e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 91,
+          "median": 34.45845516779218,
+          "p95": 59.21444705817514,
+          "max": 59.72576187252914
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 91,
+          "median": 0.44774902280810863,
+          "p95": 6.427314598493151,
+          "max": 8.735559935990723
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 91,
+          "median": 1.9063649338657168e-07,
+          "p95": 1.2410536094466619e-06,
+          "max": 1.4562410569953603e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 91,
+          "median": 4.1709153341698496e-08,
+          "p95": 1.1621860294443819e-07,
+          "max": 1.579239997465008e-07
+        }
+      }
+    },
+    {
+      "scene_key": "scene3",
+      "event_id": "scene3_734",
+      "telemetry_samples": 78,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 78,
+          "median": 1.2074182697257333e-06,
+          "p95": 4.353408482428142e-06,
+          "max": 6.830189170012755e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 78,
+          "median": 17.460511461633594,
+          "p95": 22.21933316505387,
+          "max": 22.576970096474525
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 56,
+          "median": 0.05309531220106478,
+          "p95": 0.31117740542777084,
+          "max": 0.3159981991760085
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 56,
+          "median": 1.0473840867297835e-06,
+          "p95": 4.121114102072087e-06,
+          "max": 5.624754013175619e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 78,
+          "median": 1.6019090748190452e-09,
+          "p95": 7.091273761457753e-09,
+          "max": 1.0848465708640587e-08
+        }
+      }
+    },
+    {
+      "scene_key": "scene4_room1",
+      "event_id": "scene4_171",
+      "telemetry_samples": 71,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 71,
+          "median": 1.4787793334710982e-06,
+          "p95": 4.26886823125797e-06,
+          "max": 8.537736462515945e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 71,
+          "median": 23.042511069003417,
+          "p95": 52.435312104737605,
+          "max": 53.52289481708599
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 71,
+          "median": 1.8241672186837674,
+          "p95": 10.367705154111823,
+          "max": 12.347505218469303
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 71,
+          "median": 5.903772441319573e-07,
+          "p95": 1.3585479940758391e-06,
+          "max": 1.534293846671139e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 71,
+          "median": 6.81875422808619e-07,
+          "p95": 1.4042839538797985e-06,
+          "max": 2.200064230096058e-06
+        }
+      }
+    },
+    {
+      "scene_key": "scene4_room2",
+      "event_id": "scene4_146",
+      "telemetry_samples": 73,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 73,
+          "median": 6.668185343934157e-06,
+          "p95": 1.3115919625095442e-05,
+          "max": 1.782731711219369e-05
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 73,
+          "median": 92.79277747154826,
+          "p95": 151.0320722535402,
+          "max": 151.69759821063457
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 73,
+          "median": 1.314661219115225,
+          "p95": 12.345693756493377,
+          "max": 19.269638485877167
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 73,
+          "median": 7.558200935098072e-07,
+          "p95": 1.6216321398906794e-06,
+          "max": 1.9643426872174193e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 73,
+          "median": 7.967248546833136e-07,
+          "p95": 1.5556033602055062e-06,
+          "max": 2.6948943444243847e-06
+        }
+      }
+    },
+    {
+      "scene_key": "scene4_room3",
+      "event_id": "scene4_152",
+      "telemetry_samples": 69,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 69,
+          "median": 2.699869328381916e-06,
+          "p95": 8.009106731400786e-06,
+          "max": 1.2806604693773936e-05
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 69,
+          "median": 40.58980847058875,
+          "p95": 62.11412754676664,
+          "max": 62.35175102657017
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 46,
+          "median": 1.3993064859538982,
+          "p95": 2.2056684896860532,
+          "max": 2.383224822495329
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 46,
+          "median": 6.277836579205805e-07,
+          "p95": 1.0893472417376436e-06,
+          "max": 1.2806573060501912e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 69,
+          "median": 5.510863516494896e-07,
+          "p95": 1.0745580990901298e-06,
+          "max": 1.3663929661363501e-06
+        }
+      }
+    },
+    {
+      "scene_key": "scene4_room4",
+      "event_id": "scene4_164",
+      "telemetry_samples": 134,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 134,
+          "median": 5.228158282547246e-06,
+          "p95": 1.1262047877356564e-05,
+          "max": 1.2518779069552075e-05
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 134,
+          "median": 170.72487619092288,
+          "p95": 176.61518376325748,
+          "max": 177.85073733117397
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 132,
+          "median": 1.215624132437162,
+          "p95": 9.016663723233243,
+          "max": 72.97327961563819
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 132,
+          "median": 8.198228785911414e-07,
+          "p95": 1.5766433922372068e-06,
+          "max": 2.018001730912456e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 134,
+          "median": 3.848774705308564e-07,
+          "p95": 9.652380716603846e-07,
+          "max": 1.2004469405979275e-06
+        }
+      }
+    },
+    {
+      "scene_key": "scene5",
+      "event_id": "scene5_584",
+      "telemetry_samples": 105,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 105,
+          "median": 2.699869328381916e-06,
+          "p95": 6.445849674396954e-06,
+          "max": 7.540324677666867e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 105,
+          "median": 41.060476203440416,
+          "p95": 69.20793893037212,
+          "max": 69.47311859964532
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 75,
+          "median": 0.2128251664694236,
+          "p95": 0.3303692081259304,
+          "max": 0.41485917116574145
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 75,
+          "median": 1.7652115123040553e-06,
+          "p95": 3.5296890715779608e-06,
+          "max": 4.2757478604215615e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 105,
+          "median": 7.506884881249068e-08,
+          "p95": 2.2821000020452707e-07,
+          "max": 3.2655371259100643e-07
+        }
+      }
+    },
+    {
+      "scene_key": "scene1",
+      "event_id": "scene1_367",
+      "telemetry_samples": 85,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 85,
+          "median": 1.2074182697257333e-06,
+          "p95": 4.436338000413295e-06,
+          "max": 7.294645231227028e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 85,
+          "median": 31.88942918901062,
+          "p95": 41.30486963041028,
+          "max": 41.776114048355076
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 64,
+          "median": 0.09329516928583456,
+          "p95": 0.21639446878032984,
+          "max": 0.2465152196000875
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 64,
+          "median": 1.5387329990682287e-06,
+          "p95": 3.5570011037973615e-06,
+          "max": 6.722627212453509e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 85,
+          "median": 3.540876790515426e-09,
+          "p95": 9.605489318191466e-09,
+          "max": 1.3152663398176861e-08
+        }
+      }
+    },
+    {
+      "scene_key": "scene2",
+      "event_id": "scene2_417",
+      "telemetry_samples": 113,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 113,
+          "median": 1.2074182697257333e-06,
+          "p95": 4.7536104815230715e-06,
+          "max": 7.294645231227028e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 113,
+          "median": 23.405032403372346,
+          "p95": 63.44192968750753,
+          "max": 64.3054337671938
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 113,
+          "median": 0.54884048312983,
+          "p95": 22.471533248754124,
+          "max": 24.91254667558214
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 113,
+          "median": 2.1837021647116227e-07,
+          "p95": 7.157440957565426e-07,
+          "max": 1.2732264766534292e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 113,
+          "median": 4.7591645193912467e-08,
+          "p95": 1.5354198836810402e-07,
+          "max": 2.2880472857191803e-07
+        }
+      }
+    },
+    {
+      "scene_key": "scene3",
+      "event_id": "scene3_632",
+      "telemetry_samples": 99,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 99,
+          "median": 1.2074182697257333e-06,
+          "p95": 3.4150945850063763e-06,
+          "max": 4.517745487845102e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 99,
+          "median": 26.68485655569552,
+          "p95": 33.527521540452575,
+          "max": 33.80809052039952
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 94,
+          "median": 0.04621168045540097,
+          "p95": 0.22010878044779691,
+          "max": 0.3497955967629864
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 94,
+          "median": 1.430680782747748e-06,
+          "p95": 4.368356052845598e-06,
+          "max": 7.012989679904231e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 99,
+          "median": 3.098395605353617e-09,
+          "p95": 9.677934968039809e-09,
+          "max": 1.344932558385925e-08
+        }
+      }
+    },
+    {
+      "scene_key": "scene4_room1",
+      "event_id": "scene4_114",
+      "telemetry_samples": 92,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 92,
+          "median": 1.2074182697257333e-06,
+          "p95": 3.818191820832846e-06,
+          "max": 6.331754823653221e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 92,
+          "median": 21.656421721912896,
+          "p95": 33.690249126673834,
+          "max": 33.84025884010671
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 92,
+          "median": 0.9618266282556655,
+          "p95": 12.676301097524929,
+          "max": 15.986100406940967
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 92,
+          "median": 5.319244706825647e-07,
+          "p95": 1.1854588485731384e-06,
+          "max": 1.64812651333037e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 92,
+          "median": 5.557992103528806e-07,
+          "p95": 1.3364236663029387e-06,
+          "max": 1.6700941082498984e-06
+        }
+      }
+    },
+    {
+      "scene_key": "scene4_room2",
+      "event_id": "scene4_88",
+      "telemetry_samples": 71,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 71,
+          "median": 6.037091348628668e-06,
+          "p95": 1.286339701092445e-05,
+          "max": 1.5320420339170408e-05
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 71,
+          "median": 74.66873252781097,
+          "p95": 86.61906426876207,
+          "max": 92.09067274849654
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 71,
+          "median": 0.9791202160603693,
+          "p95": 12.855706754014927,
+          "max": 14.923773680525228
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 71,
+          "median": 8.434110187951153e-07,
+          "p95": 1.538765386168683e-06,
+          "max": 2.4381488741384823e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 71,
+          "median": 7.105932003064991e-07,
+          "p95": 2.2301043509346157e-06,
+          "max": 2.7412165249737507e-06
+        }
+      }
+    },
+    {
+      "scene_key": "scene4_room3",
+      "event_id": "scene4_154",
+      "telemetry_samples": 71,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 71,
+          "median": 2.4148365394514667e-06,
+          "p95": 7.040397847728103e-06,
+          "max": 9.659346157805877e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 71,
+          "median": 23.940520475822602,
+          "p95": 61.11478678731207,
+          "max": 61.66896974142456
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 39,
+          "median": 1.0585123313808615,
+          "p95": 2.1912627163132345,
+          "max": 2.355135755496404
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 39,
+          "median": 5.313651335814034e-07,
+          "p95": 1.0929214496924928e-06,
+          "max": 1.343264227881702e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 71,
+          "median": 5.875270801093572e-07,
+          "p95": 1.0828295434395768e-06,
+          "max": 1.3306494263094507e-06
+        }
+      }
+    },
+    {
+      "scene_key": "scene4_room4",
+      "event_id": "scene4_30",
+      "telemetry_samples": 54,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 54,
+          "median": 3.958517863003385e-06,
+          "p95": 1.0138000340489137e-05,
+          "max": 1.1326587362040649e-05
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 54,
+          "median": 124.47072425508884,
+          "p95": 133.20073188949613,
+          "max": 133.47792445879327
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 54,
+          "median": 1.400419509198017,
+          "p95": 7.163592593460582,
+          "max": 7.433708832121413
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 54,
+          "median": 7.307524743872606e-07,
+          "p95": 1.4816528657912615e-06,
+          "max": 2.049916800519486e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 54,
+          "median": 5.208306762361719e-07,
+          "p95": 1.059969758428212e-06,
+          "max": 1.386627188450434e-06
+        }
+      }
+    },
+    {
+      "scene_key": "scene5",
+      "event_id": "scene5_5",
+      "telemetry_samples": 88,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 88,
+          "median": 2.699869328381916e-06,
+          "p95": 6.2155659652833185e-06,
+          "max": 6.776618231767655e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 88,
+          "median": 24.593257320145863,
+          "p95": 47.444707338333615,
+          "max": 48.6013180366813
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 58,
+          "median": 0.23697385904949114,
+          "p95": 0.35193276907132504,
+          "max": 0.4290627259099768
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 58,
+          "median": 1.5387587704527856e-06,
+          "p95": 3.149817251478801e-06,
+          "max": 3.7288084563416583e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 88,
+          "median": 9.397020103134967e-08,
+          "p95": 2.0243184849064182e-07,
+          "max": 2.787339703717671e-07
+        }
+      }
+    },
+    {
+      "scene_key": "scene1",
+      "event_id": "scene1_601",
+      "telemetry_samples": 82,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 82,
+          "median": 1.2074182697257333e-06,
+          "p95": 3.1945284701301985e-06,
+          "max": 5.4668187275950014e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 82,
+          "median": 19.6600013049191,
+          "p95": 31.757469230774873,
+          "max": 31.825365356582058
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 59,
+          "median": 0.07754343727259673,
+          "p95": 0.14606967365207135,
+          "max": 0.1687185048682424
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 59,
+          "median": 1.7493011441170653e-06,
+          "p95": 5.557772777096546e-06,
+          "max": 5.9005162926078324e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 82,
+          "median": 1.8490641779415154e-09,
+          "p95": 7.492173713611772e-09,
+          "max": 1.208659029793185e-08
+        }
+      }
+    },
+    {
+      "scene_key": "scene2",
+      "event_id": "scene2_140",
+      "telemetry_samples": 79,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 79,
+          "median": 1.2074182697257333e-06,
+          "p95": 3.91248236030638e-06,
+          "max": 4.436338000413295e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 79,
+          "median": 26.02030684328923,
+          "p95": 44.931222221174174,
+          "max": 45.54147689933972
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 79,
+          "median": 0.3221687837157062,
+          "p95": 8.584919203540876,
+          "max": 12.37418357964365
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 79,
+          "median": 2.9966389243841203e-07,
+          "p95": 1.0125719137666107e-06,
+          "max": 1.3119567302478703e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 79,
+          "median": 4.325253917600223e-08,
+          "p95": 1.4073109680909696e-07,
+          "max": 1.7378465561793966e-07
+        }
+      }
+    },
+    {
+      "scene_key": "scene3",
+      "event_id": "scene3_319",
+      "telemetry_samples": 69,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 69,
+          "median": 2.091309789151873e-06,
+          "p95": 3.078324659199975e-06,
+          "max": 3.6222548091772e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 69,
+          "median": 27.039191266431946,
+          "p95": 37.294144159747084,
+          "max": 38.76292155734021
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 68,
+          "median": 0.03105155003605735,
+          "p95": 0.18319677788845798,
+          "max": 0.3888315241836217
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 68,
+          "median": 2.53202713005901e-06,
+          "p95": 5.71769057620095e-06,
+          "max": 7.630440952348037e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 69,
+          "median": 4.002244029887036e-09,
+          "p95": 1.1886923113431257e-08,
+          "max": 1.4266192589934589e-08
+        }
+      }
+    },
+    {
+      "scene_key": "scene4_room1",
+      "event_id": "scene4_56",
+      "telemetry_samples": 66,
+      "invalid_pose_samples": 0,
+      "metrics": {
+        "gazeVector_vs_rotated_cameraGazeDirection_angle_deg": {
+          "count": 66,
+          "median": 2.699869328381916e-06,
+          "p95": 6.776618231767655e-06,
+          "max": 9.115808030550376e-06
+        },
+        "gazeVector_vs_unrotated_cameraGazeDirection_angle_deg": {
+          "count": 66,
+          "median": 24.43607228796867,
+          "p95": 55.79688554147967,
+          "max": 56.10144228170401
+        },
+        "gazeVector_vs_world_intersection_ray_angle_deg": {
+          "count": 66,
+          "median": 1.5928672073403458,
+          "p95": 12.99262644129777,
+          "max": 14.843951316210186
+        },
+        "cameraHitPoint_vs_inverse_pose_gazePoint_distance_world_units": {
+          "count": 66,
+          "median": 5.932142268125959e-07,
+          "p95": 1.2644227587880956e-06,
+          "max": 1.730635853231492e-06
+        },
+        "cameraGazeOrigin_vs_inverse_pose_gazeOrigin_distance_world_units": {
+          "count": 66,
+          "median": 5.146259335761949e-07,
+          "p95": 1.3239022816601077e-06,
+          "max": 1.614497498400138e-06
+        }
+      }
+    }
+  ]
+}

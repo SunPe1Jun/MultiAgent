@@ -1,0 +1,76 @@
+{
+  "status": "COMPLETE",
+  "version": "local_dense_video_visual_v4_batched_mention_evidence",
+  "manifest_sample_count": 100,
+  "completed_events": 100,
+  "event_failures": [],
+  "pending_events": [],
+  "referential_semantic_failures": [],
+  "visual_model_calls": 100,
+  "visual_failures": 0,
+  "mention_count": 242,
+  "positive_candidate_evidence_mentions": 2,
+  "nonpositive_candidate_rows": 197,
+  "candidate_scope_counts": {
+    "mention_closed_set": 215,
+    "unresolved_spatial_observation": 15,
+    "unresolved_object_observation": 12
+  },
+  "identity_status_counts": {
+    "no_positive_instance_support": 183,
+    "not_visible": 22,
+    "ambiguous_instances": 8,
+    "unresolved_spatial_observation": 27,
+    "supported": 2
+  },
+  "local_model_call_count": 212,
+  "cache_hit_count": 36,
+  "visual_token_estimate_per_call": {
+    "min": 3321,
+    "median": 3726,
+    "max": 4056,
+    "source": "Qwen video_grid_thw product divided by merge_size squared"
+  },
+  "frame_count_per_event": {
+    "min": 34,
+    "median": 70.0,
+    "max": 100
+  },
+  "actual_temporal_groups_per_second": {
+    "min": 3.371680580468529,
+    "median": 4.049974049783112,
+    "max": 4.1813954807477645
+  },
+  "offline_full_interaction": true,
+  "fusion": "NOT_RUN",
+  "ground_truth_context_load_count": 0,
+  "ground_truth_load_unknown_events": 100,
+  "ground_truth_used_for_prediction": false,
+  "ground_truth_read_by_summary": false,
+  "referent_accuracy_reported": false,
+  "evidence_citation_view_counts": {
+    "G001": 197,
+    "G002": 2
+  },
+  "observation_citation_view_counts": {
+    "G001": 143
+  },
+  "supported_without_positive_evidence_mentions": 183,
+  "referential_recovery_count": 1,
+  "referential_recoveries": [
+    {
+      "scene_key": "scene5",
+      "event_id": "scene5_387",
+      "method": "cached_qwen_referential_response_then_deterministic_scene_local_mapping",
+      "cached_response": "/media/kunyu/16TB/spj/Multiagent/runs/local_dense_video_visual_8b_20261022_cache_v4_pilot100/local_dense_video_visual_8b_20261022_v4_pilot100/scene5/scene5_387/referential_validation_retry_3_c223bd682e4c192a.json",
+      "cached_response_sha256": "366612682305d06b7c90c57a904c23e15842e40876784c6f8cb1bb2666188452",
+      "referential_model_recalled": false,
+      "invalid_previous_artifacts_preserved": [
+        "samples/scene5/scene5_387/recovery/invalid_attempt_20261022/visual_event.json",
+        "samples/scene5/scene5_387/recovery/invalid_attempt_20261022/referential.json",
+        "samples/scene5/scene5_387/recovery/invalid_attempt_20261022/visual_response.json",
+        "samples/scene5/scene5_387/recovery/invalid_attempt_20261022/visual_m0.json"
+      ]
+    }
+  ]
+}

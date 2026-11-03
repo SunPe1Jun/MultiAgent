@@ -1,0 +1,10 @@
+{
+  "status": "INTERRUPTED_BY_USER_STEERING",
+  "reason": "Reference paper heatmaps, omit red-circle controls",
+  "completed_conditions": [
+    "scene1/scene1_163:R"
+  ],
+  "circle_model_calls": 0,
+  "interrupted_condition": "scene1/scene1_163:H_local",
+  "partial_tensor_traces_preserved": true
+}

@@ -5,10 +5,10 @@ from pathlib import Path
 import torch
 from PIL import Image,ImageDraw
 from transformers import AutoProcessor,AutoModelForZeroShotObjectDetection
-from .baseline import module
+from .baseline import WORKSPACE_ROOT, module
 
 def main():
- p=argparse.ArgumentParser();p.add_argument('--image',required=True);p.add_argument('--event-json',required=True);p.add_argument('--anchor',required=True);p.add_argument('--output-dir',required=True);p.add_argument('--model',default='/workspace/usr3/grounding-dino-base');a=p.parse_args()
+ p=argparse.ArgumentParser();p.add_argument('--image',required=True);p.add_argument('--event-json',required=True);p.add_argument('--anchor',required=True);p.add_argument('--output-dir',required=True);p.add_argument('--model',default=str(WORKSPACE_ROOT / 'grounding-dino-base'));a=p.parse_args()
  out=Path(a.output_dir);out.mkdir(parents=True,exist_ok=True);im=Image.open(a.image).convert('RGB');labels=['forklift','truck','person','building','helicopter','cargo','van','drone','chair','lamp','curtain','cabinet','rug','window'];query='. '.join(labels)+'.'
  proc=AutoProcessor.from_pretrained(a.model,local_files_only=True);model=AutoModelForZeroShotObjectDetection.from_pretrained(a.model,local_files_only=True).to('cuda').eval();inputs=proc(images=im,text=query,return_tensors='pt').to('cuda')
  with torch.inference_mode(): result=model(**inputs)

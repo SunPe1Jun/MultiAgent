@@ -1,0 +1,201 @@
+{
+  "attention_trace": [
+    {
+      "view_id": "V018",
+      "cue_type": "heatmap",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Heatmap center is at the center of the frame."
+    },
+    {
+      "view_id": "V023",
+      "cue_type": "heatmap",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Heatmap center is at the center of the frame."
+    },
+    {
+      "view_id": "V029",
+      "cue_type": "heatmap",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Heatmap center is at the center of the frame."
+    },
+    {
+      "view_id": "V034",
+      "cue_type": "heatmap",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Heatmap center is at the center of the frame."
+    },
+    {
+      "view_id": "V040",
+      "cue_type": "heatmap",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Heatmap center is at the center of the frame."
+    },
+    {
+      "view_id": "V045",
+      "cue_type": "heatmap",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Heatmap center is at the center of the frame."
+    },
+    {
+      "view_id": "V051",
+      "cue_type": "heatmap",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Heatmap center is at the center of the frame."
+    },
+    {
+      "view_id": "V056",
+      "cue_type": "heatmap",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "Heatmap center is at the center of the frame."
+    }
+  ],
+  "evidence": [
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V018",
+      "explanation": "The heatmap center aligns with the position of helicopter1 in the RGB frame."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V023",
+      "explanation": "The heatmap center aligns with the position of helicopter1 in the RGB frame."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V029",
+      "explanation": "The heatmap center aligns with the position of helicopter1 in the RGB frame."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V034",
+      "explanation": "The heatmap center aligns with the position of helicopter1 in the RGB frame."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V040",
+      "explanation": "The heatmap center aligns with the position of helicopter1 in the RGB frame."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V045",
+      "explanation": "The heatmap center aligns with the position of helicopter1 in the RGB frame."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V051",
+      "explanation": "The heatmap center aligns with the position of helicopter1 in the RGB frame."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.9,
+      "confidence": 0.9,
+      "frame_id": "V056",
+      "explanation": "The heatmap center aligns with the position of helicopter1 in the RGB frame."
+    }
+  ],
+  "visual_observations": [
+    {
+      "mention_id": "m0",
+      "frame_id": "V018",
+      "description": "A white helicopter with a red tail is visible in the center-right of the frame.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V023",
+      "description": "A white helicopter with a red tail is visible in the center-right of the frame.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V029",
+      "description": "A white helicopter with a red tail is visible in the center-right of the frame.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V034",
+      "description": "A white helicopter with a red tail is visible in the center-right of the frame.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V040",
+      "description": "A white helicopter with a red tail is visible in the center-right of the frame.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V045",
+      "description": "A white helicopter with a red tail is visible in the center-right of the frame.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V051",
+      "description": "A white helicopter with a red tail is visible in the center-right of the frame.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V056",
+      "description": "A white helicopter with a red tail is visible in the center-right of the frame.",
+      "confidence": 0.9
+    }
+  ],
+  "identity_status": "confirmed"
+}

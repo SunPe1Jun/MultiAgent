@@ -1,0 +1,112 @@
+{
+  "attention_trace": [
+    {
+      "view_id": "V018",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V023",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V029",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V034",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V040",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V045",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V051",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    },
+    {
+      "view_id": "V056",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No attention cue visible."
+    }
+  ],
+  "evidence": [],
+  "visual_observations": [
+    {
+      "mention_id": "m0",
+      "frame_id": "V018",
+      "description": "A white helicopter is visible in the mid-ground, slightly to the right of center.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V023",
+      "description": "A white helicopter is visible in the mid-ground, slightly to the right of center.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V029",
+      "description": "A white helicopter is visible in the mid-ground, slightly to the right of center.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V034",
+      "description": "A white helicopter is visible in the mid-ground, slightly to the right of center.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V040",
+      "description": "A white helicopter is visible in the mid-ground, slightly to the right of center.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V045",
+      "description": "A white helicopter is visible in the mid-ground, slightly to the right of center.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V051",
+      "description": "A white helicopter is visible in the mid-ground, slightly to the right of center.",
+      "confidence": 0.9
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "V056",
+      "description": "A white helicopter is visible in the mid-ground, slightly to the right of center.",
+      "confidence": 0.9
+    }
+  ],
+  "identity_status": "ambiguous"
+}

@@ -1,0 +1,63 @@
+{
+  "attention_trace": [
+    {
+      "view_id": "V018",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No perceptible cue in grayscale heatmap."
+    },
+    {
+      "view_id": "V023",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No perceptible cue in grayscale heatmap."
+    },
+    {
+      "view_id": "V029",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No perceptible cue in grayscale heatmap."
+    },
+    {
+      "view_id": "V034",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No perceptible cue in grayscale heatmap."
+    },
+    {
+      "view_id": "V040",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No perceptible cue in grayscale heatmap."
+    },
+    {
+      "view_id": "V045",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No perceptible cue in grayscale heatmap."
+    },
+    {
+      "view_id": "V051",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No perceptible cue in grayscale heatmap."
+    },
+    {
+      "view_id": "V056",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": "No perceptible cue in grayscale heatmap."
+    }
+  ],
+  "evidence": [],
+  "visual_observations": [],
+  "identity_status": "none"
+}

@@ -6,6 +6,13 @@ from .qwen_backend import QwenBackend
 
 
 class ResponseParsingTests(unittest.TestCase):
+    def test_top_level_mentions_array_is_schema_normalized(self):
+        rows = [{'mention_id': 'm0', 'evidence': [], 'visual_observations': [],
+                 'identity_status': 'not_visible'}]
+        parsed = QwenBackend._parse_response('```json\n' + json.dumps(rows) + '\n```')
+        self.assertEqual(parsed['mentions'], rows)
+        self.assertEqual(parsed['_parse_warning'], 'top_level_mention_array_normalized')
+
     def test_bare_hand_array_requires_hand_schema(self):
         cue = {'frame_id': 'F1', 'mention_ids': ['m0'], 'cue_type': 'pointing',
                'confidence': .9, 'explanation': 'visible hand'}

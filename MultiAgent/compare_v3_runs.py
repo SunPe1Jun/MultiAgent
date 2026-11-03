@@ -2,6 +2,7 @@
 import json
 from pathlib import Path
 
+from .baseline import MULTIAGENT_ROOT
 from .evaluate import evaluate_results
 
 
@@ -17,7 +18,7 @@ def load_rows(root, manifest):
 
 
 def main():
-    project = Path('/workspace/usr3/MultiAgent')
+    project = MULTIAGENT_ROOT
     base_root = project / 'runs/unified_v3_20'
     sam_root = project / 'runs/unified_v3_20_sam'
     manifest = json.loads((project / 'runs/pilot20/manifest.json').read_text())

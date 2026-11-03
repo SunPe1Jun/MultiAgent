@@ -1,0 +1,12 @@
+{
+  "compared_rows": 609,
+  "all_original_projected_gt_fields_identical": true,
+  "mismatches": [],
+  "compared_columns": [
+    "gt_x",
+    "gt_y",
+    "projection_valid",
+    "status"
+  ],
+  "original_source": "/media/kunyu/16TB/spj/Trimodal-Referring/paper_experiment_evidence/manifests/experiment2_projected_gt_manifest.csv"
+}

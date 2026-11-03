@@ -1,0 +1,26 @@
+[
+    {
+        "image_id": "X1",
+        "detected": false,
+        "quadrant": "none",
+        "center_uv": null,
+        "confidence": 0.0,
+        "observation": "No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point."
+    },
+    {
+        "image_id": "X2",
+        "detected": false,
+        "quadrant": "none",
+        "center_uv": null,
+        "confidence": 0.0,
+        "observation": "No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point."
+    },
+    {
+        "image_id": "X3",
+        "detected": false,
+        "quadrant": "none",
+        "center_uv": null,
+        "confidence": 0.0,
+        "observation": "No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point."
+    }
+]

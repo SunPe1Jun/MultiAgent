@@ -1,0 +1,929 @@
+{
+  "seed": 20261021,
+  "split": "existing evaluation pool (no supplied train/val/test split)",
+  "selection": "pilot20 preserved; proportional scene quotas with seeded random supplements; no prediction-based filtering",
+  "base_manifest": "/media/kunyu/16TB/spj/Multiagent/runs/visual_evidence_8b_20261021/pilot20_corrected/manifest.json",
+  "scene_quotas": {
+    "scene1": 20,
+    "scene2": 20,
+    "scene3": 20,
+    "scene4_room1": 5,
+    "scene4_room2": 5,
+    "scene4_room3": 5,
+    "scene4_room4": 5,
+    "scene5": 20
+  },
+  "samples": [
+    {
+      "scene_key": "scene1",
+      "row_index": 49,
+      "event_id": "scene1_50",
+      "instruction": "Drop that box slowly.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 114,
+      "event_id": "scene1_115",
+      "instruction": "Set down that box gently.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 162,
+      "event_id": "scene1_163",
+      "instruction": "Turn toward that helicopter.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 165,
+      "event_id": "scene1_166",
+      "instruction": "Hold that box carefully.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 215,
+      "event_id": "scene1_216",
+      "instruction": "Turn toward the side door of the rear building.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 261,
+      "event_id": "scene1_262",
+      "instruction": "Ask this person to open the side door of the small building.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 279,
+      "event_id": "scene1_280",
+      "instruction": "Ask these workers to inspect the window of the small building.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 309,
+      "event_id": "scene1_310",
+      "instruction": "Close the strap on this cargo.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 355,
+      "event_id": "scene1_356",
+      "instruction": "Transport that cargo to the entrance of the rear building.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 363,
+      "event_id": "scene1_364",
+      "instruction": "Drive this forklift to the side door of the rear building.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 404,
+      "event_id": "scene1_405",
+      "instruction": "Inspect the window of the main building, verify its status, then close it.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 450,
+      "event_id": "scene1_451",
+      "instruction": "Land that helicopter in front of that building, unload this box.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 458,
+      "event_id": "scene1_459",
+      "instruction": "check the window of that helicopter, unload that cargo, then put it onto this forklift.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 492,
+      "event_id": "scene1_493",
+      "instruction": "Open the window of that helicopter, unload that box.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 500,
+      "event_id": "scene1_501",
+      "instruction": "Drive that forklift into this truck, align it with that truck, and deliver this box beside the rear building.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 534,
+      "event_id": "scene1_535",
+      "instruction": "Pick up this box, move it onto the surface of the platform.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 536,
+      "event_id": "scene1_537",
+      "instruction": "Open the battery cover of this forklift, unload that box, then position it onto the surface of the platform.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 544,
+      "event_id": "scene1_545",
+      "instruction": "Land that helicopter beside this forklift, unload that box.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 694,
+      "event_id": "scene1_695",
+      "instruction": "Direct this person to transfer that cargo onto the platform, ensure they secure it near the low building.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene1",
+      "row_index": 795,
+      "event_id": "scene1_796",
+      "instruction": "Open the engine cover of that forklift, unload this cargo, then position it into this forklift.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 9,
+      "event_id": "scene2_10",
+      "instruction": "Tidy that door.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 34,
+      "event_id": "scene2_35",
+      "instruction": "Slide that chair toward there.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 40,
+      "event_id": "scene2_41",
+      "instruction": "Slide that chair next to the desk.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 71,
+      "event_id": "scene2_72",
+      "instruction": "Push that file by the desk.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 105,
+      "event_id": "scene2_106",
+      "instruction": "Instruct the assistant nearby to verify that desk for clutter.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 122,
+      "event_id": "scene2_123",
+      "instruction": "Ask the assistant nearby to slide that chair to there.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 124,
+      "event_id": "scene2_125",
+      "instruction": "Request that colleague to open this drawer.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 155,
+      "event_id": "scene2_156",
+      "instruction": "Tell the person by the desk to tidy that laptop.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 218,
+      "event_id": "scene2_219",
+      "instruction": "Tidy that laptop gently.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 258,
+      "event_id": "scene2_259",
+      "instruction": "Place that file by the desk.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 289,
+      "event_id": "scene2_290",
+      "instruction": "Request this colleague to carry that chair near the spot.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 327,
+      "event_id": "scene2_328",
+      "instruction": "Adjust that chair.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 405,
+      "event_id": "scene2_406",
+      "instruction": "Tidy that file, then review that desk for clutter.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 411,
+      "event_id": "scene2_412",
+      "instruction": "Carry that chair next to the desk, then move that file over there.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 421,
+      "event_id": "scene2_422",
+      "instruction": "Arrange that file, then move that chair to that desk.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 473,
+      "event_id": "scene2_474",
+      "instruction": "Arrange that chair, then ask that colleague to move that chair in front of the desk.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 578,
+      "event_id": "scene2_579",
+      "instruction": "Request that colleague to verify that desk for clutter, then adjust that lamp.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 645,
+      "event_id": "scene2_646",
+      "instruction": "Move that file to there, then move that chair to the desk.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 663,
+      "event_id": "scene2_664",
+      "instruction": "Push that file close to the desk, then check that desk for clutter.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 678,
+      "event_id": "scene2_679",
+      "instruction": "Slide that chair near there, then adjust that lamp.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 14,
+      "event_id": "scene3_15",
+      "instruction": "tighten that car hood.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 36,
+      "event_id": "scene3_37",
+      "instruction": "align that car to the edge of that spot.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 78,
+      "event_id": "scene3_79",
+      "instruction": "Observe that van.",
+      "selection_tags": [
+        "single_or_unmapped_gt"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 91,
+      "event_id": "scene3_92",
+      "instruction": "Open that van door.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 107,
+      "event_id": "scene3_108",
+      "instruction": "Evaluate that truck.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 109,
+      "event_id": "scene3_110",
+      "instruction": "Close that drone’s camera.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 147,
+      "event_id": "scene3_148",
+      "instruction": "Tell that colleague to attach that truck hood.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 159,
+      "event_id": "scene3_160",
+      "instruction": "Inspect carefully that van.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 185,
+      "event_id": "scene3_186",
+      "instruction": "Lock that truck hood.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 192,
+      "event_id": "scene3_193",
+      "instruction": "Transport that car to that building.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 323,
+      "event_id": "scene3_324",
+      "instruction": "Verify that drone’s gimbal.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 426,
+      "event_id": "scene3_427",
+      "instruction": "Adjust the door of that van, then assess that drone’s propeller.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 568,
+      "event_id": "scene3_569",
+      "instruction": "Reposition that van beside that car, then park that car to there.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 577,
+      "event_id": "scene3_578",
+      "instruction": "Align that van there, then move that car beside that car.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 583,
+      "event_id": "scene3_584",
+      "instruction": "Instruct that colleague to pull that car here, then reverse that van there.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 634,
+      "event_id": "scene3_635",
+      "instruction": "Push that van there, then close that drone’s gimbal.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 660,
+      "event_id": "scene3_661",
+      "instruction": "Attach that drone’s battery, then loosen the door of that van.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 679,
+      "event_id": "scene3_680",
+      "instruction": "Pull that truck toward that building, then align that drone there.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 720,
+      "event_id": "scene3_721",
+      "instruction": "Detach the door of that van and open the hood of that truck, then transport that van near that building.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 747,
+      "event_id": "scene3_748",
+      "instruction": "Tell that colleague to secure that van hood, then lift the hood of that truck, then reposition that car toward that building.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room1",
+      "row_index": 28,
+      "event_id": "scene4_29",
+      "instruction": "Adjust the lamp near the red sofa.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room1",
+      "row_index": 46,
+      "event_id": "scene4_47",
+      "instruction": "Open the curtain near the sofa.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room1",
+      "row_index": 72,
+      "event_id": "scene4_73",
+      "instruction": "Close the curtain near the stove.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room1",
+      "row_index": 128,
+      "event_id": "scene4_129",
+      "instruction": "Tell that person to arrange the dining chairs, wipe the table, and close the curtain.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room1",
+      "row_index": 155,
+      "event_id": "scene4_156",
+      "instruction": "Ask that person to pick up the cup, carry it to the table, and wipe the spot.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room2",
+      "row_index": 33,
+      "event_id": "scene4_34",
+      "instruction": "Pick up the cloth from the chair.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room2",
+      "row_index": 56,
+      "event_id": "scene4_57",
+      "instruction": "Turn off the switch near the door.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room2",
+      "row_index": 90,
+      "event_id": "scene4_91",
+      "instruction": "Ask that person to pick up the mop and lean it beside the sink.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room2",
+      "row_index": 149,
+      "event_id": "scene4_150",
+      "instruction": "Pick up the chair, rotate it slightly, and place it near the small table.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room2",
+      "row_index": 158,
+      "event_id": "scene4_159",
+      "instruction": "Pick up the basin, dry its bottom with the cloth, and place it beside the chair.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room3",
+      "row_index": 19,
+      "event_id": "scene4_20",
+      "instruction": "Inspect the area in front of room1.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room3",
+      "row_index": 94,
+      "event_id": "scene4_95",
+      "instruction": "Ask that person to straighten the dining chair.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room3",
+      "row_index": 102,
+      "event_id": "scene4_103",
+      "instruction": "Move the chair slightly toward the dining table and align it with the table's edge.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene4_room3",
+      "row_index": 103,
+      "event_id": "scene4_104",
+      "instruction": "Take the vase from the cabinet and set it on the rug in front of the sofa.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room3",
+      "row_index": 122,
+      "event_id": "scene4_123",
+      "instruction": "Pick up the cushion from the sofa and place it  on the desk.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room4",
+      "row_index": 10,
+      "event_id": "scene4_11",
+      "instruction": "Inspect the curtains near the window.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene4_room4",
+      "row_index": 25,
+      "event_id": "scene4_26",
+      "instruction": "Move the bench toward the bedroom side. ⭐",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene4_room4",
+      "row_index": 41,
+      "event_id": "scene4_42",
+      "instruction": "Place the pillow near the window. ⭐",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room4",
+      "row_index": 95,
+      "event_id": "scene4_96",
+      "instruction": "Inspect the ceiling lamp above the dining table.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene4_room4",
+      "row_index": 192,
+      "event_id": "scene4_193",
+      "instruction": "Ask that person to adjust the curtains, dust the window sill, and turn on the desk lamp.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 28,
+      "event_id": "scene5_29",
+      "instruction": "Direct this drone to approach the front-middle tank.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 77,
+      "event_id": "scene5_78",
+      "instruction": "Move this truck to pull forward toward the front-right warehouse.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 112,
+      "event_id": "scene5_113",
+      "instruction": "Pull this truck toward the inland warehouse and park it near the front corner.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 190,
+      "event_id": "scene5_191",
+      "instruction": "Guide this drone toward the central yard and rise it above the warehouse line.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 210,
+      "event_id": "scene5_211",
+      "instruction": "Let this drone monitor the entrance of the central warehouse.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 291,
+      "event_id": "scene5_292",
+      "instruction": "Tell that volunteer to have that drone confirm the truck’s orientation.",
+      "selection_tags": [
+        "multi_reference_gt"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 297,
+      "event_id": "scene5_298",
+      "instruction": "Have that drone survey the open section of the yard right beside the inland warehouse.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 302,
+      "event_id": "scene5_303",
+      "instruction": "Send this drone to inspect the inland road near the truck, then observe the crates beside it.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 346,
+      "event_id": "scene5_347",
+      "instruction": "get this drone to spot the passage behind the lower coastal warehouse and then observe the ground there.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 350,
+      "event_id": "scene5_351",
+      "instruction": "Let this drone scan the rear tank row and then observe the open ground just south of it.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 357,
+      "event_id": "scene5_358",
+      "instruction": "Assign that drone to shadow person2 along the coastal road and then identify the nearest structure he pass.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 386,
+      "event_id": "scene5_387",
+      "instruction": "instruct this drone to identify the crate  beside the truck and then focus on its side panel.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 387,
+      "event_id": "scene5_388",
+      "instruction": "have that drone spot the space in front of the coastal warehouse and then inspect the narrow passage.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 398,
+      "event_id": "scene5_399",
+      "instruction": "get this drone to follow the fence toward the tank yard and then confirm the transition zone.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 403,
+      "event_id": "scene5_404",
+      "instruction": "Deploy that drone to flag the passage beside the coastal warehouse.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 432,
+      "event_id": "scene5_433",
+      "instruction": "Ask person1 to signal the crate area.",
+      "selection_tags": [
+        "multi_reference_gt",
+        "region_relation_language"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 495,
+      "event_id": "scene5_496",
+      "instruction": "Have that drone broadcast a notice over the inland road section near the truck.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 551,
+      "event_id": "scene5_552",
+      "instruction": "Ask person2 to notify about conditions on the coastal road and then update the corner near the bend.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 563,
+      "event_id": "scene5_564",
+      "instruction": "Have that drone confirm that the space around the truck is clear and then report any new movement.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 696,
+      "event_id": "scene5_697",
+      "instruction": "Let that drone to escort a visible route across the tank side.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    }
+  ]
+}

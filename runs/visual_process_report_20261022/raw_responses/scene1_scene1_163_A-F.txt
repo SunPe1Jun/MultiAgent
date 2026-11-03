@@ -1,0 +1,105 @@
+{
+  "attention_trace": [
+    {
+      "view_id": "G001",
+      "cue_type": "foveation",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "The helicopter is centered in the foveated region."
+    },
+    {
+      "view_id": "G002",
+      "cue_type": "foveation",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "The helicopter remains centered in the foveated region."
+    },
+    {
+      "view_id": "G003",
+      "cue_type": "foveation",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "The helicopter is still centered in the foveated region."
+    },
+    {
+      "view_id": "G004",
+      "cue_type": "foveation",
+      "cue_center_uv": [
+        0.5,
+        0.5
+      ],
+      "cue_confidence": 0.9,
+      "cue_observation": "The helicopter remains centered in the foveated region."
+    }
+  ],
+  "evidence": [
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.95,
+      "confidence": 0.95,
+      "frame_id": "G001",
+      "explanation": "The helicopter is clearly visible and centered in the foveated region."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.95,
+      "confidence": 0.95,
+      "frame_id": "G002",
+      "explanation": "The helicopter is clearly visible and centered in the foveated region."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.95,
+      "confidence": 0.95,
+      "frame_id": "G003",
+      "explanation": "The helicopter is clearly visible and centered in the foveated region."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 0.95,
+      "confidence": 0.95,
+      "frame_id": "G004",
+      "explanation": "The helicopter is clearly visible and centered in the foveated region."
+    }
+  ],
+  "visual_observations": [
+    {
+      "mention_id": "m0",
+      "frame_id": "G001",
+      "description": "The helicopter is visible in the center of the frame, with a clear view of its rotor and body.",
+      "confidence": 0.95
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "G002",
+      "description": "The helicopter is visible in the center of the frame, with a clear view of its rotor and body.",
+      "confidence": 0.95
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "G003",
+      "description": "The helicopter is visible in the center of the frame, with a clear view of its rotor and body.",
+      "confidence": 0.95
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "G004",
+      "description": "The helicopter is visible in the center of the frame, with a clear view of its rotor and body.",
+      "confidence": 0.95
+    }
+  ],
+  "identity_status": "confirmed"
+}

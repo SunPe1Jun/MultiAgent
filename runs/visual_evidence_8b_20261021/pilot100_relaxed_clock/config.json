@@ -1,0 +1,53 @@
+{
+  "version": "temporal_gaze_visual_only_20261021_v2_multiscale",
+  "config": {
+    "namespace": "temporal_gaze_remote8b_20261021_pilot100_clock075",
+    "groups": [
+      "R",
+      "H_inst",
+      "H_local",
+      "F_inst",
+      "F_local"
+    ],
+    "reference_frame_count": 3,
+    "clock_max_offset_ratio": 0.75,
+    "gaze": {
+      "instant_max_delta_seconds": 0.18,
+      "local_history_seconds": 2.0,
+      "utterance_pre_seconds": 0.5,
+      "utterance_post_seconds": 0.5,
+      "max_gap_seconds": 0.25,
+      "decay": "uniform",
+      "kernel_sigma_degrees": 2.0,
+      "display_scale": 2.0,
+      "overlay_max_alpha": 0.28,
+      "foveation_min_clear_fraction": 0.55,
+      "foveation_max_blur_sigma_px": 18.0,
+      "foveation_downsample_factors": [
+        2,
+        4,
+        8
+      ]
+    }
+  },
+  "model": "Qwen3-VL-8B-Instruct",
+  "base_url": "http://100.124.154.87:8000/v1",
+  "data_root": "/media/kunyu/16TB/spj/V3dMD/prepared/data",
+  "cpu_only": false,
+  "reference_frames": 3,
+  "groups": [
+    "R",
+    "H_inst",
+    "H_local",
+    "F_inst",
+    "F_local"
+  ],
+  "timing_mode": "direct",
+  "mention_isolation": false,
+  "mention_focus": false,
+  "regions": false,
+  "selection_precommitted_before_new_model_predictions": true,
+  "clock_max_offset_ratio": 0.75,
+  "study_config_path": "/media/kunyu/16TB/spj/Multiagent/configs/temporal_gaze_8b_pilot100_clock075_20261021.json",
+  "clock_guard_default_unchanged": 0.3
+}

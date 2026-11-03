@@ -55,9 +55,9 @@ def _cue_times(ctx, start, end, offset):
     return result
 
 
-def plan_frames(ctx, mentions, alignment, duration, timed=True):
+def plan_frames(ctx, mentions, alignment, duration, timed=True, max_clock_offset_ratio=0.30):
     """C policy: ASR may add frames but can never remove base evidence."""
-    clock = guard_clock(alignment['clock'], duration)
+    clock = guard_clock(alignment['clock'], duration, max_clock_offset_ratio)
     offset = clock.get('telemetry_to_video') or 0.
     limit = max(0., duration-.1)
     start = min(limit, max(0., float(ctx.api_row['t_start'])+offset))

@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "image_id": "X1",
+      "detected": true,
+      "quadrant": "top_left",
+      "center_uv": [100, 100],
+      "confidence": 0.95,
+      "observation": "Brightest blob located in top-left quadrant, appears as a distinct, bright spot."
+    },
+    {
+      "image_id": "X2",
+      "detected": false,
+      "quadrant": "none",
+      "center_uv": null,
+      "confidence": 0.0,
+      "observation": "Image is entirely black with no visible blobs or features."
+    },
+    {
+      "image_id": "X3",
+      "detected": true,
+      "quadrant": "bottom_right",
+      "center_uv": [400, 400],
+      "confidence": 0.9,
+      "observation": "Brightest blob located in bottom-right quadrant, appears as a distinct, bright spot."
+    }
+  ]
+}

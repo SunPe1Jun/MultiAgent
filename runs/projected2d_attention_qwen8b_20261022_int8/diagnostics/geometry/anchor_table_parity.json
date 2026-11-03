@@ -1,0 +1,58 @@
+[
+  {
+    "scene": "scene1",
+    "original_anchor_table": "/media/kunyu/16TB/spj/Trimodal-Referring/data/scene1_anchor_table.tsv",
+    "active_anchor_table": "/media/kunyu/16TB/spj/V3dMD/prepared/data/scene1_anchor_table.tsv",
+    "differences": [],
+    "count": 22
+  },
+  {
+    "scene": "scene2",
+    "original_anchor_table": "/media/kunyu/16TB/spj/Trimodal-Referring/data/scene2_anchor_table.tsv",
+    "active_anchor_table": "/media/kunyu/16TB/spj/V3dMD/prepared/data/scene2_anchor_table.tsv",
+    "differences": [],
+    "count": 42
+  },
+  {
+    "scene": "scene3",
+    "original_anchor_table": "/media/kunyu/16TB/spj/Trimodal-Referring/data/scene3_anchor_table.tsv",
+    "active_anchor_table": "/media/kunyu/16TB/spj/V3dMD/prepared/data/scene3_anchor_table.tsv",
+    "differences": [],
+    "count": 22
+  },
+  {
+    "scene": "scene4_room1",
+    "original_anchor_table": "/media/kunyu/16TB/spj/Trimodal-Referring/data/scene4_room1_anchor_table.tsv",
+    "active_anchor_table": "/media/kunyu/16TB/spj/V3dMD/prepared/data/scene4_room1_anchor_table.tsv",
+    "differences": [],
+    "count": 19
+  },
+  {
+    "scene": "scene4_room2",
+    "original_anchor_table": "/media/kunyu/16TB/spj/Trimodal-Referring/data/scene4_room2_anchor_table.tsv",
+    "active_anchor_table": "/media/kunyu/16TB/spj/V3dMD/prepared/data/scene4_room2_anchor_table.tsv",
+    "differences": [],
+    "count": 20
+  },
+  {
+    "scene": "scene4_room3",
+    "original_anchor_table": "/media/kunyu/16TB/spj/Trimodal-Referring/data/scene4_room3_anchor_table.tsv",
+    "active_anchor_table": "/media/kunyu/16TB/spj/V3dMD/prepared/data/scene4_room3_anchor_table.tsv",
+    "differences": [],
+    "count": 19
+  },
+  {
+    "scene": "scene4_room4",
+    "original_anchor_table": "/media/kunyu/16TB/spj/Trimodal-Referring/data/scene4_room4_anchor_table.tsv",
+    "active_anchor_table": "/media/kunyu/16TB/spj/V3dMD/prepared/data/scene4_room4_anchor_table.tsv",
+    "differences": [],
+    "count": 28
+  },
+  {
+    "scene": "scene5",
+    "original_anchor_table": "/media/kunyu/16TB/spj/Trimodal-Referring/data/scene5_anchor_table.tsv",
+    "active_anchor_table": "/media/kunyu/16TB/spj/V3dMD/prepared/data/scene5_anchor_table.tsv",
+    "differences": [],
+    "count": 27
+  }
+]

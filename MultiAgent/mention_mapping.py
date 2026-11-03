@@ -2,20 +2,22 @@
 
 This layer never reads GT, visual evidence or earlier instance predictions.
 """
+import copy
 import re
 
-VERSION = 'typed_mentions_v8_nested_parent_dedup'
+VERSION = 'typed_mentions_v10_scene_local_deictic_unresolved'
 ALIASES = {
     'box': ('cargo',), 'crate': ('cargo',), 'warehouse': ('building',),
     'warhouse': ('building',), 'worker': ('person',), 'people': ('person',),
-    'guy': ('person',), 'man': ('person',), 'men': ('person',),
+    'guy': ('person',), 'fellow': ('person',), 'fellows': ('person',),
+    'man': ('person',), 'men': ('person',), 'woman': ('person',),
     'colleague': ('person',), 'assistant': ('person',), 'volunteer': ('person',),
     'table': ('desk',), 'computer': ('pc', 'laptop'), 'document': ('file',),
     'folder': ('file',),
 }
 COMPONENTS = {'door', 'window', 'entrance', 'gate', 'cover', 'flap', 'edge',
               'surface', 'center', 'lid', 'hatch', 'panel', 'latch', 'strap',
-              'brake', 'fork', 'hood', 'tailgate', 'handle'}
+              'brake', 'fork', 'hood', 'tailgate', 'handle', 'battery', 'gimbal', 'camera'}
 VAGUE = {'there', 'here', 'inside', 'outside', 'gap', 'area', 'region', 'location'}
 
 
@@ -38,6 +40,77 @@ def literal_span(text, instruction, occurrence=0):
     if not isinstance(text, str) or not text.strip(): return None
     matches = list(re.finditer(r'(?<!\w)' + re.escape(text) + r'(?!\w)', instruction, re.I))
     return [matches[occurrence].start(), matches[occurrence].end()] if len(matches)>occurrence else None
+
+
+def repair_explicit_component_parent(payload, instruction):
+    """Repair a parser split only when the full component phrase is literal.
+
+    Uses the instruction string alone. It never consults candidate tables,
+    geometry, GT, or model predictions about object identity. A phrase like
+    ``the crate beside the truck`` cannot be merged because the model must mark
+    a component and the exact ``text of parent`` phrase must occur in the input.
+    """
+    if not isinstance(payload, dict) or not isinstance(payload.get('mentions'), list):
+        return payload, []
+    repaired = copy.deepcopy(payload)
+    mentions = repaired['mentions']
+    remove_indices = set()
+    audit = []
+    for index, mention in enumerate(mentions):
+        if not isinstance(mention, dict):
+            continue
+        text = mention.get('text')
+        parent = mention.get('parent_text') or ''
+        component = mention.get('component') or ''
+        object_type = str(mention.get('object_type') or '')
+        if not isinstance(text, str) or not isinstance(parent, str) or not parent:
+            continue
+        component_head = bool(set(tokens(object_type)) & COMPONENTS)
+        if not component and not component_head:
+            continue
+        if literal_span(parent, text) is not None:
+            continue
+        combined = next((candidate for candidate in (f'{text} of {parent}', f'{text} {parent}')
+                         if literal_span(candidate, instruction) is not None), None)
+        if combined is None:
+            continue
+        mention['text'] = combined
+        mention['_literal_component_parent_repair'] = {
+            'original_text': text, 'original_parent_text': parent,
+            'repaired_text': combined, 'reason': 'exact_instruction_span'}
+        combined_span = literal_span(combined, instruction)
+        removed = None
+        if combined_span:
+            for other_index in range(index + 1, len(mentions)):
+                other = mentions[other_index]
+                if (isinstance(other, dict) and isinstance(other.get('text'), str)
+                        and other['text'].casefold() == parent.casefold()):
+                    occurrence = sum(1 for previous in mentions[:other_index]
+                                    if isinstance(previous, dict)
+                                    and str(previous.get('text') or '').casefold() == parent.casefold())
+                    parent_span = literal_span(parent, instruction, occurrence)
+                    if (parent_span and combined_span[0] <= parent_span[0]
+                            and parent_span[1] <= combined_span[1]):
+                        remove_indices.add(other_index)
+                        removed = other_index
+                    break
+        audit.append({'mention_index': index, 'original_text': text,
+                      'original_parent_text': parent, 'repaired_text': combined,
+                      'removed_duplicate_parent_index': removed})
+    if remove_indices:
+        repaired['mentions'] = [row for i, row in enumerate(mentions) if i not in remove_indices]
+    if audit:
+        repaired['_literal_component_parent_repairs'] = audit
+    return repaired, audit
+
+
+def actor_coverage_checks(text, mentions):
+    pattern = re.compile(r'\b(?:the|that|this|another|a|an)\s+(?:(?:other|young|old|front|back)\s+)*'
+                         r'(?:person|people|fellow|worker|man|woman|guy|colleague|assistant|volunteer)\b', re.I)
+    spans = [m.get('span') for m in mentions if isinstance(m.get('span'), list) and len(m['span']) == 2]
+    return [{'text': match.group(), 'span': [match.start(), match.end()]}
+            for match in pattern.finditer(text)
+            if not any(a <= match.start() and match.end() <= b for a, b in spans)]
 
 
 def map_phrase(phrase, candidates):
@@ -95,6 +168,7 @@ def resolve_mentions(ctx, payload):
         raise ValueError('Instance selections forbidden in language extraction')
     if not payload['mentions'] and ctx.text.strip():
         raise ValueError('Empty extraction for nonempty instruction')
+    repair_audit = payload.get('_literal_component_parent_repairs', [])
     result = []
     occurrences = {}
     for index, raw in enumerate(payload['mentions']):
@@ -109,22 +183,43 @@ def resolve_mentions(ctx, payload):
         occurrences[key] = occurrence+1
         head = raw.get('object_type')
         if not isinstance(head, str) or not head.strip(): raise ValueError('object_type required')
+        if head.strip().casefold() in {'instruction', 'utterance', 'sentence', 'command'}:
+            raise ValueError('instruction-level text is not an object mention; extract its referent noun phrases')
         count = raw.get('count', 1)
         if count is not None and (type(count) is not int or not 1 <= count <= 20):
             raise ValueError('count must be null or an integer in [1,20]')
         parent = raw.get('parent_text') or ''
         if not isinstance(parent, str): raise ValueError('parent_text must be text')
-        if parent and literal_span(parent, raw['text']) is None:
-            raise ValueError('parent_text must be inside the full mention text')
         component = raw.get('component') or ''
         if component and literal_span(component, raw['text']) is None:
             raise ValueError('component must be a literal span within mention text')
         component_head = bool(set(map(singular, tokens(head))) & COMPONENTS)
+        repaired_pronoun_parent = ''
+        if parent and literal_span(parent, raw['text']) is None:
+            anchor_text = raw.get('anchor_text') or ''
+            matching_antecedent = any(
+                other['span'][0] < span[0]
+                and other['coreference_id'] == raw.get('coreference_id')
+                and other['text'].casefold() == str(anchor_text).casefold()
+                for other in result)
+            pronoun_parent = bool(re.match(r'^(?:its|their|his|her)\b', raw['text'], re.I))
+            bare_anaphor = raw['text'].strip().casefold() in {'it', 'them', 'he', 'she', 'him', 'her', 'they'}
+            if ((component_head and pronoun_parent or bare_anaphor) and matching_antecedent
+                    and parent.casefold() == str(anchor_text).casefold()):
+                repaired_pronoun_parent = parent
+                parent = ''
+            else:
+                raise ValueError(
+                    f'parent_text {parent!r} must be a literal span inside mention {raw["text"]!r}')
         # Fallback only for explicit part-of syntax WITHIN this mention.
         # "near the truck" must never turn a door into a truck.
         part_match = re.search(r'\bof\s+(.+)$', raw['text'], re.I) if component_head else None
         if not parent and part_match:
             parent = part_match.group(1)
+        if not parent and component_head:
+            possessive = re.match(r"(.+?)[’']s\s+", raw['text'], re.I)
+            if possessive:
+                parent = possessive.group(1)
         own = map_phrase(head, ctx.candidates)
         own_reason = None
         if not own and head.strip().lower() in {'side', 'area', 'region', 'location'}:
@@ -141,19 +236,16 @@ def resolve_mentions(ctx, payload):
         else:
             ids = own
             reason = own_reason if own_reason else ('type_or_alias' if ids else 'unmapped_type')
-        # A deictic location is intentionally unresolved by language alone, but
-        # it must still reach the multimodal stage.  Give it the closed scene
-        # candidate pool and let time, gaze/hand context and the visible scene
-        # resolve it.  Marking it unsupported here made ``there`` impossible
-        # to recover downstream.
-        if raw.get('kind') in ('region', 'location') and set(tokens(raw['text'])) <= VAGUE:
-            # Scene point markers (pointA/pointB/...) are telemetry anchors,
-            # not referent objects. Keep physical scene anchors available for
-            # discourse resolution while preventing a vague "there" from
-            # creating an artificial point target.
-            ids = [c.candidate_id for c in ctx.candidates
-                   if not re.fullmatch(r'point[a-z]+', c.candidate_id, re.I)]
-            reason = 'contextual_location_pool' if ids else 'unsupported_location'
+        # A deictic location is intentionally unresolved by language alone. It
+        # reaches the visual stage with no mention candidate IDs; the visual
+        # agent records an observation, not an all-anchor candidate set.
+        # Concrete location nouns (e.g. "the bedroom side") keep their local
+        # lexical mapping even when the parser labels them kind=location.
+        vague_words = set(tokens(raw['text'])) - {'the', 'a', 'an', 'over', 'right', 'to'}
+        if (vague_words and vague_words <= VAGUE or
+                raw.get('kind') in ('region', 'location') and not ids):
+            ids = []
+            reason = 'contextual_location_unresolved'
         # Bare class names (chair/window) are also valid anchor IDs in some
         # rooms. Their presence in natural language must not remove chair2 or
         # window2 from the candidate pool. Only marked IDs are explicit.
@@ -167,6 +259,7 @@ def resolve_mentions(ctx, payload):
         spoken_head = next((w for w in reversed(tokens(head)) if w in tokens(raw['text'])), '')
         result.append({**raw, 'mention_id': f'm{index}', 'span': span,
                        'parent_text': parent, 'component': component,
+                       'repaired_pronoun_parent_text': repaired_pronoun_parent or None,
                        'count': count, 'candidate_ids': ids, 'explicit_ids': explicit,
                        'canonical_types': sorted({category(n) for n in ids}),
                        'spoken_head': spoken_head, 'anchor_text': raw.get('anchor_text') or '',
@@ -181,6 +274,7 @@ def resolve_mentions(ctx, payload):
     for mention in result:
         owner = next((other for other in result
                       if other is not mention and other['parent_text']
+                      and (other['component'] or bool(set(map(singular, tokens(other['object_type']))) & COMPONENTS))
                       and not mention['parent_text']
                       and other['span'][0] <= mention['span'][0]
                       and mention['span'][1] <= other['span'][1]
@@ -194,9 +288,9 @@ def resolve_mentions(ctx, payload):
             kept.append(mention)
     result = kept
     # Components that refer back to the same entity inherit its compatible
-    # candidate pool. Do not merge unrelated mentions or override explicit IDs.
+    # candidate pool. Pronoun-only parents use anchor_text plus shared coreference.
     for mention in result:
-        if not mention['parent_text'] or mention['explicit_ids']:
+        if mention['explicit_ids']:
             continue
         antecedents = [other for other in result
                        if other['span'][0] < mention['span'][0]
@@ -204,30 +298,58 @@ def resolve_mentions(ctx, payload):
                        and other['coreference_id'] == mention['coreference_id']]
         if antecedents:
             previous = antecedents[-1]
-            shared = [name for name in previous['candidate_ids']
-                      if name in mention['candidate_ids']]
+            explicit_parent = bool(mention['parent_text'])
+            pronoun_component = bool(mention['component']) and not explicit_parent
+            bare_anaphor = mention['text'].strip().casefold() in {'it', 'them', 'he', 'she', 'him', 'her', 'they'}
+            if not explicit_parent and not pronoun_component and not bare_anaphor:
+                continue
+            shared = ([name for name in previous['candidate_ids']
+                       if name in mention['candidate_ids']] if mention['candidate_ids']
+                      else list(previous['candidate_ids']))
             if shared:
                 mention.update(candidate_ids=shared,
                                canonical_types=sorted({category(n) for n in shared}),
                                mapping_status='mapped',
-                               candidate_mapping_reason='coreference_parent',
+                               candidate_mapping_reason=('coreference_anaphor' if bare_anaphor else
+                                                         'coreference_component_parent' if pronoun_component
+                                                         else 'coreference_parent'),
                                parent_mention_id=previous['mention_id'])
-    return {'instruction': ctx.text, 'source': 'instruction_only_qwen',
-            'mapping_version': VERSION, 'mentions': result,
-            'suppressed_nested_mentions': suppressed}
+    output = {'instruction': ctx.text, 'source': 'instruction_only_qwen',
+              'mapping_version': VERSION, 'mentions': result,
+              'suppressed_nested_mentions': suppressed}
+    if repair_audit:
+        output['literal_component_parent_repairs'] = repair_audit
+    return output
 
 
 PROMPT = '''Extract referent phrases using ONLY the instruction. Do not select instances.
 Include actors, action objects, source objects and concrete spatial anchors.
+Do not omit a generic actor: phrases such as "the other person", "that fellow", "the man",
+"another worker" and "that guy" are explicit actor mentions and must be returned exactly.
+Before producing JSON, check that every explicit noun phrase introduced by a determiner
+(the/that/this/these/those/a/an/another/other) is either represented by a mention or is
+only a pronoun whose antecedent is recorded. Do not silently drop an actor because it has
+no unique lexical anchor.
 Copy text EXACTLY from the instruction, including spelling errors. object_type may be normalized.
 For a component, use the FULL noun phrase: "left door of this truck" is one mention,
 component="left door", parent_text="this truck", object_type="door". Do not also emit a
 separate truck mention for that same phrase. "window of the front building" similarly
 has parent_text="the front building". parent_text must be inside text. Spatial relations
 like "chair near the desk" produce two objects, not a component-parent relationship.
+parent_text must be a strict literal part of text, never equal the full mention. For
+"its side panel", use parent_text="" and anchor_text=<the antecedent literal mention>;
+reuse that antecedent's coreference_id. A relational phrase such as "the crate beside
+the truck" stays two mentions; do not make the whole phrase the crate's parent.
 Keep box as box; a separate deterministic stage maps box to cargo when appropriate.
-Keep vague here/there as kind=location; the resolver will pass a closed scene
-candidate pool downstream so visual, temporal and discourse context can resolve it.
+For possessive parts such as "that drone's battery", parent_text="that drone";
+the output target remains the whole parent anchor, not a new component task.
+For action pronouns such as "it" or "them", do not invent another physical target.
+Record each pronoun and its antecedent in a short coreference_note attached to that
+antecedent's mention. For example, in "pick up the
+spray bottle and place it on the rack", the spray bottle is the moved target and the rack
+is its destination; do not make "it" an untyped missing target.
+Keep vague here/there as kind=location. They have NO lexical anchor candidates;
+the Visual agent will report an unresolved spatial observation, not every scene anchor.
 Repeated references to the SAME entity share coreference_id; different instances do not.
 List mentions in instruction order. Identical phrases at different positions may refer to
 different instances: do not assume two occurrences of "that chair" share an identity.
@@ -237,7 +359,7 @@ Return compact JSON {"mentions":[{"text":"exact phrase","object_type":"singular 
 "component":"literal component or empty","parent_text":"literal parent phrase or empty",
 "kind":"object|location","role":"actor|target|source|destination|anchor",
 "relation":"brief relation or empty","anchor_text":"other literal mention or empty",
-"coreference_id":"r0","count":1}]}.
+"coreference_id":"r0","coreference_note":"literal pronoun -> antecedent phrase, or empty","count":1}]}.
 Instruction: '''
 
 

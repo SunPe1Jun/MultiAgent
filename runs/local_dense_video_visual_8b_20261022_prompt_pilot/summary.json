@@ -1,0 +1,65 @@
+{
+  "status": "COMPLETE_WITH_SEMANTIC_FAILURES",
+  "version": "local_dense_video_visual_v5_no_example_frame_bias",
+  "manifest_sample_count": 4,
+  "completed_events": 4,
+  "event_failures": [],
+  "pending_events": [],
+  "referential_semantic_failures": [
+    {
+      "scene_key": "scene5",
+      "event_id": "scene5_387",
+      "mention_id": "m0",
+      "error": "whole instruction returned as object mention"
+    }
+  ],
+  "visual_model_calls": 4,
+  "visual_failures": 0,
+  "mention_count": 12,
+  "positive_candidate_evidence_mentions": 1,
+  "nonpositive_candidate_rows": 0,
+  "candidate_scope_counts": {
+    "mention_closed_set": 6,
+    "unresolved_spatial_observation": 4,
+    "unresolved_object_observation": 2
+  },
+  "identity_status_counts": {
+    "ambiguous_instances": 5,
+    "unresolved_spatial_observation": 6,
+    "confirmed": 1
+  },
+  "local_model_call_count": 9,
+  "cache_hit_count": 0,
+  "visual_token_estimate_per_call": {
+    "min": 3700,
+    "median": 3888.0,
+    "max": 4050,
+    "source": "Qwen video_grid_thw product divided by merge_size squared"
+  },
+  "frame_count_per_event": {
+    "min": 74,
+    "median": 96.0,
+    "max": 100
+  },
+  "actual_temporal_groups_per_second": {
+    "min": 3.371680580468529,
+    "median": 4.0160894094125865,
+    "max": 4.06903260296097
+  },
+  "offline_full_interaction": true,
+  "fusion": "NOT_RUN",
+  "ground_truth_context_load_count": 4,
+  "ground_truth_used_for_prediction": false,
+  "ground_truth_read_by_summary": false,
+  "referent_accuracy_reported": false,
+  "evidence_citation_view_counts": {
+    "G001": 1
+  },
+  "observation_citation_view_counts": {
+    "G001": 7,
+    "G002": 3
+  },
+  "supported_without_positive_evidence_mentions": 0,
+  "referential_recovery_count": 0,
+  "referential_recoveries": []
+}

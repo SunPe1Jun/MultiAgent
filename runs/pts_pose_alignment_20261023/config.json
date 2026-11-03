@@ -1,0 +1,32 @@
+{
+  "version": "pts_camera_clock_v1",
+  "config": {
+    "max_size": 640,
+    "anchor_step_seconds": 0.2,
+    "pair_lags_seconds": [
+      0.16,
+      0.36
+    ],
+    "start_seconds": 0.4,
+    "block_seconds": 1.5,
+    "block_guard_seconds": 0.1,
+    "offset_bounds_seconds": [
+      -3.0,
+      6.0
+    ],
+    "offset_grid_seconds": 0.02,
+    "max_pose_gap_seconds": 0.25,
+    "minimum_pairs": 6,
+    "minimum_coverage": 0.5,
+    "minimum_motion_px": 2.0,
+    "profile_delta_px": 1.0,
+    "maximum_profile_width_seconds": 0.15,
+    "maximum_reverse_fit_difference_seconds": 0.15,
+    "maximum_validation_error_px": 15.0,
+    "maximum_validation_regression_fraction": 0.1
+  },
+  "source_root": "runs/projected2d_attention_qwen8b_20261022_int8",
+  "input_changes": "none",
+  "gt_fit": false,
+  "heatmap_foveation_changed": false
+}

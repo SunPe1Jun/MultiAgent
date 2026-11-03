@@ -70,6 +70,17 @@ class HybridTimingTests(unittest.TestCase):
         self.assertTrue(guard_clock({'telemetry_to_video': -3.01}, 10)['audio_timing_rejected'])
         self.assertTrue(guard_clock({'telemetry_to_video': 0, 'wall_audio_to_video': -4}, 10)['audio_timing_rejected'])
 
+    def test_configured_relaxed_clock_threshold_is_explicit(self):
+        clock={'telemetry_to_video':7.0,'wall_audio_to_video':-5.0}
+        strict=guard_clock(clock,10.0)
+        relaxed=guard_clock(clock,10.0,max_offset_ratio=.75)
+        self.assertTrue(strict['audio_timing_rejected'])
+        self.assertFalse(relaxed['audio_timing_rejected'])
+        plan=plan_frames(self.ctx,self.mentions,{'clock':clock,'mentions':{},
+                         'instruction_coverage':0},10.0,max_clock_offset_ratio=.75)
+        self.assertFalse(plan['alignment']['audio_timing_rejected'])
+        self.assertEqual(plan['alignment']['max_offset_ratio'],.75)
+
     def test_degenerate_window_also_falls_back_under_offset_threshold(self):
         self.ctx.api_row.update(t_start=9.88, t_end=10.0)
         p = plan_frames(self.ctx,self.mentions,self.alignment,10)

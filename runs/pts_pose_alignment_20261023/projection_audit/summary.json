@@ -1,0 +1,298 @@
+{
+  "status": "COMPLETE",
+  "events": [
+    {
+      "scene": "scene1",
+      "row_index": 705,
+      "clock_status": "ORIGINAL_CLOCK_FALLBACK_PTS_POSE",
+      "rows": 9,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene1_705_pts_projection_audit.jpg",
+      "new_projection_generated": 9,
+      "new_in_frustum": 7,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "ORIGINAL_CLOCK_FALLBACK_PTS_POSE": 9
+      },
+      "median_old_new_pixel_displacement": 0.1253474001710513
+    },
+    {
+      "scene": "scene2",
+      "row_index": 592,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 9,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene2_592_pts_projection_audit.jpg",
+      "new_projection_generated": 9,
+      "new_in_frustum": 6,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 9
+      },
+      "median_old_new_pixel_displacement": 445.0736173867048
+    },
+    {
+      "scene": "scene3",
+      "row_index": 733,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 12,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene3_733_pts_projection_audit.jpg",
+      "new_projection_generated": 12,
+      "new_in_frustum": 12,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 12
+      },
+      "median_old_new_pixel_displacement": 150.7185054318399
+    },
+    {
+      "scene": "scene4_room1",
+      "row_index": 170,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 9,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene4_room1_170_pts_projection_audit.jpg",
+      "new_projection_generated": 9,
+      "new_in_frustum": 4,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 9
+      },
+      "median_old_new_pixel_displacement": 1863.3500150449122
+    },
+    {
+      "scene": "scene4_room2",
+      "row_index": 145,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 9,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene4_room2_145_pts_projection_audit.jpg",
+      "new_projection_generated": 9,
+      "new_in_frustum": 7,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 9
+      },
+      "median_old_new_pixel_displacement": 535.1094995294415
+    },
+    {
+      "scene": "scene4_room3",
+      "row_index": 151,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 6,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene4_room3_151_pts_projection_audit.jpg",
+      "new_projection_generated": 6,
+      "new_in_frustum": 4,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 6
+      },
+      "median_old_new_pixel_displacement": 245.9504395143075
+    },
+    {
+      "scene": "scene4_room4",
+      "row_index": 163,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 6,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene4_room4_163_pts_projection_audit.jpg",
+      "new_projection_generated": 6,
+      "new_in_frustum": 6,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 6
+      },
+      "median_old_new_pixel_displacement": 64.38782020982674
+    },
+    {
+      "scene": "scene5",
+      "row_index": 583,
+      "clock_status": "ORIGINAL_CLOCK_FALLBACK_PTS_POSE",
+      "rows": 6,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene5_583_pts_projection_audit.jpg",
+      "new_projection_generated": 6,
+      "new_in_frustum": 6,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "ORIGINAL_CLOCK_FALLBACK_PTS_POSE": 6
+      },
+      "median_old_new_pixel_displacement": 0.14407726135183252
+    },
+    {
+      "scene": "scene1",
+      "row_index": 366,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 9,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene1_366_pts_projection_audit.jpg",
+      "new_projection_generated": 9,
+      "new_in_frustum": 4,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 9
+      },
+      "median_old_new_pixel_displacement": 156.00538521431898
+    },
+    {
+      "scene": "scene2",
+      "row_index": 416,
+      "clock_status": "ORIGINAL_CLOCK_FALLBACK_PTS_POSE",
+      "rows": 9,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene2_416_pts_projection_audit.jpg",
+      "new_projection_generated": 9,
+      "new_in_frustum": 7,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "ORIGINAL_CLOCK_FALLBACK_PTS_POSE": 9
+      },
+      "median_old_new_pixel_displacement": 3.689740876047821
+    },
+    {
+      "scene": "scene3",
+      "row_index": 631,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 12,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene3_631_pts_projection_audit.jpg",
+      "new_projection_generated": 12,
+      "new_in_frustum": 12,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 12
+      },
+      "median_old_new_pixel_displacement": 209.07728996105723
+    },
+    {
+      "scene": "scene4_room1",
+      "row_index": 113,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 6,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene4_room1_113_pts_projection_audit.jpg",
+      "new_projection_generated": 6,
+      "new_in_frustum": 6,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 6
+      },
+      "median_old_new_pixel_displacement": 35.18210242542166
+    },
+    {
+      "scene": "scene4_room2",
+      "row_index": 87,
+      "clock_status": "ORIGINAL_CLOCK_FALLBACK_PTS_POSE",
+      "rows": 3,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene4_room2_87_pts_projection_audit.jpg",
+      "new_projection_generated": 3,
+      "new_in_frustum": 3,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "ORIGINAL_CLOCK_FALLBACK_PTS_POSE": 3
+      },
+      "median_old_new_pixel_displacement": 0.5106436880730475
+    },
+    {
+      "scene": "scene4_room3",
+      "row_index": 153,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 9,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene4_room3_153_pts_projection_audit.jpg",
+      "new_projection_generated": 9,
+      "new_in_frustum": 4,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 9
+      },
+      "median_old_new_pixel_displacement": 750.6337252464376
+    },
+    {
+      "scene": "scene4_room4",
+      "row_index": 29,
+      "clock_status": "ORIGINAL_CLOCK_FALLBACK_PTS_POSE",
+      "rows": 3,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene4_room4_29_pts_projection_audit.jpg",
+      "new_projection_generated": 3,
+      "new_in_frustum": 3,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "ORIGINAL_CLOCK_FALLBACK_PTS_POSE": 3
+      },
+      "median_old_new_pixel_displacement": 0.4247245454058031
+    },
+    {
+      "scene": "scene5",
+      "row_index": 4,
+      "clock_status": "ORIGINAL_CLOCK_FALLBACK_PTS_POSE",
+      "rows": 6,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene5_4_pts_projection_audit.jpg",
+      "new_projection_generated": 6,
+      "new_in_frustum": 6,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "ORIGINAL_CLOCK_FALLBACK_PTS_POSE": 6
+      },
+      "median_old_new_pixel_displacement": 0.05891180267529451
+    },
+    {
+      "scene": "scene1",
+      "row_index": 600,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 9,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene1_600_pts_projection_audit.jpg",
+      "new_projection_generated": 9,
+      "new_in_frustum": 9,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 9
+      },
+      "median_old_new_pixel_displacement": 23.20605820691734
+    },
+    {
+      "scene": "scene2",
+      "row_index": 139,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 9,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene2_139_pts_projection_audit.jpg",
+      "new_projection_generated": 9,
+      "new_in_frustum": 9,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 9
+      },
+      "median_old_new_pixel_displacement": 203.12580820003836
+    },
+    {
+      "scene": "scene3",
+      "row_index": 318,
+      "clock_status": "ORIGINAL_CLOCK_FALLBACK_PTS_POSE",
+      "rows": 6,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene3_318_pts_projection_audit.jpg",
+      "new_projection_generated": 6,
+      "new_in_frustum": 6,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "ORIGINAL_CLOCK_FALLBACK_PTS_POSE": 6
+      },
+      "median_old_new_pixel_displacement": 1.8420407589945529
+    },
+    {
+      "scene": "scene4_room1",
+      "row_index": 55,
+      "clock_status": "VALIDATED_CANDIDATE",
+      "rows": 6,
+      "image": "runs/pts_pose_alignment_20261023/projection_audit/scene4_room1_55_pts_projection_audit.jpg",
+      "new_projection_generated": 6,
+      "new_in_frustum": 6,
+      "not_projected_rows": 0,
+      "pose_sources": {
+        "VALIDATED_CANDIDATE": 6
+      },
+      "median_old_new_pixel_displacement": 845.2584727966422
+    }
+  ],
+  "rows": 153,
+  "status_counts": {
+    "outside_frame": 23,
+    "in_frustum_visibility_unknown": 127,
+    "behind_camera": 3
+  },
+  "new_projection_generated": 153,
+  "new_projection_not_generated": 0,
+  "fit_uses_gt": false,
+  "gt_used_only_for_postfit_projection": true,
+  "model_inputs_changed": false,
+  "evaluator_changed": false,
+  "interpretation": "Cyan = validated candidate clock with exact frame PTS/interpolated pose; blue = original clock fallback with exact frame PTS/interpolated pose; magenta = old projection. A rejected candidate no longer suppresses the new projection when the original offset and exact frame time are available."
+}

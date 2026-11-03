@@ -164,7 +164,8 @@ Return JSON {"cues":[{"frame_id":"F1", "mention_ids":["m0"], "cue_type":"pointin
 
 
 def visual_evidence(backend,ctx,referential,paths,frames,plan,cues=None,use_gaze=False,use_regions=False,
-                    isolate_mentions=False, mention_paths=None, focus_context=None):
+                    isolate_mentions=False, mention_paths=None, focus_context=None,
+                    visual_protocol='default'):
     task = '''Resolve EVERY language mention against its compatible closed-set candidates using the
 chronological first-person video views. Each input image preserves the original full RGB on the left.
 Any additional panels are attention views or visible region proposals. Evaluate all language objects,
@@ -193,12 +194,27 @@ Return JSON {"evidence":[{"mention_id":"m0","candidate_id":"allowed ID",
 Use ONLY supplied candidate IDs and frame IDs. Positive support MUST cite a supplied frame.
 Do not fabricate IDs for unsupported types. Negative/missing observations use score=confidence=0.
 '''
-    if use_gaze:
+    if visual_protocol == 'frozen_rgb_gaze_variants':
+        task = '''Resolve EVERY language mention against its compatible closed-set candidates using
+the supplied chronological first-person RGB frames. These are the same three source times in every
+comparison condition. Some conditions may subtly tint pixels near measured gaze history or gently
+blur peripheral RGB; the overlay is uncertain attention evidence, never an object label or target
+probability. Use the RGB, instruction, unchanged hand observations, and unchanged candidate metadata
+in every condition. Do not assume the hottest point is the target. All frames are offline observations
+from the interaction; no real-time claim is made. Compare same-class instances explicitly and cite
+only the supplied frame IDs. Return JSON {"evidence":[{"mention_id":"m0","candidate_id":"allowed ID",
+"support_score":0.0,"confidence":0.0,"frame_id":"F1 or null","explanation":"brief observable basis"}]}.
+Use ONLY supplied candidate IDs and frame IDs. Positive support MUST cite a supplied frame.
+Do not fabricate IDs for unsupported types. Negative/missing observations use score=confidence=0.
+'''
+    if use_gaze and visual_protocol != 'frozen_rgb_gaze_variants':
         task += '''Gaze heatmaps and crops are SOFT attention hints. Looking at an obstacle or background
 is possible. Zero heatmap overlap never excludes a language object. Preserve full-frame context.
 '''
-    else:
+    elif not use_gaze:
         task += 'Ignore any baked-in gaze markers; no gaze evidence is enabled.\n'
+    else:
+        task += 'Gaze-derived pixel emphasis is an uncertain auxiliary visual cue. Do not infer target identity from color or blur alone.\n'
     if use_regions:
         task += '''Region boxes and SAM masks are category-level visible proposals, not candidate IDs.
 Track IDs are provisional adjacent-frame matches; disappearance is not proof of occlusion or identity.
@@ -220,9 +236,12 @@ Verify each observation in RGB and combine it with language, appearance and rela
                  'prove that a depicted action occurs during speech. Do not invent visible manipulation.\n')
     frame_meta=[]
     for f in frames:
-        frame_meta.append({k:f[k] for k in ['frame_id','time','mention_ids','approx_candidate_uv',
-                                             'candidate_panel_candidates','regions'] if k in f})
-        if use_gaze: frame_meta[-1]['gaze_status']=f.get('gaze',{}).get('status','unavailable')
+        allowed=['frame_id','time','mention_ids','approx_candidate_uv','regions']
+        if visual_protocol != 'frozen_rgb_gaze_variants':
+            allowed.append('candidate_panel_candidates')
+        frame_meta.append({k:f[k] for k in allowed if k in f})
+        if use_gaze and visual_protocol != 'frozen_rgb_gaze_variants':
+            frame_meta[-1]['gaze_status']=f.get('gaze',{}).get('status','unavailable')
     by_id={m['mention_id']:m for m in referential['mentions']};by_frame={f['frame_id']:f for f in frames}
     payloads = []
     if isolate_mentions:

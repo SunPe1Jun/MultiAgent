@@ -1,0 +1,380 @@
+{
+  "config": {
+    "model": "/media/kunyu/16TB/spj/Qwen3-VL-8B-Instruct",
+    "groups": [
+      "RGB",
+      "CURRENT_HEATMAP",
+      "HISTORY_HEATMAP",
+      "HISTORY_FOVEATION"
+    ],
+    "panels": 3,
+    "frame_selection": "original TriRef evidence panel selector; fixed per-event panel IDs/times across conditions",
+    "panel_selection_strategy": "evidence",
+    "sample_inner_margin_ratio": 0.15,
+    "panel_context_mode": "paired_crop",
+    "gaze_crop_ratio": 0.35,
+    "crop_output_size": 768,
+    "prompt_mode": "given_expression_no_annotation_derived_expected_count",
+    "visual_input_encoding": "all conditions: decoded source -> identity/heatmap/foveation -> JPEG quality94 -> original gaze crop -> original paired composite JPEG quality92",
+    "acceptable_top_k": 2,
+    "dtype": "bfloat16",
+    "quantization": "int8",
+    "do_sample": false,
+    "max_new_tokens": 768,
+    "candidate_mapping": "frozen ReferentialAgent; candidate IDs omitted from Visual prompt",
+    "history_seconds": 2.0,
+    "gaze": {
+      "instant_max_delta_seconds": 0.18,
+      "local_history_seconds": 2.0,
+      "utterance_pre_seconds": 0.5,
+      "utterance_post_seconds": 0.5,
+      "max_gap_seconds": 0.25,
+      "decay": "uniform",
+      "decay_tau_seconds": 1.0,
+      "kernel_sigma_degrees": 2.0,
+      "display_scale": 2.0,
+      "overlay_max_alpha": 0.28,
+      "foveation_min_clear_fraction": 0.55,
+      "foveation_max_blur_sigma_px": 18.0,
+      "foveation_downsample_factors": [
+        2,
+        4,
+        8
+      ]
+    },
+    "ground_truth_loaded_for_context": false,
+    "gt_in_model_prompt": false,
+    "evaluator": "/media/kunyu/16TB/spj/Trimodal-Referring/exam2/evaluate_2d_point_grounding.py"
+  },
+  "groups": [
+    {
+      "condition": "RGB",
+      "events": 20,
+      "successful_visual_calls": 16,
+      "parse_warning_events": 1,
+      "json_repaired_events": 0,
+      "upstream_or_call_failure_events": 4,
+      "vision_consumption_verified": 16,
+      "actual_input_images": 48,
+      "image_tokens_per_call": [
+        3528
+      ],
+      "elapsed_seconds": 2436.2430411550013,
+      "recorded_inference_seconds": 2384.0448714349914,
+      "replayed_smoke_calls": 0,
+      "temporal_f1": 0.4835164835164835,
+      "point@50_f1": 0.0879120879120879,
+      "point@100_f1": 0.15384615384615385,
+      "point@150_f1": 0.1758241758241758,
+      "point@200_f1": 0.28571428571428575,
+      "joint@50_f1": 0.04395604395604395,
+      "joint@100_f1": 0.1098901098901099,
+      "joint@150_f1": 0.1098901098901099,
+      "joint@200_f1": 0.2197802197802198
+    },
+    {
+      "condition": "CURRENT_HEATMAP",
+      "events": 20,
+      "successful_visual_calls": 16,
+      "parse_warning_events": 0,
+      "json_repaired_events": 0,
+      "upstream_or_call_failure_events": 4,
+      "vision_consumption_verified": 16,
+      "actual_input_images": 48,
+      "image_tokens_per_call": [
+        3528
+      ],
+      "elapsed_seconds": 2428.2141698549676,
+      "recorded_inference_seconds": 2402.0916946859943,
+      "replayed_smoke_calls": 3,
+      "temporal_f1": 0.5217391304347826,
+      "point@50_f1": 0.021739130434782608,
+      "point@100_f1": 0.10869565217391304,
+      "point@150_f1": 0.1956521739130435,
+      "point@200_f1": 0.391304347826087,
+      "joint@50_f1": 0.021739130434782608,
+      "joint@100_f1": 0.08695652173913043,
+      "joint@150_f1": 0.13043478260869565,
+      "joint@200_f1": 0.2608695652173913
+    },
+    {
+      "condition": "HISTORY_HEATMAP",
+      "events": 20,
+      "successful_visual_calls": 16,
+      "parse_warning_events": 0,
+      "json_repaired_events": 0,
+      "upstream_or_call_failure_events": 4,
+      "vision_consumption_verified": 16,
+      "actual_input_images": 48,
+      "image_tokens_per_call": [
+        3528
+      ],
+      "elapsed_seconds": 2389.565010932027,
+      "recorded_inference_seconds": 2363.734267096981,
+      "replayed_smoke_calls": 3,
+      "temporal_f1": 0.5714285714285715,
+      "point@50_f1": 0.021978021978021976,
+      "point@100_f1": 0.15384615384615385,
+      "point@150_f1": 0.19780219780219782,
+      "point@200_f1": 0.3516483516483516,
+      "joint@50_f1": 0.0,
+      "joint@100_f1": 0.0879120879120879,
+      "joint@150_f1": 0.1098901098901099,
+      "joint@200_f1": 0.24175824175824176
+    },
+    {
+      "condition": "HISTORY_FOVEATION",
+      "events": 20,
+      "successful_visual_calls": 16,
+      "parse_warning_events": 0,
+      "json_repaired_events": 0,
+      "upstream_or_call_failure_events": 4,
+      "vision_consumption_verified": 16,
+      "actual_input_images": 48,
+      "image_tokens_per_call": [
+        3528
+      ],
+      "elapsed_seconds": 2237.3471774540085,
+      "recorded_inference_seconds": 2211.111908720981,
+      "replayed_smoke_calls": 3,
+      "temporal_f1": 0.5,
+      "point@50_f1": 0.08695652173913043,
+      "point@100_f1": 0.10869565217391304,
+      "point@150_f1": 0.1956521739130435,
+      "point@200_f1": 0.28260869565217384,
+      "joint@50_f1": 0.043478260869565216,
+      "joint@100_f1": 0.06521739130434782,
+      "joint@150_f1": 0.15217391304347827,
+      "joint@200_f1": 0.23913043478260873
+    }
+  ],
+  "paired": [
+    {
+      "scene": "scene1",
+      "row_index": 705,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "PARSE_WITH_WARNINGS",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene2",
+      "row_index": 592,
+      "paired_calls_completed": false,
+      "status": {
+        "RGB": "NOT_RUN",
+        "CURRENT_HEATMAP": "NOT_RUN",
+        "HISTORY_HEATMAP": "NOT_RUN",
+        "HISTORY_FOVEATION": "NOT_RUN"
+      }
+    },
+    {
+      "scene": "scene3",
+      "row_index": 733,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene4_room1",
+      "row_index": 170,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene4_room2",
+      "row_index": 145,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene4_room3",
+      "row_index": 151,
+      "paired_calls_completed": false,
+      "status": {
+        "RGB": "NOT_RUN",
+        "CURRENT_HEATMAP": "NOT_RUN",
+        "HISTORY_HEATMAP": "NOT_RUN",
+        "HISTORY_FOVEATION": "NOT_RUN"
+      }
+    },
+    {
+      "scene": "scene4_room4",
+      "row_index": 163,
+      "paired_calls_completed": false,
+      "status": {
+        "RGB": "NOT_RUN",
+        "CURRENT_HEATMAP": "NOT_RUN",
+        "HISTORY_HEATMAP": "NOT_RUN",
+        "HISTORY_FOVEATION": "NOT_RUN"
+      }
+    },
+    {
+      "scene": "scene5",
+      "row_index": 583,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene1",
+      "row_index": 366,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene2",
+      "row_index": 416,
+      "paired_calls_completed": false,
+      "status": {
+        "RGB": "NOT_RUN",
+        "CURRENT_HEATMAP": "NOT_RUN",
+        "HISTORY_HEATMAP": "NOT_RUN",
+        "HISTORY_FOVEATION": "NOT_RUN"
+      }
+    },
+    {
+      "scene": "scene3",
+      "row_index": 631,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene4_room1",
+      "row_index": 113,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene4_room2",
+      "row_index": 87,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene4_room3",
+      "row_index": 153,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene4_room4",
+      "row_index": 29,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene5",
+      "row_index": 4,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene1",
+      "row_index": 600,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene2",
+      "row_index": 139,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene3",
+      "row_index": 318,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    },
+    {
+      "scene": "scene4_room1",
+      "row_index": 55,
+      "paired_calls_completed": true,
+      "status": {
+        "RGB": "COMPLETE",
+        "CURRENT_HEATMAP": "COMPLETE",
+        "HISTORY_HEATMAP": "COMPLETE",
+        "HISTORY_FOVEATION": "COMPLETE"
+      }
+    }
+  ],
+  "examples": [
+    "runs/projected2d_attention_qwen8b_20261022_int8/pilot20/report/scene4_room1_170_input_prediction_gt.jpg",
+    "runs/projected2d_attention_qwen8b_20261022_int8/pilot20/report/scene4_room2_145_input_prediction_gt.jpg",
+    "runs/projected2d_attention_qwen8b_20261022_int8/pilot20/report/scene2_139_input_prediction_gt.jpg"
+  ],
+  "actual_input_provenance": "runs/projected2d_attention_qwen8b_20261022_int8/pilot20/report/actual_model_inputs/provenance.json",
+  "annotation_scope": "report/evaluation only; fixed sample eligibility uses original annotation availability"
+}

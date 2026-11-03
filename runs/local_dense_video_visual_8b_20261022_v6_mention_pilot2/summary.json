@@ -1,0 +1,55 @@
+{
+  "status": "COMPLETE_WITH_VISUAL_FAILURES",
+  "version": "local_dense_video_visual_v6_frozen_mention_video",
+  "manifest_sample_count": 2,
+  "completed_events": 2,
+  "event_failures": [],
+  "pending_events": [],
+  "referential_semantic_failures": [],
+  "visual_model_calls": 7,
+  "visual_failures": 1,
+  "mention_count": 7,
+  "positive_candidate_evidence_mentions": 0,
+  "nonpositive_candidate_rows": 0,
+  "candidate_scope_counts": {
+    "mention_closed_set": 6,
+    "unresolved_spatial_observation": 1
+  },
+  "identity_status_counts": {
+    "not_visible": 5,
+    "ambiguous_instances": 1,
+    "unresolved_spatial_observation": 1
+  },
+  "local_model_call_count": 8,
+  "cache_hit_count": 6,
+  "visual_token_estimate_per_call": {
+    "min": 3700,
+    "median": 4050,
+    "max": 4050,
+    "source": "Qwen video_grid_thw product divided by merge_size squared"
+  },
+  "frame_count_per_event": {
+    "min": 74,
+    "median": 87.0,
+    "max": 100
+  },
+  "actual_temporal_groups_per_second": {
+    "min": 4.001345749905726,
+    "median": 4.035189176433348,
+    "max": 4.06903260296097
+  },
+  "offline_full_interaction": true,
+  "fusion": "NOT_RUN",
+  "ground_truth_context_load_count": 0,
+  "ground_truth_load_unknown_events": 0,
+  "ground_truth_used_for_prediction": false,
+  "ground_truth_read_by_summary": false,
+  "referent_accuracy_reported": false,
+  "evidence_citation_view_counts": {},
+  "observation_citation_view_counts": {
+    "EVENT": 6
+  },
+  "supported_without_positive_evidence_mentions": 0,
+  "referential_recovery_count": 0,
+  "referential_recoveries": []
+}

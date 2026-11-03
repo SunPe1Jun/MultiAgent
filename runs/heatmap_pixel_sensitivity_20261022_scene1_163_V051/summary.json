@@ -1,0 +1,566 @@
+{
+  "counterfactual_only": true,
+  "candidate_metrics": "NOT_RUN",
+  "source_sample": "/media/kunyu/16TB/spj/Multiagent/runs/local_visual_organization_guidance_probe_20261022_pilot2/samples/scene1/scene1_163",
+  "source_frame_id": "V051",
+  "results": {
+    "heatmap": {
+      "parsed": {
+        "images": [
+          {
+            "image_id": "X1",
+            "detected": true,
+            "quadrant": "top_left",
+            "center_uv": [
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "observation": "Brightest blob located in top-left quadrant, appears as a distinct, bright spot."
+          },
+          {
+            "image_id": "X2",
+            "detected": false,
+            "quadrant": "none",
+            "center_uv": null,
+            "confidence": 0.0,
+            "observation": "Image is entirely black with no visible blobs or features."
+          },
+          {
+            "image_id": "X3",
+            "detected": true,
+            "quadrant": "bottom_right",
+            "center_uv": [
+              400,
+              400
+            ],
+            "confidence": 0.9,
+            "observation": "Brightest blob located in bottom-right quadrant, appears as a distinct, bright spot."
+          }
+        ]
+      },
+      "raw_response": "{\n  \"images\": [\n    {\n      \"image_id\": \"X1\",\n      \"detected\": true,\n      \"quadrant\": \"top_left\",\n      \"center_uv\": [100, 100],\n      \"confidence\": 0.95,\n      \"observation\": \"Brightest blob located in top-left quadrant, appears as a distinct, bright spot.\"\n    },\n    {\n      \"image_id\": \"X2\",\n      \"detected\": false,\n      \"quadrant\": \"none\",\n      \"center_uv\": null,\n      \"confidence\": 0.0,\n      \"observation\": \"Image is entirely black with no visible blobs or features.\"\n    },\n    {\n      \"image_id\": \"X3\",\n      \"detected\": true,\n      \"quadrant\": \"bottom_right\",\n      \"center_uv\": [400, 400],\n      \"confidence\": 0.9,\n      \"observation\": \"Brightest blob located in bottom-right quadrant, appears as a distinct, bright spot.\"\n    }\n  ]\n}",
+      "request_path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/heatmap_e30599707a350b9b.json",
+      "parse_status": "valid_json_object",
+      "checks": [
+        {
+          "image_id": "X1",
+          "expected": {
+            "variant": "flipped_180",
+            "center_uv": [
+              0.2852586090659495,
+              0.3252918193710652
+            ],
+            "peak_uv": [
+              0.11979166666666667,
+              0.32068452380952384
+            ],
+            "peak_quadrant": "top_left",
+            "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/heatmap_X1.png",
+            "sha256": "bc23afef1c5b2a7ebdfe279e51762da6807e3c3cc0d7b1a0fdd20de230e6fa96"
+          },
+          "model_response": {
+            "image_id": "X1",
+            "detected": true,
+            "quadrant": "top_left",
+            "center_uv": [
+              100,
+              100
+            ],
+            "confidence": 0.95,
+            "observation": "Brightest blob located in top-left quadrant, appears as a distinct, bright spot."
+          },
+          "model_center_uv_normalized_for_audit": [
+            0.1488095238095238,
+            0.1488095238095238
+          ],
+          "center_coordinate_format": "pixel_like_posthoc_normalized",
+          "coordinate_schema_compliant": false,
+          "quadrant_correct": true,
+          "peak_center_error_uv": 0.174307348262095
+        },
+        {
+          "image_id": "X2",
+          "expected": {
+            "variant": "zero",
+            "center_uv": null,
+            "peak_uv": null,
+            "peak_quadrant": "none",
+            "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/heatmap_X2.png",
+            "sha256": "f932db3bbfa45d379601a10029f07760857f68eb220590d39fa45a25e089754a"
+          },
+          "model_response": {
+            "image_id": "X2",
+            "detected": false,
+            "quadrant": "none",
+            "center_uv": null,
+            "confidence": 0.0,
+            "observation": "Image is entirely black with no visible blobs or features."
+          },
+          "model_center_uv_normalized_for_audit": null,
+          "center_coordinate_format": "missing",
+          "coordinate_schema_compliant": true,
+          "quadrant_correct": true,
+          "peak_center_error_uv": null
+        },
+        {
+          "image_id": "X3",
+          "expected": {
+            "variant": "original",
+            "center_uv": [
+              0.7147414283598984,
+              0.6747082133173883
+            ],
+            "peak_uv": [
+              0.8802083333333334,
+              0.6793154761904762
+            ],
+            "peak_quadrant": "bottom_right",
+            "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/heatmap_X3.png",
+            "sha256": "ce6ba948b6a0d87ab8aa8d5a6a388cfb21e81648712d7b34d9bf627b8a920a5a"
+          },
+          "model_response": {
+            "image_id": "X3",
+            "detected": true,
+            "quadrant": "bottom_right",
+            "center_uv": [
+              400,
+              400
+            ],
+            "confidence": 0.9,
+            "observation": "Brightest blob located in bottom-right quadrant, appears as a distinct, bright spot."
+          },
+          "model_center_uv_normalized_for_audit": [
+            0.5952380952380952,
+            0.5952380952380952
+          ],
+          "center_coordinate_format": "pixel_like_posthoc_normalized",
+          "coordinate_schema_compliant": false,
+          "quadrant_correct": true,
+          "peak_center_error_uv": 0.2971145277294069
+        }
+      ],
+      "processor_audit": {
+        "image_count": 3,
+        "image_grid_thw": [
+          [
+            1,
+            42,
+            42
+          ],
+          [
+            1,
+            42,
+            42
+          ],
+          [
+            1,
+            42,
+            42
+          ]
+        ],
+        "image_merge_size": 2,
+        "processor_image_tokens_estimate": 1323,
+        "expanded_image_token_count": 1323,
+        "input_token_count": 1558,
+        "transformers_version": "5.9.0",
+        "model_config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661"
+      },
+      "visual_tensor_trace": {
+        "trace_path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/heatmap_e30599707a350b9b.tensor_trace/trace.json",
+        "kind": "image",
+        "capture_scope": "processor tensors + real vision forward input",
+        "processor_tensors": {
+          "input_ids": {
+            "shape": [
+              1,
+              1558
+            ],
+            "dtype": "torch.int64",
+            "sha256": "4ccfbd0918f42e6b7a00694ff77bc2afd4445e551cb342739773e1ab7bede7b6",
+            "bytes": 12464
+          },
+          "attention_mask": {
+            "shape": [
+              1,
+              1558
+            ],
+            "dtype": "torch.int64",
+            "sha256": "803a86eca52b0431b906becfcb3172086648bd351970a76ea1bc4a5904fe8654",
+            "bytes": 12464
+          },
+          "mm_token_type_ids": {
+            "shape": [
+              1,
+              1558
+            ],
+            "dtype": "torch.int64",
+            "sha256": "3656dfd4db47c7a7224b1bea620bdaca0810697fcbde1343f7721ceb73015d9e",
+            "bytes": 12464
+          },
+          "pixel_values": {
+            "shape": [
+              5292,
+              1536
+            ],
+            "dtype": "torch.float32",
+            "sha256": "1d781dfe36d27b121b35db23541b4bf40db46c5f6a079fe4681957b3679d368c",
+            "bytes": 32514048
+          },
+          "image_grid_thw": {
+            "shape": [
+              3,
+              3
+            ],
+            "dtype": "torch.int64",
+            "sha256": "08ba8ea03a252ea48704285d4499a643eef3b644e16882f0ac41064023ce2639",
+            "bytes": 72
+          }
+        },
+        "processor_inputs_path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/heatmap_e30599707a350b9b.tensor_trace/processor_inputs.pt",
+        "vision_forward_calls": [
+          {
+            "input": {
+              "shape": [
+                5292,
+                1536
+              ],
+              "dtype": "torch.bfloat16",
+              "sha256": "ef3b8da8392ffa44c362a72fa9fd32ee349cf7e48f1ace686e1e6c4d10e876f6",
+              "bytes": 16257024
+            },
+            "grid": {
+              "shape": [
+                3,
+                3
+              ],
+              "dtype": "torch.int64",
+              "sha256": "08ba8ea03a252ea48704285d4499a643eef3b644e16882f0ac41064023ce2639",
+              "bytes": 72
+            },
+            "input_matches_processor_after_dtype_cast": true,
+            "grid_matches_processor": true
+          }
+        ],
+        "restored_frame_paths": [
+          "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/heatmap_e30599707a350b9b.tensor_trace/processor_rgb_00_000.png",
+          "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/heatmap_e30599707a350b9b.tensor_trace/processor_rgb_01_000.png",
+          "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/heatmap_e30599707a350b9b.tensor_trace/processor_rgb_02_000.png"
+        ],
+        "input_consumption_verified": true,
+        "expected_vision_tensor": {
+          "shape": [
+            5292,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "ef3b8da8392ffa44c362a72fa9fd32ee349cf7e48f1ace686e1e6c4d10e876f6",
+          "bytes": 16257024
+        }
+      },
+      "elapsed_seconds": 46.34951397500117
+    },
+    "foveation": {
+      "parsed": {
+        "images": [
+          {
+            "image_id": "X1",
+            "detected": false,
+            "quadrant": "none",
+            "center_uv": null,
+            "confidence": 0.0,
+            "observation": "No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point."
+          },
+          {
+            "image_id": "X2",
+            "detected": false,
+            "quadrant": "none",
+            "center_uv": null,
+            "confidence": 0.0,
+            "observation": "No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point."
+          },
+          {
+            "image_id": "X3",
+            "detected": false,
+            "quadrant": "none",
+            "center_uv": null,
+            "confidence": 0.0,
+            "observation": "No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point."
+          }
+        ]
+      },
+      "raw_response": "[\n    {\n        \"image_id\": \"X1\",\n        \"detected\": false,\n        \"quadrant\": \"none\",\n        \"center_uv\": null,\n        \"confidence\": 0.0,\n        \"observation\": \"No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point.\"\n    },\n    {\n        \"image_id\": \"X2\",\n        \"detected\": false,\n        \"quadrant\": \"none\",\n        \"center_uv\": null,\n        \"confidence\": 0.0,\n        \"observation\": \"No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point.\"\n    },\n    {\n        \"image_id\": \"X3\",\n        \"detected\": false,\n        \"quadrant\": \"none\",\n        \"center_uv\": null,\n        \"confidence\": 0.0,\n        \"observation\": \"No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point.\"\n    }\n]",
+      "request_path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/foveation_cb56b0a40194fa1f.failed.json",
+      "parse_status": "valid_json_array_backend_schema_mismatch_normalized_for_diagnostic",
+      "checks": [
+        {
+          "image_id": "X1",
+          "expected": {
+            "variant": "flipped_180",
+            "center_uv": [
+              0.2852586090659495,
+              0.3252918193710652
+            ],
+            "peak_uv": [
+              0.11979166666666667,
+              0.32068452380952384
+            ],
+            "peak_quadrant": "top_left",
+            "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/foveation_X1.png",
+            "sha256": "17162a024a7cb902b22ba169195dc77e1530f0ccaf280f4fd43d4103cba446d4"
+          },
+          "model_response": {
+            "image_id": "X1",
+            "detected": false,
+            "quadrant": "none",
+            "center_uv": null,
+            "confidence": 0.0,
+            "observation": "No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point."
+          },
+          "model_center_uv_normalized_for_audit": null,
+          "center_coordinate_format": "missing",
+          "coordinate_schema_compliant": true,
+          "quadrant_correct": false,
+          "peak_center_error_uv": null
+        },
+        {
+          "image_id": "X2",
+          "expected": {
+            "variant": "zero",
+            "center_uv": null,
+            "peak_uv": null,
+            "peak_quadrant": "none",
+            "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/foveation_X2.png",
+            "sha256": "3a4c60c53b62fd0cbcb8dfbb5c883a4b92fd66c2e51e1a8516559aa2c1410439"
+          },
+          "model_response": {
+            "image_id": "X2",
+            "detected": false,
+            "quadrant": "none",
+            "center_uv": null,
+            "confidence": 0.0,
+            "observation": "No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point."
+          },
+          "model_center_uv_normalized_for_audit": null,
+          "center_coordinate_format": "missing",
+          "coordinate_schema_compliant": true,
+          "quadrant_correct": true,
+          "peak_center_error_uv": null
+        },
+        {
+          "image_id": "X3",
+          "expected": {
+            "variant": "original",
+            "center_uv": [
+              0.7147414283598984,
+              0.6747082133173883
+            ],
+            "peak_uv": [
+              0.8802083333333334,
+              0.6793154761904762
+            ],
+            "peak_quadrant": "bottom_right",
+            "path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_scene1_163_V051/foveation_X3.png",
+            "sha256": "db9502bbff0ab2eccee47a9ddf0245b89b6d7f5a5d8281f736b5760596a58bee"
+          },
+          "model_response": {
+            "image_id": "X3",
+            "detected": false,
+            "quadrant": "none",
+            "center_uv": null,
+            "confidence": 0.0,
+            "observation": "No locally sharper retained region detected; image appears uniformly sharp or blurred without a clear focus point."
+          },
+          "model_center_uv_normalized_for_audit": null,
+          "center_coordinate_format": "missing",
+          "coordinate_schema_compliant": true,
+          "quadrant_correct": false,
+          "peak_center_error_uv": null
+        }
+      ],
+      "processor_audit": {
+        "image_count": 3,
+        "image_grid_thw": [
+          [
+            1,
+            42,
+            42
+          ],
+          [
+            1,
+            42,
+            42
+          ],
+          [
+            1,
+            42,
+            42
+          ]
+        ],
+        "image_merge_size": 2,
+        "processor_image_tokens_estimate": 1323,
+        "expanded_image_token_count": 1323,
+        "input_token_count": 1591,
+        "transformers_version": "5.9.0",
+        "model_config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661"
+      },
+      "visual_tensor_trace": {
+        "trace_path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/foveation_cb56b0a40194fa1f.tensor_trace/trace.json",
+        "kind": "image",
+        "capture_scope": "processor tensors + real vision forward input",
+        "processor_tensors": {
+          "input_ids": {
+            "shape": [
+              1,
+              1591
+            ],
+            "dtype": "torch.int64",
+            "sha256": "db3cd17c97a5cde5e4eb6786d6759314e01e8ea0f461eee742526c05e2e028ed",
+            "bytes": 12728
+          },
+          "attention_mask": {
+            "shape": [
+              1,
+              1591
+            ],
+            "dtype": "torch.int64",
+            "sha256": "f579cc20233d38c99cad93dc54d87fbc2fb524e83572196da9db07776e3cfb8f",
+            "bytes": 12728
+          },
+          "mm_token_type_ids": {
+            "shape": [
+              1,
+              1591
+            ],
+            "dtype": "torch.int64",
+            "sha256": "581059a57ac06c564d8b4437dffa1c8bee1de96866217cafd8e4a5d685081a19",
+            "bytes": 12728
+          },
+          "pixel_values": {
+            "shape": [
+              5292,
+              1536
+            ],
+            "dtype": "torch.float32",
+            "sha256": "a3762f9729df7711219b71655862a5b5b3ff9f832c24e4dadfcd49fe7555ffda",
+            "bytes": 32514048
+          },
+          "image_grid_thw": {
+            "shape": [
+              3,
+              3
+            ],
+            "dtype": "torch.int64",
+            "sha256": "08ba8ea03a252ea48704285d4499a643eef3b644e16882f0ac41064023ce2639",
+            "bytes": 72
+          }
+        },
+        "processor_inputs_path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/foveation_cb56b0a40194fa1f.tensor_trace/processor_inputs.pt",
+        "vision_forward_calls": [
+          {
+            "input": {
+              "shape": [
+                5292,
+                1536
+              ],
+              "dtype": "torch.bfloat16",
+              "sha256": "9a67ec396e90290baf8e68eabe13c3e474ff1d39d8f5e90dfbcaab49855fbb27",
+              "bytes": 16257024
+            },
+            "grid": {
+              "shape": [
+                3,
+                3
+              ],
+              "dtype": "torch.int64",
+              "sha256": "08ba8ea03a252ea48704285d4499a643eef3b644e16882f0ac41064023ce2639",
+              "bytes": 72
+            },
+            "input_matches_processor_after_dtype_cast": true,
+            "grid_matches_processor": true
+          }
+        ],
+        "restored_frame_paths": [
+          "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/foveation_cb56b0a40194fa1f.tensor_trace/processor_rgb_00_000.png",
+          "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/foveation_cb56b0a40194fa1f.tensor_trace/processor_rgb_01_000.png",
+          "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/foveation_cb56b0a40194fa1f.tensor_trace/processor_rgb_02_000.png"
+        ],
+        "input_consumption_verified": true,
+        "expected_vision_tensor": {
+          "shape": [
+            5292,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "9a67ec396e90290baf8e68eabe13c3e474ff1d39d8f5e90dfbcaab49855fbb27",
+          "bytes": 16257024
+        }
+      },
+      "elapsed_seconds": 40.52528251901094
+    }
+  },
+  "call_audit": [
+    {
+      "key": "heatmap_sensitivity",
+      "stage": "heatmap",
+      "cache_hit": false,
+      "backend": "local_transformers_image",
+      "request_path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/heatmap_e30599707a350b9b.json",
+      "image_count": 3,
+      "image_sha256": [
+        "bc23afef1c5b2a7ebdfe279e51762da6807e3c3cc0d7b1a0fdd20de230e6fa96",
+        "f932db3bbfa45d379601a10029f07760857f68eb220590d39fa45a25e089754a",
+        "ce6ba948b6a0d87ab8aa8d5a6a388cfb21e81648712d7b34d9bf627b8a920a5a"
+      ],
+      "processor_audit": {
+        "image_count": 3,
+        "image_grid_thw": [
+          [
+            1,
+            42,
+            42
+          ],
+          [
+            1,
+            42,
+            42
+          ],
+          [
+            1,
+            42,
+            42
+          ]
+        ],
+        "image_merge_size": 2,
+        "processor_image_tokens_estimate": 1323,
+        "expanded_image_token_count": 1323,
+        "input_token_count": 1558,
+        "transformers_version": "5.9.0",
+        "model_config_sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661"
+      },
+      "inference_seconds": 41.21140860400919,
+      "elapsed_seconds": 46.34951397500117
+    },
+    {
+      "key": "heatmap_sensitivity",
+      "stage": "foveation",
+      "cache_hit": false,
+      "backend": "local_transformers_image",
+      "request_path": "/media/kunyu/16TB/spj/Multiagent/runs/heatmap_pixel_sensitivity_20261022_cache/heatmap_pixel_sensitivity_qwen8b_20261022_v1/heatmap_sensitivity/foveation_cb56b0a40194fa1f.json",
+      "image_count": 3,
+      "image_sha256": [
+        "17162a024a7cb902b22ba169195dc77e1530f0ccaf280f4fd43d4103cba446d4",
+        "3a4c60c53b62fd0cbcb8dfbb5c883a4b92fd66c2e51e1a8516559aa2c1410439",
+        "db9502bbff0ab2eccee47a9ddf0245b89b6d7f5a5d8281f736b5760596a58bee"
+      ],
+      "elapsed_seconds": 40.52528251901094,
+      "error": "JSON parse failure"
+    }
+  ],
+  "heatmap_quadrant_correct": 3,
+  "heatmap_quadrant_total": 3,
+  "foveation_detected_count": 0,
+  "foveation_total": 3,
+  "verified_vision_calls": true,
+  "foveation_backend_parse_status": "valid_json_array_backend_schema_mismatch_normalized_for_diagnostic"
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "sample": "scene4_room2/scene4_150",
+    "stage": "frozen_upstream_or_cpu",
+    "error": "ValueError: Empty extraction for nonempty instruction"
+  },
+  {
+    "sample": "scene5/scene5_387",
+    "stage": "frozen_upstream_or_cpu",
+    "error": "ValueError: Empty extraction for nonempty instruction"
+  }
+]

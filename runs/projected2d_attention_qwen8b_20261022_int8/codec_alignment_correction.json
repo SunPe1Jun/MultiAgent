@@ -1,0 +1,7 @@
+{
+  "reason": "Initial RGB control skipped one JPEG quality94 intermediate encode. All conditions now share the same encoding stages. New RGB composites use separate RGB_CODEC_ALIGNED paths; previous exact RGB images and caches are preserved.",
+  "local_experiment_pid_interrupted": 1868326,
+  "existing_inference_service_stopped": false,
+  "affected_predictions": "RGB only; re-run against matching prompt/image hash. Heatmap/foveation inputs and successful predictions are unchanged and replayed.",
+  "archive": "runs/projected2d_attention_qwen8b_20261022_int8/archive/pre_codec_alignment"
+}

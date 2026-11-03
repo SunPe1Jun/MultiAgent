@@ -1,0 +1,77 @@
+{
+  "attention_trace": [
+    {
+      "view_id": "G001",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": ""
+    },
+    {
+      "view_id": "G002",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": ""
+    },
+    {
+      "view_id": "G003",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": ""
+    },
+    {
+      "view_id": "G004",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": ""
+    }
+  ],
+  "evidence": [
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter1",
+      "support_score": 1,
+      "confidence": 1,
+      "frame_id": "G001",
+      "explanation": "A white helicopter with red tail is visible in the center-right of the frame."
+    },
+    {
+      "mention_id": "m0",
+      "candidate_id": "helicopter2",
+      "support_score": 1,
+      "confidence": 1,
+      "frame_id": "G001",
+      "explanation": "A white helicopter with red tail is visible in the center-right of the frame."
+    }
+  ],
+  "visual_observations": [
+    {
+      "mention_id": "m0",
+      "frame_id": "G001",
+      "description": "A white helicopter with red tail is visible in the center-right of the frame.",
+      "confidence": 1
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "G002",
+      "description": "A white helicopter with red tail is visible in the center-right of the frame.",
+      "confidence": 1
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "G003",
+      "description": "A white helicopter with red tail is visible in the center-right of the frame.",
+      "confidence": 1
+    },
+    {
+      "mention_id": "m0",
+      "frame_id": "G004",
+      "description": "A white helicopter with red tail is visible in the center-right of the frame.",
+      "confidence": 1
+    }
+  ],
+  "identity_status": "resolved"
+}

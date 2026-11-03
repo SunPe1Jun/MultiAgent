@@ -5,7 +5,8 @@ import math
 import re
 
 from .context import Evidence
-from .mention_mapping import PROMPT as REFERENTIAL_PROMPT_V4, resolve_mentions
+from .mention_mapping import (PROMPT as REFERENTIAL_PROMPT_V4, actor_coverage_checks,
+                              repair_explicit_component_parent, resolve_mentions)
 
 
 def sample_key(ctx):
@@ -49,29 +50,46 @@ class ReferentialAgent:
     def run(self, ctx):
         retries = []
         prompt = REFERENTIAL_PROMPT + ctx.text
-        for attempt in range(3 if self.backend else 1):
+        for attempt in range(4 if self.backend else 1):
             try:
                 if self.backend:
                     stage = 'referential' if attempt == 0 else f'referential_validation_retry_{attempt}'
                     parsed = self.backend.ask(sample_key(ctx), stage, prompt)
                 else:
                     parsed = self.outputs.get(sample_key(ctx))
+                parsed, literal_repairs = repair_explicit_component_parent(parsed, ctx.text)
                 result = self._resolve(ctx, parsed)
+                if literal_repairs:
+                    result['literal_component_parent_repairs'] = literal_repairs
                 if retries:
                     result['validation_retries'] = retries
                 return result
             except ValueError as exc:
-                if not self.backend or attempt == 2:
+                parent_error = 'parent_text' in str(exc)
+                max_attempt = 3 if parent_error else 2
+                if not self.backend or attempt >= max_attempt:
                     raise
                 retries.append({'attempt': attempt + 1, 'error': str(exc)})
                 prompt = (REFERENTIAL_PROMPT + ctx.text + '\nValidation feedback: ' + str(exc) +
-                          '\nReturn the complete mentions object again. Every text value must be copied '
-                          'literally from the instruction, preserving misspellings. A normalized category '
-                          'may appear only in object_type or synonyms. Do not add objects or candidate IDs. '
-                          'Check each text against the original instruction before responding.')
+                          '\nCorrect every mention and return the complete mentions object. Copy every '
+                          'mention text with its original whitespace, including consecutive spaces; do not '
+                          'collapse or normalize spacing. Keep relationally separate objects as separate '
+                          'mentions. For a component whose parent is expressed only by a pronoun, such as '
+                          '"its side panel", keep that exact text and component, leave parent_text empty, '
+                          'put the antecedent literal phrase in anchor_text, and reuse the antecedent '
+                          'coreference_id. parent_text is allowed only when its literal phrase occurs '
+                          'inside this mention text. For "the crate beside the truck", emit "the crate" '
+                          'and "the truck" as separate mentions; relation words such as "beside" do not '
+                          'make one mention the parent component of the other. A parent_text may never '
+                          'equal the complete mention text. Do not add candidate IDs or extra mentions. '
+                          'Check each text against the instruction before responding.')
 
     def _resolve(self, ctx, parsed):
-        return resolve_mentions(ctx, parsed)
+        result = resolve_mentions(ctx, parsed)
+        missing_actors = actor_coverage_checks(ctx.text, result['mentions'])
+        if missing_actors:
+            raise ValueError('Missing explicit actor mention(s): ' + ', '.join(m['text'] for m in missing_actors))
+        return result
 
 
 class GazeAgent:

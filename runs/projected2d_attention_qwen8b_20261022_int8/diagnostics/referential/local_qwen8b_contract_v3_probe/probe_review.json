@@ -1,0 +1,135 @@
+{
+  "results": [
+    {
+      "scene": "scene1",
+      "row_index": 705,
+      "image": "runs/projected2d_attention_qwen8b_20261022_int8/diagnostics/referential/local_qwen8b_contract_v3_probe/scene1_705_predictions_no_gt.jpg",
+      "status": "COMPLETE",
+      "parse_error": "",
+      "model_consumption_verified": true,
+      "predictions": {
+        "mentions": [
+          {
+            "mention_id": "m0",
+            "mention": "the other person",
+            "status": "not_visible",
+            "predictions": [],
+            "evidence": "The instruction asks to 'ask the other person', but no person is visible in any of the provided frames."
+          },
+          {
+            "mention_id": "m1",
+            "mention": "that truck",
+            "status": "localized",
+            "predictions": [
+              {
+                "frame_id": "P1",
+                "point_uv": [
+                  0.227,
+                  0.553
+                ]
+              }
+            ],
+            "evidence": "In frame P1, the yellow forklift (referred to as 'that truck') is visible within the highlighted crop area, matching the description of the target vehicle."
+          },
+          {
+            "mention_id": "m2",
+            "mention": "the front of the side building",
+            "status": "localized",
+            "predictions": [
+              {
+                "frame_id": "P1",
+                "point_uv": [
+                  0.323,
+                  0.422
+                ]
+              }
+            ],
+            "evidence": "In frame P1, the front of the side building (a large red-brick building) is visible, and the yellow forklift is positioned in front of it, matching the destination described."
+          },
+          {
+            "mention_id": "m3",
+            "mention": "it",
+            "status": "localized",
+            "predictions": [
+              {
+                "frame_id": "P1",
+                "point_uv": [
+                  0.227,
+                  0.553
+                ]
+              }
+            ],
+            "evidence": "The pronoun 'it' refers back to 'that truck' (m1), which is the yellow forklift. The same truck is localized in frame P1."
+          },
+          {
+            "mention_id": "m4",
+            "mention": "the side building",
+            "status": "localized",
+            "predictions": [
+              {
+                "frame_id": "P1",
+                "point_uv": [
+                  0.323,
+                  0.422
+                ]
+              }
+            ],
+            "evidence": "The side building is the large red-brick building visible in frame P1, which is the anchor point for the destination."
+          }
+        ]
+      },
+      "metrics_status": "NOT_RUN_geometry_not_calibrated"
+    },
+    {
+      "scene": "scene4_room2",
+      "row_index": 145,
+      "image": "runs/projected2d_attention_qwen8b_20261022_int8/diagnostics/referential/local_qwen8b_contract_v3_probe/scene4_room2_145_predictions_no_gt.jpg",
+      "status": "COMPLETE",
+      "parse_error": "",
+      "model_consumption_verified": true,
+      "predictions": {
+        "mentions": [
+          {
+            "mention_id": "m0",
+            "mention": "that person",
+            "status": "localized",
+            "predictions": [
+              {
+                "frame_id": "P1",
+                "point_uv": [
+                  0.085,
+                  0.405
+                ]
+              }
+            ],
+            "evidence": "The person is visible in the P1 frame, standing in the doorway on the left side of the room, as indicated by the yellow crop box."
+          },
+          {
+            "mention_id": "m1",
+            "mention": "the spray bottle",
+            "status": "not_visible",
+            "predictions": [],
+            "evidence": "The spray bottle is not visible in any of the provided frames. It is not present in the P1, P2, or P3 source images."
+          },
+          {
+            "mention_id": "m2",
+            "mention": "the rack",
+            "status": "localized",
+            "predictions": [
+              {
+                "frame_id": "P3",
+                "point_uv": [
+                  0.625,
+                  0.425
+                ]
+              }
+            ],
+            "evidence": "The yellow wooden rack is clearly visible in the P3 frame, located on the right side of the room, as highlighted by the yellow crop box."
+          }
+        ]
+      },
+      "metrics_status": "NOT_RUN_geometry_not_calibrated"
+    }
+  ],
+  "caution": "Protocol completeness is not object identity or coordinate accuracy. Two samples, RGB only; not an attention-method comparison."
+}

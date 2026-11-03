@@ -1,0 +1,20 @@
+{
+  "namespace": "temporal_gaze_remote8b_20261021_pilot100_clock075",
+  "groups": ["R", "H_inst", "H_local", "F_inst", "F_local"],
+  "reference_frame_count": 3,
+  "clock_max_offset_ratio": 0.75,
+  "gaze": {
+    "instant_max_delta_seconds": 0.18,
+    "local_history_seconds": 2.0,
+    "utterance_pre_seconds": 0.5,
+    "utterance_post_seconds": 0.5,
+    "max_gap_seconds": 0.25,
+    "decay": "uniform",
+    "kernel_sigma_degrees": 2.0,
+    "display_scale": 2.0,
+    "overlay_max_alpha": 0.28,
+    "foveation_min_clear_fraction": 0.55,
+    "foveation_max_blur_sigma_px": 18.0,
+    "foveation_downsample_factors": [2, 4, 8]
+  }
+}

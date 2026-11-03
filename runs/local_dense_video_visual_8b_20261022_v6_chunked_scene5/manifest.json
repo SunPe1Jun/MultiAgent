@@ -1,0 +1,28 @@
+{
+  "seed": 20261021,
+  "split": "existing evaluation pool (no supplied train/val/test split)",
+  "selection": "pilot20 preserved; proportional scene quotas with seeded random supplements; no prediction-based filtering",
+  "base_manifest": "/media/kunyu/16TB/spj/Multiagent/runs/visual_evidence_8b_20261021/pilot20_corrected/manifest.json",
+  "scene_quotas": {
+    "scene1": 20,
+    "scene2": 20,
+    "scene3": 20,
+    "scene4_room1": 5,
+    "scene4_room2": 5,
+    "scene4_room3": 5,
+    "scene4_room4": 5,
+    "scene5": 20
+  },
+  "samples": [
+    {
+      "scene_key": "scene5",
+      "row_index": 386,
+      "event_id": "scene5_387",
+      "instruction": "instruct this drone to identify the crate  beside the truck and then focus on its side panel.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    }
+  ],
+  "selection_note": "Frozen scene5_387, all source frames partitioned into continuous 20-frame Visual windows"
+}

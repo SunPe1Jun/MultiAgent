@@ -129,7 +129,7 @@ def guard_clock(clock, duration, max_offset_ratio=0.30):
                    audio_to_video=None, audio_to_telemetry=None,
                    telemetry_to_video=None, clock_available=False,
                    calibration_status='rejected_offset_over_duration_threshold',
-                   fallback_reason='audio_derived_offset_exceeds_30_percent_of_video',
+                   fallback_reason='audio_derived_offset_exceeds_duration_ratio_threshold',
                    fallback_policy='full_video_rgb_without_audio_or_telemetry_timing')
     return out
 

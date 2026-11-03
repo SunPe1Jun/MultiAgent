@@ -4,6 +4,7 @@ from dataclasses import dataclass, field, asdict
 from pathlib import Path
 from typing import Any
 from .baseline import module, local_path, scene_paths
+from .telemetry import load_telemetry
 
 @dataclass
 class Candidate:
@@ -74,7 +75,7 @@ class AgentContext:
     def to_dict(self): return asdict(self)
 
 
-def vrtriref_sample_to_agent_context(sample):
+def vrtriref_sample_to_agent_context(sample, *, load_ground_truth=True):
     """Single adapter: existing CSV row plus its original scene/row address.
 
     GT is isolated from inference payloads. No target_description is used as language,
@@ -85,14 +86,18 @@ def vrtriref_sample_to_agent_context(sample):
     scene = row.pop('_scene_key')
     index = int(row.pop('_row_index'))
     paths = scene_paths(scene)
-    api, ev = module('api'), module('eval')
+    api = module('api')
     anchors = api.load_scene_anchor_table(paths['anchor'])
-    aliases, _ = ev.load_anchor_alias_map(paths['anchor'])
-    gt = ev.load_gt_rows(paths['gt'], aliases)[index]
+    if load_ground_truth:
+        ev = module('eval')
+        aliases, _ = ev.load_anchor_alias_map(paths['anchor'])
+        gt = ev.load_gt_rows(paths['gt'], aliases)[index]
+    else:
+        gt = {'mapped_referents': [], 'not_loaded_for_visual_only': True}
     event_path = local_path(row['event_json_path'])
     event = json.loads(event_path.read_text())
     raw_path = local_path(row['json_path'])
-    raw = api.load_multimodal_samples(raw_path)
+    raw = load_telemetry(raw_path)
     timed = api.collect_timed_samples(raw)
     start, end = float(row['t_start']), float(row['t_end'])
     parts = {'before': [], 'during': [], 'after': []}
@@ -110,10 +115,11 @@ def vrtriref_sample_to_agent_context(sample):
          'split': 'existing evaluation pool; no official train/val/test split found',
          'time_alignment': 'metadata anchored: telemetry-to-video offset derived from first telemetry and audio metadata when available',
          'instruction_window': 'existing t_start/t_end event window; exact speech boundaries unavailable',
+         'ground_truth_loaded': load_ground_truth,
          'sequence_loader': 'baseline load_multimodal_samples + collect_timed_samples'})
 
 
-def load_contexts(manifest):
+def load_contexts(manifest, *, load_ground_truth=True):
     """Load only selected real events from their existing CSVs."""
     contexts, rows_by_scene = [], {}
     for item in manifest['samples']:
@@ -124,5 +130,5 @@ def load_contexts(manifest):
         row = dict(rows_by_scene[scene][item['row_index']])
         assert row['event_id'] == item['event_id'], 'Manifest event/row mismatch'
         row.update(_scene_key=scene, _row_index=item['row_index'])
-        contexts.append(vrtriref_sample_to_agent_context(row))
+        contexts.append(vrtriref_sample_to_agent_context(row, load_ground_truth=load_ground_truth))
     return contexts

@@ -7,6 +7,8 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw
 
+from .baseline import WORKSPACE_ROOT
+
 
 class SceneRegionSegmenter:
     """Produce category-level visible regions for visual context.
@@ -14,8 +16,8 @@ class SceneRegionSegmenter:
     These masks are visual aids, not candidate IDs. Candidate identity remains
     closed by ReferentialAgent and is never inferred from detector ordering.
     """
-    def __init__(self, detector_model='/workspace/usr3/grounding-dino-base',
-                 sam_model='/workspace/usr3/sam-base', device='cuda'):
+    def __init__(self, detector_model=str(WORKSPACE_ROOT / 'grounding-dino-base'),
+                 sam_model=str(WORKSPACE_ROOT / 'sam-base'), device='cuda'):
         import torch
         from transformers import AutoModelForZeroShotObjectDetection, AutoProcessor, SamModel, SamProcessor
         self.torch = torch; self.device = device

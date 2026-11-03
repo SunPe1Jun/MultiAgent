@@ -1,0 +1,47 @@
+{
+  "model": "/media/kunyu/16TB/spj/Qwen3-VL-8B-Instruct",
+  "groups": [
+    "RGB",
+    "CURRENT_HEATMAP",
+    "HISTORY_HEATMAP",
+    "HISTORY_FOVEATION"
+  ],
+  "panels": 3,
+  "frame_selection": "original TriRef evidence panel selector; fixed per-event panel IDs/times across conditions",
+  "panel_selection_strategy": "evidence",
+  "sample_inner_margin_ratio": 0.15,
+  "panel_context_mode": "paired_crop",
+  "gaze_crop_ratio": 0.35,
+  "crop_output_size": 768,
+  "prompt_mode": "given_expression_no_annotation_derived_expected_count",
+  "visual_input_encoding": "all conditions: decoded source -> identity/heatmap/foveation -> JPEG quality94 -> original gaze crop -> original paired composite JPEG quality92",
+  "acceptable_top_k": 2,
+  "dtype": "bfloat16",
+  "quantization": "int8",
+  "do_sample": false,
+  "max_new_tokens": 768,
+  "candidate_mapping": "frozen ReferentialAgent; candidate IDs omitted from Visual prompt",
+  "history_seconds": 2.0,
+  "gaze": {
+    "instant_max_delta_seconds": 0.18,
+    "local_history_seconds": 2.0,
+    "utterance_pre_seconds": 0.5,
+    "utterance_post_seconds": 0.5,
+    "max_gap_seconds": 0.25,
+    "decay": "uniform",
+    "decay_tau_seconds": 1.0,
+    "kernel_sigma_degrees": 2.0,
+    "display_scale": 2.0,
+    "overlay_max_alpha": 0.28,
+    "foveation_min_clear_fraction": 0.55,
+    "foveation_max_blur_sigma_px": 18.0,
+    "foveation_downsample_factors": [
+      2,
+      4,
+      8
+    ]
+  },
+  "ground_truth_loaded_for_context": false,
+  "gt_in_model_prompt": false,
+  "evaluator": "/media/kunyu/16TB/spj/Trimodal-Referring/exam2/evaluate_2d_point_grounding.py"
+}

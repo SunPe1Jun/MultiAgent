@@ -1,0 +1,35 @@
+{
+  "attention_trace": [
+    {
+      "view_id": "G001",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": ""
+    },
+    {
+      "view_id": "G002",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": ""
+    },
+    {
+      "view_id": "G003",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": ""
+    },
+    {
+      "view_id": "G004",
+      "cue_type": "none",
+      "cue_center_uv": null,
+      "cue_confidence": 0,
+      "cue_observation": ""
+    }
+  ],
+  "evidence": [],
+  "visual_observations": [],
+  "identity_status": "none"
+}

@@ -7,12 +7,14 @@ import torch
 from PIL import Image
 from transformers import SamProcessor, SamModel
 
+from .baseline import WORKSPACE_ROOT
+
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--image', required=True)
     p.add_argument('--detections', required=True)
     p.add_argument('--output-dir', required=True)
-    p.add_argument('--model', default='/workspace/usr3/sam-base')
+    p.add_argument('--model', default=str(WORKSPACE_ROOT / 'sam-base'))
     p.add_argument('--detection-index', type=int, default=0)
     a = p.parse_args()
     out = Path(a.output_dir); out.mkdir(parents=True, exist_ok=True)

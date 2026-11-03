@@ -1,0 +1,57 @@
+{
+  "version": "local_attention_cue_validation_20261022_v1",
+  "input_run": "/media/kunyu/16TB/spj/Multiagent/runs/local_attention_guidance_probe_20261022_pilot4",
+  "source_sample_list": [
+    {
+      "scene_key": "scene1",
+      "row_index": 162,
+      "event_id": "scene1_163",
+      "instruction": "Turn toward that helicopter.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene2",
+      "row_index": 34,
+      "event_id": "scene2_35",
+      "instruction": "Slide that chair toward there.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene3",
+      "row_index": 14,
+      "event_id": "scene3_15",
+      "instruction": "tighten that car hood.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    },
+    {
+      "scene_key": "scene5",
+      "row_index": 28,
+      "event_id": "scene5_29",
+      "instruction": "Direct this drone to approach the front-middle tank.",
+      "selection_tags": [
+        "random_stratified_supplement"
+      ]
+    }
+  ],
+  "model": "/media/kunyu/16TB/spj/Qwen3-VL-8B-Instruct",
+  "namespace": "local_attention_cue_validation_qwen8b_20261022",
+  "cache_dir": "/media/kunyu/16TB/spj/Multiagent/runs/local_attention_cue_validation_20261022_cache",
+  "source_frames_per_request": 8,
+  "conditions": [
+    "R",
+    "H_local",
+    "F_local",
+    "H_circle_control"
+  ],
+  "prompt_scope": "cue perception only; no mention candidates or object identity",
+  "positive_control": "paper-inspired 25px translucent red gaze circle; not a reproduction of the paper benchmark",
+  "paper": "arXiv:2509.07447, gaze visual prompt",
+  "offline_full_interaction": true,
+  "ground_truth_loaded": false
+}
