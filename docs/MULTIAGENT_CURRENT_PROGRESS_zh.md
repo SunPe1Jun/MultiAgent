@@ -1,5 +1,7 @@
 # MultiAgent 当前代码与实验进度
 
+> **当前 2D 实验请先读 [2026-11-16 进展与最佳方法](PROJECTED2D_PROGRESS_20261116_zh.md)**：HEAT_CROP 在旧 32 条上 Joint@100=0.2222；保留全图与局部 RGB，最新时间箱热图用于脚本选区，foveation 关闭；逐 mention 时序改动尚未与该配置合并验证。Scene 1 的 800 条只完成 API 输入/event JSON 重建，全量推理尚未启动。下文历史“最新”字样按其日期理解，不代表已经完成全量实验。
+
 > **2026-11-16 版本保存与实际断点**：当前更新保存到独立分支 `archive/multiagent-progress-20261116`，保留原 `main`/`edbf5e8`，11 月 9 日冻结源码/响应/评分也保存到 [仓库快照](../artifacts/projected2d_progress_20261109/README.md)。用户要求的 Scene 1 范围是 800 条：11 月 10 日已重建全部 API 输入及 event JSON，但全量面板/热图/推理尚未完成；4 条子集重跑不代表这项全量实验。恢复与版本选择请先读 [版本交接](REPOSITORY_SNAPSHOT_20261116_zh.md)。
 
 > **2026-11-09 进度存档**：正式文档为 [实验档案](EXPERIMENT_ARCHIVE_20261109_zh.md)，源码/配置/冻结响应与评分快照为 [.local-sync/archives/20261109_projected2d_visual_progress](../.local-sync/archives/20261109_projected2d_visual_progress/README.md)。恢复上下文先读该档案及快照`RESUME_STATE.json`；本次只做存档，不新增模型实验。

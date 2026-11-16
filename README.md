@@ -4,6 +4,8 @@
 
 ## 当前状态（2026-11-16）
 
+**当前实验进展与最佳方法**：[Projected-2D 进展报告](docs/PROJECTED2D_PROGRESS_20261116_zh.md)。目前最佳候选是完整 RGB＋热图引导局部 RGB 放大（HEAT_CROP），32 条旧样本 Point/Joint@100=0.2519/0.2222；裁剪实际使用最近约 0.67 秒的密度，foveation 关闭。热图独立贡献尚未确立，Scene 1 全量 800 条没有推理结果。
+
 **版本保存**：本次更新位于独立分支 `archive/multiagent-progress-20261116`，原 `main`/`edbf5e8` 保留。全部实验变体与 [11 月 9 日冻结快照](artifacts/projected2d_progress_20261109/README.md) 一并保存；版本选择、恢复方法和测试限制见 [版本交接](docs/REPOSITORY_SNAPSHOT_20261116_zh.md)。
 
 **Scene 1 全量断点**：800 条 API 输入和 event JSON 已重建，并与旧 20 条核对一致；全量面板、热图和推理尚未启动。此前 Scene 1 的 4 条误跑只是归档子集，不能代表全量实验。详见 [准备状态](artifacts/scene1_heat_crop_20261110/scene1_800_preparation_status.json)。
@@ -41,7 +43,9 @@
 
 不要把“流程跑通”写成“性能提升”。旧 H_local 的 +0.011 Micro-F1 是小样本、低有效 gaze 覆盖下的观察，且 Coordinator 同时接收数值 gaze，不能作为纯 heatmap 因果效果。
 
-## 当前主流程
+## 原完整 MultiAgent 流程（与当前 2D 最佳候选分开）
+
+以下是原 anchor-ID 集合流程；当前 Projected-2D 最佳候选直接执行原 Experiment 2 点定位 wrapper，其分数不经过下述 Coordinator。具体以 [当前 2D 进展报告](docs/PROJECTED2D_PROGRESS_20261116_zh.md) 为准。
 
 ```text
 原始指令
