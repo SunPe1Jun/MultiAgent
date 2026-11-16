@@ -1,0 +1,61 @@
+{
+  "resamples": 50000,
+  "seed": 20261109,
+  "comparisons": {
+    "NATIVE_WRAPPER": {
+      "delta": 0.059259259259259234,
+      "ci95": [
+        0.0,
+        0.12949640287769784
+      ],
+      "dev_delta": 0.0816326530612245,
+      "confirm22_delta": 0.046511627906976744
+    },
+    "RELEASED_OLD": {
+      "delta": 0.02525252525252525,
+      "ci95": [
+        -0.046675191815856776,
+        0.09989019864238607
+      ],
+      "dev_delta": 0.0709849157054126,
+      "confirm22_delta": 0.0
+    },
+    "FIXED_GAZE22": {
+      "delta": 0.014814814814814808,
+      "ci95": [
+        0.0,
+        0.049586776859504134
+      ],
+      "dev_delta": 0.0,
+      "confirm22_delta": 0.023255813953488386
+    },
+    "MIRRORED_HEAT_CROP": {
+      "delta": 0.014814814814814808,
+      "ci95": [
+        -0.052173913043478265,
+        0.0746268656716418
+      ],
+      "dev_delta": 0.040816326530612235,
+      "confirm22_delta": 0.0
+    },
+    "HEAT_CROP_FOV": {
+      "delta": 0.029629629629629617,
+      "ci95": [
+        0.0,
+        0.07407407407407408
+      ],
+      "dev_delta": 0.0,
+      "confirm22_delta": 0.046511627906976744
+    },
+    "HEAT_CROP_FOV95": {
+      "delta": 0.029629629629629617,
+      "ci95": [
+        0.0,
+        0.07407407407407408
+      ],
+      "dev_delta": 0.0,
+      "confirm22_delta": 0.046511627906976744
+    }
+  },
+  "sample_status": "Previously seen development and confirmation subset, not held out; interval is descriptive after adaptive exploration."
+}

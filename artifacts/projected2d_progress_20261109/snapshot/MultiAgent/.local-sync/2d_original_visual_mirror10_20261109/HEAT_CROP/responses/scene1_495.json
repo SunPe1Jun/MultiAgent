@@ -1,0 +1,157 @@
+{
+  "event": "scene1_495",
+  "fingerprint": "4ed575839a70999b9cae49f5e28c83380f1c685a0242db15d4aac82ab10afb2b",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"this truck\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.333,\n      \"y_norm\": 0.533,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"this box\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.333,\n      \"y_norm\": 0.533,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "this truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.333,
+        "y_norm": 0.533,
+        "confidence": 0.95
+      },
+      {
+        "mention": "this box",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.333,
+        "y_norm": 0.533,
+        "confidence": 0.95
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "this truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.6738046875,
+        "y_norm": 0.533,
+        "confidence": 0.95,
+        "raw_x_norm": 0.333,
+        "raw_y_norm": 0.533,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "this box",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.6738046875,
+        "y_norm": 0.533,
+        "confidence": 0.95,
+        "raw_x_norm": 0.333,
+        "raw_y_norm": 0.533,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene1_495.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "ef2e8b52303e591f9cf2134bf9aea49d0466c4cf323f2f369f82e45a8b29c009",
+        "bytes": 34384
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "61f760de57c09dd183580b13eb39e66516adb5c3747ddda48c3f5ef1a7399627",
+        "bytes": 34384
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "af048a466f3ade7c87f900d9219b30413747e8c35fafe93fc060627aee55f1ce",
+        "bytes": 34384
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "f6ca1691018d444f034acc9db3a91b62f1ec702038098a72746593dfb28f5b0c",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene1_495.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "2c8a75d7a97a25cd928c19af8015f913ed8dff8ac2c305f065eeaa22c3bfb975",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene1_495.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene1_495.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene1_495.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "2c8a75d7a97a25cd928c19af8015f913ed8dff8ac2c305f065eeaa22c3bfb975",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 7.554804660845548,
+  "generated_tokens": 139
+}

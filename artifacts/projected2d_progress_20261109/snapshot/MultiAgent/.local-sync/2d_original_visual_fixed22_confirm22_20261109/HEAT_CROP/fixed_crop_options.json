@@ -1,0 +1,5 @@
+{
+  "scope": "confirm",
+  "fixed_current_gaze_square_fraction": 0.22,
+  "no_heat_density_routing": true
+}

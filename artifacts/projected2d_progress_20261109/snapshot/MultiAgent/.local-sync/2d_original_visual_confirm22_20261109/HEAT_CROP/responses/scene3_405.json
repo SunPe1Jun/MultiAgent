@@ -1,0 +1,205 @@
+{
+  "event": "scene3_405",
+  "fingerprint": "63ab3471d5c358ef0810631589ac36a038000a1c2104b180aa8ef2984dbd79a1",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"that car\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.396,\n      \"y_norm\": 0.467,\n      \"confidence\": 0.98\n    },\n    {\n      \"mention\": \"that truck\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.635,\n      \"y_norm\": 0.458,\n      \"confidence\": 0.97\n    },\n    {\n      \"mention\": \"notify that colleague\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.798,\n      \"y_norm\": 0.683,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"slide that truck there\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.635,\n      \"y_norm\": 0.458,\n      \"confidence\": 0.97\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "that car",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.396,
+        "y_norm": 0.467,
+        "confidence": 0.98
+      },
+      {
+        "mention": "that truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.635,
+        "y_norm": 0.458,
+        "confidence": 0.97
+      },
+      {
+        "mention": "notify that colleague",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.798,
+        "y_norm": 0.683,
+        "confidence": 0.95
+      },
+      {
+        "mention": "slide that truck there",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.635,
+        "y_norm": 0.458,
+        "confidence": 0.97
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "that car",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.8012812500000001,
+        "y_norm": 0.467,
+        "confidence": 0.98,
+        "raw_x_norm": 0.396,
+        "raw_y_norm": 0.467,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "that truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.43456359765625,
+        "y_norm": 0.43775280000000005,
+        "confidence": 0.97,
+        "raw_x_norm": 0.635,
+        "raw_y_norm": 0.458,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "notify that colleague",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.5307721828125,
+        "y_norm": 0.5033628,
+        "confidence": 0.95,
+        "raw_x_norm": 0.798,
+        "raw_y_norm": 0.683,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "slide that truck there",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.43456359765625,
+        "y_norm": 0.43775280000000005,
+        "confidence": 0.97,
+        "raw_x_norm": 0.635,
+        "raw_y_norm": 0.458,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene3_405.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4300
+        ],
+        "dtype": "torch.int64",
+        "sha256": "b131c8de5155b03db161d531c14ed4f73fbd1d60ab250f5a1e99307d8290db42",
+        "bytes": 34400
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4300
+        ],
+        "dtype": "torch.int64",
+        "sha256": "54669e4e5e84b4ad99c45848f33803505f4c1ab4d74a410162b83fd451413362",
+        "bytes": 34400
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4300
+        ],
+        "dtype": "torch.int64",
+        "sha256": "267864697d21376ff47ba2f141f6a841251d8792db8d494b67adff26a2d37604",
+        "bytes": 34400
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "40f7438870f5e3aba8569f12cb824d37367a4eb5ba3f47421d6e5dffa3d12923",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene3_405.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "be28967ea14960dbbbc91c8718b77b95198f67b1503e0d04f5e1e283ee59208d",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene3_405.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene3_405.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene3_405.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "be28967ea14960dbbbc91c8718b77b95198f67b1503e0d04f5e1e283ee59208d",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 9.132420058129355,
+  "generated_tokens": 270
+}

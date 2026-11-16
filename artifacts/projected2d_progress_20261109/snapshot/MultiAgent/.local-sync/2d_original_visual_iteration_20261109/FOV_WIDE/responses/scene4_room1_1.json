@@ -1,0 +1,157 @@
+{
+  "event": "scene4_room1_1",
+  "fingerprint": "c7ae7b65fbe59227c7345ea3eb9370375d6ce0540e2da15a43bb899ff3bf6b20",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"curtain beside the sofa\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.72,\n      \"y_norm\": 0.45,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"curtain beside the sofa\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.72,\n      \"y_norm\": 0.45,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "curtain beside the sofa",
+        "panel_id": "P1",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.72,
+        "y_norm": 0.45,
+        "confidence": 0.95
+      },
+      {
+        "mention": "curtain beside the sofa",
+        "panel_id": "P2",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.72,
+        "y_norm": 0.45,
+        "confidence": 0.95
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "curtain beside the sofa",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.522003125,
+        "y_norm": 0.45130000000000003,
+        "confidence": 0.95,
+        "raw_x_norm": 0.72,
+        "raw_y_norm": 0.45,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "curtain beside the sofa",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.499103125,
+        "y_norm": 0.469,
+        "confidence": 0.95,
+        "raw_x_norm": 0.72,
+        "raw_y_norm": 0.45,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene4_room1_1.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4293
+        ],
+        "dtype": "torch.int64",
+        "sha256": "1b2a2914aeae14cae0cb46fb9bd15fcb4f488dfd9df684b33cd0621140f4781a",
+        "bytes": 34344
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4293
+        ],
+        "dtype": "torch.int64",
+        "sha256": "5cd4e9fc2c13826d3d223c9b3a698cb352d6e0f3af2f43164ecb36401b90d130",
+        "bytes": 34344
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4293
+        ],
+        "dtype": "torch.int64",
+        "sha256": "1fd3dfd0b52e983043145693757f2ef37d755687d0ec72416bee4dfdb2a77e48",
+        "bytes": 34344
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "bddf24f177fb938800628368d6d873d7fb61d0f05dd8b5d34611c04b9de97682",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene4_room1_1.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "aa716acee19503f99c70b70bfba97e923b8747c7f7fce56220d2c4c37984ff0a",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene4_room1_1.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene4_room1_1.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene4_room1_1.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "aa716acee19503f99c70b70bfba97e923b8747c7f7fce56220d2c4c37984ff0a",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 4.9929024369921535,
+  "generated_tokens": 143
+}

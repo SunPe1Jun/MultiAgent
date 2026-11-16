@@ -1,0 +1,133 @@
+{
+  "event": "scene1_647",
+  "fingerprint": "c7b1ab6ab0918c15b5341f910fd100774ae50fa1da4fb257561719c8237f112e",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"that truck\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.37,\n      \"y_norm\": 0.45,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "that truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.37,
+        "y_norm": 0.45,
+        "confidence": 0.95
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "that truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.748671875,
+        "y_norm": 0.45,
+        "confidence": 0.95,
+        "raw_x_norm": 0.37,
+        "raw_y_norm": 0.45,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene1_647.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4303
+        ],
+        "dtype": "torch.int64",
+        "sha256": "07823b3478deaaed616df3b156c241307f4160a20e5a923acd814334ddfff81a",
+        "bytes": 34424
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4303
+        ],
+        "dtype": "torch.int64",
+        "sha256": "c33c4b9db170363285d452ca573865e70c387be8948a26209ec84a288b336b59",
+        "bytes": 34424
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4303
+        ],
+        "dtype": "torch.int64",
+        "sha256": "b274004f66818ffc7ccb618bf604978b462430066eb76f4c0b2f1f9c8968aa59",
+        "bytes": 34424
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "6acd3c751694ab91e88df08051d83c41731be742b8ede3ae26d189051cebd1f4",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene1_647.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "0953c6634c77e3569c02f128d7548ff2074ced73ef627f1100007fab50d26c4e",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene1_647.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene1_647.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene1_647.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "0953c6634c77e3569c02f128d7548ff2074ced73ef627f1100007fab50d26c4e",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 4.144404523074627,
+  "generated_tokens": 73
+}

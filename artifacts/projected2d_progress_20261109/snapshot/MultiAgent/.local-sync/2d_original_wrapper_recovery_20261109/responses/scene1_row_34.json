@@ -1,0 +1,95 @@
+{
+  "scene": "scene1",
+  "row_index": 34,
+  "event_id": "scene1_35",
+  "instruction": "Face this cargo carefully.",
+  "input_mode": "multi_image",
+  "panel_context_mode": "paired_crop",
+  "panel_caption_mode": "none",
+  "paired_crop_coordinate_policy": "paired_canvas_map",
+  "model_input_image": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P1_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P2_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P3_paired.jpg",
+  "model_input_images": [
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P1_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P2_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P3_paired.jpg"
+  ],
+  "prompt_text": "Instruction:\nFace this cargo carefully.\n\nExpected number of output referents: 1\n\nInfer the target referents from the instruction. Do not use hidden dataset labels such as car1 or forklift2; describe each output with a short phrase from the instruction.\n\nPanels:\n- P1: video_time=2.490s, json_sample_time=1.314s\n- P2: video_time=3.470s, json_sample_time=2.294s\n- P3: video_time=4.029s, json_sample_time=2.853s\n\nImage order:\n- Image 1: P1 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3010,0.2583,0.6510,0.6083]\n- Image 2: P2 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3036,0.2745,0.6536,0.6245]\n- Image 3: P3 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3063,0.2750,0.6562,0.6250]\n\nTask:\nFor each intended referent:\n- compare all panels before deciding; do not prefer P1 or the earliest image unless it is the best evidence;\n- panel_id follows the image order and the Panels list above;\n- choose the single best panel_id from the visible panels;\n- output x_norm and y_norm as normalized coordinates inside the coordinate_space you choose;\n- for a paired image, use coordinate_space=\"full_panel\" if the point is on the LEFT full panel;\n- for a paired image, use coordinate_space=\"gaze_crop\" if the point is easier to localize on the RIGHT crop;\n- do not use coordinates of the whole paired image canvas; choose either full_panel or gaze_crop;\n- use the green gaze dot only as a noisy attention cue, together with the image and language;\n- do not output the green dot unless it is actually on the intended referent;\n- if a referent is an object part, surface, or placement area, output the best visible point on that part/area rather than the geometric center of the whole image.\n\nRequired strict JSON schema:\n{\n  \"referents\": [\n    {\n      \"mention\": \"target referent label or short phrase\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.0,\n      \"y_norm\": 0.0,\n      \"confidence\": 0.0\n    }\n  ]\n}\n\nUse null coordinates only when no reliable point can be localized. Return JSON only.",
+  "panel_meta": [
+    {
+      "panel_id": "P1",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "2.490",
+      "json_sample_time": "1.314",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P1_paired.jpg",
+      "gaze_u_norm": "0.476245",
+      "gaze_v_norm": "0.433495",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_34/P1.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene1/row_34/P1_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3010,0.2583,0.6510,0.6083"
+    },
+    {
+      "panel_id": "P2",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "3.470",
+      "json_sample_time": "2.294",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P2_paired.jpg",
+      "gaze_u_norm": "0.478519",
+      "gaze_v_norm": "0.449226",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_34/P2.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene1/row_34/P2_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3036,0.2745,0.6536,0.6245"
+    },
+    {
+      "panel_id": "P3",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "4.029",
+      "json_sample_time": "2.853",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P3_paired.jpg",
+      "gaze_u_norm": "0.481352",
+      "gaze_v_norm": "0.449949",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_34/P3.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene1/row_34/P3_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3063,0.2750,0.6562,0.6250"
+    }
+  ],
+  "model_raw_output": "{\n  \"referents\": [\n    {\n      \"mention\": \"this cargo\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.25,\n      \"y_norm\": 0.45,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "raw_parsed_json": {
+    "referents": [
+      {
+        "mention": "this cargo",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.25,
+        "y_norm": 0.45,
+        "confidence": 0.95
+      }
+    ]
+  },
+  "parsed_json": {
+    "referents": [
+      {
+        "mention": "this cargo",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.505859375,
+        "y_norm": 0.45,
+        "confidence": 0.95,
+        "raw_x_norm": 0.25,
+        "raw_y_norm": 0.45,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      }
+    ]
+  },
+  "parse_ok": true
+}

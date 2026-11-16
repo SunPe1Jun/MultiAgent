@@ -1,0 +1,14 @@
+{
+  "files": {
+    "/ai/data/MultiAgent/tools/iterate_original2d_visual.py": "e3e7d5cd1c4e473ae8c35a39b318096d6e5723606d1abb3d37544c6b31a094f9",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/input_manifest.json": "9cd9fcc6201f82a4f5980fb7d2c0aaf13447f8437a4f36cce890fca21d5ef08d",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/manifest.csv": "974aaf282d1ee6a442a9a1607962c14bf76e7bc75bc2556cf2d267199a59dced",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/image_audit.json": "743cc64745facc87ae4388a78dc67b683b79d68385e941576c90ea99fd1c897b",
+    "/ai/data/TriModal-Referring/exam2/run_qwen3vl_2d_point_grounding.py": "515a3d0db53cc28880eb021e11a27f7ffc2324097bdcdab912a6828a7c8cacc1",
+    "/ai/data/TriModal-Referring/scripts/grounding/run_qwen3vl_local_keyframe_grounding.py": "7c887e1c91719a219a831fe02ca17862c6bcd0081bd198ab22c1aafb08f043d8",
+    "/ai/data/TriModal-Referring/exam2/evaluate_2d_point_grounding.py": "eedfb65591a89cd725bfbf2c84813ec4946aca9ecc4658f779d8701c32a29725",
+    "/ai/data/MultiAgent/MultiAgent/foveation_attention.py": "be002d03cb588f310f69809a7a12caa1b4ed5a11263a87ea6a9dd5d5407cc45f",
+    "/ai/data/MultiAgent/MultiAgent/visual_input_trace.py": "8d864baf2bcea402cb317a6b6e753e55945925f52ce978f145941b00a13462c8",
+    "/ai/data/Qwen3-VL-8B-Instruct/config.json": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661"
+  }
+}

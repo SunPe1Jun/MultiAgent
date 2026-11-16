@@ -1,0 +1,143 @@
+{
+  "scene": "scene4_room3",
+  "row_index": 114,
+  "event_id": "scene4_115",
+  "instruction": "Tell that person to move the chair slightly away from the dining table.",
+  "input_mode": "multi_image",
+  "panel_context_mode": "paired_crop",
+  "panel_caption_mode": "none",
+  "paired_crop_coordinate_policy": "paired_canvas_map",
+  "model_input_image": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P1_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P2_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P3_paired.jpg",
+  "model_input_images": [
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P1_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P2_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P3_paired.jpg"
+  ],
+  "prompt_text": "Instruction:\nTell that person to move the chair slightly away from the dining table.\n\nExpected number of output referents: 3\n\nInfer the target referents from the instruction. Do not use hidden dataset labels such as car1 or forklift2; describe each output with a short phrase from the instruction.\n\nPanels:\n- P1: video_time=4.083s, json_sample_time=1.227s\n- P2: video_time=5.529s, json_sample_time=2.674s\n- P3: video_time=6.530s, json_sample_time=3.675s\n\nImage order:\n- Image 1: P1 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3365,0.2693,0.6865,0.6193]\n- Image 2: P2 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3302,0.3271,0.6802,0.6771]\n- Image 3: P3 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3286,0.3104,0.6786,0.6604]\n\nTask:\nFor each intended referent:\n- compare all panels before deciding; do not prefer P1 or the earliest image unless it is the best evidence;\n- panel_id follows the image order and the Panels list above;\n- choose the single best panel_id from the visible panels;\n- output x_norm and y_norm as normalized coordinates inside the coordinate_space you choose;\n- for a paired image, use coordinate_space=\"full_panel\" if the point is on the LEFT full panel;\n- for a paired image, use coordinate_space=\"gaze_crop\" if the point is easier to localize on the RIGHT crop;\n- do not use coordinates of the whole paired image canvas; choose either full_panel or gaze_crop;\n- use the green gaze dot only as a noisy attention cue, together with the image and language;\n- do not output the green dot unless it is actually on the intended referent;\n- if a referent is an object part, surface, or placement area, output the best visible point on that part/area rather than the geometric center of the whole image.\n\nRequired strict JSON schema:\n{\n  \"referents\": [\n    {\n      \"mention\": \"target referent label or short phrase\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.0,\n      \"y_norm\": 0.0,\n      \"confidence\": 0.0\n    }\n  ]\n}\n\nUse null coordinates only when no reliable point can be localized. Return JSON only.",
+  "panel_meta": [
+    {
+      "panel_id": "P1",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "4.083",
+      "json_sample_time": "1.227",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P1_paired.jpg",
+      "gaze_u_norm": "0.511696",
+      "gaze_v_norm": "0.444346",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_114/P1.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene4_room3/row_114/P1_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3365,0.2693,0.6865,0.6193"
+    },
+    {
+      "panel_id": "P2",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "5.529",
+      "json_sample_time": "2.674",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P2_paired.jpg",
+      "gaze_u_norm": "0.505204",
+      "gaze_v_norm": "0.502218",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_114/P2.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene4_room3/row_114/P2_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3302,0.3271,0.6802,0.6771"
+    },
+    {
+      "panel_id": "P3",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "6.530",
+      "json_sample_time": "3.675",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P3_paired.jpg",
+      "gaze_u_norm": "0.503867",
+      "gaze_v_norm": "0.485500",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_114/P3.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene4_room3/row_114/P3_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3286,0.3104,0.6786,0.6604"
+    }
+  ],
+  "model_raw_output": "{\n  \"referents\": [\n    {\n      \"mention\": \"the person\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.11,\n      \"y_norm\": 0.37,\n      \"confidence\": 0.98\n    },\n    {\n      \"mention\": \"the chair\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.68,\n      \"y_norm\": 0.55,\n      \"confidence\": 0.97\n    },\n    {\n      \"mention\": \"the dining table\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.68,\n      \"y_norm\": 0.45,\n      \"confidence\": 0.96\n    }\n  ]\n}",
+  "raw_parsed_json": {
+    "referents": [
+      {
+        "mention": "the person",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.11,
+        "y_norm": 0.37,
+        "confidence": 0.98
+      },
+      {
+        "mention": "the chair",
+        "panel_id": "P2",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.68,
+        "y_norm": 0.55,
+        "confidence": 0.97
+      },
+      {
+        "mention": "the dining table",
+        "panel_id": "P1",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.68,
+        "y_norm": 0.45,
+        "confidence": 0.96
+      }
+    ]
+  },
+  "parsed_json": {
+    "referents": [
+      {
+        "mention": "the person",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.222578125,
+        "y_norm": 0.37,
+        "confidence": 0.98,
+        "raw_x_norm": 0.11,
+        "raw_y_norm": 0.37,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "the chair",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.45357500000000006,
+        "y_norm": 0.5196000000000001,
+        "confidence": 0.97,
+        "raw_x_norm": 0.68,
+        "raw_y_norm": 0.55,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "the dining table",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.45987500000000003,
+        "y_norm": 0.42679999999999996,
+        "confidence": 0.96,
+        "raw_x_norm": 0.68,
+        "raw_y_norm": 0.45,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      }
+    ]
+  },
+  "parse_ok": true
+}

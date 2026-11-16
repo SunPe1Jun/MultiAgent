@@ -1,0 +1,14 @@
+{
+  "responses": {
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene1_495.json": "1a9d31e62f99b30965388f3274ec3f26bc46d4bb0db54471c3ea32365a8c9f5b",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene2_369.json": "7cdb2d15bc04c14e2ba210d4e9392dc843e2aa27230eb965907e627e4bbcffa8",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene2_412.json": "4c691a337b676cb95f7e3cb8441be7b3a7e85983594e03c8879ffb77f067be93",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene2_482.json": "e036b4bb139314c568de89164f88dcc2985caabff66fd9c5de3945df8eeb387a",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene3_161.json": "2c9baaf4097537eb18e595ee86e5e25cc0b0d31e2fdcf4d8f4d0ac7d2fa5d638",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene4_room1_1.json": "a01902710e72937263f140733b87902e09e88434ed0dfd2faa532eb34b951bf1",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene4_room2_19.json": "f803501e9c1369084d066e3f12b76b3320a3aabb6be8147ed407545a14c5e40a",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene4_room3_108.json": "5357619cb3d7a641cd0d919a6c7895ffb862d6cb37fc1c33efdbc40745b25072",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene4_room4_72.json": "61b7c1716260830eb83672d29afa179156bcf3bdd474e489e965a97f15386408",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27/responses/scene5_226.json": "b9ab9187c87110d7efc91ad1c067f24ba461b663f6e031fc5788d02c16a1f1d6"
+  }
+}

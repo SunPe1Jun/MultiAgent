@@ -1,0 +1,55 @@
+{
+  "calls_verified": 10,
+  "calls": [
+    {
+      "event": "scene1_495",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene2_369",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene2_412",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene2_482",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene3_161",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room1_1",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room2_19",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room3_108",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room4_72",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene5_226",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    }
+  ]
+}

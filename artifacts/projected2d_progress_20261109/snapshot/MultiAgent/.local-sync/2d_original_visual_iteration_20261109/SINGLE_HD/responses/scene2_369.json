@@ -1,0 +1,169 @@
+{
+  "event": "scene2_369",
+  "fingerprint": "1ba73c25b0541cd07821a23cb99f49bc331abc969f174be9e3d68ec14fdc126b",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"colleague\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.14,\n      \"y_norm\": 0.42,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"laptop\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.11,\n      \"y_norm\": 0.72,\n      \"confidence\": 0.98\n    },\n    {\n      \"mention\": \"printer\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.27,\n      \"y_norm\": 0.53,\n      \"confidence\": 0.97\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "colleague",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.14,
+        "y_norm": 0.42,
+        "confidence": 0.95
+      },
+      {
+        "mention": "laptop",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.11,
+        "y_norm": 0.72,
+        "confidence": 0.98
+      },
+      {
+        "mention": "printer",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.27,
+        "y_norm": 0.53,
+        "confidence": 0.97
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "colleague",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.14,
+        "y_norm": 0.42,
+        "confidence": 0.95
+      },
+      {
+        "mention": "laptop",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.11,
+        "y_norm": 0.72,
+        "confidence": 0.98
+      },
+      {
+        "mention": "printer",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.27,
+        "y_norm": 0.53,
+        "confidence": 0.97
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD/responses/scene2_369.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "0a5b090a078ab173c96d59e899e2fa6ca7d0350536731c3a5daf575375119de1",
+        "bytes": 34384
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "61f760de57c09dd183580b13eb39e66516adb5c3747ddda48c3f5ef1a7399627",
+        "bytes": 34384
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "f0274f3bfdec1f90ecfe406eda68ca860ddf7d9cfb34cdc73f55dacae815e9ba",
+        "bytes": 34384
+      },
+      "pixel_values": {
+        "shape": [
+          14700,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "0f72b111abf5f020b1aaaf88fb1f4a9abdf48be3e4ea41f4a1220ae948ab5eac",
+        "bytes": 90316800
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD/responses/scene2_369.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14700,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "d37aa2421948525a3eab8e76073e62c44ce23a9c8f641216dfb9064c0324b781",
+          "bytes": 45158400
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD/responses/scene2_369.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD/responses/scene2_369.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD/responses/scene2_369.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14700,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "d37aa2421948525a3eab8e76073e62c44ce23a9c8f641216dfb9064c0324b781",
+      "bytes": 45158400
+    }
+  },
+  "elapsed_seconds": 6.454272981965914,
+  "generated_tokens": 196
+}

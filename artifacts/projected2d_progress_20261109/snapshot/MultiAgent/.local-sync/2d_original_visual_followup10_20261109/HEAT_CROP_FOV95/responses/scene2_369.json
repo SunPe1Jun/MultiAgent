@@ -1,0 +1,181 @@
+{
+  "event": "scene2_369",
+  "fingerprint": "04d5756c01bc607271dc980fb9717bd7ebb0e1239c611a541eb6663270d09f87",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"colleague\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.22,\n      \"y_norm\": 0.43,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"laptop\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.08,\n      \"y_norm\": 0.67,\n      \"confidence\": 0.92\n    },\n    {\n      \"mention\": \"printer\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.13,\n      \"y_norm\": 0.58,\n      \"confidence\": 0.90\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "colleague",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.22,
+        "y_norm": 0.43,
+        "confidence": 0.95
+      },
+      {
+        "mention": "laptop",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.08,
+        "y_norm": 0.67,
+        "confidence": 0.92
+      },
+      {
+        "mention": "printer",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.13,
+        "y_norm": 0.58,
+        "confidence": 0.9
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "colleague",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.44515625,
+        "y_norm": 0.43,
+        "confidence": 0.95,
+        "raw_x_norm": 0.22,
+        "raw_y_norm": 0.43,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "laptop",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.161875,
+        "y_norm": 0.67,
+        "confidence": 0.92,
+        "raw_x_norm": 0.08,
+        "raw_y_norm": 0.67,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "printer",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.263046875,
+        "y_norm": 0.58,
+        "confidence": 0.9,
+        "raw_x_norm": 0.13,
+        "raw_y_norm": 0.58,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95/responses/scene2_369.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "f66aff33ca3f284662aa47586ec407f1f4aeb008b405bc3f3db0db4fdc80a29c",
+        "bytes": 34384
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "61f760de57c09dd183580b13eb39e66516adb5c3747ddda48c3f5ef1a7399627",
+        "bytes": 34384
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "af048a466f3ade7c87f900d9219b30413747e8c35fafe93fc060627aee55f1ce",
+        "bytes": 34384
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "555ee14d89993a943bb40688edc0dc5271f213dc2b17b41f3e57567f3acd6b05",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95/responses/scene2_369.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "7f250afbc0ea79747be1ee596a3a5a68e7b8f70130461d014282acd18a1f3323",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95/responses/scene2_369.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95/responses/scene2_369.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95/responses/scene2_369.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "7f250afbc0ea79747be1ee596a3a5a68e7b8f70130461d014282acd18a1f3323",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 9.061897714156657,
+  "generated_tokens": 196
+}

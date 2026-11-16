@@ -1,0 +1,406 @@
+{
+  "date": "2026-11-09",
+  "audit_kind": "released_predictions_replay_and_protocol_comparison",
+  "new_model_inference_calls": 0,
+  "original_qwen8_all4000": {
+    "events": 4000,
+    "time": {
+      "tp": 6347,
+      "fp": 2147,
+      "fn": 2172,
+      "f1": 0.7461353082936578
+    },
+    "point_50": {
+      "tp": 794,
+      "fp": 7700,
+      "fn": 7725,
+      "f1": 0.09334038676306354,
+      "evaluable_events": 3964,
+      "exact_events": 126
+    },
+    "point_100": {
+      "tp": 1999,
+      "fp": 6495,
+      "fn": 6520,
+      "f1": 0.23499676717804033,
+      "evaluable_events": 3964,
+      "exact_events": 360
+    },
+    "point_150": {
+      "tp": 2925,
+      "fp": 5569,
+      "fn": 5594,
+      "f1": 0.34385469934755775,
+      "evaluable_events": 3964,
+      "exact_events": 548
+    },
+    "point_200": {
+      "tp": 3602,
+      "fp": 4892,
+      "fn": 4917,
+      "f1": 0.423440898136719,
+      "evaluable_events": 3964,
+      "exact_events": 699
+    },
+    "joint_50": {
+      "tp": 674,
+      "fp": 7820,
+      "fn": 7845,
+      "f1": 0.07923352730265092,
+      "evaluable_events": 3964,
+      "exact_events": 99
+    },
+    "joint_100": {
+      "tp": 1712,
+      "fp": 6782,
+      "fn": 6807,
+      "f1": 0.20125786163522014,
+      "evaluable_events": 3964,
+      "exact_events": 281
+    },
+    "joint_150": {
+      "tp": 2535,
+      "fp": 5959,
+      "fn": 5984,
+      "f1": 0.29800740610121673,
+      "evaluable_events": 3964,
+      "exact_events": 423
+    },
+    "joint_200": {
+      "tp": 3121,
+      "fp": 5373,
+      "fn": 5398,
+      "f1": 0.3668959031328984,
+      "evaluable_events": 3964,
+      "exact_events": 519
+    }
+  },
+  "original_qwen8_same_subset": {
+    "events": 32,
+    "time": {
+      "tp": 51,
+      "fp": 15,
+      "fn": 15,
+      "f1": 0.7727272727272727
+    },
+    "point_50": {
+      "tp": 4,
+      "fp": 62,
+      "fn": 62,
+      "f1": 0.06060606060606061,
+      "evaluable_events": 30,
+      "exact_events": 1
+    },
+    "point_100": {
+      "tp": 14,
+      "fp": 52,
+      "fn": 52,
+      "f1": 0.21212121212121213,
+      "evaluable_events": 30,
+      "exact_events": 5
+    },
+    "point_150": {
+      "tp": 21,
+      "fp": 45,
+      "fn": 45,
+      "f1": 0.3181818181818182,
+      "evaluable_events": 30,
+      "exact_events": 7
+    },
+    "point_200": {
+      "tp": 23,
+      "fp": 43,
+      "fn": 43,
+      "f1": 0.3484848484848485,
+      "evaluable_events": 30,
+      "exact_events": 7
+    },
+    "joint_50": {
+      "tp": 4,
+      "fp": 62,
+      "fn": 62,
+      "f1": 0.06060606060606061,
+      "evaluable_events": 30,
+      "exact_events": 1
+    },
+    "joint_100": {
+      "tp": 13,
+      "fp": 53,
+      "fn": 53,
+      "f1": 0.19696969696969696,
+      "evaluable_events": 30,
+      "exact_events": 5
+    },
+    "joint_150": {
+      "tp": 20,
+      "fp": 46,
+      "fn": 46,
+      "f1": 0.30303030303030304,
+      "evaluable_events": 30,
+      "exact_events": 7
+    },
+    "joint_200": {
+      "tp": 22,
+      "fp": 44,
+      "fn": 44,
+      "f1": 0.3333333333333333,
+      "evaluable_events": 30,
+      "exact_events": 7
+    }
+  },
+  "changed_protocol_FULL_RGB_same_subset": {
+    "events": 32,
+    "time": {
+      "tp": 34,
+      "fp": 27,
+      "fn": 32,
+      "f1": 0.5354330708661418
+    },
+    "point_50": {
+      "tp": 0,
+      "fp": 61,
+      "fn": 66,
+      "f1": 0.0,
+      "evaluable_events": 30,
+      "exact_events": 0
+    },
+    "point_100": {
+      "tp": 5,
+      "fp": 56,
+      "fn": 61,
+      "f1": 0.07874015748031496,
+      "evaluable_events": 30,
+      "exact_events": 0
+    },
+    "point_150": {
+      "tp": 10,
+      "fp": 51,
+      "fn": 56,
+      "f1": 0.15748031496062992,
+      "evaluable_events": 30,
+      "exact_events": 2
+    },
+    "point_200": {
+      "tp": 13,
+      "fp": 48,
+      "fn": 53,
+      "f1": 0.2047244094488189,
+      "evaluable_events": 30,
+      "exact_events": 2
+    },
+    "joint_50": {
+      "tp": 0,
+      "fp": 61,
+      "fn": 66,
+      "f1": 0.0,
+      "evaluable_events": 30,
+      "exact_events": 0
+    },
+    "joint_100": {
+      "tp": 4,
+      "fp": 57,
+      "fn": 62,
+      "f1": 0.06299212598425197,
+      "evaluable_events": 30,
+      "exact_events": 0
+    },
+    "joint_150": {
+      "tp": 5,
+      "fp": 56,
+      "fn": 61,
+      "f1": 0.07874015748031496,
+      "evaluable_events": 30,
+      "exact_events": 0
+    },
+    "joint_200": {
+      "tp": 7,
+      "fp": 54,
+      "fn": 59,
+      "f1": 0.11023622047244094,
+      "evaluable_events": 30,
+      "exact_events": 0
+    }
+  },
+  "same_subset_replay": {
+    "events": 32,
+    "metric_counts_per_event": 27,
+    "compared_metric_counts": 864,
+    "mismatch_count": 0,
+    "mismatches": [],
+    "released_prediction_limitation": "Original mention labels are omitted; replay uses released source-normalized panel points."
+  },
+  "evaluation": {
+    "coordinate_mode": "panel",
+    "threshold_units": "original source-frame pixels",
+    "source_sizes": [
+      [
+        1920,
+        1920
+      ]
+    ],
+    "evaluator_sha256": "eedfb65591a89cd725bfbf2c84813ec4946aca9ecc4658f779d8701c32a29725",
+    "identical_to_released_evaluator_copy": true
+  },
+  "protocol_changes": {
+    "original": {
+      "input": "3 chronological full RGB + current-gaze crop paired images",
+      "full_view_size": [
+        768,
+        768
+      ],
+      "crop_source_size": [
+        672,
+        672
+      ],
+      "crop_output_size": [
+        768,
+        768
+      ],
+      "paired_image_size": [
+        1554,
+        768
+      ],
+      "prompt_mode": "expected_count",
+      "target_unit": "one selected panel point per physical referent",
+      "coordinates": "full_panel or gaze_crop normalized 0..1; original paired_canvas_map",
+      "part_target": "best visible point on indicated part/area",
+      "precision": "BF16, no quantization",
+      "max_new_tokens": 768
+    },
+    "changed": {
+      "input": "3 chronological four-area composites; FULL_RGB repeats full frame four times",
+      "source_downsample_before_crop": [
+        512,
+        512
+      ],
+      "composite_size": [
+        1024,
+        1080
+      ],
+      "crop_source_size_at_downsampled_scale": [
+        205,
+        205
+      ],
+      "prompt_mode": "frozen parsed mentions + soft instruction-phase hints; no original expected_count",
+      "target_unit": "one output row per mention; optional one or more target points",
+      "coordinates": "entire composite xy on 0..1000 scale; new script inversion",
+      "part_target": "locate indicated whole parent",
+      "precision": "BF16, no quantization",
+      "max_new_tokens": 1536
+    },
+    "annotated_physical_referents": 69,
+    "valid_evaluation_referents": 66,
+    "parsed_mention_rows": 77,
+    "events_with_different_task_count": 8,
+    "task_count_differences": [
+      {
+        "scene": "scene1",
+        "row_index": 647,
+        "original_expected_count": 1,
+        "changed_mention_count": 4,
+        "parser_valid": true,
+        "instruction": "Drive that forklift into that forklift, align it with that truck."
+      },
+      {
+        "scene": "scene4_room2",
+        "row_index": 19,
+        "original_expected_count": 2,
+        "changed_mention_count": 3,
+        "parser_valid": true,
+        "instruction": "Pick up the spray bottle and set it near the basin."
+      },
+      {
+        "scene": "scene4_room4",
+        "row_index": 176,
+        "original_expected_count": 3,
+        "changed_mention_count": 4,
+        "parser_valid": true,
+        "instruction": "Pick up a pillow from the bed and place it near the window lamp."
+      },
+      {
+        "scene": "scene4_room4",
+        "row_index": 182,
+        "original_expected_count": 2,
+        "changed_mention_count": 3,
+        "parser_valid": true,
+        "instruction": "Move the bench slightly toward the window and inspect its right side."
+      },
+      {
+        "scene": "scene4_room4",
+        "row_index": 194,
+        "original_expected_count": 1,
+        "changed_mention_count": 0,
+        "parser_valid": false,
+        "instruction": "Move the bench toward the dining table, inspect the area beneath it, and shift it slightly back."
+      },
+      {
+        "scene": "scene5",
+        "row_index": 226,
+        "original_expected_count": 1,
+        "changed_mention_count": 2,
+        "parser_valid": true,
+        "instruction": "Let this drone detect activity around the tank cluster."
+      },
+      {
+        "scene": "scene5",
+        "row_index": 664,
+        "original_expected_count": 2,
+        "changed_mention_count": 3,
+        "parser_valid": true,
+        "instruction": "Let this drone to protect the area behind the crates."
+      },
+      {
+        "scene": "scene5",
+        "row_index": 712,
+        "original_expected_count": 2,
+        "changed_mention_count": 3,
+        "parser_valid": true,
+        "instruction": "Deploy this drone to remove clutter near the coastal bend."
+      }
+    ],
+    "parser_failed_events": 1
+  },
+  "panel_prediction_counts": {
+    "original": {
+      "P1": 13,
+      "P2": 20,
+      "P3": 33
+    },
+    "changed_FULL_RGB": {
+      "P1": 56,
+      "P2": 1,
+      "P3": 4
+    }
+  },
+  "interpretation": {
+    "FULL_RGB_is_original_baseline": false,
+    "subset_change_explains_main_drop": false,
+    "evaluator_change_explains_main_drop": false,
+    "individual_causal_contributions_identified": false,
+    "claim_supported": "The original baseline was not preserved; multiple protocol changes were confounded.",
+    "heatmap_effect_on_original_baseline_identified": false
+  },
+  "source_sha256": {
+    "/ai/data/TriModal-Referring/paper_experiment_evidence/predictions/exp2/qwen3_vl_8b.csv": "3be988288b9bd5134151d38f7f1a58dc4ecfd82b460cfa828f127fc77ed7c339",
+    "/ai/data/MultiAgent/.local-sync/projected2d_routed_composite_v2_20261109/rebuilt_manifest_all.csv": "8adce85a3d01d6c582356b94ae16202a959e83bae4e67d9c5aada20c857347f2",
+    "/ai/data/MultiAgent/.local-sync/projected2d_routed_composite_v2_20261109/predictions_frozen.json": "d3afdc9a4f3cc56d01eb85b9b506c93983cef55be560945962fa9499b72d177d",
+    "/ai/data/TriModal-Referring/exam2/evaluate_2d_point_grounding.py": "eedfb65591a89cd725bfbf2c84813ec4946aca9ecc4658f779d8701c32a29725",
+    "/ai/data/MultiAgent/.local-sync/projected2d_routed_composite_v2_20261109/input_manifest.json": "b225237e269598a92de867a9cd096762ef14be4ae7f2e77ad86687fd4995f97b",
+    "/ai/data/MultiAgent/.local-sync/projected2d_routed_composite_v2_20261109/summary.json": "15ed2c3d42ea50b457b28f167cd20562e0d7f3ca612bde95c6d9fc398cb2ae35",
+    "/ai/data/TriModal-Referring/exam2/run_qwen3vl_2d_point_grounding.py": "515a3d0db53cc28880eb021e11a27f7ffc2324097bdcdab912a6828a7c8cacc1",
+    "/ai/data/TriModal-Referring/paper_experiment_evidence/prompts_and_configs/exp2_qwen8_final.sh": "83f1c7129a6cd068d04b4d10b3679bafebeb788b5f96ac79a805d981cac3c0b4",
+    "/ai/data/MultiAgent/MultiAgent/projected2d_routed_rgb.py": "7d29e4c63a104f8f7092cdaaccffa1a47ced0893670ed8a0ef8b75b333d1261c",
+    "/ai/data/MultiAgent/MultiAgent/projected2d_routed_composite.py": "f6ddfe39d1e917c1a0306062ea2b14283590782e813283df6f6120f8388133f4"
+  },
+  "score_differences_pp": {
+    "point_100": {
+      "subset_minus_full_original": -2.2875555056828203,
+      "changed_minus_original_same_subset": -13.338105464089717
+    },
+    "joint_100": {
+      "subset_minus_full_original": -0.42881646655231753,
+      "changed_minus_original_same_subset": -13.3977570985445
+    }
+  },
+  "protected_sources_unchanged": true
+}

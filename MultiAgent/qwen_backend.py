@@ -13,6 +13,16 @@ from pathlib import Path
 from .baseline import WORKSPACE_ROOT, module
 
 
+def _image_content_with_captions(images, captions=None):
+    """Attach frame identities as text without drawing over RGB pixels."""
+    if captions is None:
+        return list(images)
+    if len(captions) != len(images) or any(not isinstance(c, str) or not c.strip() for c in captions):
+        raise ValueError('Provide one nonempty text caption per image')
+    return [part for caption, image in zip(captions, images)
+            for part in ({'type': 'text', 'text': caption}, image)]
+
+
 class QwenBackend:
     def __init__(self, cache_dir, model=str(WORKSPACE_ROOT / 'Qwen3-VL-30B-A3B-Instruct'),
                  *, base_url=None, api_key=None, timeout=180, namespace='remote8b_20261021',
@@ -94,6 +104,7 @@ class QwenBackend:
             'system_prompt': system,
             'prompt': prompt,
             'processor_contract': 'qwen3vl_video_v2_no_resample_timestamp_ticks',
+            'video_rope_compat_contract': 'qwen3vl_timestamp_video_rope_grid_split_v1',
             'video_processor_size': {'shortest_edge': 4096,
                                      'longest_edge': max_pixels},
             'transformers_version': transformers.__version__,
@@ -125,6 +136,8 @@ class QwenBackend:
             self.load()
             load_seconds = time.monotonic() - load_started
             runner = self.runner
+            from .qwen_video_compat import ensure_timestamp_video_rope
+            video_rope_compatibility = ensure_timestamp_video_rope(runner.model)
             messages = [{'role': 'system', 'content': [{'type': 'text', 'text': system}]},
                         {'role': 'user', 'content': [
                             {'type': 'video'}, {'type': 'text', 'text': prompt}]}]
@@ -182,6 +195,7 @@ class QwenBackend:
                     'qwen_template_timestamp_label': f'{group_time - time_origin:.1f} seconds',
                 })
             processor_audit = {
+                'video_rope_compatibility': video_rope_compatibility,
                 'input_frame_count': len(images),
                 'input_frame_ids': [row.get('frame_id') for row in frame_metadata],
                 'input_source_frame_ids': [row.get('source_frame_id') for row in frame_metadata],
@@ -297,9 +311,12 @@ class QwenBackend:
             for image in images:
                 image.close()
 
-    def ask(self, key, stage, prompt, image_paths=(), *, max_new_tokens=2048):
+    def ask(self, key, stage, prompt, image_paths=(), *, max_new_tokens=2048, image_captions=None):
+        if image_captions is not None:
+            _image_content_with_captions([None] * len(image_paths), image_captions)
         if self.base_url:
-            return self._ask_remote(key, stage, prompt, image_paths, max_new_tokens=max_new_tokens)
+            return self._ask_remote(key, stage, prompt, image_paths,
+                                    max_new_tokens=max_new_tokens, image_captions=image_captions)
         from PIL import Image
         image_records = []
         for filename in image_paths:
@@ -314,6 +331,8 @@ class QwenBackend:
                    'image_paths': [str(p) for p in image_paths], 'images': image_records,
                    'image_sha256': images_hash,
                    'max_new_tokens': max_new_tokens, 'do_sample': False}
+        if image_captions is not None:
+            request['image_captions'] = list(image_captions)
         if self.trace_visual_inputs:
             request['visual_tensor_trace_contract'] = 'processor_and_vision_forward_v1'
         digest = hashlib.sha256(json.dumps(request, sort_keys=True).encode()).hexdigest()[:16]
@@ -336,19 +355,20 @@ class QwenBackend:
             parsed = self._parse_response(failed.get('response', ''))
             if parsed is not None:
                 if parsed.get('_parse_warning') and max_new_tokens == 2048:
-                    return self.ask(key, stage, prompt, image_paths, max_new_tokens=8192)
+                    return self.ask(key, stage, prompt, image_paths, max_new_tokens=8192, image_captions=image_captions)
                 path.parent.mkdir(parents=True, exist_ok=True)
                 path.write_text(json.dumps({**failed, 'parsed': parsed,
                                             'parse_repaired_from_failed': True},
                                            ensure_ascii=False, indent=2))
                 return parsed
             if max_new_tokens == 2048:
-                return self.ask(key, stage, prompt, image_paths, max_new_tokens=8192)
+                return self.ask(key, stage, prompt, image_paths, max_new_tokens=8192, image_captions=image_captions)
         started = time.monotonic()
         path.with_suffix('.request.json').write_text(json.dumps(request, ensure_ascii=False, indent=2))
         self.load()
         r = self.runner
-        content = [{'type': 'image'} for _ in image_paths] + [{'type': 'text', 'text': prompt}]
+        content = _image_content_with_captions(
+            [{'type': 'image'} for _ in image_paths], image_captions) + [{'type': 'text', 'text': prompt}]
         messages = [{'role': 'system', 'content': 'Return only valid compact JSON. Base claims on the supplied evidence; mark missing evidence explicitly.'},
                     {'role': 'user', 'content': content}]
         text = r.processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
@@ -423,7 +443,7 @@ class QwenBackend:
                 'image_count': len(image_paths), 'image_sha256': images_hash,
                 'elapsed_seconds': elapsed, 'error': 'JSON parse failure'})
             if max_new_tokens == 2048:
-                return self.ask(key, stage, prompt, image_paths, max_new_tokens=8192)
+                return self.ask(key, stage, prompt, image_paths, max_new_tokens=8192, image_captions=image_captions)
             raise
         path.parent.mkdir(parents=True, exist_ok=True)
         elapsed = time.monotonic() - started
@@ -448,7 +468,7 @@ class QwenBackend:
             raise ValueError('Requested model absent from remote /models')
         return payload
 
-    def _ask_remote(self, key, stage, prompt, image_paths, *, max_new_tokens):
+    def _ask_remote(self, key, stage, prompt, image_paths, *, max_new_tokens, image_captions=None):
         from PIL import Image
         images, image_records = [], []
         for filename in image_paths:
@@ -467,12 +487,14 @@ class QwenBackend:
         system = 'Return only valid compact JSON. Base claims on the supplied evidence; mark missing evidence explicitly.'
         payload = {'model': self.model_path, 'messages': [
             {'role': 'system', 'content': system},
-            {'role': 'user', 'content': images + [{'type': 'text', 'text': prompt}]}],
+            {'role': 'user', 'content': _image_content_with_captions(images, image_captions) + [{'type': 'text', 'text': prompt}]}],
             'temperature': 0, 'max_tokens': max_new_tokens, 'seed': 20261021}
         config = {'backend': 'openai_compatible_http', 'base_url': self.base_url,
                   'model': self.model_path, 'namespace': self.namespace,
                   'temperature': 0, 'seed': 20261021, 'max_tokens': max_new_tokens,
                   'system_prompt': system, 'prompt': prompt, 'images': image_records}
+        if image_captions is not None:
+            config['image_captions'] = list(image_captions)
         digest = hashlib.sha256(json.dumps(config, sort_keys=True).encode()).hexdigest()
         path = self.cache / self.namespace / key / f'{stage}_{digest[:20]}.json'
         path.parent.mkdir(parents=True, exist_ok=True)

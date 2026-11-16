@@ -1,0 +1,1132 @@
+{
+  "HEAT_CROP": [
+    {
+      "event": "scene1_495",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_369",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_412",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_482",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_161",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_1",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_19",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_108",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_72",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_226",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_198",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene1_647",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_521",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene3_304",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_405",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_593",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_51",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_98",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room2_1",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_30",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_91",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room3_59",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_114",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_159",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_176",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room4_182",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_194",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_664",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene5_712",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_743",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    }
+  ],
+  "FIXED_GAZE22": [
+    {
+      "event": "scene1_495",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_369",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_412",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_482",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_161",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_1",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room2_19",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_108",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_72",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_226",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_198",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene1_647",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_521",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene3_304",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_405",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_593",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_51",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_98",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room2_1",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_30",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_91",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room3_59",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_114",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_159",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_176",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room4_182",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_194",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_664",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene5_712",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_743",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    }
+  ],
+  "MIRRORED_HEAT_CROP": [
+    {
+      "event": "scene1_495",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_369",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_412",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_482",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_161",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_1",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room2_19",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_108",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_72",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_226",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_198",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene1_647",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_521",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene3_304",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_405",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_593",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_51",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_98",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room2_1",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_30",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_91",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room3_59",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_114",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_159",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_176",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room4_182",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_194",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene5_664",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene5_712",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_743",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    }
+  ],
+  "HEAT_CROP_FOV": [
+    {
+      "event": "scene1_495",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_369",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_412",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_482",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_161",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_1",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room2_19",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_108",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_72",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_226",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_198",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene1_647",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_521",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene3_304",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_405",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_593",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_51",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_98",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room2_1",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_30",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_91",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room3_59",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_114",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_159",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_176",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room4_182",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_194",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_664",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene5_712",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_743",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    }
+  ],
+  "FOV95": [
+    {
+      "event": "scene1_495",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_369",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_412",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_482",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_161",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_1",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_19",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_108",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_72",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_226",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene1_198",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene1_647",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene2_521",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene3_304",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_405",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene3_593",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room1_34",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_51",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room1_98",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room2_1",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_30",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room2_91",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room3_59",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_114",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room3_159",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_176",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene4_room4_182",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene4_room4_194",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_664",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    },
+    {
+      "event": "scene5_712",
+      "changed_input": true,
+      "same_image_hashes": false,
+      "same_prompt": false,
+      "same_raw_output": false
+    },
+    {
+      "event": "scene5_743",
+      "changed_input": false,
+      "same_image_hashes": true,
+      "same_prompt": true,
+      "same_raw_output": true
+    }
+  ]
+}

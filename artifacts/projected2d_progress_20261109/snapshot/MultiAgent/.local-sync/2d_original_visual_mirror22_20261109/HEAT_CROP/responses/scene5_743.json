@@ -1,0 +1,157 @@
+{
+  "event": "scene5_743",
+  "fingerprint": "6618cdab1212d2867143fb449fcfd65c52eb2b9e6805e570a4cc4437298ea4ba",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"drone\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.7375,\n      \"y_norm\": 0.3375,\n      \"confidence\": 0.98\n    },\n    {\n      \"mention\": \"inland road bend\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.55,\n      \"y_norm\": 0.65,\n      \"confidence\": 0.97\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "drone",
+        "panel_id": "P1",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.7375,
+        "y_norm": 0.3375,
+        "confidence": 0.98
+      },
+      {
+        "mention": "inland road bend",
+        "panel_id": "P2",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.55,
+        "y_norm": 0.65,
+        "confidence": 0.97
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "drone",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.5275966796875,
+        "y_norm": 0.324925,
+        "confidence": 0.98,
+        "raw_x_norm": 0.7375,
+        "raw_y_norm": 0.3375,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "inland road bend",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.41830859375000007,
+        "y_norm": 0.5176000000000001,
+        "confidence": 0.97,
+        "raw_x_norm": 0.55,
+        "raw_y_norm": 0.65,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene5_743.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4297
+        ],
+        "dtype": "torch.int64",
+        "sha256": "3dfc41555200bc9c77ec5449a938a384c62d7fcf874514de4b797bdade89ae30",
+        "bytes": 34376
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4297
+        ],
+        "dtype": "torch.int64",
+        "sha256": "003c770db880beb4890a0e00d96d2272d59c3a5f1ea1dc71d1e39e77a4008a5d",
+        "bytes": 34376
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4297
+        ],
+        "dtype": "torch.int64",
+        "sha256": "096e922fe62b140a146d6aac656e360be5a4a85c637e205722f20adfe96ea453",
+        "bytes": 34376
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "bc32e043e82b751313e6798c34b8677c6c86bf1456dc35a54d53f832cdbf703e",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene5_743.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "91658b2ced9c09c8fc7fe70ae02417803ca04695fb8843e4d6830405e6f89ef0",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene5_743.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene5_743.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene5_743.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "91658b2ced9c09c8fc7fe70ae02417803ca04695fb8843e4d6830405e6f89ef0",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 6.989286135183647,
+  "generated_tokens": 143
+}

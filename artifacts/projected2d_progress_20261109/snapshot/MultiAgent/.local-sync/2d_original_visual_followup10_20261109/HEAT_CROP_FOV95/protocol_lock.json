@@ -1,0 +1,17 @@
+{
+  "files": {
+    "/ai/data/MultiAgent/tools/iterate_original2d_visual.py": "e3e7d5cd1c4e473ae8c35a39b318096d6e5723606d1abb3d37544c6b31a094f9",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95/input_manifest.json": "9c12b1e01cfd63f2a8b0ef362a554541ee7766ee643441b85a8bd44335831d77",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95/manifest.csv": "974aaf282d1ee6a442a9a1607962c14bf76e7bc75bc2556cf2d267199a59dced",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95/image_audit.json": "2152dc9878d347e5fd25ccfe904b89df4c5ee78c8ac5780a87939851b9ff656b",
+    "/ai/data/TriModal-Referring/exam2/run_qwen3vl_2d_point_grounding.py": "515a3d0db53cc28880eb021e11a27f7ffc2324097bdcdab912a6828a7c8cacc1",
+    "/ai/data/TriModal-Referring/scripts/grounding/run_qwen3vl_local_keyframe_grounding.py": "7c887e1c91719a219a831fe02ca17862c6bcd0081bd198ab22c1aafb08f043d8",
+    "/ai/data/TriModal-Referring/exam2/evaluate_2d_point_grounding.py": "eedfb65591a89cd725bfbf2c84813ec4946aca9ecc4658f779d8701c32a29725",
+    "/ai/data/MultiAgent/MultiAgent/foveation_attention.py": "be002d03cb588f310f69809a7a12caa1b4ed5a11263a87ea6a9dd5d5407cc45f",
+    "/ai/data/MultiAgent/MultiAgent/visual_input_trace.py": "8d864baf2bcea402cb317a6b6e753e55945925f52ce978f145941b00a13462c8",
+    "/ai/data/Qwen3-VL-8B-Instruct/config.json": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "/ai/data/MultiAgent/tools/iterate_original2d_followup.py": "3986fe88ee3b816ac862ee1aba45322aae20af52a91d839b474e6e1dce3d9159",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95/followup_options.json": "6602a3fd4c9f9dcc14e2ddf4dbc0089c2759c7998bf00661d894b8957219fc7c",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/input_image_audit.json": "8a2316251d6db5965fe097fad4d2ab686c2e5b9085c86a1596680d3fc739183d"
+  }
+}

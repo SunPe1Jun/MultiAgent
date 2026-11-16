@@ -1,0 +1,91 @@
+{
+  "kind": "image",
+  "capture_scope": "processor tensors + real vision forward input",
+  "processor_tensors": {
+    "input_ids": {
+      "shape": [
+        1,
+        4293
+      ],
+      "dtype": "torch.int64",
+      "sha256": "7c2f2a1e6c8afb558722267b85fb6f240193941bbeb34cd08c9120ea9ca51227",
+      "bytes": 34344
+    },
+    "attention_mask": {
+      "shape": [
+        1,
+        4293
+      ],
+      "dtype": "torch.int64",
+      "sha256": "5cd4e9fc2c13826d3d223c9b3a698cb352d6e0f3af2f43164ecb36401b90d130",
+      "bytes": 34344
+    },
+    "mm_token_type_ids": {
+      "shape": [
+        1,
+        4293
+      ],
+      "dtype": "torch.int64",
+      "sha256": "ed1d529861a83a865ab77c85aab1eca67cb7b53e78b054608c2b5b102e4ddc29",
+      "bytes": 34344
+    },
+    "pixel_values": {
+      "shape": [
+        14700,
+        1536
+      ],
+      "dtype": "torch.float32",
+      "sha256": "993f90d6c5e8381570b7f83d502ae0b5ea33bd90d0fd14bea1033f9f8f2df73b",
+      "bytes": 90316800
+    },
+    "image_grid_thw": {
+      "shape": [
+        3,
+        3
+      ],
+      "dtype": "torch.int64",
+      "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+      "bytes": 72
+    }
+  },
+  "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene4_room1_1.tensor_trace/processor_inputs.pt",
+  "vision_forward_calls": [
+    {
+      "input": {
+        "shape": [
+          14700,
+          1536
+        ],
+        "dtype": "torch.bfloat16",
+        "sha256": "099446d804bcb110e95a18187fe1649e93dd93e21c8971e44cd24e370ad003f4",
+        "bytes": 45158400
+      },
+      "grid": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+        "bytes": 72
+      },
+      "input_matches_processor_after_dtype_cast": true,
+      "grid_matches_processor": true
+    }
+  ],
+  "restored_frame_paths": [
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene4_room1_1.tensor_trace/processor_rgb_00_000.png",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene4_room1_1.tensor_trace/processor_rgb_01_000.png",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene4_room1_1.tensor_trace/processor_rgb_02_000.png"
+  ],
+  "input_consumption_verified": true,
+  "expected_vision_tensor": {
+    "shape": [
+      14700,
+      1536
+    ],
+    "dtype": "torch.bfloat16",
+    "sha256": "099446d804bcb110e95a18187fe1649e93dd93e21c8971e44cd24e370ad003f4",
+    "bytes": 45158400
+  }
+}

@@ -1,0 +1,2018 @@
+{
+  "version": "referent_frame_choice_probe_v1",
+  "events": [
+    {
+      "id": "scene1_495",
+      "scene_key": "scene1",
+      "row_index": 495,
+      "event_id": "scene1_496",
+      "instruction": "Open the tailgate of this truck, unload this box.",
+      "mentions": [
+        {
+          "mention_id": "m1",
+          "text": "the tailgate of this truck",
+          "span": [
+            5,
+            31
+          ],
+          "object_type": "tailgate",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "tailgate",
+          "parent_text": "this truck",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m2",
+          "text": "this box",
+          "span": [
+            40,
+            48
+          ],
+          "object_type": "box",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m1": {
+          "soft_phase_range": [
+            1.247022,
+            5.824001375
+          ],
+          "soft_phase_panels": [
+            "P1"
+          ]
+        },
+        "m2": {
+          "soft_phase_range": [
+            3.9932096249999995,
+            8.570189
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_495/P1.jpg",
+          "source_sha256": "7b0097c8dd740201825580ba4b46a7bcba77bf086a4f13f828d994b7a72f1dc4",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 5.252,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene1_495/P1/MAIN_RGB_512.png",
+              "sha256": "8be5fd3e279d459458342bd004d740ff16fe70f35de10e576c38d1c6bdc0f478",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene1_495/P1/MAIN_RGB_768.png",
+              "sha256": "0cc50898a53fa4790296ee026828b882e6d885cd65e9822e57279dfe0a38f30a",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_495/P2.jpg",
+          "source_sha256": "7815ee8725db9ffdcf28433046e8dae0800384ccd90d924039663fbb632dd9ea",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 6.244,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene1_495/P2/MAIN_RGB_512.png",
+              "sha256": "be09e82082dd3e9d1f38c6dc4e81b497a3f82b5513f6efad812384bed3648d4b",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene1_495/P2/MAIN_RGB_768.png",
+              "sha256": "707df2f62ec44d05457a4d3d44626cd04137a24628c05c086278433d2c749eb5",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_495/P3.jpg",
+          "source_sha256": "7d7be47684fe06d8f1925fa5458586938c642939b299189b1c2e630e5b3ccae4",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 7.244,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene1_495/P3/MAIN_RGB_512.png",
+              "sha256": "33de9b256adc0d6b6260df07fbbf9e4d633ba92bd22c8b77680f44a4660e3c5f",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene1_495/P3/MAIN_RGB_768.png",
+              "sha256": "9621224b5c52b30f3bab20d09d96a4734d9e66426aaca8735a2503b53a112338",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m1": {
+          "action_context": "Open the tailgate of this truck,",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m2": {
+          "action_context": "unload this box.",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    },
+    {
+      "id": "scene2_369",
+      "scene_key": "scene2",
+      "row_index": 369,
+      "event_id": "scene2_370",
+      "instruction": "Ask that colleague to carry that laptop next to the printer.",
+      "mentions": [
+        {
+          "mention_id": "m0",
+          "text": "that colleague",
+          "span": [
+            4,
+            18
+          ],
+          "object_type": "colleague",
+          "kind": "object",
+          "role": "actor",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m1",
+          "text": "that laptop",
+          "span": [
+            28,
+            39
+          ],
+          "object_type": "laptop",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m2",
+          "text": "the printer",
+          "span": [
+            48,
+            59
+          ],
+          "object_type": "printer",
+          "kind": "object",
+          "role": "anchor",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r2",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": "next to"
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m0": {
+          "soft_phase_range": [
+            1.7493,
+            9.332578
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m1": {
+          "soft_phase_range": [
+            1.7493,
+            9.332578
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m2": {
+          "soft_phase_range": [
+            1.7493,
+            9.332578
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_369/P1.jpg",
+          "source_sha256": "9c53c7db0a1f9bfbf371acec961f45fcfede3fe01c2dbbe7a10ebfa915c9cc16",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 3.922,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_369/P1/MAIN_RGB_512.png",
+              "sha256": "b71ce40d754eed8ca88a23eb0b5d2eca67c444a32448cbf72e559dd84e1b85a2",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_369/P1/MAIN_RGB_768.png",
+              "sha256": "20ab2daae32975250429139909042bf11e01b7a6648b71a5599e63c15bddef67",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_369/P2.jpg",
+          "source_sha256": "945beefa5ab10e5b2ea60ab9260c5fc110cb375fd1f752dc74e248096cbaf65d",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 5.366,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_369/P2/MAIN_RGB_512.png",
+              "sha256": "3206d7b75f7a16fbc87601a92362726cad8d62814ee63debef44dd61b2549182",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_369/P2/MAIN_RGB_768.png",
+              "sha256": "239ba1387534bef8ec9aa45f356dbe05759088f9edbc698f3f717947715ded13",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_369/P3.jpg",
+          "source_sha256": "1e853bac339f83c3703e436f41f8512b734a6fed98079ffac1e40c844d601169",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 5.923,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_369/P3/MAIN_RGB_512.png",
+              "sha256": "737aaa894457bc761755820993179cf0f75c0ca1f87aef938c7f120280263331",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_369/P3/MAIN_RGB_768.png",
+              "sha256": "3837e2a0d9aa52419e6fecc65c2938bf6b1a8e4a226ea4ca0df5465b49e8b6dd",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m0": {
+          "action_context": "Ask that colleague to carry that laptop next to the printer.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m1": {
+          "action_context": "Ask that colleague to carry that laptop next to the printer.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m2": {
+          "action_context": "Ask that colleague to carry that laptop next to the printer.",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    },
+    {
+      "id": "scene2_412",
+      "scene_key": "scene2",
+      "row_index": 412,
+      "event_id": "scene2_413",
+      "instruction": "Place that chair near the spot, then move that file near there.",
+      "mentions": [
+        {
+          "mention_id": "m0",
+          "text": "that chair",
+          "span": [
+            6,
+            16
+          ],
+          "object_type": "chair",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m1",
+          "text": "the spot",
+          "span": [
+            22,
+            30
+          ],
+          "object_type": "spot",
+          "kind": "location",
+          "role": "destination",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m2",
+          "text": "that file",
+          "span": [
+            42,
+            51
+          ],
+          "object_type": "file",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r2",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m3",
+          "text": "there",
+          "span": [
+            57,
+            62
+          ],
+          "object_type": "spot",
+          "kind": "location",
+          "role": "destination",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r3",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m0": {
+          "soft_phase_range": [
+            0.0,
+            7.289180625
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m1": {
+          "soft_phase_range": [
+            0.0,
+            7.289180625
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m2": {
+          "soft_phase_range": [
+            4.373508375,
+            11.662689
+          ],
+          "soft_phase_panels": [
+            "P3"
+          ]
+        },
+        "m3": {
+          "soft_phase_range": [
+            4.373508375,
+            11.662689
+          ],
+          "soft_phase_panels": [
+            "P3"
+          ]
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_412/P1.jpg",
+          "source_sha256": "aeb761d947920aa22e49fba707c46d8cb7e37f42c1ad0d45ca48bae1c3d77ddc",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 2.66,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_412/P1/MAIN_RGB_512.png",
+              "sha256": "bbbe9a3f9cf6161937298609785c3186cf13e3c64cdd5fb2418bdd666cb7a921",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_412/P1/MAIN_RGB_768.png",
+              "sha256": "bad9c57377ba610d8dc19bcb95a599d211618553afd5a7d7ca107afa7eb6e21a",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_412/P2.jpg",
+          "source_sha256": "27373c63ce0c9dc93a564301d47cf55a5fc1796040e4f6943f5d39bcf2cadf4f",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 4.103,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_412/P2/MAIN_RGB_512.png",
+              "sha256": "4d573c5abbea362200a60774955c7987070a4f92996f6e5f1e4fdd8ae0dbc740",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_412/P2/MAIN_RGB_768.png",
+              "sha256": "9ed151631bb044151d268c80105ce0260c91a879acec3e420cd2559bee348fd3",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_412/P3.jpg",
+          "source_sha256": "4e41ec9422e69b814cf6e7bad90058eb934742b722b2ad3263240cd15d6b301d",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 7.106,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_412/P3/MAIN_RGB_512.png",
+              "sha256": "64c40a5a8f12c0c4426e70d5640f8c748b585d98e8e6102dce60a9157559be67",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_412/P3/MAIN_RGB_768.png",
+              "sha256": "cbcb0e9b7eeba81e3c075f6ba73738e2692c2904551bebcd364d55c6ae93b01c",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m0": {
+          "action_context": "Place that chair near the spot,",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m1": {
+          "action_context": "Place that chair near the spot,",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m2": {
+          "action_context": "move that file near there.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m3": {
+          "action_context": "move that file near there.",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    },
+    {
+      "id": "scene2_482",
+      "scene_key": "scene2",
+      "row_index": 482,
+      "event_id": "scene2_483",
+      "instruction": "Tell that colleague to push that chair to there, then open that drawer, then place that chair over there.",
+      "mentions": [
+        {
+          "mention_id": "m0",
+          "text": "that colleague",
+          "span": [
+            5,
+            19
+          ],
+          "object_type": "colleague",
+          "kind": "object",
+          "role": "actor",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m1",
+          "text": "that chair",
+          "span": [
+            28,
+            38
+          ],
+          "object_type": "chair",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": "push"
+        },
+        {
+          "mention_id": "m2",
+          "text": "there",
+          "span": [
+            42,
+            47
+          ],
+          "object_type": "location",
+          "kind": "location",
+          "role": "destination",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r2",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m3",
+          "text": "that drawer",
+          "span": [
+            59,
+            70
+          ],
+          "object_type": "drawer",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r3",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": "open"
+        },
+        {
+          "mention_id": "m4",
+          "text": "that chair",
+          "span": [
+            83,
+            93
+          ],
+          "object_type": "chair",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": "place"
+        },
+        {
+          "mention_id": "m5",
+          "text": "over there",
+          "span": [
+            94,
+            104
+          ],
+          "object_type": "location",
+          "kind": "location",
+          "role": "destination",
+          "count": 1,
+          "component": "",
+          "parent_text": "there",
+          "anchor_text": "there",
+          "coreference_id": "r2",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m0": {
+          "soft_phase_range": [
+            0.748833,
+            7.328620083333334
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m1": {
+          "soft_phase_range": [
+            0.748833,
+            7.328620083333334
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m2": {
+          "soft_phase_range": [
+            0.748833,
+            7.328620083333334
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m3": {
+          "soft_phase_range": [
+            4.69670525,
+            12.59244975
+          ],
+          "soft_phase_panels": [
+            "P2",
+            "P3"
+          ]
+        },
+        "m4": {
+          "soft_phase_range": [
+            9.960534916666667,
+            16.540322
+          ],
+          "soft_phase_panels": []
+        },
+        "m5": {
+          "soft_phase_range": [
+            9.960534916666667,
+            16.540322
+          ],
+          "soft_phase_panels": []
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_482/P1.jpg",
+          "source_sha256": "8ff47f58d4e594412074ab6373116e93bf2b21e3f651a14db8c031c747aea19a",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 3.517,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_482/P1/MAIN_RGB_512.png",
+              "sha256": "17818581eca5f79184c475e396bb3583a097e6dd51e65e1e81355e9ef4f4d76c",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_482/P1/MAIN_RGB_768.png",
+              "sha256": "26e7ee0c4a6d0379f1957825cb146c4b4537de3bd44c906a7b9a228d93f60169",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_482/P2.jpg",
+          "source_sha256": "5212a89c6275d1a083f9186be6c8bbd00940c2a514a4da0135f439624d8ead4f",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 4.962,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_482/P2/MAIN_RGB_512.png",
+              "sha256": "2e91be53b751d182baed4b84c0a7bdc58d8797059c7abf0bc980590cfca2c933",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_482/P2/MAIN_RGB_768.png",
+              "sha256": "4abd85f31cce08afe7907c69fee7a949c0d7a1d965270b2e0e4538b795d12c65",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_482/P3.jpg",
+          "source_sha256": "c7843e693fdd94db4008e21e35602242f82bebd499c2e258456294db697ced37",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 5.518,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_482/P3/MAIN_RGB_512.png",
+              "sha256": "09f88203ef3f0be12a51f066d58870a7a718b950aa417d6bba2c5c5f4b4cf35d",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene2_482/P3/MAIN_RGB_768.png",
+              "sha256": "f02215902447d0497679bda36986c18f646f9d8dd65951384c3c6bdc5b63268a",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m0": {
+          "action_context": "Tell that colleague to push that chair to there,",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m1": {
+          "action_context": "Tell that colleague to push that chair to there,",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m2": {
+          "action_context": "Tell that colleague to push that chair to there,",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m3": {
+          "action_context": "open that drawer,",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m4": {
+          "action_context": "place that chair over there.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m5": {
+          "action_context": "place that chair over there.",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    },
+    {
+      "id": "scene3_161",
+      "scene_key": "scene3",
+      "row_index": 161,
+      "event_id": "scene3_162",
+      "instruction": "Request that colleague to retreat that truck along the runway.",
+      "mentions": [
+        {
+          "mention_id": "m0",
+          "text": "that colleague",
+          "span": [
+            8,
+            22
+          ],
+          "object_type": "colleague",
+          "kind": "object",
+          "role": "actor",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m1",
+          "text": "that truck",
+          "span": [
+            34,
+            44
+          ],
+          "object_type": "truck",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": "retreat"
+        },
+        {
+          "mention_id": "m2",
+          "text": "the runway",
+          "span": [
+            51,
+            61
+          ],
+          "object_type": "runway",
+          "kind": "location",
+          "role": "destination",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r2",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m0": {
+          "soft_phase_range": [
+            1.248389,
+            7.748756
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m1": {
+          "soft_phase_range": [
+            1.248389,
+            7.748756
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m2": {
+          "soft_phase_range": [
+            1.248389,
+            7.748756
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_161/P1.jpg",
+          "source_sha256": "f5054843962d4c6e227a74074a646a28a4dfc80e425a7bec57f4cba9bd136166",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 2.934,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene3_161/P1/MAIN_RGB_512.png",
+              "sha256": "2efd5c749af3be9c5664adbbfdb0c4f20ba8b900cefd990b70856044ed4de11f",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene3_161/P1/MAIN_RGB_768.png",
+              "sha256": "2f359ccfccbf93be282a77bb07a3fd2ff76724a9222d8bf80c906b9f9e65743f",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_161/P2.jpg",
+          "source_sha256": "6b6a6a7c951df7802b7859b9c428a35dbb53d78e8d9919a0319c979fa5eea3a1",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 3.921,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene3_161/P2/MAIN_RGB_512.png",
+              "sha256": "2eabbf6d3af241b42cba15e80d21da398a67e9830ed29452e9cd559b961e4763",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene3_161/P2/MAIN_RGB_768.png",
+              "sha256": "715c2619cbbcbdcc4f9438dfd32f87a14102bab7bdd7dec76da9ce0bcb4e37e4",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_161/P3.jpg",
+          "source_sha256": "cf7e3f735c9efaf875f22b85f46c2795bb8e3a4ac3f270c2f9d0d5be72693abc",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 5.922,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene3_161/P3/MAIN_RGB_512.png",
+              "sha256": "b3bdcb8a2908f02b5650b2cab84b84977a68a710bbf5df7991ee70df77941ee2",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene3_161/P3/MAIN_RGB_768.png",
+              "sha256": "2168dac73365341ebe74ffae0f17c8dd43c17d8926b8eb7a0a896f19d6b3e9b2",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m0": {
+          "action_context": "Request that colleague to retreat that truck along the runway.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m1": {
+          "action_context": "Request that colleague to retreat that truck along the runway.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m2": {
+          "action_context": "Request that colleague to retreat that truck along the runway.",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    },
+    {
+      "id": "scene4_room1_1",
+      "scene_key": "scene4_room1",
+      "row_index": 1,
+      "event_id": "scene4_2",
+      "instruction": "Close the curtain beside the sofa.",
+      "mentions": [
+        {
+          "mention_id": "m0",
+          "text": "the curtain",
+          "span": [
+            6,
+            17
+          ],
+          "object_type": "curtain",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m1",
+          "text": "the sofa",
+          "span": [
+            25,
+            33
+          ],
+          "object_type": "sofa",
+          "kind": "object",
+          "role": "anchor",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": "beside"
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m0": {
+          "soft_phase_range": [
+            1.747789,
+            7.4142
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m1": {
+          "soft_phase_range": [
+            1.747789,
+            7.4142
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_1/P1.jpg",
+          "source_sha256": "9c4a33c8abb5a39e25554d8f08bc2cda68ffa6447372074a371ff5e004fb371b",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 4.402,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room1_1/P1/MAIN_RGB_512.png",
+              "sha256": "f1271c6fe578ce877feaa0fd035d0927e3c0efae5d305684e9dcded408292ef2",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room1_1/P1/MAIN_RGB_768.png",
+              "sha256": "c71117c82e5a531c987b080a1e92ecd541718d8cbdf27b24e1bdff0a4069eda6",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_1/P2.jpg",
+          "source_sha256": "63c0b741a897860428e9f9b9daa9efcf9f7ecdd79d998f17e8dbb4869a8352bb",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 5.409,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room1_1/P2/MAIN_RGB_512.png",
+              "sha256": "70b9e177231c97874efd3da7377e1071ff7c99b7450ee98e6916816dd521d57f",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room1_1/P2/MAIN_RGB_768.png",
+              "sha256": "70b7adfd4e7d112f0cb2137787584d3f184187712f6efe9846b0acd64122bd39",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_1/P3.jpg",
+          "source_sha256": "18de2213f23ebe454d253d010eb5fbce7d2321080f9fb025b31a13e33e158742",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 5.951,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room1_1/P3/MAIN_RGB_512.png",
+              "sha256": "56f7b4c8adac0161cfcd725a0091c1cd400de52f6997a0002c8f286739ae57dc",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room1_1/P3/MAIN_RGB_768.png",
+              "sha256": "c5262f836b7e6421ffbf738fbe5912274c513991f8157603cd44eab08c8d21ae",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m0": {
+          "action_context": "Close the curtain beside the sofa.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m1": {
+          "action_context": "Close the curtain beside the sofa.",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    },
+    {
+      "id": "scene4_room2_19",
+      "scene_key": "scene4_room2",
+      "row_index": 19,
+      "event_id": "scene4_20",
+      "instruction": "Pick up the spray bottle and set it near the basin.",
+      "mentions": [
+        {
+          "mention_id": "m0",
+          "text": "the spray bottle",
+          "span": [
+            8,
+            24
+          ],
+          "object_type": "bottle",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m1",
+          "text": "it",
+          "span": [
+            33,
+            35
+          ],
+          "object_type": "bottle",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "the spray bottle",
+          "coreference_id": "r0",
+          "parent_mention_id": "m0",
+          "coreference_note": "it -> the spray bottle",
+          "relation": ""
+        },
+        {
+          "mention_id": "m2",
+          "text": "the basin",
+          "span": [
+            41,
+            50
+          ],
+          "object_type": "basin",
+          "kind": "object",
+          "role": "destination",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": "near"
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m0": {
+          "soft_phase_range": [
+            1.749589,
+            7.664989
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m1": {
+          "soft_phase_range": [
+            1.749589,
+            7.664989
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m2": {
+          "soft_phase_range": [
+            1.749589,
+            7.664989
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_19/P1.jpg",
+          "source_sha256": "6b9d46e9e703a25e4ba99e6a270c89cc39cff4911b08440e1eaccbfdde8e1052",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 3.908,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room2_19/P1/MAIN_RGB_512.png",
+              "sha256": "1949db091408b4e289df4d4967093ad8ab88ca1cddccf16447250ee0e172d588",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room2_19/P1/MAIN_RGB_768.png",
+              "sha256": "703b1ede7482e3301f8ed9f2e27adeeb9b838d4e72d51c3437c937cde9b45816",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_19/P2.jpg",
+          "source_sha256": "7fa9237b967ec20c616526357bb814a2283c167262a6f1325d38bb389c71a866",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 4.464,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room2_19/P2/MAIN_RGB_512.png",
+              "sha256": "133ed5f534d1e7a7595ed18f5c3b1b7cd6a15273bf388977efacca9acffcc850",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room2_19/P2/MAIN_RGB_768.png",
+              "sha256": "f1e3f8f2f689ab517c18c1ade0a7587cab25d66b211c3df515f1b0e0b4595bdc",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_19/P3.jpg",
+          "source_sha256": "0005380ee9c9976fd23821851fc6e2eea8bfb1137ec0c8efb0c561d9849aa103",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 6.469,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room2_19/P3/MAIN_RGB_512.png",
+              "sha256": "d8fb5acfeeee4508de791cf040ffaac846c3f1d89094250cc8b38a86daa86f9a",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room2_19/P3/MAIN_RGB_768.png",
+              "sha256": "5c702b5666d405c0d63239409eb887d3b1c42bc270f9aa5c477c86ade916f92c",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m0": {
+          "action_context": "Pick up the spray bottle and set it near the basin.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m1": {
+          "action_context": "Pick up the spray bottle and set it near the basin.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m2": {
+          "action_context": "Pick up the spray bottle and set it near the basin.",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    },
+    {
+      "id": "scene4_room3_108",
+      "scene_key": "scene4_room3",
+      "row_index": 108,
+      "event_id": "scene4_109",
+      "instruction": "Move the cushion toward the right side of the sofa and tidy its position. ⭐",
+      "mentions": [
+        {
+          "mention_id": "m0",
+          "text": "the cushion",
+          "span": [
+            5,
+            16
+          ],
+          "object_type": "cushion",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m1",
+          "text": "the right side of the sofa",
+          "span": [
+            24,
+            50
+          ],
+          "object_type": "side",
+          "kind": "location",
+          "role": "destination",
+          "count": 1,
+          "component": "right side",
+          "parent_text": "the sofa",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m0": {
+          "soft_phase_range": [
+            1.997433,
+            8.498533
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m1": {
+          "soft_phase_range": [
+            1.997433,
+            8.498533
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_108/P1.jpg",
+          "source_sha256": "c588868061b8a005d8b3a72dc31f2a4defe1842c4f7e4ecf71aec1400014d039",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 3.936,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room3_108/P1/MAIN_RGB_512.png",
+              "sha256": "d74cfae4ca4aef10e989f8bc37845b007e69a0b16912d5d81e9e893831602ab1",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room3_108/P1/MAIN_RGB_768.png",
+              "sha256": "cb714963c6a6b3db02853a42fafbeb25ed01965730e2f2b92a092017bc865516",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_108/P2.jpg",
+          "source_sha256": "436f4e2ad5959eb8785b915fafaa385c393c0ff2a0f4913d93e203a544e4c3a4",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 4.938,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room3_108/P2/MAIN_RGB_512.png",
+              "sha256": "64df1443764c720c598f163d918273e67b33a661d121f20e12c832909d9934fc",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room3_108/P2/MAIN_RGB_768.png",
+              "sha256": "1f64af45d838914a01017b8d15eb249e4e6c6458da6941899abe00f4a96a1a41",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_108/P3.jpg",
+          "source_sha256": "9f9aded335eb291e630a741ce43e5896371c3a417ebbc9ae6275daaf21cbe54a",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 6.493,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room3_108/P3/MAIN_RGB_512.png",
+              "sha256": "8dfad37eb076f3407ca4aa5ac9155af7ba39b7f678e870c81be90ea9902bdbaf",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room3_108/P3/MAIN_RGB_768.png",
+              "sha256": "b29f17c1588755b317ccef07d82727e70c2bfc28cb717544954660143a34fec8",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m0": {
+          "action_context": "Move the cushion toward the right side of the sofa and tidy its position. ⭐",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m1": {
+          "action_context": "Move the cushion toward the right side of the sofa and tidy its position. ⭐",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    },
+    {
+      "id": "scene4_room4_72",
+      "scene_key": "scene4_room4",
+      "row_index": 72,
+      "event_id": "scene4_73",
+      "instruction": "Place the pillow near the blue sofa.",
+      "mentions": [
+        {
+          "mention_id": "m0",
+          "text": "the pillow",
+          "span": [
+            6,
+            16
+          ],
+          "object_type": "pillow",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m1",
+          "text": "the blue sofa",
+          "span": [
+            22,
+            35
+          ],
+          "object_type": "sofa",
+          "kind": "object",
+          "role": "destination",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": "near"
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m0": {
+          "soft_phase_range": [
+            0.5,
+            5.455989
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m1": {
+          "soft_phase_range": [
+            0.5,
+            5.455989
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_72/P1.jpg",
+          "source_sha256": "bebdb05d699ee2b70a5780c6b5821c91b8b28263f12d97005d3b002995577223",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 2.652,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room4_72/P1/MAIN_RGB_512.png",
+              "sha256": "f2c15ac5a7d7215eaab972b1c37e36fbdb31662ffac320cb23ca6c02a1991c25",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room4_72/P1/MAIN_RGB_768.png",
+              "sha256": "6190434740129f7ba1b4ab2c9b26a7daed7800c6ec8ff44958a20a89c77dfd40",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_72/P2.jpg",
+          "source_sha256": "83f150ab6035d1d45129d91fc10bca83433f8c5ba5f8ca6f762b86e60a75276b",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 4.096,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room4_72/P2/MAIN_RGB_512.png",
+              "sha256": "5275699a3bf4d8b2d477da3ce7fdd6d7a1ef628b3028e9d4d861fe0aecefc0ac",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room4_72/P2/MAIN_RGB_768.png",
+              "sha256": "4e017eac75af60f2ee2710a7d62912b581341a1e6b48508c3253fc252e96e9f5",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_72/P3.jpg",
+          "source_sha256": "d9c17e8268cb2b5e8c210b39043bdfaca41aac2d003826746a3bf4145163f2da",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 4.654,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room4_72/P3/MAIN_RGB_512.png",
+              "sha256": "db85da99f71fbda5bfd4433420f3c36297a19dc3a4ec0dc03eb7a64cb9f469c5",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene4_room4_72/P3/MAIN_RGB_768.png",
+              "sha256": "424fb99b3a07515419fbc23dda26dc0c71205aaf5b00b926872e5ea13865c584",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m0": {
+          "action_context": "Place the pillow near the blue sofa.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m1": {
+          "action_context": "Place the pillow near the blue sofa.",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    },
+    {
+      "id": "scene5_226",
+      "scene_key": "scene5",
+      "row_index": 226,
+      "event_id": "scene5_227",
+      "instruction": "Let this drone detect activity around the tank cluster.",
+      "mentions": [
+        {
+          "mention_id": "m0",
+          "text": "this drone",
+          "span": [
+            4,
+            14
+          ],
+          "object_type": "drone",
+          "kind": "object",
+          "role": "actor",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r0",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": ""
+        },
+        {
+          "mention_id": "m1",
+          "text": "the tank cluster",
+          "span": [
+            38,
+            54
+          ],
+          "object_type": "tank",
+          "kind": "object",
+          "role": "target",
+          "count": 1,
+          "component": "",
+          "parent_text": "",
+          "anchor_text": "",
+          "coreference_id": "r1",
+          "parent_mention_id": null,
+          "coreference_note": "",
+          "relation": "around"
+        }
+      ],
+      "parser_valid": true,
+      "temporal_hints": {
+        "m0": {
+          "soft_phase_range": [
+            0.998956,
+            7.956422
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        },
+        "m1": {
+          "soft_phase_range": [
+            0.998956,
+            7.956422
+          ],
+          "soft_phase_panels": [
+            "P1",
+            "P2",
+            "P3"
+          ]
+        }
+      },
+      "panels": [
+        {
+          "frame_id": "P1",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_226/P1.jpg",
+          "source_sha256": "ba194fe8be7cd2afb58caf0be607f762fbddb11217418fb16e5fafc1ffefa5eb",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 5.036,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene5_226/P1/MAIN_RGB_512.png",
+              "sha256": "f292dd446e39a2ff7e8f01a058cdda2ec3d30ea2b475df152d029a8930bc03ef",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene5_226/P1/MAIN_RGB_768.png",
+              "sha256": "394e8dc5f30fcd474af518e6a9d1d3c0430cd0d35e53d67d64f3867029a1431b",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P2",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_226/P2.jpg",
+          "source_sha256": "09087a9c03075b3ffa0d026df86595ceba1b6d53df57cb75f1d6e39ed87a0436",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 6.481,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene5_226/P2/MAIN_RGB_512.png",
+              "sha256": "3449fec19ab3f8c0d124c2edf1f02454b8fb78a14eb6dd4923d112dfa87454a4",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene5_226/P2/MAIN_RGB_768.png",
+              "sha256": "cdf173fe540511d15ad4d297473dfdcd1baa9d1b1136b5a2acab15645536086a",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        },
+        {
+          "frame_id": "P3",
+          "source_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_226/P3.jpg",
+          "source_sha256": "d91ba4f0125861bb19075c2dc0064e1a6e52116a88afb4f62a84190c9d480016",
+          "source_size": [
+            1920,
+            1920
+          ],
+          "requested_video_time": 7.038,
+          "clock_supported": true,
+          "inputs": {
+            "MAIN_RGB_512": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene5_226/P3/MAIN_RGB_512.png",
+              "sha256": "be1424d155059625c127130d75d1b6984da1f15b54a13006d0e7be37cf041095",
+              "size": [
+                512,
+                512
+              ]
+            },
+            "MAIN_RGB_768": {
+              "path": "/ai/data/MultiAgent/.local-sync/projected2d_main_rgb32_20261109/inputs/scene5_226/P3/MAIN_RGB_768.png",
+              "sha256": "41408eae42dda2b7b3e2c4afba2e41286b00cade81204b0f6ca5fccdb00b1f50",
+              "size": [
+                768,
+                768
+              ]
+            }
+          }
+        }
+      ],
+      "phase_context": {
+        "m0": {
+          "action_context": "Let this drone detect activity around the tank cluster.",
+          "source": "instruction clause, not measured speech timing"
+        },
+        "m1": {
+          "action_context": "Let this drone detect activity around the tank cluster.",
+          "source": "instruction clause, not measured speech timing"
+        }
+      }
+    }
+  ],
+  "conditions": [
+    "NEUTRAL_CHRONO",
+    "NEUTRAL_REVERSED",
+    "PER_REFERENT_COMPARISON"
+  ],
+  "sample_selection": "Previously used eight multi-mention events, plus scene2_412 and scene2_482 to inspect multi-clause temporal coverage; selected after earlier scores; development only.",
+  "condition_explanation": "NEUTRAL_CHRONO and NEUTRAL_REVERSED have identical prompts and images, with captions attached to image identity; only presentation order differs. PER_REFERENT_COMPARISON adds action clauses and per-frame checks, chronological images.",
+  "task": "2D full RGB frame points for each referent; no 3D candidate ID or target selection",
+  "source_manifest_sha256": "7a305ca04c300ce63e1f20a3dfb06798af0538e8a0acbacaa6308c88139c4293",
+  "source_frozen_predictions_sha256": "ebb61374d294b141a52fb52d0575d9c787c83dcaf38cb540ba05f3b75b52b18b",
+  "old_frozen_metrics_used_to_select": true,
+  "ground_truth_in_prompt": false
+}

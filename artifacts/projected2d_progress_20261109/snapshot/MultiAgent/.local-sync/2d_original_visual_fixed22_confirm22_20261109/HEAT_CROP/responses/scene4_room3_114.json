@@ -1,0 +1,181 @@
+{
+  "event": "scene4_room3_114",
+  "fingerprint": "81b402b5e9d20619a5edfaedd895d3f678ecbc0f8a6609d43b4ee0701ce8b4f1",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"the person\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.36,\n      \"y_norm\": 0.62,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"the chair\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.65,\n      \"y_norm\": 0.45,\n      \"confidence\": 0.92\n    },\n    {\n      \"mention\": \"the dining table\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.68,\n      \"y_norm\": 0.35,\n      \"confidence\": 0.90\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "the person",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.36,
+        "y_norm": 0.62,
+        "confidence": 0.95
+      },
+      {
+        "mention": "the chair",
+        "panel_id": "P2",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.65,
+        "y_norm": 0.45,
+        "confidence": 0.92
+      },
+      {
+        "mention": "the dining table",
+        "panel_id": "P2",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.68,
+        "y_norm": 0.35,
+        "confidence": 0.9
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "the person",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.7284375,
+        "y_norm": 0.62,
+        "confidence": 0.95,
+        "raw_x_norm": 0.36,
+        "raw_y_norm": 0.62,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "the chair",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.46203695312500004,
+        "y_norm": 0.49371,
+        "confidence": 0.92,
+        "raw_x_norm": 0.65,
+        "raw_y_norm": 0.45,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "the dining table",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.4753795,
+        "y_norm": 0.47173,
+        "confidence": 0.9,
+        "raw_x_norm": 0.68,
+        "raw_y_norm": 0.35,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_114.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4300
+        ],
+        "dtype": "torch.int64",
+        "sha256": "4851f1b76f77261665ca630912fad953e51d954bd9fc5cad3778e6c8aa429b02",
+        "bytes": 34400
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4300
+        ],
+        "dtype": "torch.int64",
+        "sha256": "54669e4e5e84b4ad99c45848f33803505f4c1ab4d74a410162b83fd451413362",
+        "bytes": 34400
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4300
+        ],
+        "dtype": "torch.int64",
+        "sha256": "267864697d21376ff47ba2f141f6a841251d8792db8d494b67adff26a2d37604",
+        "bytes": 34400
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "4bdf6ccd3b8445c7022488b5856e6aa1f42a3f9ddcebca13bb168b61b6961996",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_114.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "cfaf7f5641c979f8d9a029bc61477fc038cccb0de0b9c7ea920df05f36f4e0fe",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_114.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_114.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_114.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "cfaf7f5641c979f8d9a029bc61477fc038cccb0de0b9c7ea920df05f36f4e0fe",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 9.502750504063442,
+  "generated_tokens": 200
+}

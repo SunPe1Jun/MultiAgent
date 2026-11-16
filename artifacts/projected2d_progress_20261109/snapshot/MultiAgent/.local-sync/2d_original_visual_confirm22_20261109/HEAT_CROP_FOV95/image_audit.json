@@ -1,0 +1,1581 @@
+{
+  "panels": [
+    {
+      "event": "scene1_34",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.4557770490646362,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.04780769720673561,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.010692545572916667,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_34/P1.npz",
+      "heatmap_sha256": "713ffccb5706aeb1be1b8c9a5ea71d47d9fc12bca12390943606d6e9874653f6",
+      "crop_bbox_norm": "0.3719,0.3312,0.5917,0.5510",
+      "source_sha256": "f3bc69713c63d793e0b6bf5877160502945e7f9ef38dfe39d28aff45c6d14492",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene1_34/P1/paired.jpg"
+    },
+    {
+      "event": "scene1_34",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 2.000000238418579,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.047432396560907364,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.010599772135416666,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_34/P2.npz",
+      "heatmap_sha256": "4b19dfa9001d1fb2b1bc464628b2e93dedb7465f62ebb0fc47c09925d5be410c",
+      "crop_bbox_norm": "0.3698,0.3391,0.5896,0.5589",
+      "source_sha256": "8db0c0d3963350a5bd4b8dde70a2b0dbc39bc7cce1651a641433e7ef7ba51263",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene1_34/P2/paired.jpg"
+    },
+    {
+      "event": "scene1_34",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9401825666427612,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.0455857515335083,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.010175238715277778,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_34/P3.npz",
+      "heatmap_sha256": "24d5fd1a28092e180efe7276eca81957ce18414fb349173fc82566f9883a3647",
+      "crop_bbox_norm": "0.3703,0.3411,0.5901,0.5609",
+      "source_sha256": "669a2ea8c47d914f7bbdfc920aa2dd0c43f05340ba156236f9465dcadebebac9",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene1_34/P3/paired.jpg"
+    },
+    {
+      "event": "scene1_198",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_198/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.2802,0.2953,0.6302,0.6453",
+      "source_sha256": "23c08e22ff56857fa2ebeab3968ae934303747d9bbd722ad80eb78c7c3bd47da",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene1_198/P1/paired.jpg"
+    },
+    {
+      "event": "scene1_198",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_198/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.2870,0.3063,0.6370,0.6562",
+      "source_sha256": "6c5e3e28b1e793bd7eb432c7fdeaba588b105f7af5c1e00a542ae81340559e24",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene1_198/P2/paired.jpg"
+    },
+    {
+      "event": "scene1_198",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_198/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3250,0.3255,0.6750,0.6755",
+      "source_sha256": "30b0c360265b6f7f2e0423fbe0cd815a27fddc7381850685bc849ed4889f3cde",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene1_198/P3/paired.jpg"
+    },
+    {
+      "event": "scene1_647",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.644952416419983,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.08778748661279678,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.012537163628472223,
+        "focus_components_at_10pct_peak": 4,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_647/P1.npz",
+      "heatmap_sha256": "d5cf0ee9824bcc412040d1889b2b0e4f6e9e0d4fca2e9c81d8b4b810fe583c8c",
+      "crop_bbox_norm": "0.4906,0.3781,0.7104,0.5979",
+      "source_sha256": "b1c6632606a926b81dde6e5b3aa3520e47fc8de3f82957762816a5699f0f2dd7",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene1_647/P1/paired.jpg"
+    },
+    {
+      "event": "scene1_647",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9999991655349731,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.06898589432239532,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.011932237413194444,
+        "focus_components_at_10pct_peak": 3,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_647/P2.npz",
+      "heatmap_sha256": "ff74fa6ea249a9d1bf2678c161906e0329e59a687a7a3b6282cdf9e4a72151ce",
+      "crop_bbox_norm": "0.4984,0.3771,0.7182,0.5969",
+      "source_sha256": "6d7d3a4581fc911c3eef88da2c0407cf39ff0295ccdf4dcd0cb01732a96e81f3",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene1_647/P2/paired.jpg"
+    },
+    {
+      "event": "scene1_647",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9913471937179565,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.04850415140390396,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.010836046006944445,
+        "focus_components_at_10pct_peak": 2,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_647/P3.npz",
+      "heatmap_sha256": "d7947dd466ce5ee564ebc51a17f6dba14669db3cf27c56d3fb447c066d9eb520",
+      "crop_bbox_norm": "0.4990,0.3714,0.7188,0.5911",
+      "source_sha256": "3b176d52da760a15e68a5214b4f71aa8e71f922ecf80c3cf95c8fa10174548f4",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene1_647/P3/paired.jpg"
+    },
+    {
+      "event": "scene2_521",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene2_521/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3979,0.2792,0.7479,0.6292",
+      "source_sha256": "c5c308b31b85f86e77a36515c05519dfdb79919c8b29628e954b993530dd412c",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene2_521/P1/paired.jpg"
+    },
+    {
+      "event": "scene2_521",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene2_521/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3214,0.3130,0.6714,0.6630",
+      "source_sha256": "128378a97b087a2cf8c6cfa6c7884baec4f29999ab857e1ccdaae52fb0413638",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene2_521/P2/paired.jpg"
+    },
+    {
+      "event": "scene2_521",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene2_521/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3365,0.3000,0.6865,0.6500",
+      "source_sha256": "c0f0ca595ed47e380ce43fec59d9a69951b52fd07c9aa974cf4bf56ec79c9f64",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene2_521/P3/paired.jpg"
+    },
+    {
+      "event": "scene3_304",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.3072861433029175,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.06480731815099716,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.011945258246527778,
+        "focus_components_at_10pct_peak": 3,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene3_304/P1.npz",
+      "heatmap_sha256": "b7e0d6f3f07a16e5347cf740776549b1b8c013c392ab9111dea9bc9637ccfd26",
+      "crop_bbox_norm": "0.4151,0.3469,0.6349,0.5667",
+      "source_sha256": "94c837174eaede2cdb5b7bdff4917a027b991583a2f9ab737edb31c1e2d67c68",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene3_304/P1/paired.jpg"
+    },
+    {
+      "event": "scene3_304",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.945806622505188,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.06596312671899796,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.014410264756944444,
+        "focus_components_at_10pct_peak": 3,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene3_304/P2.npz",
+      "heatmap_sha256": "1b1c9ab44f3fc97c7ef560f83cc3201fbf468f5b182c9d65b07616f65ca83bd2",
+      "crop_bbox_norm": "0.2974,0.3307,0.6745,0.7078",
+      "source_sha256": "ced728b53e04997c15ab5d85b66035958d261b4f6b3089d2804740ead0f8818a",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene3_304/P2/paired.jpg"
+    },
+    {
+      "event": "scene3_405",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9936549663543701,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.06659168004989624,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.01407986111111111,
+        "focus_components_at_10pct_peak": 3,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene3_405/P1.npz",
+      "heatmap_sha256": "3578addf0d68ad51e6972d8b565f3373ee639d94cd695191549dc2727b3e6a65",
+      "crop_bbox_norm": "0.3734,0.3432,0.5932,0.5630",
+      "source_sha256": "2c58b2c20101a40627dc41fa6824726bd6c6555372080f563067489d350c80cf",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene3_405/P1/paired.jpg"
+    },
+    {
+      "event": "scene3_405",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.979792833328247,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.047450121492147446,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.010600043402777778,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene3_405/P2.npz",
+      "heatmap_sha256": "55bbaff23e41c5f1e82b12e22415054fd274ca9402616522903d278c9ef676b2",
+      "crop_bbox_norm": "0.3849,0.3333,0.6047,0.5531",
+      "source_sha256": "7ddadba3cb4b95edc0e84dfa0b8f054db7d64f2c179bbbfaacb2d39dd1c3c4cb",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene3_405/P2/paired.jpg"
+    },
+    {
+      "event": "scene3_405",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9784659147262573,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.05529322847723961,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.011236165364583333,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene3_405/P3.npz",
+      "heatmap_sha256": "628159266cb3f0f3fe95744dd71c70ce150763f64d7bd17e763bb11c7dffedff",
+      "crop_bbox_norm": "0.3583,0.3042,0.6500,0.5958",
+      "source_sha256": "d471b2d5ee4920fa6c19e5632da14a5bc6a06c273304ce7530a41472f8fb5414",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene3_405/P3/paired.jpg"
+    },
+    {
+      "event": "scene3_593",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene3_593/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.2979,0.2604,0.6479,0.6104",
+      "source_sha256": "49f1a79563364092f24f4ce952778a3ca3bcc9745e33daacc84505cf8101f4fe",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene3_593/P1/paired.jpg"
+    },
+    {
+      "event": "scene3_593",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene3_593/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3682,0.2703,0.7182,0.6203",
+      "source_sha256": "6b405186775580758fe0512fc65db6ec25fb8f8af68c4dd40537cff8dc4c48c7",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene3_593/P2/paired.jpg"
+    },
+    {
+      "event": "scene3_593",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene3_593/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3583,0.2714,0.7083,0.6214",
+      "source_sha256": "37e6468b464971672fd58f06b18f854cdc6b33a3a37702da20ad0c5b2581e9ff",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene3_593/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room1_34",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9999992847442627,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.04973785579204559,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.01114013671875,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room1_34/P1.npz",
+      "heatmap_sha256": "dde68bf3503fa42a5e40e3ed800f3bdcdc02fdaa84210dd44fe1e7c50363c3ae",
+      "crop_bbox_norm": "0.3969,0.4026,0.6167,0.6224",
+      "source_sha256": "16a509e3a416fd8357cac474142bb7def32291bc51d96b1a7285f9449ac2bd09",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room1_34/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room1_34",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 2.000000476837158,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.04549912363290787,
+        "focus_field_max": 0.9999999403953552,
+        "focus_field_sharp_fraction": 0.010157063802083333,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room1_34/P2.npz",
+      "heatmap_sha256": "46eb0ddf438b7488547461c70be58b23bf6b32f9fd3a08f502eab67c4ac69407",
+      "crop_bbox_norm": "0.4245,0.3969,0.6443,0.6167",
+      "source_sha256": "9f5097e3224c6408975f9a5273ff828676d7f497e0078bc11c169b7e7bf861e2",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room1_34/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room1_34",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 0.3863905072212219,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.10585782676935196,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.026876085069444444,
+        "focus_components_at_10pct_peak": 3,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room1_34/P3.npz",
+      "heatmap_sha256": "9fac27d63a2911579086045538ab3f5911a16ab6f2282a2b29b7a0274d2a120e",
+      "crop_bbox_norm": "0.3182,0.3375,0.7682,0.7875",
+      "source_sha256": "09f319e6761aa9dedb132452db842bfe22bb37d677a6ee42c3edb216be0c6ea5",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room1_34/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room1_51",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 0.26865601539611816,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.09713039547204971,
+        "focus_field_max": 0.9999999403953552,
+        "focus_field_sharp_fraction": 0.02987060546875,
+        "focus_components_at_10pct_peak": 3,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room1_51/P1.npz",
+      "heatmap_sha256": "a7a4dbe71e6ecb6b9aeaa6ecea4923a3b97c37b288c97dc8dabbd4c14a376d52",
+      "crop_bbox_norm": "0.2193,0.2120,0.6693,0.6620",
+      "source_sha256": "a97321440cd9f60e0527cbf7ead4453ec689668c385b5b9028e4d324c168966f",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room1_51/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room1_51",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.6546462774276733,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.07321948558092117,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.011783311631944444,
+        "focus_components_at_10pct_peak": 4,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room1_51/P2.npz",
+      "heatmap_sha256": "394813be75231460eb16cbeafd79600a43d5deb56811a487bdbe8a69e2b71d58",
+      "crop_bbox_norm": "0.4833,0.4167,0.7031,0.6365",
+      "source_sha256": "48feb59d8b2eb33600ef2c8f1def75d2ddd01206cbd40c8ad0dd3eec43ecee52",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room1_51/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room1_51",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 0.4364040493965149,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.10128696262836456,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.022250705295138888,
+        "focus_components_at_10pct_peak": 4,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room1_51/P3.npz",
+      "heatmap_sha256": "82367b3ed9bc72812fa52739696d4afc16532f7bb357e3aad637d338d9820cd1",
+      "crop_bbox_norm": "0.3995,0.3276,0.8214,0.7495",
+      "source_sha256": "659a0e78160447a9140486846008e7658b6f4bf53d1990bb2488ca584b372f80",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room1_51/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room1_98",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 2.000000238418579,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.0885828509926796,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.013562554253472222,
+        "focus_components_at_10pct_peak": 3,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room1_98/P1.npz",
+      "heatmap_sha256": "a1ffb3f0c388fe8ab9f4faf6f143e05dffd3e54a3db17ea3bb84c024e1481121",
+      "crop_bbox_norm": "0.4130,0.3292,0.6875,0.6036",
+      "source_sha256": "95e1e8d1815526027eb6e35bf4572faf7dc96d7f605f4b5cdaa13cfebe730c01",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room1_98/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room1_98",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9509007930755615,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.08162417262792587,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.014613172743055555,
+        "focus_components_at_10pct_peak": 6,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room1_98/P2.npz",
+      "heatmap_sha256": "67055a43d237e5cf4a2a56a5b63d1e84029f6c74e707fe6f455a9391c7b707c5",
+      "crop_bbox_norm": "0.3891,0.3589,0.8391,0.8089",
+      "source_sha256": "17c5b6780453a1184c4e79d9a4b14709b402866b610849beb3aa56963e30e0ac",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room1_98/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room1_98",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 0.6136131882667542,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.08264172077178955,
+        "focus_field_max": 0.9999999403953552,
+        "focus_field_sharp_fraction": 0.01320556640625,
+        "focus_components_at_10pct_peak": 4,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room1_98/P3.npz",
+      "heatmap_sha256": "f5b63ec5243ed77d4ca2689cd21d78c2b5ceaa1c51abecc9abb1d99d44dc7e74",
+      "crop_bbox_norm": "0.3104,0.3182,0.7604,0.7682",
+      "source_sha256": "d834bebe363a9fdb34765e4dc75de8675615503025fa6e1f2adb35cd50ef6ff9",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room1_98/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room2_1",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room2_1/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3464,0.2792,0.6964,0.6292",
+      "source_sha256": "8e4596389cbd9ea6fbb43ea4398c672f059e3e72886c3231da59bde3ca960e49",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room2_1/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room2_1",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room2_1/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3422,0.2812,0.6922,0.6312",
+      "source_sha256": "8e5850c4adcd027377c9b31ac7b34837541800d05783722df654c83cea50b7df",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room2_1/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room2_1",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room2_1/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3396,0.2708,0.6896,0.6208",
+      "source_sha256": "7dd6292cce2c432884d6604215c51e2de7da7eb05443bac2922203d104affc87",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room2_1/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room2_30",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room2_30/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3302,0.2932,0.6802,0.6432",
+      "source_sha256": "9110ac463923f80c67beea001dca80244064ec50641d3b11979f727a789019ba",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room2_30/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room2_30",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room2_30/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3380,0.3068,0.6880,0.6568",
+      "source_sha256": "6762d923a9e85ad4e7fa413150af7f94c3c026cd141aed083d4c4dbac05e4e0b",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room2_30/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room2_30",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room2_30/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3510,0.2979,0.7010,0.6479",
+      "source_sha256": "187e101fb4eba2fc1d7f398cc693f4beffcf0fcfd22965e8b55e029b28ea10f0",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room2_30/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room2_91",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room2_91/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3161,0.2313,0.6661,0.5813",
+      "source_sha256": "1fac525ba4a52ae97a6019407c5fb8c30c664ee8c005460149f58e39f635c8a4",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room2_91/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room2_91",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room2_91/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3609,0.2802,0.7109,0.6302",
+      "source_sha256": "a410217abea3d1bd03ad32fdbfdad64bf2058052e85d5d6db9f906fb1715ca1b",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room2_91/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room2_91",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room2_91/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3604,0.2651,0.7104,0.6151",
+      "source_sha256": "e0f80f80fb5ad5a9952d2fffd0a4f8681f02488a460a3590a9fedf2febfb6f4d",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room2_91/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room3_59",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.6051280498504639,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.07319026440382004,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.011999782986111112,
+        "focus_components_at_10pct_peak": 4,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room3_59/P1.npz",
+      "heatmap_sha256": "aeb1c1ccdfd3e53c195c970f7abb8b05f39f2be976e498936efb31455bc515f5",
+      "crop_bbox_norm": "0.3891,0.3828,0.6089,0.6026",
+      "source_sha256": "ee11009e0df4e8bf5d97aa68e254c168bc0fc2ac9ba4b1f70f3b5eca87c06fde",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room3_59/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room3_59",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 2.0,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.0510910302400589,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.011391330295138889,
+        "focus_components_at_10pct_peak": 2,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room3_59/P2.npz",
+      "heatmap_sha256": "e1e4bf0e6b74a138c50c735ae2febd44d37bba88fdf150a2eaa3bbcfa4f1fa4e",
+      "crop_bbox_norm": "0.3224,0.4109,0.5609,0.6495",
+      "source_sha256": "be002e58c16fb2cd6dead8d00fec3ea808e485b02e7bb7a70342da07f72aec21",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room3_59/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room3_59",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.5850865840911865,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.11769720911979675,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.013853081597222223,
+        "focus_components_at_10pct_peak": 7,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room3_59/P3.npz",
+      "heatmap_sha256": "5a15c3eab851e5db39a7c7d461fb4242ed3248aeb314ba56ae626870a770f637",
+      "crop_bbox_norm": "0.3021,0.3203,0.5219,0.5401",
+      "source_sha256": "d24f9e3c4faa8b3e4ddb9a722e9397de8ee9a3db4e8e9e25618a3cfb0f1c00ae",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room3_59/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room3_114",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.999999761581421,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.08042167127132416,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.011321343315972222,
+        "focus_components_at_10pct_peak": 3,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room3_114/P1.npz",
+      "heatmap_sha256": "86f0a21727eced7b1114dcf2c469c622863d217661a4efb6dcf2c114e9942654",
+      "crop_bbox_norm": "0.3115,0.2635,0.6984,0.6505",
+      "source_sha256": "6eee33e541cccfe534d8c6a2478bd56340e12f6402d542de16fdafc011a2dfbc",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room3_114/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room3_114",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9999995231628418,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.04927287995815277,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.011028374565972223,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room3_114/P2.npz",
+      "heatmap_sha256": "1e5ac60d55411747f75c3c74c964a81b4520473f4331ef66cc5176e61505cb87",
+      "crop_bbox_norm": "0.3979,0.3948,0.6177,0.6146",
+      "source_sha256": "503228901759f57b620dc3851db8c79455d787fd10dddbe45a13800b92d71ed5",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room3_114/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room3_114",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 0.4683680534362793,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.054699525237083435,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.0024886067708333333,
+        "focus_components_at_10pct_peak": 4,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room3_114/P3.npz",
+      "heatmap_sha256": "892d8119bdcbba31ad582682a2f4f3d992b6f4e143dec45919f819fd32ae3911",
+      "crop_bbox_norm": "0.3479,0.4115,0.7979,0.8615",
+      "source_sha256": "ecc3c025312229c52a1f4b75ddbae54bcaf6dd7ad6d7bfea6e0d4dcf5e18c0be",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room3_114/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room3_159",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 0.4074140787124634,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.05913487821817398,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.013629014756944445,
+        "focus_components_at_10pct_peak": 2,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room3_159/P1.npz",
+      "heatmap_sha256": "40a74861eb860ccefde6b4959be20be0e1d08d361f89d24878a314e1e20201e3",
+      "crop_bbox_norm": "0.2708,0.3880,0.5484,0.6656",
+      "source_sha256": "5fe027a51ce92ea00414f5951e1a60bd188b32568dce61fdb48ee7c0e48bbca9",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room3_159/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room3_159",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.1593698263168335,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.05698896944522858,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.012379014756944445,
+        "focus_components_at_10pct_peak": 2,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room3_159/P2.npz",
+      "heatmap_sha256": "31c081fd532eafc4cbebb91077d2aa2909c5a56099d21a945f9688c479929bfd",
+      "crop_bbox_norm": "0.3609,0.4141,0.5807,0.6339",
+      "source_sha256": "e5e50bc27c17c66a31b796bec01bcbfa6f5636f78735c716e9249f286377634c",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room3_159/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room3_159",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 0.5155484676361084,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.0901680439710617,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.012273220486111111,
+        "focus_components_at_10pct_peak": 4,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room3_159/P3.npz",
+      "heatmap_sha256": "049609f6226946789a90ad25fd7e29b8d2f09e95f975656c1bf442d65e61e080",
+      "crop_bbox_norm": "0.3245,0.4010,0.7745,0.8510",
+      "source_sha256": "2a747791c2de15e597b6c0f8106fd604ba728b7391b55461f7ab7380384d9c84",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room3_159/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room4_176",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room4_176/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3417,0.2969,0.6917,0.6469",
+      "source_sha256": "4f85c857e36e2abc3539893ed8651ce380a10bbb97afaa24cbca962cef6eed34",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room4_176/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room4_176",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room4_176/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3474,0.3021,0.6974,0.6521",
+      "source_sha256": "6c846f5e621395d4de8e1e66d9ba343aea95683eebcc2386d21babe1ec25e513",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room4_176/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room4_176",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room4_176/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.4010,0.2818,0.7510,0.6318",
+      "source_sha256": "ed6ae87fc1276f4663876e46c4c2e4ca87e82e904ab5ffe07479e9232fb62b9c",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room4_176/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room4_182",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9531751871109009,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.05564018711447716,
+        "focus_field_max": 0.9999999403953552,
+        "focus_field_sharp_fraction": 0.012891167534722222,
+        "focus_components_at_10pct_peak": 2,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room4_182/P1.npz",
+      "heatmap_sha256": "e068feabb2e5f5d0ae3c2d183ce288683419bc3bb1c8e864ec28ea9dbe066184",
+      "crop_bbox_norm": "0.4193,0.3703,0.6391,0.5901",
+      "source_sha256": "b175efb2215ecbadf515b1edef0ad5c2c946bc11877ba40e8d7bf67569567e01",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room4_182/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room4_182",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.965299129486084,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.04623685032129288,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.010322265625,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room4_182/P2.npz",
+      "heatmap_sha256": "a1d730f789c9c7baf7017cd4d628ea662ee41a1bd5942abca2708191cd21da5c",
+      "crop_bbox_norm": "0.4432,0.3880,0.6630,0.6078",
+      "source_sha256": "1e9fadac5aa03c65dd6f06138502dc9d188a3c3edf19add162bb7734f7760a32",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room4_182/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room4_182",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9911292791366577,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.06406289339065552,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.01246609157986111,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room4_182/P3.npz",
+      "heatmap_sha256": "da9acc13c16ff05649cd05545ea38f091b6fd3145e3a852b1bdc771d8455f0ff",
+      "crop_bbox_norm": "0.2401,0.2865,0.6797,0.7260",
+      "source_sha256": "71afc5a7d815586cfbb769858f8473396f8890944ca38544ed870f8ef4b48105",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room4_182/P3/paired.jpg"
+    },
+    {
+      "event": "scene4_room4_194",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.976029396057129,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.04987834393978119,
+        "focus_field_max": 0.9999999403953552,
+        "focus_field_sharp_fraction": 0.011209309895833333,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room4_194/P1.npz",
+      "heatmap_sha256": "c0d556c08e870a1fa23c667e2e98e10068e27bef8cf08adec2ce9aa9f721ea6f",
+      "crop_bbox_norm": "0.4167,0.3594,0.6365,0.5792",
+      "source_sha256": "d612d6228326b12a37af29eb01683ff9577752c2862b95235113e264af65de67",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room4_194/P1/paired.jpg"
+    },
+    {
+      "event": "scene4_room4_194",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9895005226135254,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.04594437777996063,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.01025390625,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room4_194/P2.npz",
+      "heatmap_sha256": "ae4ccd7a9692bde27a59989fd567a30f8c7c03b3a513a7b5543b02c5ddac9989",
+      "crop_bbox_norm": "0.4234,0.3474,0.6432,0.5672",
+      "source_sha256": "9aa2c8e39f093389d70173c96ba4cd41f54378d49a055d0a40026b26374290b3",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room4_194/P2/paired.jpg"
+    },
+    {
+      "event": "scene4_room4_194",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9894689321517944,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.050275735557079315,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.011297743055555556,
+        "focus_components_at_10pct_peak": 2,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene4_room4_194/P3.npz",
+      "heatmap_sha256": "a6abb9647499b44e1937d04971fe8deded2fb55c1a2f4a2348cba31846926f35",
+      "crop_bbox_norm": "0.4245,0.3490,0.6443,0.5687",
+      "source_sha256": "e3b35ba1c53456a6de31c746ab238542a46e4adcebc6be5ed2f29e7d721c12f4",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene4_room4_194/P3/paired.jpg"
+    },
+    {
+      "event": "scene5_664",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene5_664/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3979,0.2281,0.7479,0.5781",
+      "source_sha256": "528fa58442a97d9177dcb7035cb9b391d494921265e1811d6f3258539ff76908",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene5_664/P1/paired.jpg"
+    },
+    {
+      "event": "scene5_664",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene5_664/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3932,0.2875,0.7432,0.6375",
+      "source_sha256": "33309f641fc573902ecc6040c7b116fec96d60cc13f5b38965529ba304c0c6c5",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene5_664/P2/paired.jpg"
+    },
+    {
+      "event": "scene5_664",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene5_664/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3964,0.2766,0.7464,0.6266",
+      "source_sha256": "4fe4dc4a45903d11c1dadd532b0032324afecce5b30cd7246d037030e68efb6d",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene5_664/P3/paired.jpg"
+    },
+    {
+      "event": "scene5_712",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9606016874313354,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.045883242040872574,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.010240885416666666,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene5_712/P1.npz",
+      "heatmap_sha256": "fab0c543c342a45d7459960c0ff0dfff900964f1adb65dbfe29ed41bd95ca766",
+      "crop_bbox_norm": "0.3609,0.3276,0.5807,0.5474",
+      "source_sha256": "538cff00eb0391c782485f596e6f513c184a23ee897727ae9239b418e75bae66",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene5_712/P1/paired.jpg"
+    },
+    {
+      "event": "scene5_712",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9467813968658447,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.045789070427417755,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.010225151909722223,
+        "focus_components_at_10pct_peak": 1,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene5_712/P2.npz",
+      "heatmap_sha256": "cf245633faf8db1f95f701fc72299c13832ab52b43d0d858ba95327c5dbadae7",
+      "crop_bbox_norm": "0.3656,0.3276,0.5854,0.5474",
+      "source_sha256": "4c82c1cdee36640dfdb60c003f42fbb172a048630b75f97ecef2cb6076ee10bd",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene5_712/P2/paired.jpg"
+    },
+    {
+      "event": "scene5_712",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "FOVEATED_FULL_FIELD",
+        "foveation_enabled": true,
+        "version": "multi_focus_gaze_history_foveation_v1",
+        "total_supported_seconds": 1.9452123641967773,
+        "support_gate": 1.0,
+        "dilation_degrees": 12.0,
+        "dilation_pixels": 159.4763153499387,
+        "minimum_original_rgb_weight": 0.95,
+        "focus_field_mean": 0.0486077144742012,
+        "focus_field_max": 1.0,
+        "focus_field_sharp_fraction": 0.010870225694444444,
+        "focus_components_at_10pct_peak": 2,
+        "semantics": "multi-focus rendering field derived from past measured gaze duration; not object identity or target probability"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene5_712/P3.npz",
+      "heatmap_sha256": "356173d2b718df4ee13846aaddc20947c01db81f00806e1d754f7761f68d00f3",
+      "crop_bbox_norm": "0.3411,0.3505,0.5609,0.5703",
+      "source_sha256": "b8e01f40f78da0a583e64a8718c65f5ee0471d441a815d37796f0aff5f287f60",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene5_712/P3/paired.jpg"
+    },
+    {
+      "event": "scene5_743",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene5_743/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3635,0.2068,0.7135,0.5568",
+      "source_sha256": "b58ff013d6ca9225813ec74d0d2467ad56d382cdfd4403c2393a7be089273593",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene5_743/P1/paired.jpg"
+    },
+    {
+      "event": "scene5_743",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene5_743/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3870,0.2901,0.7370,0.6401",
+      "source_sha256": "a714b04061ae68349880e508c5f7a4bfd982efddebfbcdf74ebf13e8942311a9",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene5_743/P2/paired.jpg"
+    },
+    {
+      "event": "scene5_743",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "RGB_FALLBACK",
+        "foveation_enabled": false,
+        "total_supported_seconds": 0.0,
+        "foci": 0
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene5_743/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3875,0.2870,0.7375,0.6370",
+      "source_sha256": "4d63c9398e2ea27869bda348088a0c8347cba31a4e2b2936be64b171db985df7",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": ".local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95/inputs/scene5_743/P3/paired.jpg"
+    }
+  ]
+}

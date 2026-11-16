@@ -1,0 +1,15 @@
+{
+  "authoritative": "FINAL_VERIFIED_REPORT.json",
+  "superseded": [
+    "completion_audit.json",
+    "FIXED_GAZE22_summary.json",
+    "heat_crop_paired_bootstrap.json",
+    "treatment_coverage_evaluation.json"
+  ],
+  "reasons": [
+    "Fixed22 confirmation was mislabeled; replaced by explicit verified FIXED_CURRENT_GAZE.",
+    "Some ad-hoc bootstrap split calculations used row order rather than named dev keys.",
+    "Preparation-helper code drift occurred after earlier runs and is now explicitly disclosed."
+  ],
+  "original_responses_modified": false
+}

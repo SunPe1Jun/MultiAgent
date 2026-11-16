@@ -1,0 +1,149 @@
+{
+  "event": "scene4_room3_108",
+  "fingerprint": "30f919db9ccf7e765e8dfa33c7a1266d79bd776c5bcbbeb0c02a2560b1a62743",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"the cushion\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.41,\n      \"y_norm\": 0.47,\n      \"confidence\": 0.98\n    },\n    {\n      \"mention\": \"the right side of the sofa\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.62,\n      \"y_norm\": 0.51,\n      \"confidence\": 0.97\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "the cushion",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.41,
+        "y_norm": 0.47,
+        "confidence": 0.98
+      },
+      {
+        "mention": "the right side of the sofa",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.62,
+        "y_norm": 0.51,
+        "confidence": 0.97
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "the cushion",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.41,
+        "y_norm": 0.47,
+        "confidence": 0.98
+      },
+      {
+        "mention": "the right side of the sofa",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.62,
+        "y_norm": 0.51,
+        "confidence": 0.97
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene4_room3_108.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4304
+        ],
+        "dtype": "torch.int64",
+        "sha256": "594e0d09aa090749427df8c5779057d073c13df812717e054cd908f385c2c8a4",
+        "bytes": 34432
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4304
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d5e88cd09ee773d4ddbdf825ec36b3940b69d21d62179ae42fb463410ee8d7cd",
+        "bytes": 34432
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4304
+        ],
+        "dtype": "torch.int64",
+        "sha256": "da0e00c6972b434e4bc77f32fac5e5a757d7d3b2594ffb2fd98fae239e1c4aa8",
+        "bytes": 34432
+      },
+      "pixel_values": {
+        "shape": [
+          14700,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "34e8e5484a57717c5aa4d21fca1208b8e467db554432d02aea3917c19d8cd4ff",
+        "bytes": 90316800
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene4_room3_108.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14700,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "2a401d4e3df2812a9b3eea29c65f53065e2e4630cbb13ef5a0e156b21b28f157",
+          "bytes": 45158400
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene4_room3_108.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene4_room3_108.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene4_room3_108.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14700,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "2a401d4e3df2812a9b3eea29c65f53065e2e4630cbb13ef5a0e156b21b28f157",
+      "bytes": 45158400
+    }
+  },
+  "elapsed_seconds": 6.756125312065706,
+  "generated_tokens": 139
+}

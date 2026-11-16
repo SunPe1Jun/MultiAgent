@@ -18,6 +18,8 @@ from scipy.spatial.transform import Rotation
 
 from .context import load_contexts
 from .gaze_evidence import interpolate_camera_pose
+from .video_timing import frame_pts_table
+from .camera_geometry import camera_values
 from .projected2d_attention_study import save_json, write_csv
 
 
@@ -25,15 +27,13 @@ def camera_records(ctx):
     records = []
     for index, (seconds, sample) in enumerate(ctx.timed_samples):
         try:
-            position = [float(sample['cameraPosition'][k]) for k in 'xyz']
-            q = np.array([sample['cameraRotation'][k] for k in 'xyzw'], float)
-            fov = float(sample['cameraFOV'])
-            if not np.all(np.isfinite(position + q.tolist() + [fov])) or np.linalg.norm(q) < 1e-8 or not 0 < fov < 180:
+            position, q, fov = camera_values([sample['cameraPosition'][k] for k in 'xyz'],
+                                              [sample['cameraRotation'][k] for k in 'xyzw'], sample['cameraFOV'])
+            seconds = float(seconds)
+            if not np.isfinite(seconds) or (records and seconds <= records[-1]['telemetry_time_seconds']):
                 continue
-            if records and float(seconds) <= records[-1]['telemetry_time_seconds']:
-                continue
-            records.append({'source_index': index, 'telemetry_time_seconds': float(seconds),
-                            'camera_position': position, 'camera_rotation_xyzw': (q / np.linalg.norm(q)).tolist(),
+            records.append({'source_index': index, 'telemetry_time_seconds': seconds,
+                            'camera_position': position.tolist(), 'camera_rotation_xyzw': q.tolist(),
                             'camera_fov_degrees': fov})
         except (KeyError, TypeError, ValueError):
             continue
@@ -94,8 +94,7 @@ def probe_pts(video, executable):
     command = [executable, '-v', 'error', '-select_streams', 'v:0', '-show_frames',
                '-show_entries', 'frame=best_effort_timestamp_time,pkt_duration_time', '-of', 'json', str(video)]
     payload = json.loads(subprocess.check_output(command, timeout=60))
-    pts = [float(r['best_effort_timestamp_time']) for r in payload.get('frames', [])
-           if r.get('best_effort_timestamp_time') is not None]
+    pts = frame_pts_table(payload.get('frames', []))
     return pts, {'command': command, 'frame_pts': pts,
                  'scope': 'container presentation times; not camera exposure times; saved JPEG mapping unverified'}
 

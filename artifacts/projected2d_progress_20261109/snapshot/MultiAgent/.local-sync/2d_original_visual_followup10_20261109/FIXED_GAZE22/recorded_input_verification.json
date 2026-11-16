@@ -1,0 +1,65 @@
+{
+  "calls_verified": 10,
+  "source_lock_fully_matches": false,
+  "historical_preparation_helper_drift": [
+    {
+      "file": "/ai/data/MultiAgent/tools/iterate_original2d_followup.py",
+      "expected_sha256": "3986fe88ee3b816ac862ee1aba45322aae20af52a91d839b474e6e1dce3d9159",
+      "current_sha256": "401286d2321875d554a4356301815ce0d8e22b3a4636757a56c34b9e7a45748e",
+      "scope": "Image preparation/CLI helper edited after the frozen run; source lock no longer completely matches. Frozen inputs are independently verified below."
+    }
+  ],
+  "model_and_evaluator_sources_match": true,
+  "calls": [
+    {
+      "event": "scene1_495",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene2_369",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene2_412",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene2_482",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene3_161",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room1_1",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room2_19",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room3_108",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room4_72",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene5_226",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    }
+  ]
+}

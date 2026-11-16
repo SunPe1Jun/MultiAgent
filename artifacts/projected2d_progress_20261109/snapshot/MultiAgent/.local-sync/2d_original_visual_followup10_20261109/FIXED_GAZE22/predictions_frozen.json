@@ -1,0 +1,14 @@
+{
+  "responses": {
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene1_495.json": "e6a31c6f6f328aab0c73f49eb0f793d5b4bee2e9ccc29c305c8c6a5962497fc2",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene2_369.json": "14c032d7e5c4f625e3d2390ce8ebae7a0fcba033edd9c1b285210eae4f0c619d",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene2_412.json": "50c128be7de922ce93077a90acc36bf4afaffe12dc8acd37577d98500c8e9eb0",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene2_482.json": "d80aee9f66e1e25deb5002a576dce20c2a73bd03858bf656653879b19b54c467",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene3_161.json": "b3bdf9fecf92545c15c7cff51fa7f8c16d0a24cb194e947b421a0d11bbf8a19d",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene4_room1_1.json": "325393ddb78bbc63ed40c13bccc81b287d716552481c9842e6fbbc775028493e",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene4_room2_19.json": "dbb07b3655dd4314ff3d54fdd196c1a54595b8e76a844a5be6c9698c311fee20",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene4_room3_108.json": "93bf23eb2ef2ab600a6db612d257075a80591beccea0cfca8ff657875517fb56",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene4_room4_72.json": "ab34500f467f3b09e799e2922a3d787749be1df575553553203ca68d844822a6",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene5_226.json": "94fa414b9752d429f464665f9e5f42e6d599b4ab0c53df53651a3d1d03424087"
+  }
+}

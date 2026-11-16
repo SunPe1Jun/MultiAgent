@@ -9,6 +9,7 @@ import numpy as np
 from PIL import Image, ImageFilter
 
 from .baseline import module
+from .camera_geometry import interpolate_pose, project_world
 
 
 DEFAULTS = {
@@ -50,20 +51,6 @@ def _unit_quaternion(value):
         return None
     norm = _norm(q)
     return tuple(x/norm for x in q)
-
-
-def _slerp(a, b, t):
-    dot = sum(x*y for x, y in zip(a, b))
-    if dot < 0:
-        b = tuple(-x for x in b)
-        dot = -dot
-    if dot > 0.9995:
-        return _unit_quaternion(dict(zip(('x', 'y', 'z', 'w'),
-                                        (x+t*(y-x) for x, y in zip(a, b)))))
-    angle = math.acos(max(-1., min(1., dot)))
-    sine = math.sin(angle)
-    return tuple((math.sin((1-t)*angle)*x + math.sin(t*angle)*y)/sine
-                 for x, y in zip(a, b))
 
 
 def timestamp_seconds(value):
@@ -122,30 +109,7 @@ def _finite(value):
 
 
 def interpolate_camera_pose(records, target_time, max_gap_seconds=0.25):
-    if not records or target_time is None:
-        return None
-    before = next((row for row in reversed(records)
-                   if row['telemetry_time_seconds'] <= target_time
-                   and row['camera_position'] is not None and row['camera_rotation_xyzw'] is not None
-                   and row['camera_fov_degrees'] is not None), None)
-    after = next((row for row in records
-                  if row['telemetry_time_seconds'] >= target_time
-                  and row['camera_position'] is not None and row['camera_rotation_xyzw'] is not None
-                  and row['camera_fov_degrees'] is not None), None)
-    if before is None or after is None:
-        return None
-    left, right = before['telemetry_time_seconds'], after['telemetry_time_seconds']
-    gap = right-left
-    if gap > max_gap_seconds:
-        return None
-    ratio = 0. if gap <= 1e-9 else (target_time-left)/gap
-    position = tuple(a+(b-a)*ratio for a, b in zip(before['camera_position'], after['camera_position']))
-    rotation = _slerp(before['camera_rotation_xyzw'], after['camera_rotation_xyzw'], ratio)
-    fov = before['camera_fov_degrees'] + (after['camera_fov_degrees']-before['camera_fov_degrees'])*ratio
-    return {'position_world': position, 'rotation_xyzw': rotation, 'fov_vertical_degrees': fov,
-            'pose_interpolation': 'linear_position_slerp_rotation',
-            'pose_source_indices': [before['source_index'], after['source_index']],
-            'pose_source_times': [left, right], 'pose_bracket_gap_seconds': gap}
+    return interpolate_pose(records, target_time, max_gap_seconds)
 
 
 def project_gaze(record, pose, width, height, visibility_test=None):
@@ -153,37 +117,17 @@ def project_gaze(record, pose, width, height, visibility_test=None):
         return {'status': 'invalid_sample', 'visibility': 'visibility_unknown'}
     if pose is None:
         return {'status': 'camera_pose_unavailable', 'visibility': 'visibility_unknown'}
-    api = module('api')
-    q = pose['rotation_xyzw']
-    inverse = api.quaternion_conjugate(q)
-    point = record['gaze_point_world']
-    if point is not None:
-        delta = tuple(v-o for v, o in zip(point, pose['position_world']))
-        local = api.rotate_vector_by_quaternion(delta, inverse)
-        source = 'gazePoint_finite_world_intersection'
-    else:
-        local = api.rotate_vector_by_quaternion(record['gaze_vector_world'], inverse)
-        source = 'gazeVector_world_direction_infinite_distance'
-    x, y, z = local
-    if z <= 1e-6:
-        return {'status': 'behind_camera', 'visibility': 'visibility_unknown',
-                'projection_source': source, 'camera_xyz': local}
-    tan = math.tan(math.radians(pose['fov_vertical_degrees'])/2.)
-    aspect = width/height
-    if tan <= 1e-8 or aspect <= 0:
-        return {'status': 'invalid_camera_intrinsics', 'visibility': 'visibility_unknown'}
-    # Unity Camera.fieldOfView is vertical; pixels have square aspect and origin is top-left.
-    u = 0.5 + x/(2*z*tan*aspect)
-    v = 0.5 - y/(2*z*tan)
-    px, py = u*width, v*height
-    result = {'projection_source': source, 'camera_xyz': local,
-              'pixel_xy': [px, py], 'normalized_uv': [u, v],
-              'visibility': 'visibility_unknown', 'visibility_method': 'frustum_only_no_depth_or_mesh'}
-    if not (math.isfinite(px) and math.isfinite(py)):
-        result.update(status='invalid_projection', visibility='visibility_unknown')
-    elif u < 0 or u >= 1 or v < 0 or v >= 1:
-        result.update(status='outside_frame', visibility='visibility_unknown')
-    else:
+    point = record.get('gaze_point_world')
+    direction = point is None
+    value = record.get('gaze_vector_world') if direction else point
+    source = ('gazeVector_world_direction_infinite_distance' if direction
+              else 'gazePoint_finite_world_intersection')
+    projected = project_world(value, pose, width, height, direction=direction)
+    result = {**projected, 'projection_source': source, 'visibility': 'visibility_unknown',
+              'visibility_method': 'frustum_only_no_depth_or_mesh'}
+    if projected.get('pixel_xy_unclipped') is not None:
+        result.update(pixel_xy=projected['pixel_xy_unclipped'], normalized_uv=projected['normalized_uv_unclipped'])
+    if projected['in_frustum']:
         result['status'] = 'projected_frustum_only'
         if visibility_test is not None:
             verdict = visibility_test(record, pose, result)
@@ -219,7 +163,7 @@ def _support_weights(records, selected, start, end, max_gap, decay, tau, target)
 def select_gaze_observations(records, *, strategy, frame_time, event_window,
                              clock_available, config=None):
     cfg = {**DEFAULTS, **(config or {})}
-    if not clock_available or frame_time is None:
+    if not clock_available or _finite(frame_time) is None:
         return {'selected': [], 'window': None, 'observation_cutoff': None,
                 'status': 'clock_unavailable_full_rgb_fallback', 'protocol': 'offline'}
     valid = [r for r in records if r['validity'] == 'valid']
@@ -279,25 +223,33 @@ def build_heatmap(ctx, records, *, frame_time_video, frame_time_telemetry, event
                   clock_available, image_size, strategy, config=None, reference_pose=None):
     cfg = {**DEFAULTS, **(config or {})}
     width, height = image_size
+    if width <= 0 or height <= 0:
+        raise ValueError('Heatmap dimensions must be positive')
+    if clock_available and reference_pose is not None and reference_pose.get('telemetry_time_seconds') is not None:
+        query = _finite(reference_pose['telemetry_time_seconds'])
+        frame_query = _finite(frame_time_telemetry)
+        if query is None or frame_query is None or abs(query - frame_query) > 1e-6:
+            raise ValueError('Heatmap observation time and reference camera pose disagree')
     heat = np.zeros((height, width), dtype=np.float32)
     selected = select_gaze_observations(records, strategy=strategy,
         frame_time=frame_time_telemetry, event_window=event_window,
         clock_available=clock_available, config=cfg)
     projected = []
     valid_duration = 0.
-    pose_cache = {frame_time_telemetry: reference_pose} if reference_pose is not None else {}
-    sigma = max(1., height*math.radians(cfg['kernel_sigma_degrees']) /
-                (2*math.tan(math.radians(_reference_fov(records))/2)))
+    pose = reference_pose
+    if pose is None and selected['selected']:
+        pose = interpolate_camera_pose(records, frame_time_telemetry, cfg['max_gap_seconds'])
+    # The projected point and angular kernel must use the same frame camera.
+    reference_fov = _finite((pose or {}).get('fov_vertical_degrees'))
+    valid_fov = reference_fov is not None and 0 < reference_fov < 180
+    sigma = (max(1., height * math.radians(cfg['kernel_sigma_degrees']) /
+                 (2 * math.tan(math.radians(reference_fov) / 2))) if valid_fov else 1.)
     radius = max(2, int(math.ceil(sigma*3)))
     for item in selected['selected']:
         record, weight = item['record'], item['weight_seconds']
-        if frame_time_telemetry not in pose_cache:
-            pose_cache[frame_time_telemetry] = interpolate_camera_pose(records, frame_time_telemetry,
-                                                                        cfg['max_gap_seconds'])
-        pose = pose_cache[frame_time_telemetry]
         result = project_gaze(record, pose, width, height)
         projected.append({'source_index': record['source_index'],
-                          'gaze_timestamp': record['timestamp'],
+                          'gaze_timestamp': record.get('timestamp'),
                           'gaze_time_seconds': record['telemetry_time_seconds'],
                           'frame_time_seconds': frame_time_video,
                           'weight_seconds': weight,
@@ -328,16 +280,20 @@ def build_heatmap(ctx, records, *, frame_time_video, frame_time_telemetry, event
              'verified_visible_count': 0, 'verified_occluded_count': 0,
              'visibility_method': 'frustum_only_no_depth_or_replayable_mesh',
              'supported_world_surface': 'unsupported_dynamic_correspondence_unknown',
-             'quality_available': any(r['quality_available'] for r in records),
+             'quality_available': any(r.get('quality_available', False) for r in records),
              'valid_evidence_duration_seconds': valid_duration,
              'max_unnormalized_heat': float(heat.max()),
              'unnormalized_heat_sum': float(heat.sum()),
              'kernel_sigma_degrees': cfg['kernel_sigma_degrees'],
              'kernel_sigma_pixels_at_model_input': sigma,
+             'kernel_reference_fov_degrees': reference_fov,
+             'reference_camera_pose': pose,
+             'geometry_version': 'camera_geometry_v2',
              'kernel_semantics': 'engineering spatial tolerance; not probability or calibrated device noise',
              'projection_model': 'vertical_fov_pinhole_square_pixels_top_left_origin',
              'pose_interpolation': 'linear_position_slerp_rotation_max_gap_0.25s',
-             'status': selected['status']}
+             'status': (selected['status'] if not selected['selected'] or pose is not None
+                        else 'camera_pose_unavailable_full_rgb_fallback')}
     return heat, stats, projected
 
 
@@ -386,8 +342,3 @@ def render_presentation(image, heat, method, config=None):
             'valid_heat_fraction': float(np.mean(heat > 0)),
             'paper_method': False}
     return source.copy(), {'status': 'raw_rgb_control'}
-
-
-def _reference_fov(records):
-    values = [r['camera_fov_degrees'] for r in records if r['camera_fov_degrees']]
-    return float(np.median(values)) if values else 90.

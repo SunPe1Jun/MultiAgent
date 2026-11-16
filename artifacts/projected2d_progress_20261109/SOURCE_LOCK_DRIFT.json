@@ -1,0 +1,73 @@
+{
+  "scope": "Current source snapshot; it cannot reconstruct already overwritten historical preparation helper versions.",
+  "unchanged_frozen_outputs_verified": true,
+  "historical_source_drift": [
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/HEAT_CROP_FOV95",
+      "source": "/ai/data/MultiAgent/tools/iterate_original2d_followup.py",
+      "frozen_sha256": "3986fe88ee3b816ac862ee1aba45322aae20af52a91d839b474e6e1dce3d9159",
+      "current_sha256": "401286d2321875d554a4356301815ce0d8e22b3a4636757a56c34b9e7a45748e"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV95",
+      "source": "/ai/data/MultiAgent/tools/iterate_original2d_followup.py",
+      "frozen_sha256": "3986fe88ee3b816ac862ee1aba45322aae20af52a91d839b474e6e1dce3d9159",
+      "current_sha256": "401286d2321875d554a4356301815ce0d8e22b3a4636757a56c34b9e7a45748e"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP",
+      "source": "/ai/data/MultiAgent/tools/prepare_original2d_confirmation.py",
+      "frozen_sha256": "ed726bcfba1eafcbf00b2101df0a513160569935e7116bdd8d281a1117e984cb",
+      "current_sha256": "23411a9e2e8728a11cb2ab88ac177cf76871fee8713dba915d508b482ed03d8a"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP",
+      "source": "/ai/data/MultiAgent/tools/prepare_original2d_confirmation.py",
+      "frozen_sha256": "ed726bcfba1eafcbf00b2101df0a513160569935e7116bdd8d281a1117e984cb",
+      "current_sha256": "23411a9e2e8728a11cb2ab88ac177cf76871fee8713dba915d508b482ed03d8a"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22",
+      "source": "/ai/data/MultiAgent/tools/iterate_original2d_followup.py",
+      "frozen_sha256": "3986fe88ee3b816ac862ee1aba45322aae20af52a91d839b474e6e1dce3d9159",
+      "current_sha256": "401286d2321875d554a4356301815ce0d8e22b3a4636757a56c34b9e7a45748e"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_dev_v2_20261109/FIXED_GAZE18",
+      "source": "/ai/data/MultiAgent/tools/prepare_original2d_confirmation.py",
+      "frozen_sha256": "0a5bfa325b7b09716a3b802b128f74d9171a11f7dab5fcbf2a9b3b0be1f95a29",
+      "current_sha256": "23411a9e2e8728a11cb2ab88ac177cf76871fee8713dba915d508b482ed03d8a"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18",
+      "source": "/ai/data/MultiAgent/tools/prepare_original2d_confirmation.py",
+      "frozen_sha256": "0a5bfa325b7b09716a3b802b128f74d9171a11f7dab5fcbf2a9b3b0be1f95a29",
+      "current_sha256": "23411a9e2e8728a11cb2ab88ac177cf76871fee8713dba915d508b482ed03d8a"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_dev_v2_20261109/FIXED_GAZE27",
+      "source": "/ai/data/MultiAgent/tools/prepare_original2d_confirmation.py",
+      "frozen_sha256": "0a5bfa325b7b09716a3b802b128f74d9171a11f7dab5fcbf2a9b3b0be1f95a29",
+      "current_sha256": "23411a9e2e8728a11cb2ab88ac177cf76871fee8713dba915d508b482ed03d8a"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_fixed27_confirm_v2_20261109/FIXED_GAZE27",
+      "source": "/ai/data/MultiAgent/tools/prepare_original2d_confirmation.py",
+      "frozen_sha256": "0a5bfa325b7b09716a3b802b128f74d9171a11f7dab5fcbf2a9b3b0be1f95a29",
+      "current_sha256": "23411a9e2e8728a11cb2ab88ac177cf76871fee8713dba915d508b482ed03d8a"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP",
+      "source": "/ai/data/MultiAgent/tools/prepare_original2d_confirmation.py",
+      "frozen_sha256": "ed726bcfba1eafcbf00b2101df0a513160569935e7116bdd8d281a1117e984cb",
+      "current_sha256": "23411a9e2e8728a11cb2ab88ac177cf76871fee8713dba915d508b482ed03d8a"
+    },
+    {
+      "run": "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP",
+      "source": "/ai/data/MultiAgent/tools/iterate_original2d_followup.py",
+      "frozen_sha256": "3986fe88ee3b816ac862ee1aba45322aae20af52a91d839b474e6e1dce3d9159",
+      "current_sha256": "401286d2321875d554a4356301815ce0d8e22b3a4636757a56c34b9e7a45748e"
+    }
+  ],
+  "interpretation": "Preserve original protocol locks and disclose differences. Model inputs and response/tensor evidence are archived independently."
+}

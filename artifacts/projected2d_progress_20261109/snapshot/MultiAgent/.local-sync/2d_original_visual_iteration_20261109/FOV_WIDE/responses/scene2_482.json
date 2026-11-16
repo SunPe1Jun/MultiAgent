@@ -1,0 +1,253 @@
+{
+  "event": "scene2_482",
+  "fingerprint": "281c0d2c0d9b9fcdd70915c9109b080bb3fc6ab951417e7fcf47ac8720f9b2b7",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"that colleague\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.62,\n      \"y_norm\": 0.45,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"that chair\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.75,\n      \"y_norm\": 0.55,\n      \"confidence\": 0.92\n    },\n    {\n      \"mention\": \"there\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.78,\n      \"y_norm\": 0.58,\n      \"confidence\": 0.90\n    },\n    {\n      \"mention\": \"that drawer\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.18,\n      \"y_norm\": 0.65,\n      \"confidence\": 0.93\n    },\n    {\n      \"mention\": \"that chair\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.75,\n      \"y_norm\": 0.55,\n      \"confidence\": 0.92\n    },\n    {\n      \"mention\": \"over there\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.78,\n      \"y_norm\": 0.58,\n      \"confidence\": 0.90\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "that colleague",
+        "panel_id": "P2",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.62,
+        "y_norm": 0.45,
+        "confidence": 0.95
+      },
+      {
+        "mention": "that chair",
+        "panel_id": "P2",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.75,
+        "y_norm": 0.55,
+        "confidence": 0.92
+      },
+      {
+        "mention": "there",
+        "panel_id": "P2",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.78,
+        "y_norm": 0.58,
+        "confidence": 0.9
+      },
+      {
+        "mention": "that drawer",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.18,
+        "y_norm": 0.65,
+        "confidence": 0.93
+      },
+      {
+        "mention": "that chair",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.75,
+        "y_norm": 0.55,
+        "confidence": 0.92
+      },
+      {
+        "mention": "over there",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.78,
+        "y_norm": 0.58,
+        "confidence": 0.9
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "that colleague",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.4792828125,
+        "y_norm": 0.42000000000000004,
+        "confidence": 0.95,
+        "raw_x_norm": 0.62,
+        "raw_y_norm": 0.45,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "that chair",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.57134921875,
+        "y_norm": 0.45500000000000007,
+        "confidence": 0.92,
+        "raw_x_norm": 0.75,
+        "raw_y_norm": 0.55,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "there",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.5925953125,
+        "y_norm": 0.4655,
+        "confidence": 0.9,
+        "raw_x_norm": 0.78,
+        "raw_y_norm": 0.58,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "that drawer",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.36421875,
+        "y_norm": 0.65,
+        "confidence": 0.93,
+        "raw_x_norm": 0.18,
+        "raw_y_norm": 0.65,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "that chair",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.57034921875,
+        "y_norm": 0.44930000000000003,
+        "confidence": 0.92,
+        "raw_x_norm": 0.75,
+        "raw_y_norm": 0.55,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "over there",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.5915953125,
+        "y_norm": 0.4598,
+        "confidence": 0.9,
+        "raw_x_norm": 0.78,
+        "raw_y_norm": 0.58,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene2_482.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4308
+        ],
+        "dtype": "torch.int64",
+        "sha256": "8d354e0a5bf80e5bbeb5fbb11d4864db765952e0c37b859a79e3addc83b0d342",
+        "bytes": 34464
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4308
+        ],
+        "dtype": "torch.int64",
+        "sha256": "a865c966dd114cc7a323f1ae9a65b9e38bf0b08a23ac1d085d933fbb9424661b",
+        "bytes": 34464
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4308
+        ],
+        "dtype": "torch.int64",
+        "sha256": "6572e7a51af8adc091a3d63414194dd65c2a917a182bdb1c552b5986c71de33c",
+        "bytes": 34464
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "53850d42206934579cadd5e014b3ced787a9f70b706c8d5c5d1e007b9c7f4c6a",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene2_482.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "9ab7874a66a9a4f1e87ad743d0b6e2c7b43f972adaef4911a0b4f6838361413d",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene2_482.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene2_482.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/FOV_WIDE/responses/scene2_482.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "9ab7874a66a9a4f1e87ad743d0b6e2c7b43f972adaef4911a0b4f6838361413d",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 12.018932889215648,
+  "generated_tokens": 385
+}

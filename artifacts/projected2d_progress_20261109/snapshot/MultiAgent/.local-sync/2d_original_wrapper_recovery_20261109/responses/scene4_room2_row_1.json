@@ -1,0 +1,95 @@
+{
+  "scene": "scene4_room2",
+  "row_index": 1,
+  "event_id": "scene4_2",
+  "instruction": "Wipe the top surface of the washing machine.",
+  "input_mode": "multi_image",
+  "panel_context_mode": "paired_crop",
+  "panel_caption_mode": "none",
+  "paired_crop_coordinate_policy": "paired_canvas_map",
+  "model_input_image": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P1_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P2_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P3_paired.jpg",
+  "model_input_images": [
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P1_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P2_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P3_paired.jpg"
+  ],
+  "prompt_text": "Instruction:\nWipe the top surface of the washing machine.\n\nExpected number of output referents: 1\n\nInfer the target referents from the instruction. Do not use hidden dataset labels such as car1 or forklift2; describe each output with a short phrase from the instruction.\n\nPanels:\n- P1: video_time=3.369s, json_sample_time=1.193s\n- P2: video_time=4.805s, json_sample_time=2.629s\n- P3: video_time=5.362s, json_sample_time=3.185s\n\nImage order:\n- Image 1: P1 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3464,0.2792,0.6964,0.6292]\n- Image 2: P2 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3422,0.2812,0.6922,0.6312]\n- Image 3: P3 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3396,0.2708,0.6896,0.6208]\n\nTask:\nFor each intended referent:\n- compare all panels before deciding; do not prefer P1 or the earliest image unless it is the best evidence;\n- panel_id follows the image order and the Panels list above;\n- choose the single best panel_id from the visible panels;\n- output x_norm and y_norm as normalized coordinates inside the coordinate_space you choose;\n- for a paired image, use coordinate_space=\"full_panel\" if the point is on the LEFT full panel;\n- for a paired image, use coordinate_space=\"gaze_crop\" if the point is easier to localize on the RIGHT crop;\n- do not use coordinates of the whole paired image canvas; choose either full_panel or gaze_crop;\n- use the green gaze dot only as a noisy attention cue, together with the image and language;\n- do not output the green dot unless it is actually on the intended referent;\n- if a referent is an object part, surface, or placement area, output the best visible point on that part/area rather than the geometric center of the whole image.\n\nRequired strict JSON schema:\n{\n  \"referents\": [\n    {\n      \"mention\": \"target referent label or short phrase\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.0,\n      \"y_norm\": 0.0,\n      \"confidence\": 0.0\n    }\n  ]\n}\n\nUse null coordinates only when no reliable point can be localized. Return JSON only.",
+  "panel_meta": [
+    {
+      "panel_id": "P1",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "3.369",
+      "json_sample_time": "1.193",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P1_paired.jpg",
+      "gaze_u_norm": "0.521220",
+      "gaze_v_norm": "0.454330",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_1/P1.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene4_room2/row_1/P1_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3464,0.2792,0.6964,0.6292"
+    },
+    {
+      "panel_id": "P2",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "4.805",
+      "json_sample_time": "2.629",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P2_paired.jpg",
+      "gaze_u_norm": "0.516940",
+      "gaze_v_norm": "0.456145",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_1/P2.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene4_room2/row_1/P2_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3422,0.2812,0.6922,0.6312"
+    },
+    {
+      "panel_id": "P3",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "5.362",
+      "json_sample_time": "3.185",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P3_paired.jpg",
+      "gaze_u_norm": "0.514531",
+      "gaze_v_norm": "0.445662",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_1/P3.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene4_room2/row_1/P3_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3396,0.2708,0.6896,0.6208"
+    }
+  ],
+  "model_raw_output": "{\n  \"referents\": [\n    {\n      \"mention\": \"top surface of the washing machine\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.78,\n      \"y_norm\": 0.45,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "raw_parsed_json": {
+    "referents": [
+      {
+        "mention": "top surface of the washing machine",
+        "panel_id": "P1",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.78,
+        "y_norm": 0.45,
+        "confidence": 0.95
+      }
+    ]
+  },
+  "parsed_json": {
+    "referents": [
+      {
+        "mention": "top surface of the washing machine",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.5405953125,
+        "y_norm": 0.4367,
+        "confidence": 0.95,
+        "raw_x_norm": 0.78,
+        "raw_y_norm": 0.45,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      }
+    ]
+  },
+  "parse_ok": true
+}

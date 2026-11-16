@@ -1,0 +1,111 @@
+{
+  "resamples": 50000,
+  "seed": 20261111,
+  "scope": "Only interactions where input image or prompt changed against native wrapper; previously seen development/confirmation events, not held out.",
+  "comparisons": {
+    "FIXED_GAZE22": {
+      "all_modified": {
+        "n": 23,
+        "delta_heat_minus_control": 0.019047619047619035,
+        "bootstrap95": [
+          0.0,
+          0.06521739130434778
+        ]
+      },
+      "dev_modified": {
+        "n": 10,
+        "delta_heat_minus_control": 0.037037037037037035,
+        "bootstrap95": [
+          0.0,
+          0.13636363636363635
+        ]
+      },
+      "confirm_modified": {
+        "n": 13,
+        "delta_heat_minus_control": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "MIRRORED_HEAT_CROP": {
+      "all_modified": {
+        "n": 23,
+        "delta_heat_minus_control": 0.019047619047619035,
+        "bootstrap95": [
+          -0.06818181818181818,
+          0.09433962264150944
+        ]
+      },
+      "dev_modified": {
+        "n": 10,
+        "delta_heat_minus_control": 0.037037037037037035,
+        "bootstrap95": [
+          0.0,
+          0.09375
+        ]
+      },
+      "confirm_modified": {
+        "n": 13,
+        "delta_heat_minus_control": 0.0,
+        "bootstrap95": [
+          -0.1702127659574468,
+          0.14285714285714285
+        ]
+      }
+    },
+    "HEAT_CROP_FOV": {
+      "all_modified": {
+        "n": 23,
+        "delta_heat_minus_control": 0.0380952380952381,
+        "bootstrap95": [
+          0.0,
+          0.09433962264150941
+        ]
+      },
+      "dev_modified": {
+        "n": 10,
+        "delta_heat_minus_control": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "confirm_modified": {
+        "n": 13,
+        "delta_heat_minus_control": 0.0784313725490196,
+        "bootstrap95": [
+          0.0,
+          0.1739130434782609
+        ]
+      }
+    },
+    "FOV95": {
+      "all_modified": {
+        "n": 23,
+        "delta_heat_minus_control": 0.0380952380952381,
+        "bootstrap95": [
+          0.0,
+          0.09433962264150944
+        ]
+      },
+      "dev_modified": {
+        "n": 10,
+        "delta_heat_minus_control": 0.0,
+        "bootstrap95": [
+          0.0,
+          0.0
+        ]
+      },
+      "confirm_modified": {
+        "n": 13,
+        "delta_heat_minus_control": 0.0784313725490196,
+        "bootstrap95": [
+          0.0,
+          0.1739130434782609
+        ]
+      }
+    }
+  }
+}

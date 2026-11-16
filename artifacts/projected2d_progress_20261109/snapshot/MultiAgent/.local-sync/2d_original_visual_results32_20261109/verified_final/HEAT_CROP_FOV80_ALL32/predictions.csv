@@ -1,0 +1,681 @@
+﻿scene,row_index,event_id,instruction,model_input_image,model_raw_output,parsed_json,parse_ok,prediction_count,error_message
+scene1,495,scene1_496,"Open the tailgate of this truck, unload this box.",/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene1_495/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene1_495/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene1_495/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""truck"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.345,
+      ""y_norm"": 0.535,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""box"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.345,
+      ""y_norm"": 0.535,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""truck"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.6980859374999999, ""y_norm"": 0.535, ""confidence"": 0.95, ""raw_x_norm"": 0.345, ""raw_y_norm"": 0.535, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""box"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.6980859374999999, ""y_norm"": 0.535, ""confidence"": 0.95, ""raw_x_norm"": 0.345, ""raw_y_norm"": 0.535, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,2,
+scene2,369,scene2_370,Ask that colleague to carry that laptop next to the printer.,/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene2_369/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene2_369/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene2_369/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""colleague"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.15,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""laptop"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.08,
+      ""y_norm"": 0.68,
+      ""confidence"": 0.9
+    },
+    {
+      ""mention"": ""printer"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.13,
+      ""y_norm"": 0.62,
+      ""confidence"": 0.9
+    }
+  ]
+}","{""referents"": [{""mention"": ""colleague"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.30351562499999996, ""y_norm"": 0.45, ""confidence"": 0.95, ""raw_x_norm"": 0.15, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""laptop"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.161875, ""y_norm"": 0.68, ""confidence"": 0.9, ""raw_x_norm"": 0.08, ""raw_y_norm"": 0.68, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""printer"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.263046875, ""y_norm"": 0.62, ""confidence"": 0.9, ""raw_x_norm"": 0.13, ""raw_y_norm"": 0.62, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,3,
+scene2,412,scene2_413,"Place that chair near the spot, then move that file near there.",/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene2_412/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene2_412/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene2_412/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""that chair"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.78,
+      ""y_norm"": 0.55,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""that file"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.42,
+      ""y_norm"": 0.55,
+      ""confidence"": 0.92
+    },
+    {
+      ""mention"": ""the spot"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.42,
+      ""y_norm"": 0.55,
+      ""confidence"": 0.92
+    },
+    {
+      ""mention"": ""near there"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.42,
+      ""y_norm"": 0.55,
+      ""confidence"": 0.92
+    }
+  ]
+}","{""referents"": [{""mention"": ""that chair"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.60785465625, ""y_norm"": 0.51619, ""confidence"": 0.95, ""raw_x_norm"": 0.78, ""raw_y_norm"": 0.55, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""that file"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.8498437499999999, ""y_norm"": 0.55, ""confidence"": 0.92, ""raw_x_norm"": 0.42, ""raw_y_norm"": 0.55, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""the spot"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.8498437499999999, ""y_norm"": 0.55, ""confidence"": 0.92, ""raw_x_norm"": 0.42, ""raw_y_norm"": 0.55, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""near there"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.8498437499999999, ""y_norm"": 0.55, ""confidence"": 0.92, ""raw_x_norm"": 0.42, ""raw_y_norm"": 0.55, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,4,
+scene2,482,scene2_483,"Tell that colleague to push that chair to there, then open that drawer, then place that chair over there.",/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene2_482/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene2_482/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene2_482/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""that colleague"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.79,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""that chair"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.78,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.97
+    },
+    {
+      ""mention"": ""there"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.78,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.97
+    },
+    {
+      ""mention"": ""that drawer"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.25,
+      ""y_norm"": 0.48,
+      ""confidence"": 0.96
+    },
+    {
+      ""mention"": ""that chair"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.78,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.97
+    },
+    {
+      ""mention"": ""over there"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.78,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.97
+    }
+  ]
+}","{""referents"": [{""mention"": ""that colleague"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.570102171875, ""y_norm"": 0.42701, ""confidence"": 0.98, ""raw_x_norm"": 0.79, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""that chair"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.58655465625, ""y_norm"": 0.42701, ""confidence"": 0.97, ""raw_x_norm"": 0.78, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""there"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.58655465625, ""y_norm"": 0.42701, ""confidence"": 0.97, ""raw_x_norm"": 0.78, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""that drawer"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.505859375, ""y_norm"": 0.48, ""confidence"": 0.96, ""raw_x_norm"": 0.25, ""raw_y_norm"": 0.48, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""that chair"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.58655465625, ""y_norm"": 0.42131, ""confidence"": 0.97, ""raw_x_norm"": 0.78, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""over there"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.58655465625, ""y_norm"": 0.42131, ""confidence"": 0.97, ""raw_x_norm"": 0.78, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,6,
+scene3,161,scene3_162,Request that colleague to retreat that truck along the runway.,/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene3_161/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene3_161/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene3_161/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""truck"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.17,
+      ""y_norm"": 0.42,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""runway"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.45,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""colleague"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.55,
+      ""y_norm"": 0.65,
+      ""confidence"": 0.92
+    }
+  ]
+}","{""referents"": [{""mention"": ""truck"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.343984375, ""y_norm"": 0.42, ""confidence"": 0.95, ""raw_x_norm"": 0.17, ""raw_y_norm"": 0.42, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""runway"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.910546875, ""y_norm"": 0.45, ""confidence"": 0.98, ""raw_x_norm"": 0.45, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""colleague"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.380061796875, ""y_norm"": 0.47987, ""confidence"": 0.92, ""raw_x_norm"": 0.55, ""raw_y_norm"": 0.65, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,3,
+scene4_room1,1,scene4_2,Close the curtain beside the sofa.,/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room1_1/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room1_1/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room1_1/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""curtain beside the sofa"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.73,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""curtain beside the sofa"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.73,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""curtain beside the sofa"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.521617078125, ""y_norm"": 0.45721, ""confidence"": 0.95, ""raw_x_norm"": 0.73, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""curtain beside the sofa"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.535117078125, ""y_norm"": 0.45201, ""confidence"": 0.95, ""raw_x_norm"": 0.73, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,
+scene4_room2,19,scene4_20,Pick up the spray bottle and set it near the basin.,/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room2_19/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room2_19/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room2_19/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""spray bottle"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.767,
+      ""y_norm"": 0.433,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""basin"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.486,
+      ""y_norm"": 0.433,
+      ""confidence"": 0.99
+    }
+  ]
+}","{""referents"": [{""mention"": ""spray bottle"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5468728859375, ""y_norm"": 0.4362734, ""confidence"": 0.98, ""raw_x_norm"": 0.767, ""raw_y_norm"": 0.433, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""basin"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.983390625, ""y_norm"": 0.433, ""confidence"": 0.99, ""raw_x_norm"": 0.486, ""raw_y_norm"": 0.433, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,2,
+scene4_room3,108,scene4_109,Move the cushion toward the right side of the sofa and tidy its position. ⭐,/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room3_108/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room3_108/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room3_108/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""the cushion"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.72,
+      ""y_norm"": 0.42,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""the right side of the sofa"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.85,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.97
+    }
+  ]
+}","{""referents"": [{""mention"": ""the cushion"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.49162621874999995, ""y_norm"": 0.525116, ""confidence"": 0.98, ""raw_x_norm"": 0.72, ""raw_y_norm"": 0.42, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the right side of the sofa"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5494176171874999, ""y_norm"": 0.53171, ""confidence"": 0.97, ""raw_x_norm"": 0.85, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,
+scene4_room4,72,scene4_73,Place the pillow near the blue sofa.,/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room4_72/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room4_72/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene4_room4_72/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""pillow"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.17,
+      ""y_norm"": 0.68,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""blue sofa"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.17,
+      ""y_norm"": 0.68,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""pillow"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.343984375, ""y_norm"": 0.68, ""confidence"": 0.95, ""raw_x_norm"": 0.17, ""raw_y_norm"": 0.68, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""blue sofa"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.343984375, ""y_norm"": 0.68, ""confidence"": 0.95, ""raw_x_norm"": 0.17, ""raw_y_norm"": 0.68, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,2,
+scene5,226,scene5_227,Let this drone detect activity around the tank cluster.,/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene5_226/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene5_226/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/inputs/scene5_226/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""tank cluster"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.772,
+      ""y_norm"": 0.443,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""tank cluster"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.514742778125, ""y_norm"": 0.44057139999999995, ""confidence"": 0.98, ""raw_x_norm"": 0.772, ""raw_y_norm"": 0.443, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene1,34,scene1_35,Face this cargo carefully.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene1_34/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene1_34/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene1_34/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""this cargo"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.248,
+      ""y_norm"": 0.427,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""this cargo"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5018125, ""y_norm"": 0.427, ""confidence"": 0.98, ""raw_x_norm"": 0.248, ""raw_y_norm"": 0.427, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,1,
+scene1,198,scene1_199,Touch that truck gently.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene1_198/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene1_198/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene1_198/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""that truck"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.71,
+      ""y_norm"": 0.48,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""that truck"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.42482109375, ""y_norm"": 0.4633, ""confidence"": 0.98, ""raw_x_norm"": 0.71, ""raw_y_norm"": 0.48, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene1,647,scene1_648,"Drive that forklift into that forklift, align it with that truck.",/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene1_647/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene1_647/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene1_647/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""that truck"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.499,
+      ""y_norm"": 0.485,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""that truck"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.499, ""y_norm"": 0.485, ""confidence"": 0.95, ""raw_x_norm"": 0.499, ""raw_y_norm"": 0.485, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""none""}]}",True,1,
+scene2,521,scene2_522,"Tidy that file, then close that drawer.",/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene2_521/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene2_521/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene2_521/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""file"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.7479,
+      ""y_norm"": 0.3979,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""drawer"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.6714,
+      ""y_norm"": 0.3130,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""file"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5693619921874999, ""y_norm"": 0.418465, ""confidence"": 0.95, ""raw_x_norm"": 0.7479, ""raw_y_norm"": 0.3979, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""drawer"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.43868445312500004, ""y_norm"": 0.42255, ""confidence"": 0.95, ""raw_x_norm"": 0.6714, ""raw_y_norm"": 0.313, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,
+scene3,304,scene3_305,Steer that car to that building.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene3_304/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene3_304/P2/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""that car"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.596,
+      ""y_norm"": 0.477,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""that building"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.578,
+      ""y_norm"": 0.437,
+      ""confidence"": 0.99
+    }
+  ]
+}","{""referents"": [{""mention"": ""that car"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.45522036875000005, ""y_norm"": 0.4517446, ""confidence"": 0.98, ""raw_x_norm"": 0.596, ""raw_y_norm"": 0.477, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""that building"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.35249784531249995, ""y_norm"": 0.4954927, ""confidence"": 0.99, ""raw_x_norm"": 0.578, ""raw_y_norm"": 0.437, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,
+scene3,405,scene3_406,"Notify that colleague to inspect that car, then slide that truck there.",/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene3_405/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene3_405/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene3_405/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""that car"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.396,
+      ""y_norm"": 0.442,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""that truck"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.635,
+      ""y_norm"": 0.442,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""notify that colleague"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.798,
+      ""y_norm"": 0.675,
+      ""confidence"": 0.97
+    },
+    {
+      ""mention"": ""slide that truck there"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.635,
+      ""y_norm"": 0.442,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""that car"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.8012812500000001, ""y_norm"": 0.442, ""confidence"": 0.98, ""raw_x_norm"": 0.396, ""raw_y_norm"": 0.442, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""that truck"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.43456359765625, ""y_norm"": 0.4330872, ""confidence"": 0.98, ""raw_x_norm"": 0.635, ""raw_y_norm"": 0.442, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""notify that colleague"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5307721828125, ""y_norm"": 0.5010300000000001, ""confidence"": 0.97, ""raw_x_norm"": 0.798, ""raw_y_norm"": 0.675, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""slide that truck there"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.43456359765625, ""y_norm"": 0.4330872, ""confidence"": 0.98, ""raw_x_norm"": 0.635, ""raw_y_norm"": 0.442, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,4,
+scene3,593,scene3_594,"Monitor the left building, then assess that building.",/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene3_593/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene3_593/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene3_593/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""the left building"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.52,
+      ""y_norm"": 0.35,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""the left building"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.42,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""the left building"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.30796250000000003, ""y_norm"": 0.3829, ""confidence"": 0.95, ""raw_x_norm"": 0.52, ""raw_y_norm"": 0.35, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the left building"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.8498437499999999, ""y_norm"": 0.45, ""confidence"": 0.98, ""raw_x_norm"": 0.42, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,2,
+scene4_room1,34,scene4_35,Adjust the blue armchair slightly forward.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room1_34/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room1_34/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room1_34/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""blue armchair"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.75,
+      ""y_norm"": 0.5,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""blue armchair"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.505512109375, ""y_norm"": 0.5125, ""confidence"": 0.95, ""raw_x_norm"": 0.75, ""raw_y_norm"": 0.5, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene4_room1,51,scene4_52,Ask that person to turn on the lamp.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room1_51/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room1_51/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room1_51/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""the lamp"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.72,
+      ""y_norm"": 0.55,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""the lamp"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.72,
+      ""y_norm"": 0.55,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""the lamp"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5785695625, ""y_norm"": 0.53759, ""confidence"": 0.98, ""raw_x_norm"": 0.72, ""raw_y_norm"": 0.55, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the lamp"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5785695625, ""y_norm"": 0.53759, ""confidence"": 0.98, ""raw_x_norm"": 0.72, ""raw_y_norm"": 0.55, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,
+scene4_room1,98,scene4_99,Pick up the cup on the table and place it near the sofa.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room1_98/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room1_98/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room1_98/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""the cup on the table"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.57,
+      ""y_norm"": 0.35,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""the table"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.57,
+      ""y_norm"": 0.35,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""near the sofa"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.55,
+      ""y_norm"": 0.55,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""the cup on the table"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.44756484374999994, ""y_norm"": 0.5164, ""confidence"": 0.95, ""raw_x_norm"": 0.57, ""raw_y_norm"": 0.35, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the table"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.44756484374999994, ""y_norm"": 0.5164, ""confidence"": 0.95, ""raw_x_norm"": 0.57, ""raw_y_norm"": 0.35, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""near the sofa"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.4375548828125, ""y_norm"": 0.48012, ""confidence"": 0.95, ""raw_x_norm"": 0.55, ""raw_y_norm"": 0.55, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,3,
+scene4_room2,1,scene4_2,Wipe the top surface of the washing machine.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room2_1/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room2_1/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room2_1/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""top surface of the washing machine"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.78,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""top surface of the washing machine"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5405953125, ""y_norm"": 0.4367, ""confidence"": 0.95, ""raw_x_norm"": 0.78, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene4_room2,30,scene4_31,Dust the corner of the yellow shelf.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room2_30/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room2_30/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room2_30/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""corner of the yellow shelf"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.76,
+      ""y_norm"": 0.51,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""corner of the yellow shelf"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.51023125, ""y_norm"": 0.4717, ""confidence"": 0.95, ""raw_x_norm"": 0.76, ""raw_y_norm"": 0.51, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene4_room2,91,scene4_92,Tell that person to wipe the washing machine door frame.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room2_91/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room2_91/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room2_91/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""person"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.46,
+      ""y_norm"": 0.57,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""washing machine door frame"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.72,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.97
+    }
+  ]
+}","{""referents"": [{""mention"": ""person"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.93078125, ""y_norm"": 0.57, ""confidence"": 0.98, ""raw_x_norm"": 0.46, ""raw_y_norm"": 0.57, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""washing machine door frame"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.512603125, ""y_norm"": 0.4377, ""confidence"": 0.97, ""raw_x_norm"": 0.72, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,
+scene4_room3,59,scene4_60,Wipe the stove front.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room3_59/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room3_59/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room3_59/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""stove front"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.714,
+      ""y_norm"": 0.476,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""stove front"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.481701053125, ""y_norm"": 0.4874248, ""confidence"": 0.98, ""raw_x_norm"": 0.714, ""raw_y_norm"": 0.476, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene4_room3,114,scene4_115,Tell that person to move the chair slightly away from the dining table.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room3_114/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room3_114/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room3_114/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""the person"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.37,
+      ""y_norm"": 0.62,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""the chair"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.65,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.92
+    },
+    {
+      ""mention"": ""the dining table"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.68,
+      ""y_norm"": 0.35,
+      ""confidence"": 0.90
+    }
+  ]
+}","{""referents"": [{""mention"": ""the person"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.748671875, ""y_norm"": 0.62, ""confidence"": 0.95, ""raw_x_norm"": 0.37, ""raw_y_norm"": 0.62, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""the chair"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.46203695312500004, ""y_norm"": 0.49371, ""confidence"": 0.92, ""raw_x_norm"": 0.65, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the dining table"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.4753795, ""y_norm"": 0.47173, ""confidence"": 0.9, ""raw_x_norm"": 0.68, ""raw_y_norm"": 0.35, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,3,
+scene4_room3,159,scene4_160,Pick up a book from the shelf and place it on the desk.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room3_159/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room3_159/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room3_159/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""book"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.47,
+      ""y_norm"": 0.65,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""shelf"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.47,
+      ""y_norm"": 0.65,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""desk"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.65,
+      ""y_norm"": 0.55,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""book"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.9510156249999999, ""y_norm"": 0.65, ""confidence"": 0.95, ""raw_x_norm"": 0.47, ""raw_y_norm"": 0.65, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""shelf"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.9510156249999999, ""y_norm"": 0.65, ""confidence"": 0.95, ""raw_x_norm"": 0.47, ""raw_y_norm"": 0.65, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""desk"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.425036953125, ""y_norm"": 0.5349900000000001, ""confidence"": 0.95, ""raw_x_norm"": 0.65, ""raw_y_norm"": 0.55, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,3,
+scene4_room4,176,scene4_177,Pick up a pillow from the bed and place it near the window lamp.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room4_176/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room4_176/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room4_176/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""a pillow on the bed"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.65,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""the window lamp"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.65,
+      ""y_norm"": 0.35,
+      ""confidence"": 0.92
+    },
+    {
+      ""mention"": ""near the window lamp"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.65,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.90
+    }
+  ]
+}","{""referents"": [{""mention"": ""a pillow on the bed"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.44382890625000004, ""y_norm"": 0.4544, ""confidence"": 0.95, ""raw_x_norm"": 0.65, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the window lamp"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.44952890625, ""y_norm"": 0.4246, ""confidence"": 0.92, ""raw_x_norm"": 0.65, ""raw_y_norm"": 0.35, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""near the window lamp"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.44952890625, ""y_norm"": 0.4596, ""confidence"": 0.9, ""raw_x_norm"": 0.65, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,3,
+scene4_room4,182,scene4_183,Move the bench slightly toward the window and inspect its right side.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room4_182/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room4_182/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room4_182/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""bench"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.2401,
+      ""y_norm"": 0.2865,
+      ""confidence"": 0.0
+    },
+    {
+      ""mention"": ""right side of the bench"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.6797,
+      ""y_norm"": 0.7260,
+      ""confidence"": 0.0
+    }
+  ]
+}","{""referents"": [{""mention"": ""bench"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.48582734375000003, ""y_norm"": 0.2865, ""confidence"": 0.0, ""raw_x_norm"": 0.2401, ""raw_y_norm"": 0.2865, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""right side of the bench"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.3947921490625, ""y_norm"": 0.605577, ""confidence"": 0.0, ""raw_x_norm"": 0.6797, ""raw_y_norm"": 0.726, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,
+scene4_room4,194,scene4_195,"Move the bench toward the dining table, inspect the area beneath it, and shift it slightly back.",/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room4_194/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room4_194/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene4_room4_194/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""the bench"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.25,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""the bench"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.505859375, ""y_norm"": 0.45, ""confidence"": 0.95, ""raw_x_norm"": 0.25, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,1,
+scene5,664,scene5_665,Let this drone to protect the area behind the crates.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene5_664/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene5_664/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene5_664/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""the area behind the crates"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.7479,
+      ""y_norm"": 0.5781,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""the drone"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.45,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""the area behind the crates"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5693619921874999, ""y_norm"": 0.43043499999999996, ""confidence"": 0.95, ""raw_x_norm"": 0.7479, ""raw_y_norm"": 0.5781, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the drone"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.910546875, ""y_norm"": 0.45, ""confidence"": 0.98, ""raw_x_norm"": 0.45, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,2,
+scene5,712,scene5_713,Deploy this drone to remove clutter near the coastal bend.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene5_712/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene5_712/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene5_712/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""coastal bend"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.36,
+      ""y_norm"": 0.44,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""clutter"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.47,
+      ""y_norm"": 0.48,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""coastal bend"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.7284375, ""y_norm"": 0.44, ""confidence"": 0.95, ""raw_x_norm"": 0.36, ""raw_y_norm"": 0.44, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""clutter"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.9510156249999999, ""y_norm"": 0.48, ""confidence"": 0.95, ""raw_x_norm"": 0.47, ""raw_y_norm"": 0.48, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,2,
+scene5,743,scene5_744,Direct that drone to check on the inland road bend.,/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene5_743/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene5_743/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP_FOV/inputs/scene5_743/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""drone"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.7375,
+      ""y_norm"": 0.3375,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""inland road bend"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.55,
+      ""y_norm"": 0.65,
+      ""confidence"": 0.97
+    }
+  ]
+}","{""referents"": [{""mention"": ""drone"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5275966796875, ""y_norm"": 0.324925, ""confidence"": 0.98, ""raw_x_norm"": 0.7375, ""raw_y_norm"": 0.3375, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""inland road bend"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.41830859375000007, ""y_norm"": 0.5176000000000001, ""confidence"": 0.97, ""raw_x_norm"": 0.55, ""raw_y_norm"": 0.65, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,

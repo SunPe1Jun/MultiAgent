@@ -1,0 +1,7 @@
+{
+  "scope": "confirm",
+  "mirrored": false,
+  "fixed_gaze_crop_fraction": 0.27,
+  "heatmap_source": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109",
+  "rendering_uses_target_annotations": false
+}

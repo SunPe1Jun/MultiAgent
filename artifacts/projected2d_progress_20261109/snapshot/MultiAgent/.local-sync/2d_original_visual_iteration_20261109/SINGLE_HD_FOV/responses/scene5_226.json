@@ -1,0 +1,129 @@
+{
+  "event": "scene5_226",
+  "fingerprint": "594cbe66aa2f6978dbb9e2091fc41cd279582b426fdb1ac64d8b66b51006ab6e",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"drone\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.82,\n      \"y_norm\": 0.33,\n      \"confidence\": 0.98\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "drone",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.82,
+        "y_norm": 0.33,
+        "confidence": 0.98
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "drone",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.82,
+        "y_norm": 0.33,
+        "confidence": 0.98
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene5_226.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4296
+        ],
+        "dtype": "torch.int64",
+        "sha256": "b64d2bfccc030c4ed6dfbcc4212b440ef4fba8dc3439c93f55e31995a3994bd2",
+        "bytes": 34368
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4296
+        ],
+        "dtype": "torch.int64",
+        "sha256": "cb9216fba5a198ff519332eb6f743e4272abdafb38caf57c266e84152020148a",
+        "bytes": 34368
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4296
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d6d4285833604c3953506393bb893f180bc77270a55563324908fbefdd38808a",
+        "bytes": 34368
+      },
+      "pixel_values": {
+        "shape": [
+          14700,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "ae495e2bd8251183791b853942bb43ea20574df5ce1413419b2990ad33a586e4",
+        "bytes": 90316800
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene5_226.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14700,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "d24ec92507849d8c43ab2a9b26bb68f76cfa41fb25abccb3077fb116d069592c",
+          "bytes": 45158400
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene5_226.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene5_226.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene5_226.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14700,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "d24ec92507849d8c43ab2a9b26bb68f76cfa41fb25abccb3077fb116d069592c",
+      "bytes": 45158400
+    }
+  },
+  "elapsed_seconds": 3.8774960769806057,
+  "generated_tokens": 73
+}

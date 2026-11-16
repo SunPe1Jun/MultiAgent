@@ -14,6 +14,8 @@ import importlib.metadata
 import importlib.util
 import json
 import math
+
+import numpy as np
 import re
 import subprocess
 import sys
@@ -23,6 +25,7 @@ from pathlib import Path
 from .agents import ReferentialAgent, sample_key
 from .baseline import DATA_ROOT, ROOT as TRIMODAL_ROOT, WORKSPACE_ROOT, module
 from .context import load_contexts
+from .video_timing import frame_pts_table
 from .mention_mapping import category
 from .qwen_backend import QwenBackend
 
@@ -30,7 +33,7 @@ from .qwen_backend import QwenBackend
 DEFAULT_FPS = 4.0
 DEFAULT_MIN_FRAMES = 16
 DEFAULT_MAX_FRAMES = 100
-VERSION = 'local_dense_video_visual_v7_pts_pose_fallback_literal_referential_repair'
+VERSION = 'local_dense_video_visual_v8_content_start_original_clock_projection'
 DEFAULT_MAX_SIDE = 672
 DEFAULT_VIDEO_MAX_PIXELS = 8_388_608
 
@@ -91,10 +94,13 @@ def bind_pose_contract(ctx, frame_manifest, out_dir, pose_root):
         frame.update(actual_container_pts_seconds=pose['frame_time'].get('actual_container_pts_seconds'),
                      frame_pts_binding=pose['frame_time'],
                      camera_pose=pose['reference_camera'],
+                     candidate_camera_pose=pose['candidate_camera'],
+                     attention_camera_pose=pose['attention_camera'],
                      diagnostic_candidate_pose=pose['diagnostic_camera'],
                      pose_status=pose['reference_camera'].get('status'),
                      pose_clock_status=pose['reference_camera'].get('clock_status'),
                      clock_offset_seconds=pose['reference_camera'].get('clock_offset_seconds'),
+                     candidate_offset_seconds=pose['candidate_camera'].get('candidate_offset_seconds'),
                      telemetry_pose_time_seconds=pose['reference_camera'].get('telemetry_time_seconds'),
                      original_clock_offset_source=pose['reference_camera'].get('original_clock_offset_source'))
     # Refresh Qwen temporal groups after pose provenance has been attached.
@@ -142,8 +148,8 @@ def probe_frames(video_path):
         'frame=best_effort_timestamp_time:stream=width,height,avg_frame_rate,time_base',
         '-of', 'json', str(video_path)], capture_output=True, text=True, check=True)
     payload = json.loads(result.stdout)
-    frames = [{'source_frame_index': i, 'pts_seconds': float(row['best_effort_timestamp_time'])}
-              for i, row in enumerate(payload['frames']) if 'best_effort_timestamp_time' in row]
+    pts = frame_pts_table(payload['frames'])
+    frames = [{'source_frame_index': i, 'pts_seconds': value} for i, value in enumerate(pts)]
     if not frames or any(b['pts_seconds'] <= a['pts_seconds'] for a, b in zip(frames, frames[1:])):
         raise ValueError('Missing or non-increasing source video PTS')
     return frames, payload['streams'][0]
@@ -184,6 +190,73 @@ def prompt_temporal_groups(groups):
     return [{key: row.get(key) for key in fields if key in row} for row in groups]
 
 
+def startup_frame_metrics(frame):
+    import cv2
+    gray = cv2.cvtColor(cv2.resize(frame, (160, 160)), cv2.COLOR_BGR2GRAY)
+    nonblack = float((gray > 8).mean())
+    histogram = np.bincount(gray.ravel(), minlength=256).astype(np.float64)
+    probabilities = histogram[histogram > 0] / gray.size
+    entropy = float(-np.sum(probabilities * np.log2(probabilities)))
+    edge_density = float((cv2.Canny(gray, 30, 100) > 0).mean())
+    hsv = cv2.cvtColor(cv2.resize(frame, (160, 160)), cv2.COLOR_BGR2HSV)
+    saturated_fraction = float((hsv[:, :, 1] > 24).mean())
+    has_visual_detail = entropy >= .5 or edge_density >= .01 or saturated_fraction >= .08
+    return {'nonblack_fraction': nonblack, 'grayscale_entropy_bits': entropy,
+            'edge_density': edge_density, 'saturated_fraction': saturated_fraction,
+            'usable_scene_content': nonblack >= .08 and has_visual_detail}
+
+
+def detect_visual_content_start(video_path: Path, source_frames, t_start, duration,
+                                *, max_scan_seconds=5.0, sample_interval_seconds=.25):
+    """Skip a sustained black/loading splash using image content, then retain real PTS."""
+    import cv2
+    start = max(0.0, float(t_start))
+    candidates = [row for row in source_frames
+                  if start <= row['pts_seconds'] <= min(duration, start + max_scan_seconds)]
+    if not candidates:
+        raise ValueError('No decoded frames available in startup-content scan window')
+    cap = cv2.VideoCapture(str(video_path))
+    fps = float(cap.get(cv2.CAP_PROP_FPS))
+    if not math.isfinite(fps) or fps <= 0:
+        cap.release()
+        raise ValueError('Cannot inspect startup frames without a valid decoder frame rate')
+    stride = max(1, int(round(fps * sample_interval_seconds)))
+    sample_indices = list(range(candidates[0]['source_frame_index'],
+                                candidates[-1]['source_frame_index'] + 1, stride))
+    valid = []
+    try:
+        for index in sample_indices:
+            cap.set(cv2.CAP_PROP_POS_FRAMES, index)
+            ok, frame = cap.read()
+            if not ok:
+                continue
+            metrics = startup_frame_metrics(frame)
+            position = min(range(len(candidates)),
+                           key=lambda i: abs(candidates[i]['source_frame_index'] - index))
+            valid.append({'source_frame_index': index,
+                          'requested_pts_seconds': candidates[position]['pts_seconds'], **metrics})
+    finally:
+        cap.release()
+    # Require two neighboring content frames so a single bright logo is not mistaken
+    # for the loaded environment. Keep the first real presentation timestamp.
+    for first, second in zip(valid, valid[1:]):
+        if (first['usable_scene_content'] and second['usable_scene_content']
+                and 0 < second['requested_pts_seconds'] - first['requested_pts_seconds']
+                <= sample_interval_seconds * 2):
+            content_start = max(start, first['requested_pts_seconds'])
+            return {'status': 'STARTUP_SPLASH_SKIPPED' if content_start > start + 1e-6 else 'SCENE_CONTENT_AT_START',
+                    'requested_start_seconds': start, 'content_start_seconds': content_start,
+                    'skipped_seconds': content_start - start,
+                    'detector': '160x160 grayscale nonblack fraction, entropy and Canny edge density; two consecutive samples',
+                    'thresholds': {'nonblack_fraction_min': .08, 'grayscale_entropy_bits_min': .5,
+                                   'edge_density_min': .01, 'saturated_fraction_min': .08}, 'sampled_frames': valid}
+    if valid and valid[0]['usable_scene_content'] and valid[0]['requested_pts_seconds'] <= start + sample_interval_seconds:
+        return {'status':'SCENE_CONTENT_AT_START','requested_start_seconds':start,
+                'content_start_seconds':start,'skipped_seconds':0.,
+                'detector':'first decoded frame has visual scene content','sampled_frames':valid}
+    raise ValueError('Could not find two consecutive scene-content frames within the startup scan window')
+
+
 def extract_dense_frames(video_path: Path, output_dir: Path, t_start: float, t_end: float,
                          *, fps: float = DEFAULT_FPS,
                          min_frames: int = DEFAULT_MIN_FRAMES,
@@ -193,7 +266,9 @@ def extract_dense_frames(video_path: Path, output_dir: Path, t_start: float, t_e
         raise ValueError('Invalid dense-frame configuration')
     duration = probe_duration(video_path)
     source_frames, stream = probe_frames(video_path)
-    start = min(max(0.0, float(t_start)), max(0.0, duration - 0.05))
+    requested_start = min(max(0.0, float(t_start)), max(0.0, duration - 0.05))
+    content = detect_visual_content_start(video_path, source_frames, requested_start, duration)
+    start = min(content['content_start_seconds'], max(0.0, duration - 0.05))
     end = min(max(start + 0.05, float(t_end)), duration)
     clip_duration = max(end - start, 0.05)
     # `fps` is the desired model temporal-group rate. Qwen merges two source
@@ -254,7 +329,7 @@ def extract_dense_frames(video_path: Path, output_dir: Path, t_start: float, t_e
                        'width': width, 'height': height, 'pixel_origin': 'top_left',
                        'resize_scale_xy': [width/stream['width'], height/stream['height']],
                        'crop': None, 'path': str(path), 'sha256': file_sha(path),
-                       'selection_reason': 'uniform_time_coverage_nearest_real_pts_no_gt'})
+                       'selection_reason': 'uniform_time_coverage_nearest_real_pts_after_visual_startup_scan_no_gt'})
     group_times = [sum(f['time_seconds'] for f in frames[i:i+2]) / 2
                    for i in range(0, len(frames), 2)]
     temporal_groups = qwen_temporal_groups(frames)
@@ -272,7 +347,7 @@ def extract_dense_frames(video_path: Path, output_dir: Path, t_start: float, t_e
             'source_stream': stream,
             'frame_count_requested': requested_count, 'frame_count': len(frames),
             'selection_interval_seconds': interval,
-            'selection_method': 'uniform_time_coverage_nearest_real_pts',
+            'selection_method': 'visual_startup_scan_then_uniform_time_coverage_nearest_real_pts',
             'time_metadata_estimated': False, 'frames': frames}
 
 

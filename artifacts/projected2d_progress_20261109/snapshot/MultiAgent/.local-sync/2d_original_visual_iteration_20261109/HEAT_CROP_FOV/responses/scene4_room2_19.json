@@ -1,0 +1,157 @@
+{
+  "event": "scene4_room2_19",
+  "fingerprint": "57ee5fdb1cbb5f358a6f0a97702d6f9aa558225b566fd3b86fde27d29ae02e83",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"spray bottle\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.767,\n      \"y_norm\": 0.433,\n      \"confidence\": 0.98\n    },\n    {\n      \"mention\": \"basin\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.486,\n      \"y_norm\": 0.433,\n      \"confidence\": 0.99\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "spray bottle",
+        "panel_id": "P1",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.767,
+        "y_norm": 0.433,
+        "confidence": 0.98
+      },
+      {
+        "mention": "basin",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.486,
+        "y_norm": 0.433,
+        "confidence": 0.99
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "spray bottle",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.5468728859375,
+        "y_norm": 0.4362734,
+        "confidence": 0.98,
+        "raw_x_norm": 0.767,
+        "raw_y_norm": 0.433,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      },
+      {
+        "mention": "basin",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.983390625,
+        "y_norm": 0.433,
+        "confidence": 0.99,
+        "raw_x_norm": 0.486,
+        "raw_y_norm": 0.433,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/responses/scene4_room2_19.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "4cb6d5e499153c01a04cd0b3865a15c744563455acd9f55078613e95993da4cd",
+        "bytes": 34384
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "61f760de57c09dd183580b13eb39e66516adb5c3747ddda48c3f5ef1a7399627",
+        "bytes": 34384
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4298
+        ],
+        "dtype": "torch.int64",
+        "sha256": "af048a466f3ade7c87f900d9219b30413747e8c35fafe93fc060627aee55f1ce",
+        "bytes": 34384
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "4804b605ce972ae6918b0cffbaef9e7933049ea7e6ca7fde4c5e3e1c64ff7ffd",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/responses/scene4_room2_19.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "72ca85d3f3360454af01fd05ff0f881a0d204339117d537916e93a5c41e2ee0e",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/responses/scene4_room2_19.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/responses/scene4_room2_19.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/HEAT_CROP_FOV/responses/scene4_room2_19.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "72ca85d3f3360454af01fd05ff0f881a0d204339117d537916e93a5c41e2ee0e",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 4.850040038116276,
+  "generated_tokens": 141
+}

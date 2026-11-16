@@ -15,96 +15,63 @@ import time
 import warnings
 
 import numpy as np
-from scipy.spatial.transform import Rotation, Slerp
+from .camera_geometry import CameraPoseTimeline
+from .video_timing import bound_frame_pts
 
 from .context import load_contexts
 from .head_motion_diagnostics import camera_records, probe_pts, verify_saved_frame_pts
 from .projected2d_attention_study import save_json, sha_file, write_csv
 
-VERSION = 'pts_camera_clock_v1'
+VERSION = 'pts_camera_clock_v2'
 DEFAULT_CONFIG = {'max_size': 640, 'anchor_step_seconds': .20, 'pair_lags_seconds': [.16, .36],
     'start_seconds': .4, 'block_seconds': 1.5, 'block_guard_seconds': .10,
     'offset_bounds_seconds': [-3., 6.], 'offset_grid_seconds': .02,
     'max_pose_gap_seconds': .25, 'minimum_pairs': 6, 'minimum_coverage': .5,
     'minimum_motion_px': 2., 'profile_delta_px': 1., 'maximum_profile_width_seconds': .15,
     'maximum_reverse_fit_difference_seconds': .15, 'maximum_validation_error_px': 15.,
-    'maximum_validation_regression_fraction': .10}
+    'maximum_validation_regression_fraction': .10, 'minimum_original_validation_retention': .8}
 
 
-class CameraPoseTimeline:
-    """One reference-camera sampler for both clock fitting and source-frame projection."""
-    def __init__(self, records, max_gap_seconds=.25):
-        if len(records) < 2:
-            raise ValueError('At least two valid monotonic camera samples required')
-        self.records = records
-        self.times = np.array([r['telemetry_time_seconds'] for r in records])
-        if not np.all(np.diff(self.times) > 0):
-            raise ValueError('Camera timestamps must increase strictly')
-        self.positions = np.array([r['camera_position'] for r in records])
-        self.quaternions = np.array([r['camera_rotation_xyzw'] for r in records])
-        self.fovs = np.array([r['camera_fov_degrees'] for r in records])
-        self.rotations = Slerp(self.times, Rotation.from_quat(self.quaternions))
-        self.max_gap = max_gap_seconds
-
-    def sample_many(self, seconds):
-        seconds = np.asarray(seconds, float)
-        clamped = np.clip(seconds, self.times[0], self.times[-1])
-        right = np.clip(np.searchsorted(self.times, clamped, side='left'), 1, len(self.times) - 1)
-        left = right - 1
-        exact = np.isclose(clamped, self.times[right], rtol=0, atol=1e-9)
-        exact_left = np.isclose(clamped, self.times[left], rtol=0, atol=1e-9)
-        valid = ((seconds >= self.times[0]) & (seconds <= self.times[-1]) &
-                 ((self.times[right] - self.times[left] <= self.max_gap) | exact | exact_left))
-        return valid, self.rotations(clamped).as_matrix(), np.interp(clamped, self.times, self.fovs)
-
-    def pose_at(self, telemetry_seconds):
-        valid, _, _ = self.sample_many([telemetry_seconds])
-        if not valid[0]:
-            return {'status': 'POSE_UNAVAILABLE', 'reason': 'outside_camera_range_or_large_sample_gap',
-                    'telemetry_time_seconds': telemetry_seconds, 'extrapolated': False}
-        right = min(len(self.times) - 1, int(np.searchsorted(self.times, telemetry_seconds)))
-        if abs(self.times[right] - telemetry_seconds) <= 1e-9:
-            left = right
-        else:
-            left = max(0, right - 1)
-        position = [float(np.interp(telemetry_seconds, self.times, self.positions[:, axis])) for axis in range(3)]
-        return {'status': 'POSE_AVAILABLE', 'telemetry_time_seconds': float(telemetry_seconds),
-                'position_world': position, 'rotation_xyzw': self.rotations([telemetry_seconds]).as_quat()[0].tolist(),
-                'fov_vertical_degrees': float(np.interp(telemetry_seconds, self.times, self.fovs)),
-                'pose_source_indices': [self.records[left]['source_index'], self.records[right]['source_index']],
-                'pose_source_times': [float(self.times[left]), float(self.times[right])],
-                'pose_bracket_gap_seconds': float(self.times[right] - self.times[left]),
-                'pose_interpolation': 'linear_position_slerp_rotation', 'extrapolated': False}
-
-
-def source_frame_pose(timeline, frame, clock, *, diagnostic=False):
-    """Bind exact frame PTS to a camera pose using candidate, then original clock."""
+def source_frame_pose(timeline, frame, clock, *, diagnostic=False, allow_candidate=False):
+    """Bind frame PTS to a reference pose, keeping uncalibrated fits diagnostic."""
     if frame.get('status') not in {'VERIFIED_EXACT_SOURCE_JPEG', 'VERIFIED_CONTAINER_PTS_SEQUENCE'}:
         return {'status': 'FRAME_TIME_UNVERIFIED', 'extrapolated': False}
-    if clock.get('status') == 'VALIDATED_CANDIDATE':
+    candidate_valid = clock.get('status') == 'VALIDATED_CANDIDATE'
+    if diagnostic or (allow_candidate and candidate_valid):
         offset = clock.get('offset_seconds')
-        pose_clock_status = 'VALIDATED_CANDIDATE'
-    elif diagnostic:
-        offset = clock.get('offset_seconds')
-        pose_clock_status = 'REJECTED_CANDIDATE_DIAGNOSTIC_ONLY'
+        pose_clock_status = ('REJECTED_CANDIDATE_DIAGNOSTIC_ONLY' if diagnostic and not candidate_valid
+                             else 'VALIDATED_CANDIDATE')
     elif clock.get('original_offset_seconds') is not None:
-        # A rejected fit means the new offset is unavailable. Keep generating
-        # the PTS/interpolated-pose projection with the existing clock offset.
-        # RGB-only fit diagnostics must not suppress this projection.
         offset = clock['original_offset_seconds']
-        pose_clock_status = 'ORIGINAL_CLOCK_FALLBACK_PTS_POSE'
+        if candidate_valid:
+            pose_clock_status = 'ORIGINAL_CLOCK_REFERENCE_PTS_POSE'
+        elif clock.get('original_clock_status') == 'ORIGINAL_CLOCK_SUPPORTED':
+            pose_clock_status = 'ORIGINAL_CLOCK_SUPPORTED'
+        else:
+            pose_clock_status = 'ORIGINAL_CLOCK_FALLBACK_PTS_POSE'
+    elif candidate_valid:
+        offset = clock.get('offset_seconds')
+        pose_clock_status = 'VALIDATED_CANDIDATE_NO_ORIGINAL_CLOCK'
     else:
         return {'status': 'NO_CLOCK_OFFSET', 'reasons': clock.get('rejection_reasons', []),
-                'candidate_rejected': clock.get('status') != 'VALIDATED_CANDIDATE',
-                'extrapolated': False}
-    if offset is None:
+                'candidate_rejected': True, 'extrapolated': False}
+    if offset is None or not np.isfinite(offset):
         return {'status': 'CLOCK_UNAVAILABLE', 'extrapolated': False}
-    video_time = frame['actual_container_pts_seconds']
+    video_time = frame.get('actual_container_pts_seconds')
+    if video_time is None or not np.isfinite(video_time):
+        return {'status': 'FRAME_TIME_UNVERIFIED', 'extrapolated': False}
     pose = timeline.pose_at(video_time - offset)
     return {**pose, 'video_frame_pts_seconds': video_time, 'clock_offset_seconds': offset,
             'clock_status': pose_clock_status, 'candidate_clock_status': clock['status'],
+            'original_clock_status': clock.get('original_clock_status'),
             'original_clock_offset_source': clock.get('original_offset_source'),
+            'candidate_offset_seconds': clock.get('offset_seconds'),
             'diagnostic_only': pose_clock_status == 'REJECTED_CANDIDATE_DIAGNOSTIC_ONLY',
+            'clock_validated': pose_clock_status == 'VALIDATED_CANDIDATE',
+            'attention_clock_supported': (pose_clock_status in {'VALIDATED_CANDIDATE',
+                'VALIDATED_CANDIDATE_NO_ORIGINAL_CLOCK', 'ORIGINAL_CLOCK_SUPPORTED'}),
+            'position_projection_clock_source': ('RGB_rotation_candidate' if pose_clock_status.startswith('VALIDATED_CANDIDATE')
+                else 'original_manifest_clock'),
             'clock_convention': 'video_pts = telemetry_seconds + offset',
             'exposure_time_calibration': 'unverified_container_pts_vs_render_exposure'}
 
@@ -216,6 +183,7 @@ def track_pts_features(video, ffmpeg, ffprobe, config):
 class MotionScorer:
     def __init__(self, pairs, timeline):
         self.pairs, self.timeline = pairs, timeline
+        self._error_cache = {}
         self.points_a = np.array([p['points_a'] + [p['points_a'][-1]] * (100 - len(p['points_a'])) for p in pairs])
         self.points_b = np.array([p['points_b'] + [p['points_b'][-1]] * (100 - len(p['points_b'])) for p in pairs])
         self.lengths = np.array([len(p['points_a']) for p in pairs])
@@ -227,6 +195,8 @@ class MotionScorer:
         self.motion = np.array([p['median_observed_displacement_px'] for p in pairs])
 
     def errors(self, offset):
+        if offset in self._error_cache:
+            return self._error_cache[offset]
         valid_a, qa, fa = self.timeline.sample_many(self.ta - offset)
         valid_b, qb, fb = self.timeline.sample_many(self.tb - offset)
         focal_a = self.heights / (2 * np.tan(np.deg2rad(fa) / 2))
@@ -249,6 +219,8 @@ class MotionScorer:
             warnings.simplefilter('ignore', RuntimeWarning)
             result = np.nanmedian(error, axis=1)
         result[~valid] = np.nan
+        result.setflags(write=False)
+        self._error_cache[offset] = result
         return result
 
 
@@ -336,6 +308,11 @@ def evaluate_fits(scorer, candidate, original, previous, reverse, config):
     if (common['informative_common_pairs'] < config['minimum_pairs'] or
             common['candidate_informative_median_px'] > common['original_informative_median_px'] * (1 + config['maximum_validation_regression_fraction'])):
         reasons.append('original_common_validation_not_supported')
+    original_supported = eligible_validation & np.isfinite(baselines['original'])
+    retained = original_supported & np.isfinite(chosen)
+    retention = float(retained.sum() / original_supported.sum()) if original_supported.any() else 0.
+    if original_supported.any() and retention < config.get('minimum_original_validation_retention', .8):
+        reasons.append('candidate_loses_original_validation_coverage')
     original_evidence = assess_original_clock(scorer, original, config)
     return {'status': 'VALIDATED_CANDIDATE' if not reasons else 'CLOCK_UNCERTAIN',
             'rejection_reasons': reasons, 'offset_seconds': candidate['offset_seconds'],
@@ -344,6 +321,9 @@ def evaluate_fits(scorer, candidate, original, previous, reverse, config):
             'original_clock_evidence': original_evidence,
             'reverse_fold_offset_seconds': reverse.get('offset_seconds'), 'fold_offset_difference_seconds': difference,
             'validation_informative_pairs': int(validation.sum()), 'validation_median_px': vmed,
+            'original_validation_supported_pairs': int(original_supported.sum()),
+            'retained_original_validation_pairs': int(retained.sum()),
+            'original_validation_retention_fraction': retention,
             'comparisons': summary, 'absolute_pixel_calibration': 'UNVERIFIED',
             'pair_predictions': [{'pair_index': i, 'candidate_error_px': float(v) if np.isfinite(v) else None,
                                   'fold': scorer.pairs[i]['fold']} for i, v in enumerate(chosen)]}
@@ -418,12 +398,8 @@ def audit_event(ctx, root, output, config, ffmpeg, ffprobe, reuse):
         if sha_file(Path(panel['source_path'])) != panel['source_sha256']:
             raise ValueError('Frozen source JPEG hash mismatch')
         if panel.get('container_pts_binding_verified'):
-            source_index = int(panel['source_frame_index'])
-            expected_pts = float(tracks['frame_pts'][source_index])
-            supplied_pts = float(panel['actual_container_pts_seconds'])
-            if abs(expected_pts - supplied_pts) > 1e-6:
-                raise ValueError(f"Frame-index/PTS binding mismatch for {panel['frame_id']}: "
-                                 f'{expected_pts} != {supplied_pts}')
+            source_index = panel['source_frame_index']
+            expected_pts = bound_frame_pts(source_index, panel.get('actual_container_pts_seconds'), tracks['frame_pts'])
             exact = {'status': 'VERIFIED_CONTAINER_PTS_SEQUENCE',
                      'actual_container_pts_seconds': expected_pts,
                      'source_frame_index': source_index,
@@ -436,11 +412,14 @@ def audit_event(ctx, root, output, config, ffmpeg, ffprobe, reuse):
             if (not exact.get('source_jpeg_sha256_matches')
                     or exact.get('replayed_jpeg_sha256') != panel['source_sha256']):
                 exact = verify_saved_frame_pts(ctx.video_path, panel, tracks['frame_pts'], ffmpeg)
-        usable = source_frame_pose(timeline, exact, clock)
+        reference = source_frame_pose(timeline, exact, clock)
+        candidate = source_frame_pose(timeline, exact, clock, allow_candidate=True)
         diagnostic = source_frame_pose(timeline, exact, clock, diagnostic=True)
         frames.append({'frame_id': panel['frame_id'], 'source_path': panel['source_path'], 'source_sha256': panel['source_sha256'],
                        'width': panel['width'], 'height': panel['height'], 'requested_seek_seconds': panel['video_time_seconds'],
-                       'frame_time': exact, 'reference_camera': usable, 'diagnostic_camera': diagnostic})
+                       'frame_time': exact, 'reference_camera': reference,
+                       'candidate_camera': candidate, 'attention_camera': candidate,
+                       'diagnostic_camera': diagnostic})
     save_camera_timeline(out, tracks['frame_pts'], timeline, clock, scorer)
     save_json(out / 'frame_pose_contract.json', {'version': VERSION, 'clock': clock, 'frames': frames,
               'source_hashes': source_hashes, 'clock_fit_path': str(out / 'clock_fit.json'),
@@ -516,6 +495,7 @@ def run(root, output, config, ffmpeg, ffprobe, reuse, events=None):
                        validation_median_px=clock.get('validation_median_px'),
                        common_validation=clock.get('comparisons', {}).get('original_validation'),
                        reference_poses_available=sum(f['reference_camera']['status'] == 'POSE_AVAILABLE' for f in frames),
+                        candidate_attention_poses_supported=sum(f['attention_camera'].get('attention_clock_supported', False) for f in frames),
                        total_frames=len(frames))
         except Exception as exc:
             row.update(status='FAILED', error=f'{type(exc).__name__}: {exc}')
@@ -535,7 +515,7 @@ def run(root, output, config, ffmpeg, ffprobe, reuse, events=None):
 def main(argv=None):
     parser = argparse.ArgumentParser()
     parser.add_argument('root', type=Path)
-    parser.add_argument('--output', type=Path, default=Path('runs/pts_pose_alignment_20261023'))
+    parser.add_argument('--output', type=Path, default=Path('runs/pts_camera_clock_v2'))
     parser.add_argument('--ffmpeg', default='ffmpeg')
     parser.add_argument('--ffprobe', default='ffprobe')
     parser.add_argument('--reuse-tracks', action='store_true')

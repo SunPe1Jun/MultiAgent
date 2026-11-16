@@ -1,0 +1,160 @@
+{
+  "events": [
+    {
+      "event": "scene1_495",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "1152790aa4b82025cb7ae7eae03cf71c11276e7340d0d832e4f2352c4dc7c8cf",
+        "98a45e6556388f8d08c5dac56b782fd07aba2c57be79e30d13018a5e1b18a89d",
+        "baa6ef50424aca8ac1a48d12f364acf21af2d4a13ec731bee297e2dc688e008b"
+      ],
+      "new_hashes": [
+        "13395c4114b6e636e68ab173ec7a7dca2a4c2b8334f97d148fa468aebe12553f",
+        "6a6c9df64145e70af124676139cc433735da5278fd8d38ecc60a9136b7b2f8c7",
+        "6c642fcbaa8ce1942fdc9138ff6a173fa2f1b61835d557da0afe40008f9914d5"
+      ]
+    },
+    {
+      "event": "scene2_369",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "84a0e0f3f978197fbf140470b09f034f154f7650a335780ee10b1f6e449e939b",
+        "fd6108702539f6b69545aefa483d139080086d11af68e20070b50d24437eeab7",
+        "18ec2893a017838d6d6e00c07f455d92a733a6c0df41de4604c28d14ab1a137e"
+      ],
+      "new_hashes": [
+        "1ee2f4bb95d928560453b3c71e97520569adfa4977094044345a7cf0e668434b",
+        "238eb6d1dd47e2f9ee6dfc872b01bd2ad1f6e2f468df51ca59cf1683c214cfda",
+        "e3c8243369c63d5d44de23b51c8a3795b2d1a70e54c57d7ffe3262ab83b52df6"
+      ]
+    },
+    {
+      "event": "scene2_412",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "9e7c2d1a53017aef439dcbe06fde6c5a9c8b7158a62b91de43ceb81449922110",
+        "74f13be3ce96814972d3a6670ab3a6b4f87b8fb40328e83130c2f624559332a3",
+        "a32832e0e099699ccc621111ebe43c2238a74a324bfaa46afd156050b9bb4cef"
+      ],
+      "new_hashes": [
+        "666d133111563369d5de9066f9037545a41e76dfd0f353e93eb7d91821846a71",
+        "5bd0e013a9f8e7018b254bed2fc25b3987181c2d02052b2edffad489ae3f6d1d",
+        "bc70fab56be503cdf05667269d662b8929ef90bf4bb7bab37dc9de3744182626"
+      ]
+    },
+    {
+      "event": "scene2_482",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "c2800d8e4d2ee7c3f236a1dade305b3e157ff91e01814eefb1f0976967b7ca7c",
+        "e7c17f4cdf5deffde55638c9432e144a368aaf77236b3be3c66cd13fdfa77f3e",
+        "97dcc9ae6f0a5d9c30701b2cca28ceb660f0695bf212c7040cb82084e70cb1a2"
+      ],
+      "new_hashes": [
+        "8fe65f71c8a6012868ed02ff547e4bc7bb7ef11ba6c8d3fecab3e612669556d0",
+        "affbf8b1749c6e3e5a9dcfc7de6d621edb2bd0cca573908cd1d6a66b07419d77",
+        "b0cc60370e5b1649eb763721d8fc9d245febf92c631bfb51c5c0cd8017279e86"
+      ]
+    },
+    {
+      "event": "scene3_161",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "cd30dba996863d1aabde1be563c02f4c4e4cef1551cdde2451b4d2f15a5a0eed",
+        "555cde8edf92c3d6f11d3ffc9f32bbcc3c9f2874b8125b10e8fed5eae6cf5a33",
+        "1ffbf29a4cab2234bf148befa0ae0dd643b2ed610a2d4c8feec183f419b7fe4a"
+      ],
+      "new_hashes": [
+        "bc35fc918480f9a51e8416ca5cde1333c71042d7985902cec4409d9975b53134",
+        "a8e095217099c5471757db4040970fddf8229c7d1fc90fdd9e0dbca136b3e355",
+        "fa39b6fcf47536d01599f6ceb1b598a8e1d7aaf9ad5e0770a896b7bc2506ea4e"
+      ]
+    },
+    {
+      "event": "scene4_room1_1",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "7bd4ddc99c61ed908429751614ae7fa7fd2635e71ddabfd3a3fa4588151dc0fc",
+        "dd63f93fce43fd3ec999daf4a7125f7620aa16f727ca32746797e607267b9341",
+        "0dc79011ca370d9cde0f67c2382a1665b865afd96925070af8e110a81f7fb65b"
+      ],
+      "new_hashes": [
+        "2cf84052d24c93215afaca8daa66e47cb6d251c656495f7bbb2ad2a27468d86e",
+        "aca6fed57e353a7bff47d8ad8070c0a0dc7248c2ea5129b3b94cca8219a960ae",
+        "82a64728768dcb461f22cb800d2b235c6ef3c3bb2e92ea2929108dc76f3ff68b"
+      ]
+    },
+    {
+      "event": "scene4_room2_19",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "ec9a159024cb354b67b8417c315760cecd5145d37c68409a2018bd9263e817ca",
+        "cbdc16551727291f447a210f1b67645d9e95436b7aab423f06914219ad9365b2",
+        "94649a1e944cad2fd81c35b306c02799a30ad0e14f5e86bd47e0343ae6ee6f57"
+      ],
+      "new_hashes": [
+        "01fdcd1982a61a4b59b1861a0d46024cbc3ebd5bcee03e458b7cac664250eff0",
+        "0d2b815c1a922cf710621c3cf131db2d2a282456880105d5ffa5dd57657811fa",
+        "e57ed165a005a03175a82aa8cddea40b45adb6f451443d72bf802792083b3b09"
+      ]
+    },
+    {
+      "event": "scene4_room3_108",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "aaf13c44596e4e465d0acd2acc46aa2dab7490fffa5f53b88b7b5e5a04c9f02b",
+        "65987d5358c8a2d42b2072f0b21f2e637aceb80cd2bebd7d8bb38bd86235c675",
+        "ea558076c15a31cceab7d67bfda4f129a70247c1dd2c77c44e75b2d0c9884fe6"
+      ],
+      "new_hashes": [
+        "7fc522819076e6b66b486a6b9da46e9ffbc2a5ef1a012828d685c791e0fa3964",
+        "5359777ca7cc14a76cdbe3fe8cb25090b174ba9beb4c8a101ce5e00787dcc089",
+        "ff26675d57515bed5c1bd5f1805a3f478778640b553e4e4281dacee60d46103f"
+      ]
+    },
+    {
+      "event": "scene4_room4_72",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "0d875aaf0b3742964d6fb7af33384353f9e1d70a2ee7dbdf812ae211e60a2d85",
+        "d2a32dcf13bc2c1133924930e77564953a5051baed60eeb642542c7a450b4a04",
+        "ae8a875435d89bc65ea101ae9ae9a6e3a72b1caa10986d396e495abad382fbb5"
+      ],
+      "new_hashes": [
+        "af57df2e1fe1c841b51fb586af93989bea0450a90c5a98e422ce2f90506dd2f5",
+        "a06d63a76a8dedcd2a4a84cab1c25b6c5f2fe290270a56c1c2dae6b3e2ef2577",
+        "11bbfd3666734f61b1e0a74db6846b1ab9e40246be2ec94466ea33650716fd90"
+      ]
+    },
+    {
+      "event": "scene5_226",
+      "same_prompt": false,
+      "same_image_hashes": false,
+      "original_hashes": [
+        "7e8b313e47edeab4e744627072f3d6bb8848d93f7fed005f871a685b6159627b",
+        "31831d431cc7ab703a98ebee3fc6be10882b152de17ba76ae2ed2cb074a88f4a",
+        "34e05b8fc85b10719d098064db0331c0ebcb1b100b3a51305fa99d352cc18f60"
+      ],
+      "new_hashes": [
+        "c93c3ffd02dbdc36f4dd163a2e0af27305734d5d9eac0cc2eab6ca0dc27efb55",
+        "d2652bd4243bd90aff40fe802c6d7ab122e91ca0ebb31586e7edd5a43484c208",
+        "35114c9517e8256ae859698806ee2bca37d9b08556c4d67adfbdf440f3732ed0"
+      ]
+    }
+  ],
+  "counts": {
+    "same_prompt": 0,
+    "same_images": 0,
+    "same_both": 0
+  },
+  "intent": "Compare directly against regenerated original wrapper on same event."
+}

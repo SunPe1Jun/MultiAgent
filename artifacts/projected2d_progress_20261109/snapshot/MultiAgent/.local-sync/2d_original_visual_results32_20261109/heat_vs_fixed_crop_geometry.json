@@ -1,0 +1,2000 @@
+{
+  "pairs": [
+    {
+      "scope": "dev",
+      "event": "scene1_495",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3161,
+        0.3927,
+        0.5359,
+        0.6125
+      ],
+      "fixed_bbox": [
+        0.3151,
+        0.3927,
+        0.5349,
+        0.6125
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0010000000000000009,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "dev",
+      "event": "scene1_495",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3302,
+        0.3641,
+        0.55,
+        0.5839
+      ],
+      "fixed_bbox": [
+        0.3401,
+        0.3531,
+        0.5599,
+        0.5729
+      ],
+      "same": false,
+      "center_delta_fraction": 0.014798986451781028,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "dev",
+      "event": "scene1_495",
+      "frame": "P3",
+      "heat_bbox": [
+        0.338,
+        0.3609,
+        0.6052,
+        0.6281
+      ],
+      "fixed_bbox": [
+        0.3901,
+        0.3906,
+        0.6099,
+        0.6104
+      ],
+      "same": false,
+      "center_delta_fraction": 0.02902688409044277,
+      "heat_side": 0.26719999999999994,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene2_369",
+      "frame": "P1",
+      "heat_bbox": [
+        0.4797,
+        0.3495,
+        0.6995,
+        0.5693
+      ],
+      "fixed_bbox": [
+        0.4818,
+        0.349,
+        0.7016,
+        0.5687
+      ],
+      "same": false,
+      "center_delta_fraction": 0.002170829334609245,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene2_369",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4135,
+        0.3714,
+        0.6333,
+        0.5911
+      ],
+      "fixed_bbox": [
+        0.4135,
+        0.3724,
+        0.6333,
+        0.5922
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0010499999999999954,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene2_369",
+      "frame": "P3",
+      "heat_bbox": [
+        0.4286,
+        0.3641,
+        0.6484,
+        0.5839
+      ],
+      "fixed_bbox": [
+        0.4156,
+        0.3714,
+        0.6354,
+        0.5911
+      ],
+      "same": false,
+      "center_delta_fraction": 0.014884975646604195,
+      "heat_side": 0.2198,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "dev",
+      "event": "scene2_412",
+      "frame": "P1",
+      "heat_bbox": [
+        0.376,
+        0.3635,
+        0.5958,
+        0.5833
+      ],
+      "fixed_bbox": [
+        0.4234,
+        0.3505,
+        0.6432,
+        0.5703
+      ],
+      "same": false,
+      "center_delta_fraction": 0.049150381483768775,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene2_412",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4859,
+        0.3953,
+        0.7057,
+        0.6151
+      ],
+      "fixed_bbox": [
+        0.4807,
+        0.401,
+        0.7005,
+        0.6208
+      ],
+      "same": false,
+      "center_delta_fraction": 0.007715568676384149,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene2_412",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3932,
+        0.3885,
+        0.613,
+        0.6083
+      ],
+      "fixed_bbox": [
+        0.3974,
+        0.388,
+        0.6172,
+        0.6078
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0042296571965112955,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene2_482",
+      "frame": "P1",
+      "heat_bbox": [
+        0.4437,
+        0.3281,
+        0.6635,
+        0.5479
+      ],
+      "fixed_bbox": [
+        0.4437,
+        0.3281,
+        0.6635,
+        0.5479
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene2_482",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4646,
+        0.3281,
+        0.6844,
+        0.5479
+      ],
+      "fixed_bbox": [
+        0.4635,
+        0.3276,
+        0.6833,
+        0.5474
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0012083045973594712,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene2_482",
+      "frame": "P3",
+      "heat_bbox": [
+        0.4646,
+        0.3224,
+        0.6844,
+        0.5422
+      ],
+      "fixed_bbox": [
+        0.4625,
+        0.3219,
+        0.6823,
+        0.5417
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0021587033144922943,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene3_161",
+      "frame": "P1",
+      "heat_bbox": [
+        0.4391,
+        0.3354,
+        0.6589,
+        0.5552
+      ],
+      "fixed_bbox": [
+        0.4375,
+        0.3359,
+        0.6573,
+        0.5557
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0016763054614240484,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene3_161",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3604,
+        0.337,
+        0.5802,
+        0.5568
+      ],
+      "fixed_bbox": [
+        0.3578,
+        0.3333,
+        0.5776,
+        0.5531
+      ],
+      "same": false,
+      "center_delta_fraction": 0.004522167621837971,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene3_161",
+      "frame": "P3",
+      "heat_bbox": [
+        0.4411,
+        0.3641,
+        0.6609,
+        0.5839
+      ],
+      "fixed_bbox": [
+        0.4427,
+        0.3625,
+        0.6625,
+        0.5823
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0022627416997968598,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room1_1",
+      "frame": "P1",
+      "heat_bbox": [
+        0.4219,
+        0.3583,
+        0.6417,
+        0.5781
+      ],
+      "fixed_bbox": [
+        0.4354,
+        0.3589,
+        0.6552,
+        0.5786
+      ],
+      "same": false,
+      "center_delta_fraction": 0.01351119905855875,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room1_1",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4354,
+        0.3531,
+        0.6552,
+        0.5729
+      ],
+      "fixed_bbox": [
+        0.4125,
+        0.3766,
+        0.6323,
+        0.5964
+      ],
+      "same": false,
+      "center_delta_fraction": 0.03281249761904761,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room1_1",
+      "frame": "P3",
+      "heat_bbox": [
+        0.4302,
+        0.3812,
+        0.6958,
+        0.6469
+      ],
+      "fixed_bbox": [
+        0.4068,
+        0.3469,
+        0.6266,
+        0.5667
+      ],
+      "same": false,
+      "center_delta_fraction": 0.07362915523079151,
+      "heat_side": 0.26559999999999995,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room2_19",
+      "frame": "P1",
+      "heat_bbox": [
+        0.4307,
+        0.3411,
+        0.6505,
+        0.5609
+      ],
+      "fixed_bbox": [
+        0.4339,
+        0.3396,
+        0.6536,
+        0.5594
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0034889110048838662,
+      "heat_side": 0.21979999999999994,
+      "fixed_side": 0.21969999999999995
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room2_19",
+      "frame": "P2",
+      "heat_bbox": [
+        0.425,
+        0.3276,
+        0.6745,
+        0.5771
+      ],
+      "fixed_bbox": [
+        0.4307,
+        0.3458,
+        0.6505,
+        0.5656
+      ],
+      "same": false,
+      "center_delta_fraction": 0.00974397249585609,
+      "heat_side": 0.2495,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room2_19",
+      "frame": "P3",
+      "heat_bbox": [
+        0.4286,
+        0.3677,
+        0.6484,
+        0.5875
+      ],
+      "fixed_bbox": [
+        0.3995,
+        0.3583,
+        0.6193,
+        0.5781
+      ],
+      "same": false,
+      "center_delta_fraction": 0.030580549373744128,
+      "heat_side": 0.2198,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room3_108",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3698,
+        0.4109,
+        0.6104,
+        0.6516
+      ],
+      "fixed_bbox": [
+        0.413,
+        0.4339,
+        0.6328,
+        0.6536
+      ],
+      "same": false,
+      "center_delta_fraction": 0.035101139582640314,
+      "heat_side": 0.24060000000000004,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room3_108",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4099,
+        0.4458,
+        0.6297,
+        0.6656
+      ],
+      "fixed_bbox": [
+        0.4104,
+        0.451,
+        0.6302,
+        0.6708
+      ],
+      "same": false,
+      "center_delta_fraction": 0.005223983154643568,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room3_108",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3964,
+        0.4328,
+        0.6161,
+        0.6526
+      ],
+      "fixed_bbox": [
+        0.3818,
+        0.4323,
+        0.6016,
+        0.6521
+      ],
+      "same": false,
+      "center_delta_fraction": 0.014558588530486001,
+      "heat_side": 0.2197,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room4_72",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3109,
+        0.2401,
+        0.7609,
+        0.6901
+      ],
+      "fixed_bbox": [
+        0.4047,
+        0.3734,
+        0.6245,
+        0.5932
+      ],
+      "same": false,
+      "center_delta_fraction": 0.028016602220826085,
+      "heat_side": 0.45,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room4_72",
+      "frame": "P2",
+      "heat_bbox": [
+        0.2057,
+        0.3396,
+        0.6557,
+        0.7896
+      ],
+      "fixed_bbox": [
+        0.3214,
+        0.3448,
+        0.5411,
+        0.5646
+      ],
+      "same": false,
+      "center_delta_fraction": 0.10990137624252028,
+      "heat_side": 0.44999999999999996,
+      "fixed_side": 0.2197
+    },
+    {
+      "scope": "dev",
+      "event": "scene4_room4_72",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3161,
+        0.3214,
+        0.6818,
+        0.687
+      ],
+      "fixed_bbox": [
+        0.399,
+        0.3865,
+        0.6188,
+        0.6062
+      ],
+      "same": false,
+      "center_delta_fraction": 0.012673791855636602,
+      "heat_side": 0.36569999999999997,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene5_226",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3964,
+        0.3432,
+        0.6161,
+        0.563
+      ],
+      "fixed_bbox": [
+        0.3964,
+        0.3443,
+        0.6161,
+        0.5641
+      ],
+      "same": false,
+      "center_delta_fraction": 0.001100000000000101,
+      "heat_side": 0.2197,
+      "fixed_side": 0.2197
+    },
+    {
+      "scope": "dev",
+      "event": "scene5_226",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4036,
+        0.3406,
+        0.6234,
+        0.5604
+      ],
+      "fixed_bbox": [
+        0.4,
+        0.3391,
+        0.6198,
+        0.5589
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0038999999999999634,
+      "heat_side": 0.21979999999999994,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "dev",
+      "event": "scene5_226",
+      "frame": "P3",
+      "heat_bbox": [
+        0.4047,
+        0.3438,
+        0.6245,
+        0.5635
+      ],
+      "fixed_bbox": [
+        0.4057,
+        0.3443,
+        0.6255,
+        0.5641
+      ],
+      "same": false,
+      "center_delta_fraction": 0.0011412712210512605,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "confirm",
+      "event": "scene1_34",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3719,
+        0.3312,
+        0.5917,
+        0.551
+      ],
+      "fixed_bbox": [
+        0.3719,
+        0.3312,
+        0.5917,
+        0.551
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene1_34",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3698,
+        0.3391,
+        0.5896,
+        0.5589
+      ],
+      "fixed_bbox": [
+        0.3698,
+        0.3391,
+        0.5896,
+        0.5589
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene1_34",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3703,
+        0.3411,
+        0.5901,
+        0.5609
+      ],
+      "fixed_bbox": [
+        0.3703,
+        0.3411,
+        0.5901,
+        0.5609
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21979999999999994,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "confirm",
+      "event": "scene1_198",
+      "frame": "P1",
+      "heat_bbox": [
+        0.2802,
+        0.2953,
+        0.6302,
+        0.6453
+      ],
+      "fixed_bbox": [
+        0.2802,
+        0.2953,
+        0.6302,
+        0.6453
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene1_198",
+      "frame": "P2",
+      "heat_bbox": [
+        0.287,
+        0.3063,
+        0.637,
+        0.6562
+      ],
+      "fixed_bbox": [
+        0.287,
+        0.3063,
+        0.637,
+        0.6562
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene1_198",
+      "frame": "P3",
+      "heat_bbox": [
+        0.325,
+        0.3255,
+        0.675,
+        0.6755
+      ],
+      "fixed_bbox": [
+        0.325,
+        0.3255,
+        0.675,
+        0.6755
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene1_647",
+      "frame": "P1",
+      "heat_bbox": [
+        0.4906,
+        0.3781,
+        0.7104,
+        0.5979
+      ],
+      "fixed_bbox": [
+        0.4906,
+        0.3781,
+        0.7104,
+        0.5979
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "confirm",
+      "event": "scene1_647",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4984,
+        0.3771,
+        0.7182,
+        0.5969
+      ],
+      "fixed_bbox": [
+        0.4984,
+        0.3771,
+        0.7182,
+        0.5969
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21979999999999994,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "confirm",
+      "event": "scene1_647",
+      "frame": "P3",
+      "heat_bbox": [
+        0.499,
+        0.3714,
+        0.7188,
+        0.5911
+      ],
+      "fixed_bbox": [
+        0.499,
+        0.3714,
+        0.7188,
+        0.5911
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene2_521",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3979,
+        0.2792,
+        0.7479,
+        0.6292
+      ],
+      "fixed_bbox": [
+        0.3979,
+        0.2792,
+        0.7479,
+        0.6292
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene2_521",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3214,
+        0.313,
+        0.6714,
+        0.663
+      ],
+      "fixed_bbox": [
+        0.3214,
+        0.313,
+        0.6714,
+        0.663
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene2_521",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3365,
+        0.3,
+        0.6865,
+        0.65
+      ],
+      "fixed_bbox": [
+        0.3365,
+        0.3,
+        0.6865,
+        0.65
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene3_304",
+      "frame": "P1",
+      "heat_bbox": [
+        0.4151,
+        0.3469,
+        0.6349,
+        0.5667
+      ],
+      "fixed_bbox": [
+        0.4151,
+        0.3469,
+        0.6349,
+        0.5667
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene3_304",
+      "frame": "P2",
+      "heat_bbox": [
+        0.2974,
+        0.3307,
+        0.6745,
+        0.7078
+      ],
+      "fixed_bbox": [
+        0.2974,
+        0.3307,
+        0.6745,
+        0.7078
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.3771,
+      "fixed_side": 0.3771
+    },
+    {
+      "scope": "confirm",
+      "event": "scene3_405",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3734,
+        0.3432,
+        0.5932,
+        0.563
+      ],
+      "fixed_bbox": [
+        0.3734,
+        0.3432,
+        0.5932,
+        0.563
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21979999999999994,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "confirm",
+      "event": "scene3_405",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3849,
+        0.3333,
+        0.6047,
+        0.5531
+      ],
+      "fixed_bbox": [
+        0.3849,
+        0.3333,
+        0.6047,
+        0.5531
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene3_405",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3583,
+        0.3042,
+        0.65,
+        0.5958
+      ],
+      "fixed_bbox": [
+        0.3583,
+        0.3042,
+        0.65,
+        0.5958
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2917,
+      "fixed_side": 0.2917
+    },
+    {
+      "scope": "confirm",
+      "event": "scene3_593",
+      "frame": "P1",
+      "heat_bbox": [
+        0.2979,
+        0.2604,
+        0.6479,
+        0.6104
+      ],
+      "fixed_bbox": [
+        0.2979,
+        0.2604,
+        0.6479,
+        0.6104
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene3_593",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3682,
+        0.2703,
+        0.7182,
+        0.6203
+      ],
+      "fixed_bbox": [
+        0.3682,
+        0.2703,
+        0.7182,
+        0.6203
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.3499999999999999,
+      "fixed_side": 0.3499999999999999
+    },
+    {
+      "scope": "confirm",
+      "event": "scene3_593",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3583,
+        0.2714,
+        0.7083,
+        0.6214
+      ],
+      "fixed_bbox": [
+        0.3583,
+        0.2714,
+        0.7083,
+        0.6214
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room1_34",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3969,
+        0.4026,
+        0.6167,
+        0.6224
+      ],
+      "fixed_bbox": [
+        0.3969,
+        0.4026,
+        0.6167,
+        0.6224
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room1_34",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4245,
+        0.3969,
+        0.6443,
+        0.6167
+      ],
+      "fixed_bbox": [
+        0.4245,
+        0.3969,
+        0.6443,
+        0.6167
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room1_34",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3182,
+        0.3375,
+        0.7682,
+        0.7875
+      ],
+      "fixed_bbox": [
+        0.3182,
+        0.3375,
+        0.7682,
+        0.7875
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.45,
+      "fixed_side": 0.45
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room1_51",
+      "frame": "P1",
+      "heat_bbox": [
+        0.2193,
+        0.212,
+        0.6693,
+        0.662
+      ],
+      "fixed_bbox": [
+        0.2193,
+        0.212,
+        0.6693,
+        0.662
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.45,
+      "fixed_side": 0.45
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room1_51",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4833,
+        0.4167,
+        0.7031,
+        0.6365
+      ],
+      "fixed_bbox": [
+        0.4833,
+        0.4167,
+        0.7031,
+        0.6365
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21979999999999994,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room1_51",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3995,
+        0.3276,
+        0.8214,
+        0.7495
+      ],
+      "fixed_bbox": [
+        0.3995,
+        0.3276,
+        0.8214,
+        0.7495
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.4219,
+      "fixed_side": 0.4219
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room1_98",
+      "frame": "P1",
+      "heat_bbox": [
+        0.413,
+        0.3292,
+        0.6875,
+        0.6036
+      ],
+      "fixed_bbox": [
+        0.413,
+        0.3292,
+        0.6875,
+        0.6036
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2745,
+      "fixed_side": 0.2745
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room1_98",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3891,
+        0.3589,
+        0.8391,
+        0.8089
+      ],
+      "fixed_bbox": [
+        0.3891,
+        0.3589,
+        0.8391,
+        0.8089
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.44999999999999996,
+      "fixed_side": 0.44999999999999996
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room1_98",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3104,
+        0.3182,
+        0.7604,
+        0.7682
+      ],
+      "fixed_bbox": [
+        0.3104,
+        0.3182,
+        0.7604,
+        0.7682
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.44999999999999996,
+      "fixed_side": 0.44999999999999996
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room2_1",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3464,
+        0.2792,
+        0.6964,
+        0.6292
+      ],
+      "fixed_bbox": [
+        0.3464,
+        0.2792,
+        0.6964,
+        0.6292
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room2_1",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3422,
+        0.2812,
+        0.6922,
+        0.6312
+      ],
+      "fixed_bbox": [
+        0.3422,
+        0.2812,
+        0.6922,
+        0.6312
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room2_1",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3396,
+        0.2708,
+        0.6896,
+        0.6208
+      ],
+      "fixed_bbox": [
+        0.3396,
+        0.2708,
+        0.6896,
+        0.6208
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room2_30",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3302,
+        0.2932,
+        0.6802,
+        0.6432
+      ],
+      "fixed_bbox": [
+        0.3302,
+        0.2932,
+        0.6802,
+        0.6432
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room2_30",
+      "frame": "P2",
+      "heat_bbox": [
+        0.338,
+        0.3068,
+        0.688,
+        0.6568
+      ],
+      "fixed_bbox": [
+        0.338,
+        0.3068,
+        0.688,
+        0.6568
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.3499999999999999,
+      "fixed_side": 0.3499999999999999
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room2_30",
+      "frame": "P3",
+      "heat_bbox": [
+        0.351,
+        0.2979,
+        0.701,
+        0.6479
+      ],
+      "fixed_bbox": [
+        0.351,
+        0.2979,
+        0.701,
+        0.6479
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room2_91",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3161,
+        0.2313,
+        0.6661,
+        0.5813
+      ],
+      "fixed_bbox": [
+        0.3161,
+        0.2313,
+        0.6661,
+        0.5813
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room2_91",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3609,
+        0.2802,
+        0.7109,
+        0.6302
+      ],
+      "fixed_bbox": [
+        0.3609,
+        0.2802,
+        0.7109,
+        0.6302
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room2_91",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3604,
+        0.2651,
+        0.7104,
+        0.6151
+      ],
+      "fixed_bbox": [
+        0.3604,
+        0.2651,
+        0.7104,
+        0.6151
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room3_59",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3891,
+        0.3828,
+        0.6089,
+        0.6026
+      ],
+      "fixed_bbox": [
+        0.3891,
+        0.3828,
+        0.6089,
+        0.6026
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room3_59",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3224,
+        0.4109,
+        0.5609,
+        0.6495
+      ],
+      "fixed_bbox": [
+        0.3224,
+        0.4109,
+        0.5609,
+        0.6495
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.23849999999999993,
+      "fixed_side": 0.23849999999999993
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room3_59",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3021,
+        0.3203,
+        0.5219,
+        0.5401
+      ],
+      "fixed_bbox": [
+        0.3021,
+        0.3203,
+        0.5219,
+        0.5401
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room3_114",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3115,
+        0.2635,
+        0.6984,
+        0.6505
+      ],
+      "fixed_bbox": [
+        0.3115,
+        0.2635,
+        0.6984,
+        0.6505
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.3869,
+      "fixed_side": 0.3869
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room3_114",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3979,
+        0.3948,
+        0.6177,
+        0.6146
+      ],
+      "fixed_bbox": [
+        0.3979,
+        0.3948,
+        0.6177,
+        0.6146
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room3_114",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3479,
+        0.4115,
+        0.7979,
+        0.8615
+      ],
+      "fixed_bbox": [
+        0.3479,
+        0.4115,
+        0.7979,
+        0.8615
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.45000000000000007,
+      "fixed_side": 0.45000000000000007
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room3_159",
+      "frame": "P1",
+      "heat_bbox": [
+        0.2708,
+        0.388,
+        0.5484,
+        0.6656
+      ],
+      "fixed_bbox": [
+        0.2708,
+        0.388,
+        0.5484,
+        0.6656
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2776,
+      "fixed_side": 0.2776
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room3_159",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3609,
+        0.4141,
+        0.5807,
+        0.6339
+      ],
+      "fixed_bbox": [
+        0.3609,
+        0.4141,
+        0.5807,
+        0.6339
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room3_159",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3245,
+        0.401,
+        0.7745,
+        0.851
+      ],
+      "fixed_bbox": [
+        0.3245,
+        0.401,
+        0.7745,
+        0.851
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.44999999999999996,
+      "fixed_side": 0.44999999999999996
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room4_176",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3417,
+        0.2969,
+        0.6917,
+        0.6469
+      ],
+      "fixed_bbox": [
+        0.3417,
+        0.2969,
+        0.6917,
+        0.6469
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room4_176",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3474,
+        0.3021,
+        0.6974,
+        0.6521
+      ],
+      "fixed_bbox": [
+        0.3474,
+        0.3021,
+        0.6974,
+        0.6521
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room4_176",
+      "frame": "P3",
+      "heat_bbox": [
+        0.401,
+        0.2818,
+        0.751,
+        0.6318
+      ],
+      "fixed_bbox": [
+        0.401,
+        0.2818,
+        0.751,
+        0.6318
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room4_182",
+      "frame": "P1",
+      "heat_bbox": [
+        0.4193,
+        0.3703,
+        0.6391,
+        0.5901
+      ],
+      "fixed_bbox": [
+        0.4193,
+        0.3703,
+        0.6391,
+        0.5901
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room4_182",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4432,
+        0.388,
+        0.663,
+        0.6078
+      ],
+      "fixed_bbox": [
+        0.4432,
+        0.388,
+        0.663,
+        0.6078
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room4_182",
+      "frame": "P3",
+      "heat_bbox": [
+        0.2401,
+        0.2865,
+        0.6797,
+        0.726
+      ],
+      "fixed_bbox": [
+        0.2401,
+        0.2865,
+        0.6797,
+        0.726
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.4396,
+      "fixed_side": 0.4396
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room4_194",
+      "frame": "P1",
+      "heat_bbox": [
+        0.4167,
+        0.3594,
+        0.6365,
+        0.5792
+      ],
+      "fixed_bbox": [
+        0.4167,
+        0.3594,
+        0.6365,
+        0.5792
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21979999999999994,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room4_194",
+      "frame": "P2",
+      "heat_bbox": [
+        0.4234,
+        0.3474,
+        0.6432,
+        0.5672
+      ],
+      "fixed_bbox": [
+        0.4234,
+        0.3474,
+        0.6432,
+        0.5672
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene4_room4_194",
+      "frame": "P3",
+      "heat_bbox": [
+        0.4245,
+        0.349,
+        0.6443,
+        0.5687
+      ],
+      "fixed_bbox": [
+        0.4245,
+        0.349,
+        0.6443,
+        0.5687
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene5_664",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3979,
+        0.2281,
+        0.7479,
+        0.5781
+      ],
+      "fixed_bbox": [
+        0.3979,
+        0.2281,
+        0.7479,
+        0.5781
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene5_664",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3932,
+        0.2875,
+        0.7432,
+        0.6375
+      ],
+      "fixed_bbox": [
+        0.3932,
+        0.2875,
+        0.7432,
+        0.6375
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene5_664",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3964,
+        0.2766,
+        0.7464,
+        0.6266
+      ],
+      "fixed_bbox": [
+        0.3964,
+        0.2766,
+        0.7464,
+        0.6266
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene5_712",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3609,
+        0.3276,
+        0.5807,
+        0.5474
+      ],
+      "fixed_bbox": [
+        0.3609,
+        0.3276,
+        0.5807,
+        0.5474
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.2198,
+      "fixed_side": 0.2198
+    },
+    {
+      "scope": "confirm",
+      "event": "scene5_712",
+      "frame": "P2",
+      "heat_bbox": [
+        0.3656,
+        0.3276,
+        0.5854,
+        0.5474
+      ],
+      "fixed_bbox": [
+        0.3656,
+        0.3276,
+        0.5854,
+        0.5474
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21980000000000005,
+      "fixed_side": 0.21980000000000005
+    },
+    {
+      "scope": "confirm",
+      "event": "scene5_712",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3411,
+        0.3505,
+        0.5609,
+        0.5703
+      ],
+      "fixed_bbox": [
+        0.3411,
+        0.3505,
+        0.5609,
+        0.5703
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.21979999999999994,
+      "fixed_side": 0.21979999999999994
+    },
+    {
+      "scope": "confirm",
+      "event": "scene5_743",
+      "frame": "P1",
+      "heat_bbox": [
+        0.3635,
+        0.2068,
+        0.7135,
+        0.5568
+      ],
+      "fixed_bbox": [
+        0.3635,
+        0.2068,
+        0.7135,
+        0.5568
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    },
+    {
+      "scope": "confirm",
+      "event": "scene5_743",
+      "frame": "P2",
+      "heat_bbox": [
+        0.387,
+        0.2901,
+        0.737,
+        0.6401
+      ],
+      "fixed_bbox": [
+        0.387,
+        0.2901,
+        0.737,
+        0.6401
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35,
+      "fixed_side": 0.35
+    },
+    {
+      "scope": "confirm",
+      "event": "scene5_743",
+      "frame": "P3",
+      "heat_bbox": [
+        0.3875,
+        0.287,
+        0.7375,
+        0.637
+      ],
+      "fixed_bbox": [
+        0.3875,
+        0.287,
+        0.7375,
+        0.637
+      ],
+      "same": true,
+      "center_delta_fraction": 0.0,
+      "heat_side": 0.35000000000000003,
+      "fixed_side": 0.35000000000000003
+    }
+  ],
+  "interpretation": "Crop geometry differs where history density changes shape/center, while comparison scores show no confirm22 gain from this difference."
+}

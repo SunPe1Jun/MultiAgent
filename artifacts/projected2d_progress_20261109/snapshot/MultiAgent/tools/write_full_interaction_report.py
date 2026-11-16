@@ -1,0 +1,101 @@
+#!/usr/bin/env python3
+"""Write the full task report from frozen results and verifier outputs only."""
+from pathlib import Path
+import json
+from tools.run_full_interaction_referring import OUTPUT as ROOT,read
+
+
+def pct(value):return f'{100*value:.2f}%'
+
+def metrics_table(analysis):
+    lines=['| 条件 | Exact-set | Any-hit | Micro-P | Micro-R | Micro-F1 | TP/FP/FN |',
+      '| --- | ---: | ---: | ---: | ---: | ---: | --- |']
+    for c,d in analysis['conditions'].items():
+        m=d['set_metrics'];lines.append(f"| {c} | {m['exact_set_count']}/{m['events']} | {m['any_hit_count']}/{m['events']} | {pct(m['micro_precision'])} | {pct(m['micro_recall'])} | {pct(m['micro_f1'])} | {m['tp']}/{m['fp']}/{m['fn']} |")
+    return '\n'.join(lines)
+
+def write():
+    base=read(ROOT/'grounding_v2/analysis.json');adaptive=read(ROOT/'grounding_v3/analysis.json')
+    same=read(ROOT/'same8_v2_v3_comparison.json');v2verify=read(ROOT/'grounding_v2/verification.json');v3verify=read(ROOT/'grounding_v3/verification.json')
+    base_diff=base['paired_micro_f1']['NO_ADDED_HEAT'];adaptive_diff=adaptive['paired_contrasts_true_heat']['NO_ADDED_HEAT']['f1']
+    rows=[]
+    for c in ('NO_ADDED_HEAT','TRUE_HEAT','SPATIAL_MIRROR','TIME_REVERSE'):
+        x=same['conditions'][c]
+        rows.append(f"| {c} | {x['v2_exact']}/8 | {x['v3_exact']}/8 | {100*x['v3_minus_v2_f1']:.2f} | [{100*x['paired_interaction_interval']['interval_95'][0]:.2f}, {100*x['paired_interaction_interval']['interval_95'][1]:.2f}] |")
+    stage=adaptive['grounding_and_decoder']
+    hint=adaptive['mention_hint_coverage']
+    language=adaptive['language_model_calls']
+    text=f'''# 完整交互指代选取：恢复主任务后的两轮迭代（2026-11-06）
+
+本轮按用户澄清恢复到**完整指令＋全帧交互序列→指代对象集合→原始referent GT评价**。不再由referent GT预选A/B，不把读热图颜色作为主要成绩。第一轮24段旧交互，第二轮按每子场景一条做8段接口回归。两轮共{base['completed_model_calls']+adaptive['completed_model_calls']}次成功的不同视觉模型输入，另有{language}次instruction-only mention解析；完全相同的提示与图片哈希复用一次真实响应。关键结论：第一轮真实热图对无图的Micro-F1差值为{100*base_diff['gain']:.2f}个百分点，区间含零、Exact-set相同；第二轮真实热图Micro-F1比无图低**{abs(100*adaptive_diff['gain']):.2f}个百分点**。当前没有可靠正收益证据。
+
+主查看器：`.local-sync/full_interaction_referring_20261106/grounding_v2/index.html`；接口回归：`grounding_v3/index.html`。逐交互与推理后referent投影复核已分层展示。全部预测先冻结，之后才读取GT。
+
+## 输入与对照
+
+每段固定12张完整画面，保留全相机视野。源RGB在上游已缩放至672×672，不声称原视频全像素无损。每张输入由2×2拼图构成：左上原RGB，右上早期、左下中段、右下近期热图；热图与RGB同坐标范围。模型看到有序视频patch，每2张源帧合成一patch；真实PTS输入且禁用处理器二次采样。
+
+脚本用统一时钟/姿态将当前帧之前2秒有效gaze投影回当前相机坐标，等分早/中/近三段，按支持秒数累积sigma=2°密度；每段按250ms支持压亮度，低支持不被峰值归一化成亮热点。模型只看到热图图像，不输入注意分数。整帧无对象crop/框/anchor编号。13/24交互的至少一帧有支持热图，共142/288帧；另11段完全回退RGB仍留在主评价。原RGB的绿色采集标记各条件均保留，所以无新增热图不等于完全无gaze。
+
+四组共用RGB、PTS、候选空间和预算：`NO_ADDED_HEAT`、`TRUE_HEAT`、`SPATIAL_MIRROR`（只镜像热图）、`TIME_REVERSE`（交换短历史的早/近热图）。完整RGB视频在四组中均保持正序。TIME_REVERSE不是自然语音mention时间错位。
+
+## 从完整视觉选择到场景ID
+
+直接要求8B从全场景候选表选择任意anchor ID，先运行9次，全部空集合/不确定，随后停止，不把这9次当完整GT对照，也没有继续花模型调用扩到96。输入/失败日志均保留。
+
+为分开“全局画面里找到指代物”与“把物体对应到任意场景编号”，后续模型在完整视频里输出原文mention、类别、支持视图和RGB坐标；不提供referent中心、目标框、GT筛选候选。固定脚本再在全部类别兼容场景候选中，用候选中心/可用相机投影对应模型选点，归一化距离≤0.15且领先次近候选至少0.02才接ID；只剩一个类别兼容候选时可唯一映射。无相机支持、点距候选过远、同类歧义均记录为解码失败。不按gaze或GT选ID。
+
+公开候选几何只在推理后ID解码内部计算，不画入模型图，也不保存全anchor投影审计。推理后可视化橙十字只含**当前交互自己的referent投影**，白十字为模型视觉point；两者均未进入模型输入。
+
+因此最终集合分数衡量**模型全局视觉定位＋近似几何ID解码**，不等于纯模型任意ID推理准确率。anchor中心可能不在可见表面，像素标定、遮挡、动态身份未验证；匹配失败不是必然的模型视觉错误。两阶段结果分别记录。
+
+## 第一轮：24段全局指代
+
+96个逻辑条件结果，63种视觉输入。每条件8个输出schema失败，原响应保留，主评价按空集合计分，没有用GT修答案。
+
+{metrics_table(base)}
+
+真实热图相对无新增热图：Micro-F1 **{100*base_diff['gain']:.2f}个百分点**，按交互配对bootstrap 5000次，经验95%区间**[{100*base_diff['interval_95'][0]:.2f}, {100*base_diff['interval_95'][1]:.2f}]**；Exact-set均2/24。相对空间镜像高1.03点、相对时间反转高0.52点，两组区间亦跨零。Exact无改善、无损害。只能说有小幅趋势，不能称可靠热图增益。
+
+## 第二轮：8段坐标/mention接口回归
+
+在读取第一轮GT成绩前，按每场景中间行预先取8条旧交互：scene1/261、scene2/411、scene3/577、room1/72、room2/149、room3/94、room4/25、scene5/112。提示3项一并调整：模型直接按整张组合图0–1000坐标给点、共享GT-free指令mention提示、显示每个Gxxx视图是否有可用于几何匹配的相机支持。版式、候选与decoder不变。共32条件结果、{adaptive['completed_model_calls']}实际不同视觉输入与{language}语言解析；严格相同输入才复用。
+
+{metrics_table(adaptive)}
+
+真实热图相对无图Micro-F1 **{100*adaptive_diff['gain']:.2f}个百分点**，8交互区间[{100*adaptive_diff['interval_95'][0]:.2f}, {100*adaptive_diff['interval_95'][1]:.2f}]；Exact-set均1/8。真实热图分数比无图和空间镜像低，时间反转又比真实低。区间很宽且全是旧数据，不能据此断言热图有害；它显示效果受提示/坐标接口与样本影响，未建立正收益。
+
+同8交互跨轮比较仅为描述性敏感性分析：
+
+| 条件 | V2 Exact | V3 Exact | V3−V2事件F1均值差，百分点 | 配对95%区间 |
+| --- | ---: | ---: | ---: | ---: |
+{chr(10).join(rows)}
+
+坐标/mention/相机提示同时变化，跨轮差值不能归因到其中单一变化。
+
+第二轮真实条件输出11个视觉referent行，其中10行通过逐行literal/category/view/point验证，1行类别不兼容被拒；其中7行被decoder映射、2行同类歧义、1行缺camera支持。4次唯一类别映射另列。无图10个原始定位点、9行有效、6行对应。无论有图无图，8条里的unparsed/unaccounted mention hints分别14/24、15/24。**mention覆盖不足本身是显著断点**；四组各有1个point行因输出类别/定位字段不符合约定而拒绝，未修复成目标；模型提供的额外unresolved行也逐条单列。有效的33个point行里25个成功对应场景ID（9个经几何匹配、16个属于唯一类别），其余8个因距离、同类歧义或视图/相机限制未映射。点数、mention覆盖或decoder承接率都不能冒充最终指代准确率。
+
+## 评价、核验与结果限制
+
+第二轮8条同交互跨轮敏感性对照：同一提示/图像条件内精确复用，V3−V2的无图事件F1均值+4.17点、区间[-20.83, 29.17]；真热图-8.33点、区间[-33.33, 16.67]。坐标/mention/视图提示一同变化，仅说明回归结果易受接口影响，不是热图的因果估计。
+
+两轮均用原`evaluate_local_3d_object_match.py`做GT规范化及集合指标；主看Exact-set/Micro-F1，另报Any-hit、P/R、TP/FP/FN。区间按交互重采样，未把帧、patch或mention当独立样本。GT只在prediction_frozen记录生成后加载。真实验证分辨率1408×1344，11088视觉token/请求。画面重建1152张条件输入；源图像像素、热图数组、姿态/PTS与哈希核验。对候选顺序与伪GT做decoder反事实，输出不变。QuickJS只验证384/1152卡片筛选逻辑，不等于完整浏览器测试。
+
+此环境Transformers 5.3.0缺少带时间戳视频组的RoPE grid拆分，与上游4.57.1对照后做了窄补丁：仅RoPE位置编码里拆时间组，像素、视觉grid与PTS不变。生成前失败请求留档，新缓存契约隔离。
+
+完整目标是从更大/新交互评估模型选择全套referents，不是部署默认系统。48项定向测试通过；当前旧交互全部用过，第二轮自适应，也未接回Hand/Visual/Coordinator完整multi-agent最终流程。主流程保持原状。可靠收益仍待新交互验证。
+
+```bash
+source /ai/data/TriModal-Referring/.local-sync/reconstructed_pilot100/env.sh
+cd /ai/data/MultiAgent
+PYTHONPATH=. python tools/run_full_frame_grounding.py evaluate
+PYTHONPATH=. python tools/run_full_frame_grounding_v3.py evaluate
+PYTHONPATH=. python tools/build_full_grounding_comparison.py
+PYTHONPATH=. python tools/finalize_full_interaction_referring.py
+```
+
+以上只对已冻结预测重新评分/归档，不新增模型推理。
+'''
+    out=Path('/ai/data/MultiAgent/docs/FULL_INTERACTION_REFERRING_20261106_zh.md')
+    out.write_text(text);(ROOT/'RESULTS.md').write_text(text);print('Report written',out)
+if __name__=='__main__':write()

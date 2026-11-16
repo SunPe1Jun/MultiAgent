@@ -1,0 +1,870 @@
+{
+  "events": [
+    {
+      "id": "scene1_34",
+      "scene": "scene1",
+      "row_index": 34,
+      "instruction": "Face this cargo carefully.",
+      "event_id": "scene1_35",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 2.49,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_34/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 3.47,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_34/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 4.029,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_34/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 1,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 1
+    },
+    {
+      "id": "scene1_198",
+      "scene": "scene1",
+      "row_index": 198,
+      "instruction": "Touch that truck gently.",
+      "event_id": "scene1_199",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 4.086,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_198/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.611,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_198/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 5.622,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_198/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 1,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 1
+    },
+    {
+      "id": "scene1_495",
+      "scene": "scene1",
+      "row_index": 495,
+      "instruction": "Open the tailgate of this truck, unload this box.",
+      "event_id": "scene1_496",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 5.252,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_495/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 6.244,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_495/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 7.244,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_495/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "dev10",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene1_647",
+      "scene": "scene1",
+      "row_index": 647,
+      "instruction": "Drive that forklift into that forklift, align it with that truck.",
+      "event_id": "scene1_648",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 6.004,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_647/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 6.558,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_647/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 7.114,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_647/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 1,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 0
+    },
+    {
+      "id": "scene2_369",
+      "scene": "scene2",
+      "row_index": 369,
+      "instruction": "Ask that colleague to carry that laptop next to the printer.",
+      "event_id": "scene2_370",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.922,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_369/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.366,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_369/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 5.923,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_369/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 3,
+      "partition": "dev10",
+      "evaluable_gt_count": 3
+    },
+    {
+      "id": "scene2_412",
+      "scene": "scene2",
+      "row_index": 412,
+      "instruction": "Place that chair near the spot, then move that file near there.",
+      "event_id": "scene2_413",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 2.66,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_412/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.103,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_412/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 7.106,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_412/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 4,
+      "partition": "dev10",
+      "evaluable_gt_count": 4
+    },
+    {
+      "id": "scene2_482",
+      "scene": "scene2",
+      "row_index": 482,
+      "instruction": "Tell that colleague to push that chair to there, then open that drawer, then place that chair over there.",
+      "event_id": "scene2_483",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.517,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_482/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.962,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_482/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 5.518,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_482/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 6,
+      "partition": "dev10",
+      "evaluable_gt_count": 6
+    },
+    {
+      "id": "scene2_521",
+      "scene": "scene2",
+      "row_index": 521,
+      "instruction": "Tidy that file, then close that drawer.",
+      "event_id": "scene2_522",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 2.597,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_521/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.044,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_521/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 4.6,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene2/row_521/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene3_161",
+      "scene": "scene3",
+      "row_index": 161,
+      "instruction": "Request that colleague to retreat that truck along the runway.",
+      "event_id": "scene3_162",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 2.934,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_161/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 3.921,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_161/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 5.922,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_161/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 3,
+      "partition": "dev10",
+      "evaluable_gt_count": 3
+    },
+    {
+      "id": "scene3_304",
+      "scene": "scene3",
+      "row_index": 304,
+      "instruction": "Steer that car to that building.",
+      "event_id": "scene3_305",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 4.375,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_304/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.821,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_304/P2.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene3_405",
+      "scene": "scene3",
+      "row_index": 405,
+      "instruction": "Notify that colleague to inspect that car, then slide that truck there.",
+      "event_id": "scene3_406",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 5.547,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_405/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 6.103,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_405/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 7.102,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_405/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 4,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 4
+    },
+    {
+      "id": "scene3_593",
+      "scene": "scene3",
+      "row_index": 593,
+      "instruction": "Monitor the left building, then assess that building.",
+      "event_id": "scene3_594",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.948,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_593/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.393,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_593/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 6.394,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene3/row_593/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene4_room1_1",
+      "scene": "scene4_room1",
+      "row_index": 1,
+      "instruction": "Close the curtain beside the sofa.",
+      "event_id": "scene4_2",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 4.402,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_1/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.409,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_1/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 5.951,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_1/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "dev10",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene4_room1_34",
+      "scene": "scene4_room1",
+      "row_index": 34,
+      "instruction": "Adjust the blue armchair slightly forward.",
+      "event_id": "scene4_35",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 4.608,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_34/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 6.598,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_34/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 7.596,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_34/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 1,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 1
+    },
+    {
+      "id": "scene4_room1_51",
+      "scene": "scene4_room1",
+      "row_index": 51,
+      "instruction": "Ask that person to turn on the lamp.",
+      "event_id": "scene4_52",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.709,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_51/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.228,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_51/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 5.776,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_51/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene4_room1_98",
+      "scene": "scene4_room1",
+      "row_index": 98,
+      "instruction": "Pick up the cup on the table and place it near the sofa.",
+      "event_id": "scene4_99",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 2.995,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_98/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.442,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_98/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 4.998,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room1/row_98/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 3,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 3
+    },
+    {
+      "id": "scene4_room2_1",
+      "scene": "scene4_room2",
+      "row_index": 1,
+      "instruction": "Wipe the top surface of the washing machine.",
+      "event_id": "scene4_2",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.369,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_1/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.805,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_1/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 5.362,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_1/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 1,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 0
+    },
+    {
+      "id": "scene4_room2_19",
+      "scene": "scene4_room2",
+      "row_index": 19,
+      "instruction": "Pick up the spray bottle and set it near the basin.",
+      "event_id": "scene4_20",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.908,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_19/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.464,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_19/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 6.469,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_19/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "dev10",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene4_room2_30",
+      "scene": "scene4_room2",
+      "row_index": 30,
+      "instruction": "Dust the corner of the yellow shelf.",
+      "event_id": "scene4_31",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.304,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_30/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 3.85,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_30/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 4.842,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_30/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 1,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 1
+    },
+    {
+      "id": "scene4_room2_91",
+      "scene": "scene4_room2",
+      "row_index": 91,
+      "instruction": "Tell that person to wipe the washing machine door frame.",
+      "event_id": "scene4_92",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 4.304,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_91/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.405,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_91/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 6.295,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room2/row_91/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 1
+    },
+    {
+      "id": "scene4_room3_59",
+      "scene": "scene4_room3",
+      "row_index": 59,
+      "instruction": "Wipe the stove front.",
+      "event_id": "scene4_60",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.35,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_59/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.31,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_59/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 5.854,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_59/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 1,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 1
+    },
+    {
+      "id": "scene4_room3_108",
+      "scene": "scene4_room3",
+      "row_index": 108,
+      "instruction": "Move the cushion toward the right side of the sofa and tidy its position. ⭐",
+      "event_id": "scene4_109",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.936,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_108/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.938,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_108/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 6.493,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_108/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "dev10",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene4_room3_114",
+      "scene": "scene4_room3",
+      "row_index": 114,
+      "instruction": "Tell that person to move the chair slightly away from the dining table.",
+      "event_id": "scene4_115",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 4.083,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_114/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.529,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_114/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 6.53,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_114/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 3,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 3
+    },
+    {
+      "id": "scene4_room3_159",
+      "scene": "scene4_room3",
+      "row_index": 159,
+      "instruction": "Pick up a book from the shelf and place it on the desk.",
+      "event_id": "scene4_160",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 4.636,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_159/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.414,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_159/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 6.632,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_159/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 3,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 3
+    },
+    {
+      "id": "scene4_room4_72",
+      "scene": "scene4_room4",
+      "row_index": 72,
+      "instruction": "Place the pillow near the blue sofa.",
+      "event_id": "scene4_73",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 2.652,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_72/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.096,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_72/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 4.654,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_72/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "dev10",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene4_room4_176",
+      "scene": "scene4_room4",
+      "row_index": 176,
+      "instruction": "Pick up a pillow from the bed and place it near the window lamp.",
+      "event_id": "scene4_177",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 4.529,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_176/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.085,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_176/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 7.086,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_176/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 3,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 3
+    },
+    {
+      "id": "scene4_room4_182",
+      "scene": "scene4_room4",
+      "row_index": 182,
+      "instruction": "Move the bench slightly toward the window and inspect its right side.",
+      "event_id": "scene4_183",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 5.958,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_182/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 7.404,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_182/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 7.959,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_182/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene4_room4_194",
+      "scene": "scene4_room4",
+      "row_index": 194,
+      "instruction": "Move the bench toward the dining table, inspect the area beneath it, and shift it slightly back.",
+      "event_id": "scene4_195",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 7.094,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_194/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 8.539,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_194/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 9.539,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room4/row_194/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 1,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 1
+    },
+    {
+      "id": "scene5_226",
+      "scene": "scene5",
+      "row_index": 226,
+      "instruction": "Let this drone detect activity around the tank cluster.",
+      "event_id": "scene5_227",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 5.036,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_226/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 6.481,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_226/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 7.038,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_226/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 1,
+      "partition": "dev10",
+      "evaluable_gt_count": 1
+    },
+    {
+      "id": "scene5_664",
+      "scene": "scene5",
+      "row_index": 664,
+      "instruction": "Let this drone to protect the area behind the crates.",
+      "event_id": "scene5_665",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 4.372,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_664/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 5.817,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_664/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 6.372,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_664/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene5_712",
+      "scene": "scene5",
+      "row_index": 712,
+      "instruction": "Deploy this drone to remove clutter near the coastal bend.",
+      "event_id": "scene5_713",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 5.858,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_712/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 6.414,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_712/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 7.415,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_712/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 2
+    },
+    {
+      "id": "scene5_743",
+      "scene": "scene5",
+      "row_index": 743,
+      "instruction": "Direct that drone to check on the inland road bend.",
+      "event_id": "scene5_744",
+      "panels": [
+        {
+          "frame_id": "P1",
+          "video_time_seconds": 3.201,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_743/P1.jpg"
+        },
+        {
+          "frame_id": "P2",
+          "video_time_seconds": 4.642,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_743/P2.jpg"
+        },
+        {
+          "frame_id": "P3",
+          "video_time_seconds": 5.198,
+          "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene5/row_743/P3.jpg"
+        }
+      ],
+      "annotated_physical_count": 2,
+      "partition": "confirm22_previously_seen",
+      "evaluable_gt_count": 2
+    }
+  ],
+  "independent_holdout": false,
+  "counts": {
+    "interactions": 32,
+    "panels": 95,
+    "dev10": 10,
+    "confirm22": 22
+  }
+}

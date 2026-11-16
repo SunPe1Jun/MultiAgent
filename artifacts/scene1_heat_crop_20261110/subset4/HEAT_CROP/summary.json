@@ -1,0 +1,110 @@
+{
+  "metrics": {
+    "events": 4,
+    "gt_referents": 4,
+    "time_evaluable_referents": 4,
+    "predictions": 5,
+    "time_tp": 4,
+    "time_fp": 1,
+    "time_fn": 0,
+    "point_tp_50": 1,
+    "point_fp_50": 4,
+    "point_fn_50": 3,
+    "point_tp_100": 2,
+    "point_fp_100": 3,
+    "point_fn_100": 2,
+    "point_tp_150": 2,
+    "point_fp_150": 3,
+    "point_fn_150": 2,
+    "point_tp_200": 2,
+    "point_fp_200": 3,
+    "point_fn_200": 2,
+    "joint_tp_50": 1,
+    "joint_fp_50": 4,
+    "joint_fn_50": 3,
+    "joint_tp_100": 2,
+    "joint_fp_100": 3,
+    "joint_fn_100": 2,
+    "joint_tp_150": 2,
+    "joint_fp_150": 3,
+    "joint_fn_150": 2,
+    "joint_tp_200": 2,
+    "joint_fp_200": 3,
+    "joint_fn_200": 2,
+    "time_precision": 0.8,
+    "time_recall": 1.0,
+    "time_f1": 0.888888888888889,
+    "point_50_precision": 0.2,
+    "point_50_recall": 0.25,
+    "point_50_f1": 0.22222222222222224,
+    "point_100_precision": 0.4,
+    "point_100_recall": 0.5,
+    "point_100_f1": 0.4444444444444445,
+    "point_150_precision": 0.4,
+    "point_150_recall": 0.5,
+    "point_150_f1": 0.4444444444444445,
+    "point_200_precision": 0.4,
+    "point_200_recall": 0.5,
+    "point_200_f1": 0.4444444444444445,
+    "joint_50_precision": 0.2,
+    "joint_50_recall": 0.25,
+    "joint_50_f1": 0.22222222222222224,
+    "joint_100_precision": 0.4,
+    "joint_100_recall": 0.5,
+    "joint_100_f1": 0.4444444444444445,
+    "joint_150_precision": 0.4,
+    "joint_150_recall": 0.5,
+    "joint_150_f1": 0.4444444444444445,
+    "joint_200_precision": 0.4,
+    "joint_200_recall": 0.5,
+    "joint_200_f1": 0.4444444444444445,
+    "mean_point_distance_px_100": 49.0077860178674,
+    "mean_joint_distance_px_100": 49.0077860178674
+  },
+  "exact": {
+    "point_exact_50": {
+      "exact": 1,
+      "evaluable_events": 3,
+      "all_events": 4
+    },
+    "point_exact_100": {
+      "exact": 2,
+      "evaluable_events": 3,
+      "all_events": 4
+    },
+    "point_exact_150": {
+      "exact": 2,
+      "evaluable_events": 3,
+      "all_events": 4
+    },
+    "point_exact_200": {
+      "exact": 2,
+      "evaluable_events": 3,
+      "all_events": 4
+    },
+    "joint_exact_50": {
+      "exact": 1,
+      "evaluable_events": 3,
+      "all_events": 4
+    },
+    "joint_exact_100": {
+      "exact": 2,
+      "evaluable_events": 3,
+      "all_events": 4
+    },
+    "joint_exact_150": {
+      "exact": 2,
+      "evaluable_events": 3,
+      "all_events": 4
+    },
+    "joint_exact_200": {
+      "exact": 2,
+      "evaluable_events": 3,
+      "all_events": 4
+    }
+  },
+  "frames": {
+    "P3": 4,
+    "P1": 1
+  }
+}

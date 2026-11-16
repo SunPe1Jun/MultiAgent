@@ -1,0 +1,14 @@
+﻿scene,row_index,event_id,parsed_json,parse_ok
+scene1,34,scene1_35,"{""referents"": [{""panel_id"": ""P3"", ""x_norm"": 0.5564453125000001, ""y_norm"": 0.425}]}",True
+scene1,647,scene1_648,"{""referents"": [{""panel_id"": ""P3"", ""x_norm"": 0.93078125, ""y_norm"": 0.42}]}",True
+scene3,304,scene3_305,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.44027265624999995, ""y_norm"": 0.49520000000000003}, {""panel_id"": ""P2"", ""x_norm"": 0.910546875, ""y_norm"": 0.45}]}",True
+scene3,405,scene3_406,"{""referents"": [{""panel_id"": ""P3"", ""x_norm"": 0.76890625, ""y_norm"": 0.45}, {""panel_id"": ""P3"", ""x_norm"": 0.45052890625, ""y_norm"": 0.42779999999999996}, {""panel_id"": ""P3"", ""x_norm"": 0.5921695312499999, ""y_norm"": 0.49779999999999996}, {""panel_id"": ""P3"", ""x_norm"": 0.45052890625, ""y_norm"": 0.42779999999999996}]}",True
+scene4_room1,34,scene4_35,"{""referents"": [{""panel_id"": ""P2"", ""x_norm"": 0.4806750000000001, ""y_norm"": 0.5221}]}",True
+scene4_room1,51,scene4_52,"{""referents"": [{""panel_id"": ""P2"", ""x_norm"": 0.6014762109375, ""y_norm"": 0.50966}, {""panel_id"": ""P2"", ""x_norm"": 0.6014762109375, ""y_norm"": 0.50966}]}",True
+scene4_room1,98,scene4_99,"{""referents"": [{""panel_id"": ""P2"", ""x_norm"": 0.4709929687500001, ""y_norm"": 0.47419999999999995}, {""panel_id"": ""P2"", ""x_norm"": 0.4709929687500001, ""y_norm"": 0.47419999999999995}, {""panel_id"": ""P1"", ""x_norm"": 0.42400859375000005, ""y_norm"": 0.43089999999999995}]}",True
+scene4_room3,59,scene4_60,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.4391929687500001, ""y_norm"": 0.5014000000000001}]}",True
+scene4_room3,114,scene4_115,"{""referents"": [{""panel_id"": ""P2"", ""x_norm"": 0.481903125, ""y_norm"": 0.5196000000000001}, {""panel_id"": ""P2"", ""x_norm"": 0.50314921875, ""y_norm"": 0.48460000000000003}, {""panel_id"": ""P2"", ""x_norm"": 0.44515625, ""y_norm"": 0.45}]}",True
+scene4_room3,159,scene4_160,"{""referents"": [{""panel_id"": ""P3"", ""x_norm"": 0.8498437499999999, ""y_norm"": 0.55}, {""panel_id"": ""P2"", ""x_norm"": 0.30160859375000004, ""y_norm"": 0.4658}, {""panel_id"": ""P3"", ""x_norm"": 0.8498437499999999, ""y_norm"": 0.55}]}",True
+scene4_room4,182,scene4_183,"{""referents"": [{""panel_id"": ""P2"", ""x_norm"": 0.5355395703125, ""y_norm"": 0.551395}, {""panel_id"": ""P3"", ""x_norm"": 0.543568125, ""y_norm"": 0.557065}]}",True
+scene4_room4,194,scene4_195,"{""referents"": [{""panel_id"": ""P3"", ""x_norm"": 0.52609375, ""y_norm"": 0.42}]}",True
+scene5,712,scene5_713,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.4722953125, ""y_norm"": 0.35100000000000003}, {""panel_id"": ""P3"", ""x_norm"": 0.7082031249999999, ""y_norm"": 0.45}]}",True

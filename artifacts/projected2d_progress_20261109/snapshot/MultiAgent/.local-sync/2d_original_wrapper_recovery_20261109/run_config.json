@@ -1,0 +1,13 @@
+{
+  "model": "/ai/data/Qwen3-VL-8B-Instruct",
+  "dtype": "bfloat16",
+  "max_new_tokens": 768,
+  "input_mode": "multi_image",
+  "panel_context_mode": "paired_crop",
+  "panel_caption_mode": "none",
+  "paired_crop_coordinate_policy": "paired_canvas_map",
+  "gaze_crop_ratio": 0.35,
+  "crop_output_size": 768,
+  "prompt_mode": "expected_count",
+  "sample": "same 32 prior development events; original published protocol reproduction, not new held-out efficacy"
+}

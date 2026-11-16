@@ -1,0 +1,133 @@
+{
+  "event": "scene4_room1_34",
+  "fingerprint": "55f27f3f73b50fe6f103f140707da42d4e613608d0a8106d5f2f61afe3354bc2",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"blue armchair\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.74,\n      \"y_norm\": 0.52,\n      \"confidence\": 0.98\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "blue armchair",
+        "panel_id": "P1",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.74,
+        "y_norm": 0.52,
+        "confidence": 0.98
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "blue armchair",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.50726459375,
+        "y_norm": 0.502296,
+        "confidence": 0.98,
+        "raw_x_norm": 0.74,
+        "raw_y_norm": 0.52,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room1_34.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4294
+        ],
+        "dtype": "torch.int64",
+        "sha256": "46a11bee676155bc252a701ded7c1f18182f0342392d39f3d4bd6a565dd7a07b",
+        "bytes": 34352
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4294
+        ],
+        "dtype": "torch.int64",
+        "sha256": "9764e20816a32e254a2926c3999efb355f04d0df882fab2f15ea24086c7a3fce",
+        "bytes": 34352
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4294
+        ],
+        "dtype": "torch.int64",
+        "sha256": "6f94d7e89dfe9c8dcf921f99d0145b53a6a4122817f3a5feee0a94e536abbdee",
+        "bytes": 34352
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "4930d1e24431ea041d7ba3d661710ef65b31bc95996f2aeb3c9744f969cd170d",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room1_34.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "f50b3f8d08b961056bf7b5b3ce5ae981b0bc9d42f024ce6fd22ad988fd219ed3",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room1_34.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room1_34.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room1_34.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f50b3f8d08b961056bf7b5b3ce5ae981b0bc9d42f024ce6fd22ad988fd219ed3",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 3.0273173849564046,
+  "generated_tokens": 75
+}

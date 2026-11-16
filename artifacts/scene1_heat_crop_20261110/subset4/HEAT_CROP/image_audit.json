@@ -1,0 +1,196 @@
+{
+  "panels": [
+    {
+      "event": "scene1_34",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_34/P1.npz",
+      "heatmap_sha256": "713ffccb5706aeb1be1b8c9a5ea71d47d9fc12bca12390943606d6e9874653f6",
+      "crop_bbox_norm": "0.3719,0.3312,0.5917,0.5510",
+      "source_sha256": "f3bc69713c63d793e0b6bf5877160502945e7f9ef38dfe39d28aff45c6d14492",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_34/P1/paired.jpg"
+    },
+    {
+      "event": "scene1_34",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_34/P2.npz",
+      "heatmap_sha256": "4b19dfa9001d1fb2b1bc464628b2e93dedb7465f62ebb0fc47c09925d5be410c",
+      "crop_bbox_norm": "0.3698,0.3391,0.5896,0.5589",
+      "source_sha256": "8db0c0d3963350a5bd4b8dde70a2b0dbc39bc7cce1651a641433e7ef7ba51263",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_34/P2/paired.jpg"
+    },
+    {
+      "event": "scene1_34",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_34/P3.npz",
+      "heatmap_sha256": "24d5fd1a28092e180efe7276eca81957ce18414fb349173fc82566f9883a3647",
+      "crop_bbox_norm": "0.3703,0.3411,0.5901,0.5609",
+      "source_sha256": "669a2ea8c47d914f7bbdfc920aa2dd0c43f05340ba156236f9465dcadebebac9",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_34/P3/paired.jpg"
+    },
+    {
+      "event": "scene1_198",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_198/P1.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.2802,0.2953,0.6302,0.6453",
+      "source_sha256": "23c08e22ff56857fa2ebeab3968ae934303747d9bbd722ad80eb78c7c3bd47da",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_198/P1/paired.jpg"
+    },
+    {
+      "event": "scene1_198",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_198/P2.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.2870,0.3063,0.6370,0.6562",
+      "source_sha256": "6c5e3e28b1e793bd7eb432c7fdeaba588b105f7af5c1e00a542ae81340559e24",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_198/P2/paired.jpg"
+    },
+    {
+      "event": "scene1_198",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_198/P3.npz",
+      "heatmap_sha256": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+      "crop_bbox_norm": "0.3250,0.3255,0.6750,0.6755",
+      "source_sha256": "30b0c360265b6f7f2e0423fbe0cd815a27fddc7381850685bc849ed4889f3cde",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_198/P3/paired.jpg"
+    },
+    {
+      "event": "scene1_495",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_heatmap_foveation_recovery_20261109/inputs/scene1_495/P1/gaze_history_heatmap.npz",
+      "heatmap_sha256": "ba997d65c41198341813f5a52d73e4d57e54a1ef54d0ed9c67a1aa87b059d468",
+      "crop_bbox_norm": "0.3161,0.3927,0.5359,0.6125",
+      "source_sha256": "7b0097c8dd740201825580ba4b46a7bcba77bf086a4f13f828d994b7a72f1dc4",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_495/P1/paired.jpg"
+    },
+    {
+      "event": "scene1_495",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_heatmap_foveation_recovery_20261109/inputs/scene1_495/P2/gaze_history_heatmap.npz",
+      "heatmap_sha256": "a7e97f26ed5a6cc52d63796e58cf7659ca103a889cd29eeb1cc2c4c5fa0ae5a1",
+      "crop_bbox_norm": "0.3302,0.3641,0.5500,0.5839",
+      "source_sha256": "7815ee8725db9ffdcf28433046e8dae0800384ccd90d924039663fbb632dd9ea",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_495/P2/paired.jpg"
+    },
+    {
+      "event": "scene1_495",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_heatmap_foveation_recovery_20261109/inputs/scene1_495/P3/gaze_history_heatmap.npz",
+      "heatmap_sha256": "c24f54818dd5a722256e19e959789aefde274b08892c2b17ccb4012d98df34ef",
+      "crop_bbox_norm": "0.3380,0.3609,0.6052,0.6281",
+      "source_sha256": "7d7be47684fe06d8f1925fa5458586938c642939b299189b1c2e630e5b3ccae4",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_495/P3/paired.jpg"
+    },
+    {
+      "event": "scene1_647",
+      "frame_id": "P1",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_647/P1.npz",
+      "heatmap_sha256": "d5cf0ee9824bcc412040d1889b2b0e4f6e9e0d4fca2e9c81d8b4b810fe583c8c",
+      "crop_bbox_norm": "0.4906,0.3781,0.7104,0.5979",
+      "source_sha256": "b1c6632606a926b81dde6e5b3aa3520e47fc8de3f82957762816a5699f0f2dd7",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_647/P1/paired.jpg"
+    },
+    {
+      "event": "scene1_647",
+      "frame_id": "P2",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_647/P2.npz",
+      "heatmap_sha256": "ff74fa6ea249a9d1bf2678c161906e0329e59a687a7a3b6282cdf9e4a72151ce",
+      "crop_bbox_norm": "0.4984,0.3771,0.7182,0.5969",
+      "source_sha256": "6d7d3a4581fc911c3eef88da2c0407cf39ff0295ccdf4dcd0cb01732a96e81f3",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_647/P2/paired.jpg"
+    },
+    {
+      "event": "scene1_647",
+      "frame_id": "P3",
+      "foveation": {
+        "status": "UNMODIFIED_RGB"
+      },
+      "heatmap": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_647/P3.npz",
+      "heatmap_sha256": "d7947dd466ce5ee564ebc51a17f6dba14669db3cf27c56d3fb447c066d9eb520",
+      "crop_bbox_norm": "0.4990,0.3714,0.7188,0.5911",
+      "source_sha256": "3b176d52da760a15e68a5214b4f71aa8e71f922ecf80c3cf95c8fa10174548f4",
+      "source_size": [
+        1920,
+        1920
+      ],
+      "input": "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_647/P3/paired.jpg"
+    }
+  ]
+}

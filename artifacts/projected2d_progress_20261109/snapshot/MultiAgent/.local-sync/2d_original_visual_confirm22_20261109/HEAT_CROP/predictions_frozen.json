@@ -1,0 +1,26 @@
+{
+  "responses": {
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene1_34.json": "ee3335d5576ba15eec9dcf4bf9900bc6d864ed96fd7c5b55a7e35bc4374e1fb3",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene1_198.json": "36ae207a88134c050a962fccff34045c163efe657e1bbe8f534e61e59ec96e13",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene1_647.json": "98ca6f5f24737232ddba527f788355728f67e9360a3772744befcf7be84c33c4",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene2_521.json": "06aeeaa8c24b7b7c3231b4a624d042c285a00db7aab8c8773b879d9ea96bd411",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene3_304.json": "fdc4b2f3f4324f780e54b6576e4e14e35e5b3518ffa76cf17c818bc156f7e176",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene3_405.json": "044dad05b4d3bbcccab40cfe7e8f463c2c78a6f55dc003cb56f5e845075bbc96",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene3_593.json": "6fa3ccbd0bbf65d454292d485b87d0e8ad9cd4a855e3c8ddacedccff5bf96163",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room1_34.json": "620bd63def302965bb2a1d7fe43e4340fb87345be9005be097ca7afdbbf5e370",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room1_51.json": "495ff1799dcf6f3010ac3033a8f4a9636c2520dd21cac3451fc688463f166dde",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room1_98.json": "d2e89c6ab2ba770b92dbf3fd609a1710fb3b4ddde23c364a5fb284092855db99",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room2_1.json": "94acf53ea6b2fbc437e17e8f886f5a7b3db0b2dab293ccf6bb96b606fc6ae543",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room2_30.json": "e78180e281493106351f9ae4e28f6604f84679788b9e8df236de3ef89d05d546",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room2_91.json": "9784463abb6961bf32546a0e5de7281f40e686a31fa0f79494a0cb88529cab9a",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room3_59.json": "fc6c86e5c5235e235543f8919d8ee7cd87320a6bd5612eba15a5d1109fbbe625",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room3_114.json": "8a86bd0f85def512b426d5f5ea7677e27731b74391ad06573a8ae8042e0a3c02",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room3_159.json": "eb2e142ed154f99ba90f890d387e2f20084a74d68d298d2029a02f8dd9d00ed6",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room4_176.json": "70c4241e26c086cba91d8715353f47e013e958851e14bd1bdf368cef5fb8a752",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room4_182.json": "633a57ad530d908d0f9cb39697f248ddc71ccbaef3e6f8017d9177c12ff413db",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene4_room4_194.json": "a04b69c5ac235e63c507810885c0b54ac9773ab39024fb3504db7ea2ab1cd157",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene5_664.json": "57bd917ec861f21b8b4124a5dda542a6b1eaabc1eef1c4c48190b3e0d31afbc7",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene5_712.json": "57d2887e285c10bd3ae10e579e1f68e16e511d0f59a8660f63ffc025a507614a",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_confirm22_20261109/HEAT_CROP/responses/scene5_743.json": "597fd5225adcc267b5bb952d686fa26c8c5554d866d38892ca0af715cc0953cc"
+  }
+}

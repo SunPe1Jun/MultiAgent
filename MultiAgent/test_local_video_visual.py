@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import tempfile
+import subprocess
 import unittest
 from pathlib import Path
 from types import SimpleNamespace
@@ -9,7 +10,7 @@ from unittest.mock import Mock
 from PIL import Image
 
 from .context import Candidate
-from .local_video_visual import (extract_dense_frames, qwen_temporal_groups,
+from .local_video_visual import (detect_visual_content_start, startup_frame_metrics, extract_dense_frames, qwen_temporal_groups,
                                  remap_window_evidence, run_visual_calls, temporal_windows,
                                  validate_batched_visual_response, validate_visual_response)
 from .mention_mapping import resolve_mentions
@@ -231,6 +232,49 @@ class LocalVideoVisualTests(unittest.TestCase):
             'mention_id': 'm0', 'frame_id': 'G001', 'description': 'A crate beside a truck.',
             'confidence': .5}]}, ctx, mention, frames)
         self.assertEqual(len(output['visual_observations']), 1)
+
+    def test_startup_scan_skips_black_unity_splash_and_keeps_first_scene_pts(self):
+        rows=[]
+        for i,t in enumerate([0.,.25,.5,.75,1.,1.25,1.5,1.75]):
+            rows.append({'source_frame_index':i*6,'pts_seconds':t})
+        frame={'requested_start_seconds':0.}
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp);black=root/'black';content=root/'content'
+            black.mkdir();content.mkdir()
+            for i in range(8):
+                image=Image.new('RGB',(160,160),(40+i*5,60,90))
+                for y in range(160):
+                    for x in range(160):
+                        if (x//8+y//8)%2:image.putpixel((x,y),(180,80,30))
+                if i < 2:
+                    Image.new('RGB',(160,160),(0,0,0)).save(black/f'frame_{i:04d}.png')
+                else:
+                    image.save(black/f'frame_{i:04d}.png')
+                image.save(content/f'frame_{i:04d}.png')
+            subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-framerate','4',
+                '-i',str(black/'frame_%04d.png'),'-f','lavfi','-i','sine=frequency=400:duration=2',
+                '-shortest','-c:v','mpeg4','-pix_fmt','yuv420p',str(root/'splash.mp4')],check=True)
+            subprocess.run(['ffmpeg','-hide_banner','-loglevel','error','-y','-framerate','4',
+                '-i',str(content/'frame_%04d.png'),'-f','lavfi','-i','sine=frequency=400:duration=2',
+                '-shortest','-c:v','mpeg4','-pix_fmt','yuv420p',str(root/'scene.mp4')],check=True)
+            splash_rows=[{'source_frame_index':i,'pts_seconds':i*.25} for i in range(8)]
+            for i in range(2):splash_rows[i]['pts_seconds']=i*.25
+            # Two splash frames, then two consecutive actual-scene frames.
+            detected=detect_visual_content_start(root/'splash.mp4',splash_rows,0.,2.)
+            self.assertEqual(detected['status'],'STARTUP_SPLASH_SKIPPED')
+            self.assertGreaterEqual(detected['content_start_seconds'],.5)
+            self.assertEqual(detect_visual_content_start(root/'scene.mp4',splash_rows,0.,2.)['status'],
+                             'SCENE_CONTENT_AT_START')
+
+    def test_startup_frame_metrics_identify_splash_but_keep_dark_scene_detail(self):
+        import numpy as np
+        blank=np.zeros((160,160,3),dtype=np.uint8)
+        textured=np.zeros((160,160,3),dtype=np.uint8)
+        for y in range(160):
+            for x in range(160):
+                if (x//8+y//8)%2:textured[y,x]=[45,55,65]
+        self.assertFalse(startup_frame_metrics(blank)['usable_scene_content'])
+        self.assertTrue(startup_frame_metrics(textured)['usable_scene_content'])
 
     def test_dense_video_extraction_supplies_multiple_ordered_real_frames(self):
         with tempfile.TemporaryDirectory() as temp:

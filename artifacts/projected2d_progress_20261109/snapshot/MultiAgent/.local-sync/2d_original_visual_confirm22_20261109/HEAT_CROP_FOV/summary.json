@@ -1,0 +1,111 @@
+{
+  "metrics": {
+    "events": 22,
+    "gt_referents": 39,
+    "time_evaluable_referents": 39,
+    "predictions": 42,
+    "time_tp": 29,
+    "time_fp": 13,
+    "time_fn": 10,
+    "point_tp_50": 4,
+    "point_fp_50": 38,
+    "point_fn_50": 35,
+    "point_tp_100": 8,
+    "point_fp_100": 34,
+    "point_fn_100": 31,
+    "point_tp_150": 13,
+    "point_fp_150": 29,
+    "point_fn_150": 26,
+    "point_tp_200": 16,
+    "point_fp_200": 26,
+    "point_fn_200": 23,
+    "joint_tp_50": 3,
+    "joint_fp_50": 39,
+    "joint_fn_50": 36,
+    "joint_tp_100": 6,
+    "joint_fp_100": 36,
+    "joint_fn_100": 33,
+    "joint_tp_150": 11,
+    "joint_fp_150": 31,
+    "joint_fn_150": 28,
+    "joint_tp_200": 14,
+    "joint_fp_200": 28,
+    "joint_fn_200": 25,
+    "time_precision": 0.6904761904761905,
+    "time_recall": 0.7435897435897436,
+    "time_f1": 0.7160493827160495,
+    "point_50_precision": 0.09523809523809523,
+    "point_50_recall": 0.10256410256410256,
+    "point_50_f1": 0.09876543209876541,
+    "point_100_precision": 0.19047619047619047,
+    "point_100_recall": 0.20512820512820512,
+    "point_100_f1": 0.19753086419753083,
+    "point_150_precision": 0.30952380952380953,
+    "point_150_recall": 0.3333333333333333,
+    "point_150_f1": 0.3209876543209877,
+    "point_200_precision": 0.38095238095238093,
+    "point_200_recall": 0.41025641025641024,
+    "point_200_f1": 0.39506172839506165,
+    "joint_50_precision": 0.07142857142857142,
+    "joint_50_recall": 0.07692307692307693,
+    "joint_50_f1": 0.07407407407407408,
+    "joint_100_precision": 0.14285714285714285,
+    "joint_100_recall": 0.15384615384615385,
+    "joint_100_f1": 0.14814814814814817,
+    "joint_150_precision": 0.2619047619047619,
+    "joint_150_recall": 0.28205128205128205,
+    "joint_150_f1": 0.2716049382716049,
+    "joint_200_precision": 0.3333333333333333,
+    "joint_200_recall": 0.358974358974359,
+    "joint_200_f1": 0.345679012345679,
+    "mean_point_distance_px_100": 56.282658601768304,
+    "mean_joint_distance_px_100": 56.48277699425841
+  },
+  "exact": {
+    "point_exact_50": {
+      "exact": 4,
+      "evaluable_events": 20,
+      "all_events": 22
+    },
+    "point_exact_100": {
+      "exact": 6,
+      "evaluable_events": 20,
+      "all_events": 22
+    },
+    "point_exact_150": {
+      "exact": 6,
+      "evaluable_events": 20,
+      "all_events": 22
+    },
+    "point_exact_200": {
+      "exact": 6,
+      "evaluable_events": 20,
+      "all_events": 22
+    },
+    "joint_exact_50": {
+      "exact": 3,
+      "evaluable_events": 20,
+      "all_events": 22
+    },
+    "joint_exact_100": {
+      "exact": 5,
+      "evaluable_events": 20,
+      "all_events": 22
+    },
+    "joint_exact_150": {
+      "exact": 5,
+      "evaluable_events": 20,
+      "all_events": 22
+    },
+    "joint_exact_200": {
+      "exact": 5,
+      "evaluable_events": 20,
+      "all_events": 22
+    }
+  },
+  "frames": {
+    "P3": 17,
+    "P1": 12,
+    "P2": 13
+  }
+}

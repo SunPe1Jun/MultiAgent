@@ -1,0 +1,229 @@
+{
+  "event": "scene2_482",
+  "fingerprint": "09a1152e220095b0d0684962e52c031027fa0bc7de27d68417f1ba002c96524e",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"that colleague\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.22,\n      \"y_norm\": 0.43,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"that chair\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.83,\n      \"y_norm\": 0.57,\n      \"confidence\": 0.98\n    },\n    {\n      \"mention\": \"there\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.83,\n      \"y_norm\": 0.57,\n      \"confidence\": 0.98\n    },\n    {\n      \"mention\": \"that drawer\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.31,\n      \"y_norm\": 0.63,\n      \"confidence\": 0.97\n    },\n    {\n      \"mention\": \"that chair\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.83,\n      \"y_norm\": 0.57,\n      \"confidence\": 0.98\n    },\n    {\n      \"mention\": \"over there\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.83,\n      \"y_norm\": 0.57,\n      \"confidence\": 0.98\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "that colleague",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.22,
+        "y_norm": 0.43,
+        "confidence": 0.95
+      },
+      {
+        "mention": "that chair",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.83,
+        "y_norm": 0.57,
+        "confidence": 0.98
+      },
+      {
+        "mention": "there",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.83,
+        "y_norm": 0.57,
+        "confidence": 0.98
+      },
+      {
+        "mention": "that drawer",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.31,
+        "y_norm": 0.63,
+        "confidence": 0.97
+      },
+      {
+        "mention": "that chair",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.83,
+        "y_norm": 0.57,
+        "confidence": 0.98
+      },
+      {
+        "mention": "over there",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.83,
+        "y_norm": 0.57,
+        "confidence": 0.98
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "that colleague",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.22,
+        "y_norm": 0.43,
+        "confidence": 0.95
+      },
+      {
+        "mention": "that chair",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.83,
+        "y_norm": 0.57,
+        "confidence": 0.98
+      },
+      {
+        "mention": "there",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.83,
+        "y_norm": 0.57,
+        "confidence": 0.98
+      },
+      {
+        "mention": "that drawer",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.31,
+        "y_norm": 0.63,
+        "confidence": 0.97
+      },
+      {
+        "mention": "that chair",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.83,
+        "y_norm": 0.57,
+        "confidence": 0.98
+      },
+      {
+        "mention": "over there",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.83,
+        "y_norm": 0.57,
+        "confidence": 0.98
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene2_482.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4308
+        ],
+        "dtype": "torch.int64",
+        "sha256": "f8391572df105f7954333641d6621bd2dbd1872d2dcaaa6ff3f8b84ef44fce3a",
+        "bytes": 34464
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4308
+        ],
+        "dtype": "torch.int64",
+        "sha256": "a865c966dd114cc7a323f1ae9a65b9e38bf0b08a23ac1d085d933fbb9424661b",
+        "bytes": 34464
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4308
+        ],
+        "dtype": "torch.int64",
+        "sha256": "69a10ebef24ed521b0575c02d1adc304d04bafd691e3c0b476279e586c11a162",
+        "bytes": 34464
+      },
+      "pixel_values": {
+        "shape": [
+          14700,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "874691bf3af07241f7e51c433c7c0cc824694d75750e0a0d725deae9f0c4ee63",
+        "bytes": 90316800
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene2_482.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14700,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "33c4884ccdd48bf33411ba14806ebd35f604dc75e35e28089ced2223874d7a7e",
+          "bytes": 45158400
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "4c349e67a892e7f72c0f16f5a9570ab33b96d8962538645cbc05de6d39094622",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene2_482.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene2_482.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_iteration_20261109/SINGLE_HD_FOV/responses/scene2_482.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14700,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "33c4884ccdd48bf33411ba14806ebd35f604dc75e35e28089ced2223874d7a7e",
+      "bytes": 45158400
+    }
+  },
+  "elapsed_seconds": 16.12088611908257,
+  "generated_tokens": 382
+}

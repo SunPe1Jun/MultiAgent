@@ -1,0 +1,119 @@
+{
+  "scene": "scene4_room3",
+  "row_index": 108,
+  "event_id": "scene4_109",
+  "instruction": "Move the cushion toward the right side of the sofa and tidy its position. ⭐",
+  "input_mode": "multi_image",
+  "panel_context_mode": "paired_crop",
+  "panel_caption_mode": "none",
+  "paired_crop_coordinate_policy": "paired_canvas_map",
+  "model_input_image": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P1_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P2_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P3_paired.jpg",
+  "model_input_images": [
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P1_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P2_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P3_paired.jpg"
+  ],
+  "prompt_text": "Instruction:\nMove the cushion toward the right side of the sofa and tidy its position. ⭐\n\nExpected number of output referents: 2\n\nInfer the target referents from the instruction. Do not use hidden dataset labels such as car1 or forklift2; describe each output with a short phrase from the instruction.\n\nPanels:\n- P1: video_time=3.936s, json_sample_time=1.330s\n- P2: video_time=4.938s, json_sample_time=2.332s\n- P3: video_time=6.493s, json_sample_time=3.887s\n\nImage order:\n- Image 1: P1 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3479,0.3688,0.6979,0.7188]\n- Image 2: P2 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3453,0.3859,0.6953,0.7359]\n- Image 3: P3 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.3167,0.3672,0.6667,0.7172]\n\nTask:\nFor each intended referent:\n- compare all panels before deciding; do not prefer P1 or the earliest image unless it is the best evidence;\n- panel_id follows the image order and the Panels list above;\n- choose the single best panel_id from the visible panels;\n- output x_norm and y_norm as normalized coordinates inside the coordinate_space you choose;\n- for a paired image, use coordinate_space=\"full_panel\" if the point is on the LEFT full panel;\n- for a paired image, use coordinate_space=\"gaze_crop\" if the point is easier to localize on the RIGHT crop;\n- do not use coordinates of the whole paired image canvas; choose either full_panel or gaze_crop;\n- use the green gaze dot only as a noisy attention cue, together with the image and language;\n- do not output the green dot unless it is actually on the intended referent;\n- if a referent is an object part, surface, or placement area, output the best visible point on that part/area rather than the geometric center of the whole image.\n\nRequired strict JSON schema:\n{\n  \"referents\": [\n    {\n      \"mention\": \"target referent label or short phrase\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.0,\n      \"y_norm\": 0.0,\n      \"confidence\": 0.0\n    }\n  ]\n}\n\nUse null coordinates only when no reliable point can be localized. Return JSON only.",
+  "panel_meta": [
+    {
+      "panel_id": "P1",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "3.936",
+      "json_sample_time": "1.330",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P1_paired.jpg",
+      "gaze_u_norm": "0.522670",
+      "gaze_v_norm": "0.543624",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_108/P1.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene4_room3/row_108/P1_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3479,0.3688,0.6979,0.7188"
+    },
+    {
+      "panel_id": "P2",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "4.938",
+      "json_sample_time": "2.332",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P2_paired.jpg",
+      "gaze_u_norm": "0.520066",
+      "gaze_v_norm": "0.561091",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_108/P2.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene4_room3/row_108/P2_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3453,0.3859,0.6953,0.7359"
+    },
+    {
+      "panel_id": "P3",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "6.493",
+      "json_sample_time": "3.887",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P3_paired.jpg",
+      "gaze_u_norm": "0.491921",
+      "gaze_v_norm": "0.542181",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene4_room3/row_108/P3.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene4_room3/row_108/P3_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.3167,0.3672,0.6667,0.7172"
+    }
+  ],
+  "model_raw_output": "{\n  \"referents\": [\n    {\n      \"mention\": \"the cushion\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.25,\n      \"y_norm\": 0.55,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"the right side of the sofa\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.45,\n      \"y_norm\": 0.55,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "raw_parsed_json": {
+    "referents": [
+      {
+        "mention": "the cushion",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.25,
+        "y_norm": 0.55,
+        "confidence": 0.95
+      },
+      {
+        "mention": "the right side of the sofa",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.45,
+        "y_norm": 0.55,
+        "confidence": 0.95
+      }
+    ]
+  },
+  "parsed_json": {
+    "referents": [
+      {
+        "mention": "the cushion",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.505859375,
+        "y_norm": 0.55,
+        "confidence": 0.95,
+        "raw_x_norm": 0.25,
+        "raw_y_norm": 0.55,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "the right side of the sofa",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.910546875,
+        "y_norm": 0.55,
+        "confidence": 0.95,
+        "raw_x_norm": 0.45,
+        "raw_y_norm": 0.55,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      }
+    ]
+  },
+  "parse_ok": true
+}

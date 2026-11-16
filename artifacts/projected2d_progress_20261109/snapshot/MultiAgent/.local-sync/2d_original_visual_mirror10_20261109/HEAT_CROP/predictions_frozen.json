@@ -1,0 +1,14 @@
+{
+  "responses": {
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene1_495.json": "8f96e0c9a6282653b3d79500475072ea7e529c1ae13f12cb6cd93a2eef952a29",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene2_369.json": "b866af702f762212c550dd5dbcde61923389cad0c117f74d75b571ffb4a48887",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene2_412.json": "8221c78df4c0292f45b7bc934aa0d30d430d37c34b989737be4fd83e54f8d62f",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene2_482.json": "e517dbd02e944cfabc536766b1c2dbea0999fb40359d8bf950b2b05327bf1178",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene3_161.json": "40c26b977e425c58964971edddba9d509d34929136d79e619d2569d5d691d409",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene4_room1_1.json": "c284d75c4c5ff6b59bc2ff81a1a5a0ccbca0412d5ca7f3742af9447cfd548d89",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene4_room2_19.json": "071fd41cb34f779119816c2e47a6592cbddd3a2e6418289eb4182d1a012265d4",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene4_room3_108.json": "2dd5e77f765a7755f1f1c53d1027ec9b8c3cb6e035668a77975d4ff67018fb02",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene4_room4_72.json": "9320c0f2cfed137d68f7c3ff17fc9fe310c93a6102d704aafc890eb9d5c94661",
+    "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror10_20261109/HEAT_CROP/responses/scene5_226.json": "f9c0298e5b4b58d98282d2ad655c449ecf7b9186f239535cdf8b463f696d9fda"
+  }
+}

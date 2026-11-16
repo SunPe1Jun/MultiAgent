@@ -1,0 +1,1791 @@
+{
+  "method": "Per-condition scores restricted to the 23 interactions where paired image hashes or prompt differ from native original wrapper. The remaining 9 reproduce identical response with identical images and prompt.",
+  "warning": "These 23 interactions are selected by input-change status, not GT outcome. All 32 event intention-to-treat scores are also retained separately.",
+  "conditions": {
+    "HEAT_CROP": {
+      "actually_modified_events": 23,
+      "unchanged_events": 9,
+      "candidate": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 40,
+          "time_fp": 13,
+          "time_fn": 12,
+          "point_tp_50": 5,
+          "point_fp_50": 48,
+          "point_fn_50": 47,
+          "point_tp_100": 14,
+          "point_fp_100": 39,
+          "point_fn_100": 38,
+          "point_tp_150": 20,
+          "point_fp_150": 33,
+          "point_fn_150": 32,
+          "point_tp_200": 26,
+          "point_fp_200": 27,
+          "point_fn_200": 26,
+          "joint_tp_50": 4,
+          "joint_fp_50": 49,
+          "joint_fn_50": 48,
+          "joint_tp_100": 12,
+          "joint_fp_100": 41,
+          "joint_fn_100": 40,
+          "joint_tp_150": 16,
+          "joint_fp_150": 37,
+          "joint_fn_150": 36,
+          "joint_tp_200": 21,
+          "joint_fp_200": 32,
+          "joint_fn_200": 31,
+          "time_precision": 0.7547169811320755,
+          "time_recall": 0.7692307692307693,
+          "time_f1": 0.7619047619047619,
+          "point_50_precision": 0.09433962264150944,
+          "point_50_recall": 0.09615384615384616,
+          "point_50_f1": 0.09523809523809523,
+          "point_100_precision": 0.2641509433962264,
+          "point_100_recall": 0.2692307692307692,
+          "point_100_f1": 0.26666666666666666,
+          "point_150_precision": 0.37735849056603776,
+          "point_150_recall": 0.38461538461538464,
+          "point_150_f1": 0.38095238095238093,
+          "point_200_precision": 0.49056603773584906,
+          "point_200_recall": 0.5,
+          "point_200_f1": 0.49523809523809526,
+          "joint_50_precision": 0.07547169811320754,
+          "joint_50_recall": 0.07692307692307693,
+          "joint_50_f1": 0.0761904761904762,
+          "joint_100_precision": 0.22641509433962265,
+          "joint_100_recall": 0.23076923076923078,
+          "joint_100_f1": 0.22857142857142856,
+          "joint_150_precision": 0.3018867924528302,
+          "joint_150_recall": 0.3076923076923077,
+          "joint_150_f1": 0.3047619047619048,
+          "joint_200_precision": 0.39622641509433965,
+          "joint_200_recall": 0.40384615384615385,
+          "joint_200_f1": 0.39999999999999997,
+          "mean_point_distance_px_100": 57.33706416454279,
+          "mean_joint_distance_px_100": 57.98444861014827
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 7,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "native_wrapper_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 39,
+          "time_fp": 14,
+          "time_fn": 13,
+          "point_tp_50": 4,
+          "point_fp_50": 49,
+          "point_fn_50": 48,
+          "point_tp_100": 10,
+          "point_fp_100": 43,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 36,
+          "point_fn_150": 35,
+          "point_tp_200": 22,
+          "point_fp_200": 31,
+          "point_fn_200": 30,
+          "joint_tp_50": 3,
+          "joint_fp_50": 50,
+          "joint_fn_50": 49,
+          "joint_tp_100": 8,
+          "joint_fp_100": 45,
+          "joint_fn_100": 44,
+          "joint_tp_150": 13,
+          "joint_fp_150": 40,
+          "joint_fn_150": 39,
+          "joint_tp_200": 18,
+          "joint_fp_200": 35,
+          "joint_fn_200": 34,
+          "time_precision": 0.7358490566037735,
+          "time_recall": 0.75,
+          "time_f1": 0.7428571428571428,
+          "point_50_precision": 0.07547169811320754,
+          "point_50_recall": 0.07692307692307693,
+          "point_50_f1": 0.0761904761904762,
+          "point_100_precision": 0.18867924528301888,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19047619047619047,
+          "point_150_precision": 0.32075471698113206,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.32380952380952377,
+          "point_200_precision": 0.41509433962264153,
+          "point_200_recall": 0.4230769230769231,
+          "point_200_f1": 0.4190476190476191,
+          "joint_50_precision": 0.05660377358490566,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05714285714285714,
+          "joint_100_precision": 0.1509433962264151,
+          "joint_100_recall": 0.15384615384615385,
+          "joint_100_f1": 0.1523809523809524,
+          "joint_150_precision": 0.24528301886792453,
+          "joint_150_recall": 0.25,
+          "joint_150_f1": 0.24761904761904763,
+          "joint_200_precision": 0.33962264150943394,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.34285714285714286,
+          "mean_point_distance_px_100": 59.40205399640854,
+          "mean_joint_distance_px_100": 60.75055508516594
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 6,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "released_old_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 51,
+          "time_tp": 40,
+          "time_fp": 11,
+          "time_fn": 12,
+          "point_tp_50": 3,
+          "point_fp_50": 48,
+          "point_fn_50": 49,
+          "point_tp_100": 10,
+          "point_fp_100": 41,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 34,
+          "point_fn_150": 35,
+          "point_tp_200": 19,
+          "point_fp_200": 32,
+          "point_fn_200": 33,
+          "joint_tp_50": 3,
+          "joint_fp_50": 48,
+          "joint_fn_50": 49,
+          "joint_tp_100": 9,
+          "joint_fp_100": 42,
+          "joint_fn_100": 43,
+          "joint_tp_150": 16,
+          "joint_fp_150": 35,
+          "joint_fn_150": 36,
+          "joint_tp_200": 18,
+          "joint_fp_200": 33,
+          "joint_fn_200": 34,
+          "time_precision": 0.7843137254901961,
+          "time_recall": 0.7692307692307693,
+          "time_f1": 0.7766990291262137,
+          "point_50_precision": 0.058823529411764705,
+          "point_50_recall": 0.057692307692307696,
+          "point_50_f1": 0.05825242718446602,
+          "point_100_precision": 0.19607843137254902,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19417475728155342,
+          "point_150_precision": 0.3333333333333333,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.3300970873786408,
+          "point_200_precision": 0.37254901960784315,
+          "point_200_recall": 0.36538461538461536,
+          "point_200_f1": 0.3689320388349514,
+          "joint_50_precision": 0.058823529411764705,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05825242718446602,
+          "joint_100_precision": 0.17647058823529413,
+          "joint_100_recall": 0.17307692307692307,
+          "joint_100_f1": 0.1747572815533981,
+          "joint_150_precision": 0.3137254901960784,
+          "joint_150_recall": 0.3076923076923077,
+          "joint_150_f1": 0.31067961165048547,
+          "joint_200_precision": 0.35294117647058826,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.3495145631067962,
+          "mean_point_distance_px_100": 60.81238864749015,
+          "mean_joint_distance_px_100": 58.67985728569478
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "candidate_vs_native_bootstrap": {
+        "delta": 0.07619047619047617,
+        "ci95": [
+          0.0,
+          0.16666666666666669
+        ]
+      },
+      "candidate_vs_released_bootstrap": {
+        "delta": 0.0538141470180305,
+        "ci95": [
+          -0.02527505203687183,
+          0.14285714285714288
+        ]
+      },
+      "modified_event_splits": {
+        "dev_modified": {
+          "n": 10,
+          "candidate_joint100": 0.25925925925925924,
+          "native_joint100": 0.14814814814814814,
+          "released_joint100": 0.23076923076923075,
+          "candidate_tp": 7,
+          "native_tp": 4,
+          "released_tp": 6
+        },
+        "confirm_modified": {
+          "n": 13,
+          "candidate_joint100": 0.19607843137254902,
+          "native_joint100": 0.1568627450980392,
+          "released_joint100": 0.11764705882352941,
+          "candidate_tp": 5,
+          "native_tp": 4,
+          "released_tp": 3
+        }
+      },
+      "unchanged_raw_responses_identical_to_native": 9
+    },
+    "FIXED_GAZE22": {
+      "actually_modified_events": 23,
+      "unchanged_events": 9,
+      "candidate": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 41,
+          "time_fp": 12,
+          "time_fn": 11,
+          "point_tp_50": 5,
+          "point_fp_50": 48,
+          "point_fn_50": 47,
+          "point_tp_100": 13,
+          "point_fp_100": 40,
+          "point_fn_100": 39,
+          "point_tp_150": 18,
+          "point_fp_150": 35,
+          "point_fn_150": 34,
+          "point_tp_200": 24,
+          "point_fp_200": 29,
+          "point_fn_200": 28,
+          "joint_tp_50": 4,
+          "joint_fp_50": 49,
+          "joint_fn_50": 48,
+          "joint_tp_100": 11,
+          "joint_fp_100": 42,
+          "joint_fn_100": 41,
+          "joint_tp_150": 15,
+          "joint_fp_150": 38,
+          "joint_fn_150": 37,
+          "joint_tp_200": 20,
+          "joint_fp_200": 33,
+          "joint_fn_200": 32,
+          "time_precision": 0.7735849056603774,
+          "time_recall": 0.7884615384615384,
+          "time_f1": 0.780952380952381,
+          "point_50_precision": 0.09433962264150944,
+          "point_50_recall": 0.09615384615384616,
+          "point_50_f1": 0.09523809523809523,
+          "point_100_precision": 0.24528301886792453,
+          "point_100_recall": 0.25,
+          "point_100_f1": 0.24761904761904763,
+          "point_150_precision": 0.33962264150943394,
+          "point_150_recall": 0.34615384615384615,
+          "point_150_f1": 0.34285714285714286,
+          "point_200_precision": 0.4528301886792453,
+          "point_200_recall": 0.46153846153846156,
+          "point_200_f1": 0.45714285714285713,
+          "joint_50_precision": 0.07547169811320754,
+          "joint_50_recall": 0.07692307692307693,
+          "joint_50_f1": 0.0761904761904762,
+          "joint_100_precision": 0.20754716981132076,
+          "joint_100_recall": 0.21153846153846154,
+          "joint_100_f1": 0.20952380952380956,
+          "joint_150_precision": 0.2830188679245283,
+          "joint_150_recall": 0.28846153846153844,
+          "joint_150_f1": 0.28571428571428564,
+          "joint_200_precision": 0.37735849056603776,
+          "joint_200_recall": 0.38461538461538464,
+          "joint_200_f1": 0.38095238095238093,
+          "mean_point_distance_px_100": 59.31619592667974,
+          "mean_joint_distance_px_100": 60.38227564227425
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 6,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "native_wrapper_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 39,
+          "time_fp": 14,
+          "time_fn": 13,
+          "point_tp_50": 4,
+          "point_fp_50": 49,
+          "point_fn_50": 48,
+          "point_tp_100": 10,
+          "point_fp_100": 43,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 36,
+          "point_fn_150": 35,
+          "point_tp_200": 22,
+          "point_fp_200": 31,
+          "point_fn_200": 30,
+          "joint_tp_50": 3,
+          "joint_fp_50": 50,
+          "joint_fn_50": 49,
+          "joint_tp_100": 8,
+          "joint_fp_100": 45,
+          "joint_fn_100": 44,
+          "joint_tp_150": 13,
+          "joint_fp_150": 40,
+          "joint_fn_150": 39,
+          "joint_tp_200": 18,
+          "joint_fp_200": 35,
+          "joint_fn_200": 34,
+          "time_precision": 0.7358490566037735,
+          "time_recall": 0.75,
+          "time_f1": 0.7428571428571428,
+          "point_50_precision": 0.07547169811320754,
+          "point_50_recall": 0.07692307692307693,
+          "point_50_f1": 0.0761904761904762,
+          "point_100_precision": 0.18867924528301888,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19047619047619047,
+          "point_150_precision": 0.32075471698113206,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.32380952380952377,
+          "point_200_precision": 0.41509433962264153,
+          "point_200_recall": 0.4230769230769231,
+          "point_200_f1": 0.4190476190476191,
+          "joint_50_precision": 0.05660377358490566,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05714285714285714,
+          "joint_100_precision": 0.1509433962264151,
+          "joint_100_recall": 0.15384615384615385,
+          "joint_100_f1": 0.1523809523809524,
+          "joint_150_precision": 0.24528301886792453,
+          "joint_150_recall": 0.25,
+          "joint_150_f1": 0.24761904761904763,
+          "joint_200_precision": 0.33962264150943394,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.34285714285714286,
+          "mean_point_distance_px_100": 59.40205399640854,
+          "mean_joint_distance_px_100": 60.75055508516594
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 6,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "released_old_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 51,
+          "time_tp": 40,
+          "time_fp": 11,
+          "time_fn": 12,
+          "point_tp_50": 3,
+          "point_fp_50": 48,
+          "point_fn_50": 49,
+          "point_tp_100": 10,
+          "point_fp_100": 41,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 34,
+          "point_fn_150": 35,
+          "point_tp_200": 19,
+          "point_fp_200": 32,
+          "point_fn_200": 33,
+          "joint_tp_50": 3,
+          "joint_fp_50": 48,
+          "joint_fn_50": 49,
+          "joint_tp_100": 9,
+          "joint_fp_100": 42,
+          "joint_fn_100": 43,
+          "joint_tp_150": 16,
+          "joint_fp_150": 35,
+          "joint_fn_150": 36,
+          "joint_tp_200": 18,
+          "joint_fp_200": 33,
+          "joint_fn_200": 34,
+          "time_precision": 0.7843137254901961,
+          "time_recall": 0.7692307692307693,
+          "time_f1": 0.7766990291262137,
+          "point_50_precision": 0.058823529411764705,
+          "point_50_recall": 0.057692307692307696,
+          "point_50_f1": 0.05825242718446602,
+          "point_100_precision": 0.19607843137254902,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19417475728155342,
+          "point_150_precision": 0.3333333333333333,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.3300970873786408,
+          "point_200_precision": 0.37254901960784315,
+          "point_200_recall": 0.36538461538461536,
+          "point_200_f1": 0.3689320388349514,
+          "joint_50_precision": 0.058823529411764705,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05825242718446602,
+          "joint_100_precision": 0.17647058823529413,
+          "joint_100_recall": 0.17307692307692307,
+          "joint_100_f1": 0.1747572815533981,
+          "joint_150_precision": 0.3137254901960784,
+          "joint_150_recall": 0.3076923076923077,
+          "joint_150_f1": 0.31067961165048547,
+          "joint_200_precision": 0.35294117647058826,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.3495145631067962,
+          "mean_point_distance_px_100": 60.81238864749015,
+          "mean_joint_distance_px_100": 58.67985728569478
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "candidate_vs_native_bootstrap": {
+        "delta": 0.057142857142857134,
+        "ci95": [
+          -0.03999999999999998,
+          0.15625
+        ]
+      },
+      "candidate_vs_released_bootstrap": {
+        "delta": 0.034766527970411465,
+        "ci95": [
+          -0.059399021663172624,
+          0.13043478260869568
+        ]
+      },
+      "modified_event_splits": {
+        "dev_modified": {
+          "n": 10,
+          "candidate_joint100": 0.2222222222222222,
+          "native_joint100": 0.14814814814814814,
+          "released_joint100": 0.23076923076923075,
+          "candidate_tp": 6,
+          "native_tp": 4,
+          "released_tp": 6
+        },
+        "confirm_modified": {
+          "n": 13,
+          "candidate_joint100": 0.19607843137254902,
+          "native_joint100": 0.1568627450980392,
+          "released_joint100": 0.11764705882352941,
+          "candidate_tp": 5,
+          "native_tp": 4,
+          "released_tp": 3
+        }
+      },
+      "unchanged_raw_responses_identical_to_native": 9
+    },
+    "MIRRORED_HEAT_CROP": {
+      "actually_modified_events": 23,
+      "unchanged_events": 9,
+      "candidate": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 42,
+          "time_fp": 11,
+          "time_fn": 10,
+          "point_tp_50": 7,
+          "point_fp_50": 46,
+          "point_fn_50": 45,
+          "point_tp_100": 14,
+          "point_fp_100": 39,
+          "point_fn_100": 38,
+          "point_tp_150": 16,
+          "point_fp_150": 37,
+          "point_fn_150": 36,
+          "point_tp_200": 22,
+          "point_fp_200": 31,
+          "point_fn_200": 30,
+          "joint_tp_50": 5,
+          "joint_fp_50": 48,
+          "joint_fn_50": 47,
+          "joint_tp_100": 11,
+          "joint_fp_100": 42,
+          "joint_fn_100": 41,
+          "joint_tp_150": 13,
+          "joint_fp_150": 40,
+          "joint_fn_150": 39,
+          "joint_tp_200": 19,
+          "joint_fp_200": 34,
+          "joint_fn_200": 33,
+          "time_precision": 0.7924528301886793,
+          "time_recall": 0.8076923076923077,
+          "time_f1": 0.7999999999999999,
+          "point_50_precision": 0.1320754716981132,
+          "point_50_recall": 0.1346153846153846,
+          "point_50_f1": 0.13333333333333333,
+          "point_100_precision": 0.2641509433962264,
+          "point_100_recall": 0.2692307692307692,
+          "point_100_f1": 0.26666666666666666,
+          "point_150_precision": 0.3018867924528302,
+          "point_150_recall": 0.3076923076923077,
+          "point_150_f1": 0.3047619047619048,
+          "point_200_precision": 0.41509433962264153,
+          "point_200_recall": 0.4230769230769231,
+          "point_200_f1": 0.4190476190476191,
+          "joint_50_precision": 0.09433962264150944,
+          "joint_50_recall": 0.09615384615384616,
+          "joint_50_f1": 0.09523809523809523,
+          "joint_100_precision": 0.20754716981132076,
+          "joint_100_recall": 0.21153846153846154,
+          "joint_100_f1": 0.20952380952380956,
+          "joint_150_precision": 0.24528301886792453,
+          "joint_150_recall": 0.25,
+          "joint_150_f1": 0.24761904761904763,
+          "joint_200_precision": 0.3584905660377358,
+          "joint_200_recall": 0.36538461538461536,
+          "joint_200_f1": 0.3619047619047619,
+          "mean_point_distance_px_100": 56.67701530551746,
+          "mean_joint_distance_px_100": 60.240820549099865
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 7,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "native_wrapper_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 39,
+          "time_fp": 14,
+          "time_fn": 13,
+          "point_tp_50": 4,
+          "point_fp_50": 49,
+          "point_fn_50": 48,
+          "point_tp_100": 10,
+          "point_fp_100": 43,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 36,
+          "point_fn_150": 35,
+          "point_tp_200": 22,
+          "point_fp_200": 31,
+          "point_fn_200": 30,
+          "joint_tp_50": 3,
+          "joint_fp_50": 50,
+          "joint_fn_50": 49,
+          "joint_tp_100": 8,
+          "joint_fp_100": 45,
+          "joint_fn_100": 44,
+          "joint_tp_150": 13,
+          "joint_fp_150": 40,
+          "joint_fn_150": 39,
+          "joint_tp_200": 18,
+          "joint_fp_200": 35,
+          "joint_fn_200": 34,
+          "time_precision": 0.7358490566037735,
+          "time_recall": 0.75,
+          "time_f1": 0.7428571428571428,
+          "point_50_precision": 0.07547169811320754,
+          "point_50_recall": 0.07692307692307693,
+          "point_50_f1": 0.0761904761904762,
+          "point_100_precision": 0.18867924528301888,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19047619047619047,
+          "point_150_precision": 0.32075471698113206,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.32380952380952377,
+          "point_200_precision": 0.41509433962264153,
+          "point_200_recall": 0.4230769230769231,
+          "point_200_f1": 0.4190476190476191,
+          "joint_50_precision": 0.05660377358490566,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05714285714285714,
+          "joint_100_precision": 0.1509433962264151,
+          "joint_100_recall": 0.15384615384615385,
+          "joint_100_f1": 0.1523809523809524,
+          "joint_150_precision": 0.24528301886792453,
+          "joint_150_recall": 0.25,
+          "joint_150_f1": 0.24761904761904763,
+          "joint_200_precision": 0.33962264150943394,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.34285714285714286,
+          "mean_point_distance_px_100": 59.40205399640854,
+          "mean_joint_distance_px_100": 60.75055508516594
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 6,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "released_old_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 51,
+          "time_tp": 40,
+          "time_fp": 11,
+          "time_fn": 12,
+          "point_tp_50": 3,
+          "point_fp_50": 48,
+          "point_fn_50": 49,
+          "point_tp_100": 10,
+          "point_fp_100": 41,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 34,
+          "point_fn_150": 35,
+          "point_tp_200": 19,
+          "point_fp_200": 32,
+          "point_fn_200": 33,
+          "joint_tp_50": 3,
+          "joint_fp_50": 48,
+          "joint_fn_50": 49,
+          "joint_tp_100": 9,
+          "joint_fp_100": 42,
+          "joint_fn_100": 43,
+          "joint_tp_150": 16,
+          "joint_fp_150": 35,
+          "joint_fn_150": 36,
+          "joint_tp_200": 18,
+          "joint_fp_200": 33,
+          "joint_fn_200": 34,
+          "time_precision": 0.7843137254901961,
+          "time_recall": 0.7692307692307693,
+          "time_f1": 0.7766990291262137,
+          "point_50_precision": 0.058823529411764705,
+          "point_50_recall": 0.057692307692307696,
+          "point_50_f1": 0.05825242718446602,
+          "point_100_precision": 0.19607843137254902,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19417475728155342,
+          "point_150_precision": 0.3333333333333333,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.3300970873786408,
+          "point_200_precision": 0.37254901960784315,
+          "point_200_recall": 0.36538461538461536,
+          "point_200_f1": 0.3689320388349514,
+          "joint_50_precision": 0.058823529411764705,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05825242718446602,
+          "joint_100_precision": 0.17647058823529413,
+          "joint_100_recall": 0.17307692307692307,
+          "joint_100_f1": 0.1747572815533981,
+          "joint_150_precision": 0.3137254901960784,
+          "joint_150_recall": 0.3076923076923077,
+          "joint_150_f1": 0.31067961165048547,
+          "joint_200_precision": 0.35294117647058826,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.3495145631067962,
+          "mean_point_distance_px_100": 60.81238864749015,
+          "mean_joint_distance_px_100": 58.67985728569478
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "candidate_vs_native_bootstrap": {
+        "delta": 0.057142857142857134,
+        "ci95": [
+          -0.06666666666666665,
+          0.18556701030927836
+        ]
+      },
+      "candidate_vs_released_bootstrap": {
+        "delta": 0.034766527970411465,
+        "ci95": [
+          -0.06740321504060522,
+          0.15355805243445692
+        ]
+      },
+      "modified_event_splits": {
+        "dev_modified": {
+          "n": 10,
+          "candidate_joint100": 0.2222222222222222,
+          "native_joint100": 0.14814814814814814,
+          "released_joint100": 0.23076923076923075,
+          "candidate_tp": 6,
+          "native_tp": 4,
+          "released_tp": 6
+        },
+        "confirm_modified": {
+          "n": 13,
+          "candidate_joint100": 0.19607843137254902,
+          "native_joint100": 0.1568627450980392,
+          "released_joint100": 0.11764705882352941,
+          "candidate_tp": 5,
+          "native_tp": 4,
+          "released_tp": 3
+        }
+      },
+      "unchanged_raw_responses_identical_to_native": 9
+    },
+    "HEAT_CROP_FOV": {
+      "actually_modified_events": 23,
+      "unchanged_events": 9,
+      "candidate": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 38,
+          "time_fp": 15,
+          "time_fn": 14,
+          "point_tp_50": 5,
+          "point_fp_50": 48,
+          "point_fn_50": 47,
+          "point_tp_100": 12,
+          "point_fp_100": 41,
+          "point_fn_100": 40,
+          "point_tp_150": 16,
+          "point_fp_150": 37,
+          "point_fn_150": 36,
+          "point_tp_200": 23,
+          "point_fp_200": 30,
+          "point_fn_200": 29,
+          "joint_tp_50": 4,
+          "joint_fp_50": 49,
+          "joint_fn_50": 48,
+          "joint_tp_100": 10,
+          "joint_fp_100": 43,
+          "joint_fn_100": 42,
+          "joint_tp_150": 14,
+          "joint_fp_150": 39,
+          "joint_fn_150": 38,
+          "joint_tp_200": 18,
+          "joint_fp_200": 35,
+          "joint_fn_200": 34,
+          "time_precision": 0.7169811320754716,
+          "time_recall": 0.7307692307692307,
+          "time_f1": 0.7238095238095238,
+          "point_50_precision": 0.09433962264150944,
+          "point_50_recall": 0.09615384615384616,
+          "point_50_f1": 0.09523809523809523,
+          "point_100_precision": 0.22641509433962265,
+          "point_100_recall": 0.23076923076923078,
+          "point_100_f1": 0.22857142857142856,
+          "point_150_precision": 0.3018867924528302,
+          "point_150_recall": 0.3076923076923077,
+          "point_150_f1": 0.3047619047619048,
+          "point_200_precision": 0.4339622641509434,
+          "point_200_recall": 0.4423076923076923,
+          "point_200_f1": 0.4380952380952381,
+          "joint_50_precision": 0.07547169811320754,
+          "joint_50_recall": 0.07692307692307693,
+          "joint_50_f1": 0.0761904761904762,
+          "joint_100_precision": 0.18867924528301888,
+          "joint_100_recall": 0.19230769230769232,
+          "joint_100_f1": 0.19047619047619047,
+          "joint_150_precision": 0.2641509433962264,
+          "joint_150_recall": 0.2692307692307692,
+          "joint_150_f1": 0.26666666666666666,
+          "joint_200_precision": 0.33962264150943394,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.34285714285714286,
+          "mean_point_distance_px_100": 57.46999028874365,
+          "mean_joint_distance_px_100": 57.82752766163279
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 6,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "native_wrapper_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 39,
+          "time_fp": 14,
+          "time_fn": 13,
+          "point_tp_50": 4,
+          "point_fp_50": 49,
+          "point_fn_50": 48,
+          "point_tp_100": 10,
+          "point_fp_100": 43,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 36,
+          "point_fn_150": 35,
+          "point_tp_200": 22,
+          "point_fp_200": 31,
+          "point_fn_200": 30,
+          "joint_tp_50": 3,
+          "joint_fp_50": 50,
+          "joint_fn_50": 49,
+          "joint_tp_100": 8,
+          "joint_fp_100": 45,
+          "joint_fn_100": 44,
+          "joint_tp_150": 13,
+          "joint_fp_150": 40,
+          "joint_fn_150": 39,
+          "joint_tp_200": 18,
+          "joint_fp_200": 35,
+          "joint_fn_200": 34,
+          "time_precision": 0.7358490566037735,
+          "time_recall": 0.75,
+          "time_f1": 0.7428571428571428,
+          "point_50_precision": 0.07547169811320754,
+          "point_50_recall": 0.07692307692307693,
+          "point_50_f1": 0.0761904761904762,
+          "point_100_precision": 0.18867924528301888,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19047619047619047,
+          "point_150_precision": 0.32075471698113206,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.32380952380952377,
+          "point_200_precision": 0.41509433962264153,
+          "point_200_recall": 0.4230769230769231,
+          "point_200_f1": 0.4190476190476191,
+          "joint_50_precision": 0.05660377358490566,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05714285714285714,
+          "joint_100_precision": 0.1509433962264151,
+          "joint_100_recall": 0.15384615384615385,
+          "joint_100_f1": 0.1523809523809524,
+          "joint_150_precision": 0.24528301886792453,
+          "joint_150_recall": 0.25,
+          "joint_150_f1": 0.24761904761904763,
+          "joint_200_precision": 0.33962264150943394,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.34285714285714286,
+          "mean_point_distance_px_100": 59.40205399640854,
+          "mean_joint_distance_px_100": 60.75055508516594
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 6,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "released_old_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 51,
+          "time_tp": 40,
+          "time_fp": 11,
+          "time_fn": 12,
+          "point_tp_50": 3,
+          "point_fp_50": 48,
+          "point_fn_50": 49,
+          "point_tp_100": 10,
+          "point_fp_100": 41,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 34,
+          "point_fn_150": 35,
+          "point_tp_200": 19,
+          "point_fp_200": 32,
+          "point_fn_200": 33,
+          "joint_tp_50": 3,
+          "joint_fp_50": 48,
+          "joint_fn_50": 49,
+          "joint_tp_100": 9,
+          "joint_fp_100": 42,
+          "joint_fn_100": 43,
+          "joint_tp_150": 16,
+          "joint_fp_150": 35,
+          "joint_fn_150": 36,
+          "joint_tp_200": 18,
+          "joint_fp_200": 33,
+          "joint_fn_200": 34,
+          "time_precision": 0.7843137254901961,
+          "time_recall": 0.7692307692307693,
+          "time_f1": 0.7766990291262137,
+          "point_50_precision": 0.058823529411764705,
+          "point_50_recall": 0.057692307692307696,
+          "point_50_f1": 0.05825242718446602,
+          "point_100_precision": 0.19607843137254902,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19417475728155342,
+          "point_150_precision": 0.3333333333333333,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.3300970873786408,
+          "point_200_precision": 0.37254901960784315,
+          "point_200_recall": 0.36538461538461536,
+          "point_200_f1": 0.3689320388349514,
+          "joint_50_precision": 0.058823529411764705,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05825242718446602,
+          "joint_100_precision": 0.17647058823529413,
+          "joint_100_recall": 0.17307692307692307,
+          "joint_100_f1": 0.1747572815533981,
+          "joint_150_precision": 0.3137254901960784,
+          "joint_150_recall": 0.3076923076923077,
+          "joint_150_f1": 0.31067961165048547,
+          "joint_200_precision": 0.35294117647058826,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.3495145631067962,
+          "mean_point_distance_px_100": 60.81238864749015,
+          "mean_joint_distance_px_100": 58.67985728569478
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "candidate_vs_native_bootstrap": {
+        "delta": 0.03809523809523807,
+        "ci95": [
+          -0.07317073170731705,
+          0.14035087719298245
+        ]
+      },
+      "candidate_vs_released_bootstrap": {
+        "delta": 0.0157189089227924,
+        "ci95": [
+          -0.06808528428093645,
+          0.10612438214997824
+        ]
+      },
+      "modified_event_splits": {
+        "dev_modified": {
+          "n": 10,
+          "candidate_joint100": 0.25925925925925924,
+          "native_joint100": 0.14814814814814814,
+          "released_joint100": 0.23076923076923075,
+          "candidate_tp": 7,
+          "native_tp": 4,
+          "released_tp": 6
+        },
+        "confirm_modified": {
+          "n": 13,
+          "candidate_joint100": 0.11764705882352941,
+          "native_joint100": 0.1568627450980392,
+          "released_joint100": 0.11764705882352941,
+          "candidate_tp": 3,
+          "native_tp": 4,
+          "released_tp": 3
+        }
+      },
+      "unchanged_raw_responses_identical_to_native": 9
+    },
+    "FOV95": {
+      "actually_modified_events": 23,
+      "unchanged_events": 9,
+      "candidate": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 39,
+          "time_fp": 14,
+          "time_fn": 13,
+          "point_tp_50": 5,
+          "point_fp_50": 48,
+          "point_fn_50": 47,
+          "point_tp_100": 12,
+          "point_fp_100": 41,
+          "point_fn_100": 40,
+          "point_tp_150": 16,
+          "point_fp_150": 37,
+          "point_fn_150": 36,
+          "point_tp_200": 25,
+          "point_fp_200": 28,
+          "point_fn_200": 27,
+          "joint_tp_50": 4,
+          "joint_fp_50": 49,
+          "joint_fn_50": 48,
+          "joint_tp_100": 10,
+          "joint_fp_100": 43,
+          "joint_fn_100": 42,
+          "joint_tp_150": 13,
+          "joint_fp_150": 40,
+          "joint_fn_150": 39,
+          "joint_tp_200": 20,
+          "joint_fp_200": 33,
+          "joint_fn_200": 32,
+          "time_precision": 0.7358490566037735,
+          "time_recall": 0.75,
+          "time_f1": 0.7428571428571428,
+          "point_50_precision": 0.09433962264150944,
+          "point_50_recall": 0.09615384615384616,
+          "point_50_f1": 0.09523809523809523,
+          "point_100_precision": 0.22641509433962265,
+          "point_100_recall": 0.23076923076923078,
+          "point_100_f1": 0.22857142857142856,
+          "point_150_precision": 0.3018867924528302,
+          "point_150_recall": 0.3076923076923077,
+          "point_150_f1": 0.3047619047619048,
+          "point_200_precision": 0.4716981132075472,
+          "point_200_recall": 0.4807692307692308,
+          "point_200_f1": 0.4761904761904762,
+          "joint_50_precision": 0.07547169811320754,
+          "joint_50_recall": 0.07692307692307693,
+          "joint_50_f1": 0.0761904761904762,
+          "joint_100_precision": 0.18867924528301888,
+          "joint_100_recall": 0.19230769230769232,
+          "joint_100_f1": 0.19047619047619047,
+          "joint_150_precision": 0.24528301886792453,
+          "joint_150_recall": 0.25,
+          "joint_150_f1": 0.24761904761904763,
+          "joint_200_precision": 0.37735849056603776,
+          "joint_200_recall": 0.38461538461538464,
+          "joint_200_f1": 0.38095238095238093,
+          "mean_point_distance_px_100": 58.417248728984525,
+          "mean_joint_distance_px_100": 59.31598234754525
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 7,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "native_wrapper_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 53,
+          "time_tp": 39,
+          "time_fp": 14,
+          "time_fn": 13,
+          "point_tp_50": 4,
+          "point_fp_50": 49,
+          "point_fn_50": 48,
+          "point_tp_100": 10,
+          "point_fp_100": 43,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 36,
+          "point_fn_150": 35,
+          "point_tp_200": 22,
+          "point_fp_200": 31,
+          "point_fn_200": 30,
+          "joint_tp_50": 3,
+          "joint_fp_50": 50,
+          "joint_fn_50": 49,
+          "joint_tp_100": 8,
+          "joint_fp_100": 45,
+          "joint_fn_100": 44,
+          "joint_tp_150": 13,
+          "joint_fp_150": 40,
+          "joint_fn_150": 39,
+          "joint_tp_200": 18,
+          "joint_fp_200": 35,
+          "joint_fn_200": 34,
+          "time_precision": 0.7358490566037735,
+          "time_recall": 0.75,
+          "time_f1": 0.7428571428571428,
+          "point_50_precision": 0.07547169811320754,
+          "point_50_recall": 0.07692307692307693,
+          "point_50_f1": 0.0761904761904762,
+          "point_100_precision": 0.18867924528301888,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19047619047619047,
+          "point_150_precision": 0.32075471698113206,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.32380952380952377,
+          "point_200_precision": 0.41509433962264153,
+          "point_200_recall": 0.4230769230769231,
+          "point_200_f1": 0.4190476190476191,
+          "joint_50_precision": 0.05660377358490566,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05714285714285714,
+          "joint_100_precision": 0.1509433962264151,
+          "joint_100_recall": 0.15384615384615385,
+          "joint_100_f1": 0.1523809523809524,
+          "joint_150_precision": 0.24528301886792453,
+          "joint_150_recall": 0.25,
+          "joint_150_f1": 0.24761904761904763,
+          "joint_200_precision": 0.33962264150943394,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.34285714285714286,
+          "mean_point_distance_px_100": 59.40205399640854,
+          "mean_joint_distance_px_100": 60.75055508516594
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 4,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 6,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 2,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "released_old_same_modified": {
+        "metrics": {
+          "events": 23,
+          "gt_referents": 52,
+          "time_evaluable_referents": 52,
+          "predictions": 51,
+          "time_tp": 40,
+          "time_fp": 11,
+          "time_fn": 12,
+          "point_tp_50": 3,
+          "point_fp_50": 48,
+          "point_fn_50": 49,
+          "point_tp_100": 10,
+          "point_fp_100": 41,
+          "point_fn_100": 42,
+          "point_tp_150": 17,
+          "point_fp_150": 34,
+          "point_fn_150": 35,
+          "point_tp_200": 19,
+          "point_fp_200": 32,
+          "point_fn_200": 33,
+          "joint_tp_50": 3,
+          "joint_fp_50": 48,
+          "joint_fn_50": 49,
+          "joint_tp_100": 9,
+          "joint_fp_100": 42,
+          "joint_fn_100": 43,
+          "joint_tp_150": 16,
+          "joint_fp_150": 35,
+          "joint_fn_150": 36,
+          "joint_tp_200": 18,
+          "joint_fp_200": 33,
+          "joint_fn_200": 34,
+          "time_precision": 0.7843137254901961,
+          "time_recall": 0.7692307692307693,
+          "time_f1": 0.7766990291262137,
+          "point_50_precision": 0.058823529411764705,
+          "point_50_recall": 0.057692307692307696,
+          "point_50_f1": 0.05825242718446602,
+          "point_100_precision": 0.19607843137254902,
+          "point_100_recall": 0.19230769230769232,
+          "point_100_f1": 0.19417475728155342,
+          "point_150_precision": 0.3333333333333333,
+          "point_150_recall": 0.3269230769230769,
+          "point_150_f1": 0.3300970873786408,
+          "point_200_precision": 0.37254901960784315,
+          "point_200_recall": 0.36538461538461536,
+          "point_200_f1": 0.3689320388349514,
+          "joint_50_precision": 0.058823529411764705,
+          "joint_50_recall": 0.057692307692307696,
+          "joint_50_f1": 0.05825242718446602,
+          "joint_100_precision": 0.17647058823529413,
+          "joint_100_recall": 0.17307692307692307,
+          "joint_100_f1": 0.1747572815533981,
+          "joint_150_precision": 0.3137254901960784,
+          "joint_150_recall": 0.3076923076923077,
+          "joint_150_f1": 0.31067961165048547,
+          "joint_200_precision": 0.35294117647058826,
+          "joint_200_recall": 0.34615384615384615,
+          "joint_200_f1": 0.3495145631067962,
+          "mean_point_distance_px_100": 60.81238864749015,
+          "mean_joint_distance_px_100": 58.67985728569478
+        },
+        "exact": {
+          "point_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "point_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_50": {
+            "exact": 0,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_100": {
+            "exact": 3,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_150": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          },
+          "joint_exact_200": {
+            "exact": 5,
+            "evaluable_events": 22,
+            "all_events": 23
+          }
+        }
+      },
+      "candidate_vs_native_bootstrap": {
+        "delta": 0.03809523809523807,
+        "ci95": [
+          -0.07317073170731705,
+          0.14035087719298245
+        ]
+      },
+      "candidate_vs_released_bootstrap": {
+        "delta": 0.0157189089227924,
+        "ci95": [
+          -0.06808528428093645,
+          0.10612438214997824
+        ]
+      },
+      "modified_event_splits": {
+        "dev_modified": {
+          "n": 10,
+          "candidate_joint100": 0.25925925925925924,
+          "native_joint100": 0.14814814814814814,
+          "released_joint100": 0.23076923076923075,
+          "candidate_tp": 7,
+          "native_tp": 4,
+          "released_tp": 6
+        },
+        "confirm_modified": {
+          "n": 13,
+          "candidate_joint100": 0.11764705882352941,
+          "native_joint100": 0.1568627450980392,
+          "released_joint100": 0.11764705882352941,
+          "candidate_tp": 3,
+          "native_tp": 4,
+          "released_tp": 3
+        }
+      },
+      "unchanged_raw_responses_identical_to_native": 9
+    }
+  }
+}

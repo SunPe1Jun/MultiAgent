@@ -1,0 +1,26 @@
+{
+  "responses": {
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene1_34.json": "3b03e3937c6763cd354a96e61606eec568a9a371e9ae5703656422f7a23efb30",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene1_198.json": "e0d451729bbad523614c6f920cc67972146a7449fc5be789e38f1d0fa2319210",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene1_647.json": "4267edacd0d269232d5e8f861bf91a019e9e2a70f9f212bc8811a6f61671bf85",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene2_521.json": "8c847b6e61748f3ed90bc73d45e1c502ed129f3d44afbe8b7647ba90a8edd261",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene3_304.json": "b16ec219614462fe80b9037f1e99d9bd003ae73fe80c388eafdd3786ab757e37",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene3_405.json": "96ec9835ec2b4ee974a4ce3f0b91f470560428bcdf8f2ac62737c3de7758e0e0",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene3_593.json": "ffdb44b5ae60ead019735c37c2a68721acf6197dbff5db2ca8f2f28147aa3688",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room1_34.json": "18714d5819ce0c4017499a23ee4cf8065e4abb2db9fe761c2f78d70fa55e20cc",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room1_51.json": "e5cc746b8e018f621cc050d97e9cd96f06dba47c16745b17faed2a698697bcd5",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room1_98.json": "f3bb944842d6578b56ae88c0c916aa1dd4c5e251dc335bef908d162df9e4ce32",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room2_1.json": "0162070bec7156d43bc5b5cb25ca046a7986ae0010213fe7da56d116cfd88453",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room2_30.json": "11e3974874c02437923c8b85cbd5f5460090f348f463081fc770d03a5bc79a87",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room2_91.json": "c24906cdd2d5467ec1743ce3b4d1968947fe72066a15705c9578f3011ccdcf0b",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room3_59.json": "178c68eb5cf3bfb41f954bfb94766368900dbf94e278f5794e263ebb9069fb29",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room3_114.json": "d77f46f78c6b7e9695b3354348b3631c01c34ddf03eca8839f1ffa781334fa2b",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room3_159.json": "7f9106cc96d0d1b647c3f1298a8e3af90f4676b2267e12b7ff1eba7718f887bd",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room4_176.json": "c8939e94cb3e3c23b7e08dd3437f21aa0f8712e617f9ee52d8a68a33e28fd9ea",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room4_182.json": "38300e473651a388bffc57a281049a39cd8b8ea5e880e4b32608114b80f46d58",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene4_room4_194.json": "2b62e867ed22f58723dd01f39b69e04d437c4065c6cddd3df1ccb6e6999bb213",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene5_664.json": "e89951ebf50feff9a34affda5c5ad2798070a599d801c656ad498efabbf48012",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene5_712.json": "2c33aacf7a40b8e081b48793d6d381e2e9d7bf09dfb4dc5462350f779073cbb1",
+    "/ai/data/MultiAgent/.local-sync/2d_original_real_fixed22_confirm22_20261109/FIXED_CURRENT_GAZE/responses/scene5_743.json": "af98d914a699ce8ccc55ba8145e31d8aaaa54a459d079520c1200c51f3274e52"
+  }
+}

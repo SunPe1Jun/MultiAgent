@@ -1,0 +1,133 @@
+{
+  "event": "scene4_room4_194",
+  "fingerprint": "31117ea63de4b3275e23947d49047dafd0eb9bcec05ea3c668330d723868ddbf",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"the bench\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.26,\n      \"y_norm\": 0.43,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "the bench",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.26,
+        "y_norm": 0.43,
+        "confidence": 0.95
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "the bench",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.52609375,
+        "y_norm": 0.43,
+        "confidence": 0.95,
+        "raw_x_norm": 0.26,
+        "raw_y_norm": 0.43,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene4_room4_194.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4306
+        ],
+        "dtype": "torch.int64",
+        "sha256": "2da0e058bbbc0c4d7a42266103bf681f8c0d7e1b95a9ee17e6e1d4afd3123f4c",
+        "bytes": 34448
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4306
+        ],
+        "dtype": "torch.int64",
+        "sha256": "292e76a37b6a61f1299b007bcf828e98b9c9e21f63c7768a825a724178d46f1d",
+        "bytes": 34448
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4306
+        ],
+        "dtype": "torch.int64",
+        "sha256": "6422541a0632129d080db6cc815e057024034207c578d2e6c37f215bba2490c8",
+        "bytes": 34448
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "f722fbab585f0b81cec048771aef979191a81d7c93cd78cad7ba0efb71ee605a",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene4_room4_194.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "154785d4759b88801691589848c59a355f55140984a98f9ec11765e33a451574",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene4_room4_194.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene4_room4_194.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/responses/scene4_room4_194.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "154785d4759b88801691589848c59a355f55140984a98f9ec11765e33a451574",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 3.8825736599974334,
+  "generated_tokens": 73
+}

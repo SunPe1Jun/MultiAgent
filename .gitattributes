@@ -1,0 +1,3 @@
+# Frozen experiments retain original bytes, including CSV CRLF and whitespace.
+artifacts/projected2d_progress_20261109/** -text -whitespace
+artifacts/scene1_heat_crop_20261110/** -text -whitespace

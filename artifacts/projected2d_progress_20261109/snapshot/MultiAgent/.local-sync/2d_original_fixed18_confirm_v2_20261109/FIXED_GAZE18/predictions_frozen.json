@@ -1,0 +1,26 @@
+{
+  "responses": {
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene1_34.json": "0e6a60f1061f508883dcfa81963665b922b61417171911f1d7eb056aa81e63ca",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene1_198.json": "c7383378b1c2d1845378174fef96ff4992d735066f2e5f8c76303c6f8d725aca",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene1_647.json": "f5b3d054fcdf163c2a5d3b835112ec5e7afe305d0c871e30b6de8e95b47880ee",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene2_521.json": "02b367fd18987a94122c72ce8fd929340be6f8f735e3d070fca488b1a6aa4da6",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene3_304.json": "cf9bcc4fc67ccaac04b7b8482c1c6b3154447719fa3a97fe09697a9c127ec3a1",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene3_405.json": "478f52fa320e20cdf65331a21486856e1509456fb0e45c82bd7400ab541366bf",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene3_593.json": "c14775b3070c5a23818d023a27fd7e78ab871563d548d330f801099f8c3da52b",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room1_34.json": "d4f2b2735be1e72abfa5914d8672af04c3d9bfbf3c9b9379286da5899b728eaa",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room1_51.json": "e07affed1360bb38dbc8a57df87286c38a14da69a0b0eb6a4922e60820b8c051",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room1_98.json": "f370cd8b9efb92e569aed14b216a36188657ab6cf927c28bfd46c9f9770f3b33",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room2_1.json": "8820c81334a75f890c310229927bed48133c77dd7663afdfd50bd5145f2dd7d2",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room2_30.json": "c3b268c53887baf8353a547dd8e4b153a323dd68beb303bda38a9bfc77032379",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room2_91.json": "fabf88f88aad3f12c37e2087251abffb72753d7867691c2831aace841044373e",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room3_59.json": "e873cf782a6ba2fb605fec2f0eca07e3054940e7560fbeab761d2ff88cf5f18b",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room3_114.json": "c702060b3b2039aac2c05b79c9dd1b91ab878cfd1f37d7400cda0fda4168d245",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room3_159.json": "b2e644329eceed1bdda86bd5b205f6cdbf26e64a1ae4414bb80c4870fd6b9e05",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room4_176.json": "84c01bc2a49cde032f57fd091aa94fc82f751dd4b976697f99a61b8b1d2ccd70",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room4_182.json": "586bd1234accdbf2896467078c84c6ecbafdbfd10d44854d9aa3fa63ba357b64",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene4_room4_194.json": "49716d5bdc8821e8e50c1c3df40636a7bb445e27c0a905ca8713b4771fe11d89",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene5_664.json": "14277934f8c7caf7e99291d4323e91531048c358530e7e08272f65339fc3c711",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene5_712.json": "dd47866e615bae85bd0dec019d8096501c49458afd9ccff1e09d74bdae6420e6",
+    "/ai/data/MultiAgent/.local-sync/2d_original_fixed18_confirm_v2_20261109/FIXED_GAZE18/responses/scene5_743.json": "22161e306f811a1448f3201ad38e891d5acf231efe0d9bd7349ab1eb3b349a6e"
+  }
+}

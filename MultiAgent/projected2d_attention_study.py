@@ -18,6 +18,7 @@ from PIL import Image
 
 from .agents import ReferentialAgent
 from .baseline import module as baseline_module
+from .camera_geometry import ATTENTION_CLOCK_POLICY, VERSION as GEOMETRY_VERSION, aligned_frame_geometry
 from .context import load_contexts
 from .gaze_evidence import DEFAULTS, build_heatmap, gaze_records, render_presentation
 from .qwen_backend import QwenBackend
@@ -215,21 +216,14 @@ def make_condition_images(manifest_rows, context_by_key, out: Path, config):
             pose_frame = pose_by_frame.get(panel_id, {})
             frame_time = pose_frame.get('frame_time', {})
             reference_camera = pose_frame.get('reference_camera', {})
-            video_time = float(frame_time.get('actual_container_pts_seconds', requested_video_time))
-            telemetry_time = reference_camera.get('telemetry_time_seconds')
-            clock_available = (frame_time.get('status') == 'VERIFIED_EXACT_SOURCE_JPEG'
-                               and reference_camera.get('status') == 'POSE_AVAILABLE')
-            if telemetry_time is None:
-                telemetry_time = video_time - float(row['video_time_offset_seconds'] or 0.0)
+            source_sha256 = sha_file(source)
+            geometry = aligned_frame_geometry(pose_frame, source_sha256, requested_video_time,
+                                              float(row['video_time_offset_seconds'] or 0.0))
+            video_time = geometry['video_time_seconds']
+            telemetry_time = geometry['telemetry_time_seconds']
+            clock_available = geometry['clock_available']
             common = {**DEFAULTS, **config["gaze"]}
-            pose_input = ({'position_world': reference_camera['position_world'],
-                           'rotation_xyzw': reference_camera['rotation_xyzw'],
-                           'fov_vertical_degrees': reference_camera['fov_vertical_degrees'],
-                           'pose_interpolation': reference_camera.get('pose_interpolation'),
-                           'pose_source_indices': reference_camera.get('pose_source_indices'),
-                           'pose_source_times': reference_camera.get('pose_source_times'),
-                           'pose_bracket_gap_seconds': reference_camera.get('pose_bracket_gap_seconds')}
-                          if clock_available else None)
+            pose_input = geometry['reference_pose']
             heat_current, stat_current, proj_current = build_heatmap(ctx, records,
                 frame_time_video=video_time, frame_time_telemetry=telemetry_time,
                 event_window=[float(ctx.api_row["t_start"]), float(ctx.api_row["t_end"])],
@@ -281,14 +275,19 @@ def make_condition_images(manifest_rows, context_by_key, out: Path, config):
                 "video_time_seconds": video_time, "requested_video_time_seconds": requested_video_time,
                 "actual_container_pts_seconds": frame_time.get('actual_container_pts_seconds'),
                 "telemetry_time_seconds": telemetry_time,
-                "selected_clock_offset_seconds": reference_camera.get('clock_offset_seconds'),
-                "selected_pose_clock_source": reference_camera.get('clock_status'),
+                "selected_clock_offset_seconds": geometry['selected_clock_offset_seconds'],
+                "selected_pose_clock_source": geometry['selected_pose_clock_source'],
+                "camera_source_field": geometry['camera_source_field'],
+                "clock_policy": geometry['clock_policy'],
+                "original_clock_offset_seconds": reference_camera.get('clock_offset_seconds'),
+                "original_pose_clock_source": reference_camera.get('clock_status'),
                 "candidate_clock_status": pose_contract.get('clock', {}).get('status'),
-                "pose_status": reference_camera.get('status', 'FRAME_POSE_CONTRACT_MISSING'),
-                "pose_reasons": reference_camera.get('reasons', reference_camera.get('reason')),
+                "pose_status": geometry['pose_status'], "pose_reasons": geometry['pose_reasons'],
                 "video_time_offset_seconds": row.get('video_time_offset_seconds'),
                 "width": rgb.width, "height": rgb.height, "source_path": str(source),
-                "source_sha256": sha_file(source),
+                "source_sha256": source_sha256,
+                "frame_geometry_status": geometry["status"],
+                "attention_clock_supported": clock_available,
                 "input_representation": "original_paired_crop",
                 "intermediate_encoding": "JPEG_quality94_all_four_conditions",
                 "crop_bbox_norm": paired_meta["crop_bbox_norm"],
@@ -367,7 +366,11 @@ def reproject_gt_manifest(rows, out: Path):
         contract = contracts[key]
         frame = next((item for item in contract.get('frames', [])
                       if item.get('frame_id') == row['panel_id']), None)
-        camera = (frame or {}).get('reference_camera') or {}
+        source = Path(row['frame_path'])
+        geometry = aligned_frame_geometry((frame or {}) if source.is_file() else {},
+            sha_file(source) if source.is_file() else '', float(row['video_frame_time']),
+            float(row.get('video_time_offset_seconds') or 0.))
+        camera = geometry['reference_pose'] or {}
         if camera.get('status') == 'POSE_AVAILABLE':
             sample = {'cameraPosition': dict(zip('xyz', camera['position_world'])),
                       'cameraRotation': dict(zip('xyzw', camera['rotation_xyzw'])),
@@ -390,7 +393,10 @@ def reproject_gt_manifest(rows, out: Path):
                    pose_alignment_status=camera.get('clock_status', camera.get('status', 'POSE_UNAVAILABLE')),
                    pose_candidate_clock_status=contract.get('clock', {}).get('status'),
                    source_frame_pts_seconds=(frame or {}).get('frame_time', {}).get('actual_container_pts_seconds'),
-                   telemetry_pose_time_seconds=camera.get('telemetry_time_seconds'),
+                   telemetry_pose_time_seconds=geometry['telemetry_time_seconds'],
+                   selected_clock_offset_seconds=geometry['selected_clock_offset_seconds'],
+                   selected_pose_clock_source=geometry['selected_pose_clock_source'],
+                   frame_geometry_status=geometry['status'], clock_policy=geometry['clock_policy'],
                    gt_projection_status=projected.get('status'), projection_valid=str(valid))
         if valid:
             row.update(gt_x=f'{pixel[0]:.2f}', gt_y=f'{pixel[1]:.2f}',
@@ -403,7 +409,10 @@ def reproject_gt_manifest(rows, out: Path):
         output.append(row)
         audit.append({'scene': key[0], 'row_index': key[1], 'frame_id': row['panel_id'],
             'referent_name': row.get('referent_name'), 'pose_status': camera.get('status', 'POSE_UNAVAILABLE'),
-            'pose_clock_source': camera.get('clock_status'), 'candidate_clock_status': contract.get('clock', {}).get('status'),
+            'pose_clock_source': geometry['selected_pose_clock_source'],
+            'selected_clock_offset_seconds': geometry['selected_clock_offset_seconds'],
+            'frame_geometry_status': geometry['status'], 'clock_policy': geometry['clock_policy'],
+            'candidate_clock_status': contract.get('clock', {}).get('status'),
             'pts_seconds': row.get('source_frame_pts_seconds'),
             'telemetry_pose_time_seconds': row.get('telemetry_pose_time_seconds'),
             'old_gt_pixel_xy': [old['gt_x'], old['gt_y']], 'new_gt_pixel_xy_unclipped': pixel,
@@ -411,7 +420,9 @@ def reproject_gt_manifest(rows, out: Path):
             'old_projection_valid': old['projection_valid'], 'new_projection_valid': str(valid)})
     write_csv(out / 'gt_pose_reprojection_audit.csv', audit, list(audit[0]) if audit else [])
     save_json(out / 'gt_pose_reprojection_summary.json', {
-        'rows': len(audit), 'projection_status_counts': dict(Counter(r['new_projection_status'] for r in audit)),
+        'rows': len(audit), 'clock_policy': ATTENTION_CLOCK_POLICY,
+        'projection_scope': 'event_referents_from_manifest_only',
+        'projection_status_counts': dict(Counter(r['new_projection_status'] for r in audit)),
         'pose_status_counts': dict(Counter(r['pose_status'] for r in audit)),
         'gt_used_for_pose_fit_or_model_input': False,
         'evaluator_matching_rules_unchanged': True,
@@ -740,7 +751,10 @@ def main(argv=None):
     model_path = Path(args.model_path).resolve()
     if not (model_path / 'config.json').is_file():
         raise FileNotFoundError(f"Local model config not found: {model_path / 'config.json'}")
-    config = {"model": str(model_path), "model_config_sha256": sha_file(model_path / 'config.json'),
+    config = {"geometry_version": GEOMETRY_VERSION,
+        "attention_clock_policy": ATTENTION_CLOCK_POLICY,
+        "kernel_fov_source": "same_reference_camera_as_gaze_projection",
+        "model": str(model_path), "model_config_sha256": sha_file(model_path / 'config.json'),
         "groups": GROUPS, "panels": 3,
         "frame_selection": "original TriRef evidence panel selector; fixed per-event panel IDs/times across conditions",
         "panel_selection_strategy": "evidence", "sample_inner_margin_ratio": 0.15,

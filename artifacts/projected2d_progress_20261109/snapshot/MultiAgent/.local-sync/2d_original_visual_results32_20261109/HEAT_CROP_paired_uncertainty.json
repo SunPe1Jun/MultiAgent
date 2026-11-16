@@ -1,0 +1,97 @@
+{
+  "paired_interaction_bootstrap": 20000,
+  "seed": 20261109,
+  "comparisons": {
+    "native_wrapper": {
+      "delta_joint_f1": 0.059259259259259234,
+      "bootstrap95": [
+        0.0,
+        0.12800000000000003
+      ],
+      "interaction_changes": [
+        {
+          "scene": "scene2",
+          "row_index": 412,
+          "baseline_tp": 0,
+          "new_tp": 1
+        },
+        {
+          "scene": "scene3",
+          "row_index": 161,
+          "baseline_tp": 0,
+          "new_tp": 1
+        },
+        {
+          "scene": "scene4_room1",
+          "row_index": 98,
+          "baseline_tp": 2,
+          "new_tp": 1
+        },
+        {
+          "scene": "scene4_room3",
+          "row_index": 59,
+          "baseline_tp": 0,
+          "new_tp": 1
+        },
+        {
+          "scene": "scene4_room3",
+          "row_index": 108,
+          "baseline_tp": 1,
+          "new_tp": 2
+        },
+        {
+          "scene": "scene4_room3",
+          "row_index": 159,
+          "baseline_tp": 0,
+          "new_tp": 1
+        }
+      ]
+    },
+    "released_old": {
+      "delta_joint_f1": 0.02525252525252525,
+      "bootstrap95": [
+        -0.046888487914871,
+        0.10002703433360369
+      ],
+      "interaction_changes": [
+        {
+          "scene": "scene1",
+          "row_index": 34,
+          "baseline_tp": 0,
+          "new_tp": 1
+        },
+        {
+          "scene": "scene2",
+          "row_index": 412,
+          "baseline_tp": 0,
+          "new_tp": 1
+        },
+        {
+          "scene": "scene4_room1",
+          "row_index": 34,
+          "baseline_tp": 1,
+          "new_tp": 0
+        },
+        {
+          "scene": "scene4_room3",
+          "row_index": 59,
+          "baseline_tp": 0,
+          "new_tp": 1
+        },
+        {
+          "scene": "scene4_room3",
+          "row_index": 159,
+          "baseline_tp": 0,
+          "new_tp": 1
+        },
+        {
+          "scene": "scene4_room4",
+          "row_index": 176,
+          "baseline_tp": 1,
+          "new_tp": 0
+        }
+      ]
+    }
+  },
+  "scope": "Previously seen development data; postselection interval does not establish generalization."
+}

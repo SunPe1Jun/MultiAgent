@@ -1,0 +1,29 @@
+{
+  "files": {
+    "/ai/data/MultiAgent/tools/iterate_original2d_visual.py": "9284c5a7f86c3eea102806a71a20577e24332cdee7a55a8b98ebbdd259565f8e",
+    "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/input_manifest.json": "dd7f3f18703b5cc0e89a8ff9586910b09bdaf4954eb4f930750d82b10f6b7305",
+    "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/manifest.csv": "d693f80e0f11c66c1b4f921a531b7ab77fa611d9bbe5dd107acba676fdba9a90",
+    "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/image_audit.json": "3a69dcfebccdcb6934a6b0c0f037dd36d80ef375569c8df105e03c3a12fafec7",
+    "/ai/data/TriModal-Referring/exam2/run_qwen3vl_2d_point_grounding.py": "515a3d0db53cc28880eb021e11a27f7ffc2324097bdcdab912a6828a7c8cacc1",
+    "/ai/data/TriModal-Referring/scripts/grounding/run_qwen3vl_local_keyframe_grounding.py": "7c887e1c91719a219a831fe02ca17862c6bcd0081bd198ab22c1aafb08f043d8",
+    "/ai/data/TriModal-Referring/exam2/evaluate_2d_point_grounding.py": "eedfb65591a89cd725bfbf2c84813ec4946aca9ecc4658f779d8701c32a29725",
+    "/ai/data/MultiAgent/MultiAgent/foveation_attention.py": "be002d03cb588f310f69809a7a12caa1b4ed5a11263a87ea6a9dd5d5407cc45f",
+    "/ai/data/MultiAgent/MultiAgent/visual_input_trace.py": "8d864baf2bcea402cb317a6b6e753e55945925f52ce978f145941b00a13462c8",
+    "/ai/data/Qwen3-VL-8B-Instruct/config.json": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661",
+    "/ai/data/MultiAgent/tools/run_original2d_heat_crop.py": "592f8e47d43c5a3e89d0d345277e7ad932d450866abcfee83c3c78dc948f51d5",
+    "/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/heatmap_recipe.json": "e3d95f99ecd134b3f311aaab9afd2caf9609a92b39fbe0d83236c7d41857cc2b",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/input_image_audit.json": "8a2316251d6db5965fe097fad4d2ab686c2e5b9085c86a1596680d3fc739183d",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_34/P1.npz": "713ffccb5706aeb1be1b8c9a5ea71d47d9fc12bca12390943606d6e9874653f6",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_34/P2.npz": "4b19dfa9001d1fb2b1bc464628b2e93dedb7465f62ebb0fc47c09925d5be410c",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_34/P3.npz": "24d5fd1a28092e180efe7276eca81957ce18414fb349173fc82566f9883a3647",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_198/P1.npz": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_198/P2.npz": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_198/P3.npz": "650a52fdd47126e7543f2dab325fce3f834f4e4a3ead459af14a0a272491ebdb",
+    "/ai/data/MultiAgent/.local-sync/2d_heatmap_foveation_recovery_20261109/inputs/scene1_495/P1/gaze_history_heatmap.npz": "ba997d65c41198341813f5a52d73e4d57e54a1ef54d0ed9c67a1aa87b059d468",
+    "/ai/data/MultiAgent/.local-sync/2d_heatmap_foveation_recovery_20261109/inputs/scene1_495/P2/gaze_history_heatmap.npz": "a7e97f26ed5a6cc52d63796e58cf7659ca103a889cd29eeb1cc2c4c5fa0ae5a1",
+    "/ai/data/MultiAgent/.local-sync/2d_heatmap_foveation_recovery_20261109/inputs/scene1_495/P3/gaze_history_heatmap.npz": "c24f54818dd5a722256e19e959789aefde274b08892c2b17ccb4012d98df34ef",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_647/P1.npz": "d5cf0ee9824bcc412040d1889b2b0e4f6e9e0d4fca2e9c81d8b4b810fe583c8c",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_647/P2.npz": "ff74fa6ea249a9d1bf2678c161906e0329e59a687a7a3b6282cdf9e4a72151ce",
+    "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109/maps/scene1_647/P3.npz": "d7947dd466ce5ee564ebc51a17f6dba14669db3cf27c56d3fb447c066d9eb520"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "files": {
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/manifest.csv": "8adce85a3d01d6c582356b94ae16202a959e83bae4e67d9c5aada20c857347f2",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/run_config.json": "db06167418c24c24dd357ace1e759172f6c749a3ef9110bb3539344632f66776",
+    "/ai/data/TriModal-Referring/exam2/run_qwen3vl_2d_point_grounding.py": "515a3d0db53cc28880eb021e11a27f7ffc2324097bdcdab912a6828a7c8cacc1",
+    "/ai/data/TriModal-Referring/exam2/evaluate_2d_point_grounding.py": "eedfb65591a89cd725bfbf2c84813ec4946aca9ecc4658f779d8701c32a29725",
+    "/ai/data/TriModal-Referring/scripts/grounding/run_qwen3vl_local_keyframe_grounding.py": "7c887e1c91719a219a831fe02ca17862c6bcd0081bd198ab22c1aafb08f043d8",
+    "/ai/data/Qwen3-VL-8B-Instruct/config.json": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661"
+  }
+}

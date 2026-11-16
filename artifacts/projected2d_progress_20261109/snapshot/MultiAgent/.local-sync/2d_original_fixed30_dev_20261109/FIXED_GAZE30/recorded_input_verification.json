@@ -1,0 +1,58 @@
+{
+  "calls_verified": 10,
+  "source_lock_fully_matches": true,
+  "historical_preparation_helper_drift": [],
+  "model_and_evaluator_sources_match": true,
+  "calls": [
+    {
+      "event": "scene1_495",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene2_369",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene2_412",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene2_482",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene3_161",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room1_1",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room2_19",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room3_108",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene4_room4_72",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene5_226",
+      "input_ids_pixels_and_grid_match": true,
+      "vision_consumption_verified": true
+    }
+  ]
+}

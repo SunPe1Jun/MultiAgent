@@ -1,0 +1,10 @@
+﻿scene,row_index,event_id,parsed_json,parse_ok
+scene1,198,scene1_199,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.43898515625, ""y_norm"": 0.4633}]}",True
+scene2,521,scene2_522,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.5637671875, ""y_norm"": 0.4262}]}",True
+scene3,593,scene3_594,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.30796250000000003, ""y_norm"": 0.3829}, {""panel_id"": ""P3"", ""x_norm"": 0.8498437499999999, ""y_norm"": 0.45}]}",True
+scene4_room2,1,scene4_2,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.5122671875, ""y_norm"": 0.4262}]}",True
+scene4_room2,30,scene4_31,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.51023125, ""y_norm"": 0.4612}]}",True
+scene4_room2,91,scene4_92,"{""referents"": [{""panel_id"": ""P3"", ""x_norm"": 0.9510156249999999, ""y_norm"": 0.55}, {""panel_id"": ""P2"", ""x_norm"": 0.512603125, ""y_norm"": 0.4377}]}",True
+scene4_room4,176,scene4_177,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.5358953125, ""y_norm"": 0.48940000000000006}, {""panel_id"": ""P2"", ""x_norm"": 0.44952890625, ""y_norm"": 0.4246}, {""panel_id"": ""P2"", ""x_norm"": 0.37870859375000004, ""y_norm"": 0.4596}]}",True
+scene5,664,scene5_665,"{""referents"": [{""panel_id"": ""P3"", ""x_norm"": 0.8903125, ""y_norm"": 0.52}, {""panel_id"": ""P3"", ""x_norm"": 0.93078125, ""y_norm"": 0.42}]}",True
+scene5,743,scene5_744,"{""referents"": [{""panel_id"": ""P1"", ""x_norm"": 0.5222851562499999, ""y_norm"": 0.3293}, {""panel_id"": ""P3"", ""x_norm"": 0.8498437499999999, ""y_norm"": 0.55}]}",True

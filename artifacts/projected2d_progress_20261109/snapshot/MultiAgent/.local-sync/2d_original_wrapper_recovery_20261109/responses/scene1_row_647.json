@@ -1,0 +1,95 @@
+{
+  "scene": "scene1",
+  "row_index": 647,
+  "event_id": "scene1_648",
+  "instruction": "Drive that forklift into that forklift, align it with that truck.",
+  "input_mode": "multi_image",
+  "panel_context_mode": "paired_crop",
+  "panel_caption_mode": "none",
+  "paired_crop_coordinate_policy": "paired_canvas_map",
+  "model_input_image": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P1_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P2_paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P3_paired.jpg",
+  "model_input_images": [
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P1_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P2_paired.jpg",
+    "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P3_paired.jpg"
+  ],
+  "prompt_text": "Instruction:\nDrive that forklift into that forklift, align it with that truck.\n\nExpected number of output referents: 1\n\nInfer the target referents from the instruction. Do not use hidden dataset labels such as car1 or forklift2; describe each output with a short phrase from the instruction.\n\nPanels:\n- P1: video_time=6.004s, json_sample_time=4.714s\n- P2: video_time=6.558s, json_sample_time=5.269s\n- P3: video_time=7.114s, json_sample_time=5.825s\n\nImage order:\n- Image 1: P1 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.4375,0.3089,0.7875,0.6589]\n- Image 2: P2 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.4359,0.3099,0.7859,0.6599]\n- Image 3: P3 paired image; LEFT side is the full panel; RIGHT side is a gaze-centered crop; crop_bbox_in_full_panel=[0.4333,0.3068,0.7833,0.6568]\n\nTask:\nFor each intended referent:\n- compare all panels before deciding; do not prefer P1 or the earliest image unless it is the best evidence;\n- panel_id follows the image order and the Panels list above;\n- choose the single best panel_id from the visible panels;\n- output x_norm and y_norm as normalized coordinates inside the coordinate_space you choose;\n- for a paired image, use coordinate_space=\"full_panel\" if the point is on the LEFT full panel;\n- for a paired image, use coordinate_space=\"gaze_crop\" if the point is easier to localize on the RIGHT crop;\n- do not use coordinates of the whole paired image canvas; choose either full_panel or gaze_crop;\n- use the green gaze dot only as a noisy attention cue, together with the image and language;\n- do not output the green dot unless it is actually on the intended referent;\n- if a referent is an object part, surface, or placement area, output the best visible point on that part/area rather than the geometric center of the whole image.\n\nRequired strict JSON schema:\n{\n  \"referents\": [\n    {\n      \"mention\": \"target referent label or short phrase\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.0,\n      \"y_norm\": 0.0,\n      \"confidence\": 0.0\n    }\n  ]\n}\n\nUse null coordinates only when no reliable point can be localized. Return JSON only.",
+  "panel_meta": [
+    {
+      "panel_id": "P1",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "6.004",
+      "json_sample_time": "4.714",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P1_paired.jpg",
+      "gaze_u_norm": "0.612354",
+      "gaze_v_norm": "0.483686",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_647/P1.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene1/row_647/P1_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.4375,0.3089,0.7875,0.6589"
+    },
+    {
+      "panel_id": "P2",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "6.558",
+      "json_sample_time": "5.269",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P2_paired.jpg",
+      "gaze_u_norm": "0.610888",
+      "gaze_v_norm": "0.484746",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_647/P2.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene1/row_647/P2_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.4359,0.3099,0.7859,0.6599"
+    },
+    {
+      "panel_id": "P3",
+      "image_role": "paired_full_crop",
+      "video_frame_time": "7.114",
+      "json_sample_time": "5.825",
+      "frame_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P3_paired.jpg",
+      "gaze_u_norm": "0.608460",
+      "gaze_v_norm": "0.481613",
+      "gaze_projection_valid": "True",
+      "source_frame_path": "/ai/data/MultiAgent/.local-sync/projected2d_routed_rgb_20261109/manifest_build/frames/scene1/row_647/P3.jpg",
+      "crop_path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/gaze_crops/scene1/row_647/P3_crop.jpg",
+      "crop_source": "gaze",
+      "crop_bbox_norm": "0.4333,0.3068,0.7833,0.6568"
+    }
+  ],
+  "model_raw_output": "{\n  \"referents\": [\n    {\n      \"mention\": \"that truck\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.442,\n      \"y_norm\": 0.408,\n      \"confidence\": 0.98\n    }\n  ]\n}",
+  "raw_parsed_json": {
+    "referents": [
+      {
+        "mention": "that truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.442,
+        "y_norm": 0.408,
+        "confidence": 0.98
+      }
+    ]
+  },
+  "parsed_json": {
+    "referents": [
+      {
+        "mention": "that truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.894359375,
+        "y_norm": 0.408,
+        "confidence": 0.98,
+        "raw_x_norm": 0.442,
+        "raw_y_norm": 0.408,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      }
+    ]
+  },
+  "parse_ok": true
+}

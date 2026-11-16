@@ -1,0 +1,5 @@
+{
+  "scope": "confirm",
+  "configuration": "same heatcrop and 12 degree foveation as dev; peripheral RGB floor=.95",
+  "new_foveation_tuning_selected_on": "dev10 only"
+}

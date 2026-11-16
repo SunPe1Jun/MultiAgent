@@ -1,0 +1,25 @@
+{
+  "calls_verified": 4,
+  "calls": [
+    {
+      "event": "scene1_34",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene1_198",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene1_495",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    },
+    {
+      "event": "scene1_647",
+      "full_input_ids_and_pixels_match": true,
+      "vision_consumption_verified": true
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+﻿scene,row_index,event_id,instruction,model_input_image,model_raw_output,parsed_json,parse_ok,prediction_count,error_message
+scene1,198,scene1_199,Touch that truck gently.,/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene1_198/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene1_198/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene1_198/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""that truck"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.71,
+      ""y_norm"": 0.48,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""that truck"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.42482109375, ""y_norm"": 0.4633, ""confidence"": 0.98, ""raw_x_norm"": 0.71, ""raw_y_norm"": 0.48, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene2,521,scene2_522,"Tidy that file, then close that drawer.",/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene2_521/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene2_521/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene2_521/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""file"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.7479,
+      ""y_norm"": 0.3979,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""drawer"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.6714,
+      ""y_norm"": 0.3130,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""file"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5693619921874999, ""y_norm"": 0.418465, ""confidence"": 0.95, ""raw_x_norm"": 0.7479, ""raw_y_norm"": 0.3979, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""drawer"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.43868445312500004, ""y_norm"": 0.42255, ""confidence"": 0.95, ""raw_x_norm"": 0.6714, ""raw_y_norm"": 0.313, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,
+scene3,593,scene3_594,"Monitor the left building, then assess that building.",/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene3_593/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene3_593/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene3_593/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""the left building"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.52,
+      ""y_norm"": 0.35,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""the left building"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.42,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""the left building"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.30796250000000003, ""y_norm"": 0.3829, ""confidence"": 0.95, ""raw_x_norm"": 0.52, ""raw_y_norm"": 0.35, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the left building"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.8498437499999999, ""y_norm"": 0.45, ""confidence"": 0.98, ""raw_x_norm"": 0.42, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,2,
+scene4_room2,1,scene4_2,Wipe the top surface of the washing machine.,/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room2_1/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room2_1/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room2_1/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""top surface of the washing machine"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.78,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""top surface of the washing machine"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5405953125, ""y_norm"": 0.4367, ""confidence"": 0.95, ""raw_x_norm"": 0.78, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene4_room2,30,scene4_31,Dust the corner of the yellow shelf.,/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room2_30/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room2_30/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room2_30/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""corner of the yellow shelf"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.76,
+      ""y_norm"": 0.51,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""corner of the yellow shelf"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.51023125, ""y_norm"": 0.4717, ""confidence"": 0.95, ""raw_x_norm"": 0.76, ""raw_y_norm"": 0.51, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene4_room2,91,scene4_92,Tell that person to wipe the washing machine door frame.,/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room2_91/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room2_91/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room2_91/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""person"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.46,
+      ""y_norm"": 0.57,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""washing machine door frame"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.72,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.97
+    }
+  ]
+}","{""referents"": [{""mention"": ""person"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.93078125, ""y_norm"": 0.57, ""confidence"": 0.98, ""raw_x_norm"": 0.46, ""raw_y_norm"": 0.57, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""washing machine door frame"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.512603125, ""y_norm"": 0.4377, ""confidence"": 0.97, ""raw_x_norm"": 0.72, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,
+scene4_room4,176,scene4_177,Pick up a pillow from the bed and place it near the window lamp.,/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room4_176/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room4_176/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene4_room4_176/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""a pillow on the bed"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.65,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""the window lamp"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.65,
+      ""y_norm"": 0.35,
+      ""confidence"": 0.92
+    },
+    {
+      ""mention"": ""near the window lamp"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.65,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.90
+    }
+  ]
+}","{""referents"": [{""mention"": ""a pillow on the bed"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.44382890625000004, ""y_norm"": 0.4544, ""confidence"": 0.95, ""raw_x_norm"": 0.65, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the window lamp"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.44952890625, ""y_norm"": 0.4246, ""confidence"": 0.92, ""raw_x_norm"": 0.65, ""raw_y_norm"": 0.35, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""near the window lamp"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.44952890625, ""y_norm"": 0.4596, ""confidence"": 0.9, ""raw_x_norm"": 0.65, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,3,
+scene5,664,scene5_665,Let this drone to protect the area behind the crates.,/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene5_664/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene5_664/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene5_664/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""the area behind the crates"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.7479,
+      ""y_norm"": 0.5781,
+      ""confidence"": 0.95
+    },
+    {
+      ""mention"": ""the drone"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.45,
+      ""y_norm"": 0.45,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""the area behind the crates"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5693619921874999, ""y_norm"": 0.43043499999999996, ""confidence"": 0.95, ""raw_x_norm"": 0.7479, ""raw_y_norm"": 0.5781, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""the drone"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.910546875, ""y_norm"": 0.45, ""confidence"": 0.98, ""raw_x_norm"": 0.45, ""raw_y_norm"": 0.45, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,2,
+scene5,743,scene5_744,Direct that drone to check on the inland road bend.,/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene5_743/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene5_743/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_original_visual_mirror22_20261109/HEAT_CROP/inputs/scene5_743/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""drone"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.7375,
+      ""y_norm"": 0.3375,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""inland road bend"",
+      ""panel_id"": ""P2"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.55,
+      ""y_norm"": 0.65,
+      ""confidence"": 0.97
+    }
+  ]
+}","{""referents"": [{""mention"": ""drone"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.5275966796875, ""y_norm"": 0.324925, ""confidence"": 0.98, ""raw_x_norm"": 0.7375, ""raw_y_norm"": 0.3375, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}, {""mention"": ""inland road bend"", ""panel_id"": ""P2"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.41830859375000007, ""y_norm"": 0.5176000000000001, ""confidence"": 0.97, ""raw_x_norm"": 0.55, ""raw_y_norm"": 0.65, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,2,

@@ -4,50 +4,21 @@ from __future__ import annotations
 import argparse
 from collections import Counter
 import json
-import math
 from pathlib import Path
 
-import numpy as np
 from PIL import Image, ImageDraw, ImageFont
-from scipy.spatial.transform import Rotation
+from .camera_geometry import project_world
 
 from .context import load_contexts
 from .projected2d_attention_study import read_csv, save_json, sha_file, write_csv
 
 
 def project_world_anchor(point, sample, width, height):
-    """Retain unbounded UV; in-frustum is not a depth/occlusion test."""
-    result = {"point_world": list(point), "occlusion": "unknown_no_depth_or_mesh",
-              "pixel_calibration": "unverified_recorded_camera_vs_video",
-              "projection_model": "vertical_fov_square_pixels_ideal_pinhole",
-              "in_frustum": False}
-    try:
-        position = np.array([sample['cameraPosition'][k] for k in ('x', 'y', 'z')], float)
-        q = np.array([sample['cameraRotation'][k] for k in ('x', 'y', 'z', 'w')], float)
-        fov = float(sample['cameraFOV'])
-        if (width <= 0 or height <= 0 or not 0 < fov < 180
-                or not np.all(np.isfinite(position)) or not np.all(np.isfinite(q))
-                or not np.all(np.isfinite(point)) or np.linalg.norm(q) < 1e-8):
-            raise ValueError('invalid camera or world point')
-        local = Rotation.from_quat(q).inv().apply(np.asarray(point, float) - position)
-        result.update(camera_xyz=local.tolist(), camera_position_world=position.tolist(),
-                      camera_rotation_xyzw=(q / np.linalg.norm(q)).tolist(), vertical_fov_degrees=fov)
-        if local[2] <= 1e-6:
-            result.update(status='behind_camera', normalized_uv_unclipped=None, pixel_xy_unclipped=None)
-            return result
-        focal = height / (2 * math.tan(math.radians(fov) / 2))
-        u = .5 + focal * local[0] / (local[2] * width)
-        v = .5 - focal * local[1] / (local[2] * height)
-        inside = 0 <= u < 1 and 0 <= v < 1
-        result.update(status='in_frustum_visibility_unknown' if inside else 'outside_frame',
-                      in_frustum=bool(inside), normalized_uv_unclipped=[float(u), float(v)],
-                      pixel_xy_unclipped=[float(u * width), float(v * height)],
-                      intrinsics={'fx': focal, 'fy': focal, 'cx': width / 2, 'cy': height / 2},
-                      outside_edges=([k for k, test in [('left', u < 0), ('right', u >= 1),
-                                                      ('top', v < 0), ('bottom', v >= 1)] if test] if not inside else []))
-    except (KeyError, TypeError, ValueError, OverflowError) as exc:
-        result.update(status='invalid_geometry', error=str(exc))
-    return result
+    """Use the same unclipped camera transform as gaze; frustum inclusion is not visibility."""
+    pose = {'position_world': [(sample.get('cameraPosition') or {}).get(k) for k in 'xyz'],
+            'rotation_xyzw': [(sample.get('cameraRotation') or {}).get(k) for k in 'xyzw'],
+            'fov_vertical_degrees': sample.get('cameraFOV')}
+    return {'point_world': list(point), **project_world(point, pose, width, height)}
 
 
 def audit(root: Path):

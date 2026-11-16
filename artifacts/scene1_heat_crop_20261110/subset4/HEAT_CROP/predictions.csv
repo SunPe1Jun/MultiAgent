@@ -1,0 +1,57 @@
+﻿scene,row_index,event_id,instruction,model_input_image,model_raw_output,parsed_json,parse_ok,prediction_count,error_message
+scene1,34,scene1_35,Face this cargo carefully.,/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_34/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_34/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_34/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""this cargo"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.243,
+      ""y_norm"": 0.427,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""this cargo"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.4916953125, ""y_norm"": 0.427, ""confidence"": 0.98, ""raw_x_norm"": 0.243, ""raw_y_norm"": 0.427, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,1,
+scene1,198,scene1_199,Touch that truck gently.,/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_198/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_198/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_198/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""that truck"",
+      ""panel_id"": ""P1"",
+      ""coordinate_space"": ""gaze_crop"",
+      ""x_norm"": 0.71,
+      ""y_norm"": 0.48,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""that truck"", ""panel_id"": ""P1"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.42482109375, ""y_norm"": 0.4633, ""confidence"": 0.98, ""raw_x_norm"": 0.71, ""raw_y_norm"": 0.48, ""raw_coordinate_space"": ""gaze_crop"", ""coordinate_transform"": ""paired_canvas_right_crop_to_full_panel""}]}",True,1,
+scene1,495,scene1_496,"Open the tailgate of this truck, unload this box.",/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_495/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_495/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_495/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""truck"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.466,
+      ""y_norm"": 0.542,
+      ""confidence"": 0.98
+    },
+    {
+      ""mention"": ""box"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.466,
+      ""y_norm"": 0.542,
+      ""confidence"": 0.98
+    }
+  ]
+}","{""referents"": [{""mention"": ""truck"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.942921875, ""y_norm"": 0.542, ""confidence"": 0.98, ""raw_x_norm"": 0.466, ""raw_y_norm"": 0.542, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}, {""mention"": ""box"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.942921875, ""y_norm"": 0.542, ""confidence"": 0.98, ""raw_x_norm"": 0.466, ""raw_y_norm"": 0.542, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""paired_canvas_left_to_full_panel""}]}",True,2,
+scene1,647,scene1_648,"Drive that forklift into that forklift, align it with that truck.",/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_647/P1/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_647/P2/paired.jpg;/ai/data/MultiAgent/.local-sync/2d_heat_crop_scene1_20261110/HEAT_CROP/inputs/scene1_647/P3/paired.jpg,"{
+  ""referents"": [
+    {
+      ""mention"": ""that truck"",
+      ""panel_id"": ""P3"",
+      ""coordinate_space"": ""full_panel"",
+      ""x_norm"": 0.499,
+      ""y_norm"": 0.371,
+      ""confidence"": 0.95
+    }
+  ]
+}","{""referents"": [{""mention"": ""that truck"", ""panel_id"": ""P3"", ""coordinate_space"": ""full_panel"", ""sheet_x_norm"": null, ""sheet_y_norm"": null, ""x_norm"": 0.499, ""y_norm"": 0.371, ""confidence"": 0.95, ""raw_x_norm"": 0.499, ""raw_y_norm"": 0.371, ""raw_coordinate_space"": ""full_panel"", ""coordinate_transform"": ""none""}]}",True,1,

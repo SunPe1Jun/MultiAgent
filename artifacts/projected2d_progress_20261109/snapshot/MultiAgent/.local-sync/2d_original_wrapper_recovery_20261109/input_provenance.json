@@ -1,0 +1,578 @@
+{
+  "events": [
+    {
+      "event": "scene1_row_198.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_198/P1_paired.jpg",
+          "sha256": "234613b3f21360875ff1810c9c9bde7b3a2e7c3c85c6b98ee7ba9d52da6e95da"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_198/P2_paired.jpg",
+          "sha256": "787ecae20e4f28581e2c8307a090564ad987c7d3c9b43d5f02958735dd12b37d"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_198/P3_paired.jpg",
+          "sha256": "03f77a716a4eccf6ca6a64827aa353599da63c1e08717a5158dc1678fd7f8c70"
+        }
+      ],
+      "prompt_sha256": "5b7fc793b0edccf8ff22db118f788d689863299562264c97e4a5f8adc4b46b3f"
+    },
+    {
+      "event": "scene1_row_34.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P1_paired.jpg",
+          "sha256": "ae3cb22c6d3ea18918b476c185131548ee7a92a9e414172d86973c01cfa96155"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P2_paired.jpg",
+          "sha256": "7b76238851056cf059f72f8f39f7c9dd3bed3f47facf546ecf2d3e78d005a2a1"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_34/P3_paired.jpg",
+          "sha256": "7c3d0ab65bbe1cfdb533425500a518b2c45dd33d0f956125a3594c1a9d4139a2"
+        }
+      ],
+      "prompt_sha256": "697dc4aef2b92e5144b55a4b3190dd2e8e21cd07a77d2ddc02bce786e71f6530"
+    },
+    {
+      "event": "scene1_row_495.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_495/P1_paired.jpg",
+          "sha256": "1152790aa4b82025cb7ae7eae03cf71c11276e7340d0d832e4f2352c4dc7c8cf"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_495/P2_paired.jpg",
+          "sha256": "98a45e6556388f8d08c5dac56b782fd07aba2c57be79e30d13018a5e1b18a89d"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_495/P3_paired.jpg",
+          "sha256": "baa6ef50424aca8ac1a48d12f364acf21af2d4a13ec731bee297e2dc688e008b"
+        }
+      ],
+      "prompt_sha256": "ed7722650ea63027f02c743770f63c5b4a1d4de9ea1d82d53bb57ed116dab25f"
+    },
+    {
+      "event": "scene1_row_647.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P1_paired.jpg",
+          "sha256": "ca162f66315c36342a8862902d2b9a0a893c69292dfaf8bed0b037185b3694e4"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P2_paired.jpg",
+          "sha256": "9136f453277abe46314dc419a005fa90d15214788a01f3b656036a9199c34d92"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene1/row_647/P3_paired.jpg",
+          "sha256": "2cfaf611e3982924c9e63be482986706d99b8dd2dc16646a612682d98bcadc29"
+        }
+      ],
+      "prompt_sha256": "ff06eaaae2632818d4f5e985201131f62ded8a92eb4e7578848706c2eba4c32e"
+    },
+    {
+      "event": "scene2_row_369.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_369/P1_paired.jpg",
+          "sha256": "84a0e0f3f978197fbf140470b09f034f154f7650a335780ee10b1f6e449e939b"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_369/P2_paired.jpg",
+          "sha256": "fd6108702539f6b69545aefa483d139080086d11af68e20070b50d24437eeab7"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_369/P3_paired.jpg",
+          "sha256": "18ec2893a017838d6d6e00c07f455d92a733a6c0df41de4604c28d14ab1a137e"
+        }
+      ],
+      "prompt_sha256": "825911398b1b15346538ad953296b6cce86aab3af8742505a0a2f4c0ba6b60d5"
+    },
+    {
+      "event": "scene2_row_412.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_412/P1_paired.jpg",
+          "sha256": "9e7c2d1a53017aef439dcbe06fde6c5a9c8b7158a62b91de43ceb81449922110"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_412/P2_paired.jpg",
+          "sha256": "74f13be3ce96814972d3a6670ab3a6b4f87b8fb40328e83130c2f624559332a3"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_412/P3_paired.jpg",
+          "sha256": "a32832e0e099699ccc621111ebe43c2238a74a324bfaa46afd156050b9bb4cef"
+        }
+      ],
+      "prompt_sha256": "9cfa1be54fe8427f701d284b0ace586997e9b60c03b841468fbd4812255f360e"
+    },
+    {
+      "event": "scene2_row_482.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_482/P1_paired.jpg",
+          "sha256": "c2800d8e4d2ee7c3f236a1dade305b3e157ff91e01814eefb1f0976967b7ca7c"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_482/P2_paired.jpg",
+          "sha256": "e7c17f4cdf5deffde55638c9432e144a368aaf77236b3be3c66cd13fdfa77f3e"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_482/P3_paired.jpg",
+          "sha256": "97dcc9ae6f0a5d9c30701b2cca28ceb660f0695bf212c7040cb82084e70cb1a2"
+        }
+      ],
+      "prompt_sha256": "6a0eced2ff3c9417d905a95fee41108852527455fadea190db9a36ae342700e2"
+    },
+    {
+      "event": "scene2_row_521.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_521/P1_paired.jpg",
+          "sha256": "3eb011caeac278d00c018b619a4fa46dd5c12ffb6ad7e105e17b54fae1645eda"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_521/P2_paired.jpg",
+          "sha256": "0835781031d89fc48d0af33eafd223036f9b96b4130cf1a268fa9719146c3795"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene2/row_521/P3_paired.jpg",
+          "sha256": "389fe633f26e2d6aecf6d61115dc6d22a8c650933f2beb854926f561374cf891"
+        }
+      ],
+      "prompt_sha256": "c6f282b40d96a517c7cc67fe241f86f569fddb9b4f2fa4d376f500292e86728a"
+    },
+    {
+      "event": "scene3_row_161.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_161/P1_paired.jpg",
+          "sha256": "cd30dba996863d1aabde1be563c02f4c4e4cef1551cdde2451b4d2f15a5a0eed"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_161/P2_paired.jpg",
+          "sha256": "555cde8edf92c3d6f11d3ffc9f32bbcc3c9f2874b8125b10e8fed5eae6cf5a33"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_161/P3_paired.jpg",
+          "sha256": "1ffbf29a4cab2234bf148befa0ae0dd643b2ed610a2d4c8feec183f419b7fe4a"
+        }
+      ],
+      "prompt_sha256": "46a3aba8684cfd3fe2a0575eb5251c4191bd83428b67942f228ae95765f84804"
+    },
+    {
+      "event": "scene3_row_304.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_304/P1_paired.jpg",
+          "sha256": "afb2cfcfd01e33b4b0b9cf1788dcc4885c96ef786c8303f15e1ca96e35003b97"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_304/P2_paired.jpg",
+          "sha256": "6227f0c3d16d671a79ac1406c27bbb5412d5898e9727bab53672264282be8514"
+        }
+      ],
+      "prompt_sha256": "66a75164da248b04ddfc2776a2409da1df70e60bf0653cfd1241650e62a4dc42"
+    },
+    {
+      "event": "scene3_row_405.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_405/P1_paired.jpg",
+          "sha256": "76b8c985fe6fb66db3138d5b160b6653948b90a72a6f328ea4b258cba296fcbb"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_405/P2_paired.jpg",
+          "sha256": "9d8b1ec773ab63282aaf377d2e684cfc66457c674854cd7e47add20b5c129029"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_405/P3_paired.jpg",
+          "sha256": "72af0866b2580b40fade3052a756641319d0613092b44d797cb9fbecef9eec23"
+        }
+      ],
+      "prompt_sha256": "ce6d2b9aef8fb2a1cf0cbda015d60f85151727049257912aaf1b9c09e685ad78"
+    },
+    {
+      "event": "scene3_row_593.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_593/P1_paired.jpg",
+          "sha256": "dcae73b01aee0f8f648bb9e77989af8f26a3864e5c2334a6c7d96d89ac714e20"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_593/P2_paired.jpg",
+          "sha256": "95d60899da0c27d4e1ede9c2824b082d0cf297a2ef5893129550d084b8c5aa5d"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene3/row_593/P3_paired.jpg",
+          "sha256": "7df192b40ae3788871340c01d0b8b1fb8ba96db61edcda2fab0f7b9eab79caec"
+        }
+      ],
+      "prompt_sha256": "0b1f77217d2549bbf017907a88cf30be37076329d500b4fbdb2b0cbc74174358"
+    },
+    {
+      "event": "scene4_room1_row_1.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_1/P1_paired.jpg",
+          "sha256": "7bd4ddc99c61ed908429751614ae7fa7fd2635e71ddabfd3a3fa4588151dc0fc"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_1/P2_paired.jpg",
+          "sha256": "dd63f93fce43fd3ec999daf4a7125f7620aa16f727ca32746797e607267b9341"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_1/P3_paired.jpg",
+          "sha256": "0dc79011ca370d9cde0f67c2382a1665b865afd96925070af8e110a81f7fb65b"
+        }
+      ],
+      "prompt_sha256": "fbe75de2057acd23ee3297f6fb0f06bcc3d4033b4d1742dc3af55930e543720c"
+    },
+    {
+      "event": "scene4_room1_row_34.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_34/P1_paired.jpg",
+          "sha256": "9a30bb3f9080c175affeafa9dbba723f5cb5e5c91c5672d6c00e7cb9a7fbab52"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_34/P2_paired.jpg",
+          "sha256": "483ea1b4fff7d6524916c69b2af237e2888f9a66f875a2c50302bb72d4b826f2"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_34/P3_paired.jpg",
+          "sha256": "37d1efbf87acfa86abcd79c9225a311d0b5ac73f0da0e1c114cd7ddad88c9f97"
+        }
+      ],
+      "prompt_sha256": "35a26ef7fbc62f73404b71eacf52b479ab11e7f7b765e60a5b18bb91fb4e06ee"
+    },
+    {
+      "event": "scene4_room1_row_51.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_51/P1_paired.jpg",
+          "sha256": "e2d170f4ca17c3005ae9e9b2afa74bb57569331980f5effdfae588b3d64a4f09"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_51/P2_paired.jpg",
+          "sha256": "bdf258700736781495d207205343eaeb5295cf4d88b37993fb0d21aa93d5a05d"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_51/P3_paired.jpg",
+          "sha256": "dbf9c31d890ad7ed8ab012afda8812cde326fe2647417083cc808c9b37f2bbdb"
+        }
+      ],
+      "prompt_sha256": "2497d0ed4894640549e01a09a5aa2a749cbabe7082cfb4253b3c03cfc305524b"
+    },
+    {
+      "event": "scene4_room1_row_98.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_98/P1_paired.jpg",
+          "sha256": "957d40864e9a71f6ac7c9841f2497d079ce420321e31a5138c703928c85c826d"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_98/P2_paired.jpg",
+          "sha256": "cc4e300b569781b5da352701e80dd219f468edc57bd724fa01868ef3ae7345af"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room1/row_98/P3_paired.jpg",
+          "sha256": "fb61c161251d117534165f997acde7994546a02ffa0da631e0ed95bbb96f911b"
+        }
+      ],
+      "prompt_sha256": "fa592478ed4768d0a3136324d2516f8145f6ea110a79a8a2245d985b2fa77655"
+    },
+    {
+      "event": "scene4_room2_row_1.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P1_paired.jpg",
+          "sha256": "f5e8c8c74400ea1d5b50c6f541ce7a2c9db485d70a9e7fc33bb08b83c5298add"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P2_paired.jpg",
+          "sha256": "6f39afe1cc1408367e475b997010da9037a9d5c54e3f1c82fb7013927c21eacb"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_1/P3_paired.jpg",
+          "sha256": "873839c9ebec19cbdaee721c96580cf75cfac236a01913cd972315e682b3f031"
+        }
+      ],
+      "prompt_sha256": "4a8b7cc6cf6f7adeaa75be844052ff96edc930c0bf5f1e0185aab84bb7d69499"
+    },
+    {
+      "event": "scene4_room2_row_19.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_19/P1_paired.jpg",
+          "sha256": "ec9a159024cb354b67b8417c315760cecd5145d37c68409a2018bd9263e817ca"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_19/P2_paired.jpg",
+          "sha256": "cbdc16551727291f447a210f1b67645d9e95436b7aab423f06914219ad9365b2"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_19/P3_paired.jpg",
+          "sha256": "94649a1e944cad2fd81c35b306c02799a30ad0e14f5e86bd47e0343ae6ee6f57"
+        }
+      ],
+      "prompt_sha256": "740e8fa23260394aa7cf4faa40f042074204d2421450972cadd9f5de0507bcb2"
+    },
+    {
+      "event": "scene4_room2_row_30.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_30/P1_paired.jpg",
+          "sha256": "a8c8a0416012e93a0edf2e4416c1c2b0ba891c8c653d9b8a287352cf97ceec7d"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_30/P2_paired.jpg",
+          "sha256": "7d3fbafede660165dad3124b94bf8acd19d1881c6271d283e4890690b668b373"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_30/P3_paired.jpg",
+          "sha256": "5953de49ee9ffbebd385eb16b6cd2b2d42385569cc4350ab378a1122fdd64967"
+        }
+      ],
+      "prompt_sha256": "d049f51ca952e3fd32bddb585a864903f5a1a1460fb153010384c1f98c45a39a"
+    },
+    {
+      "event": "scene4_room2_row_91.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_91/P1_paired.jpg",
+          "sha256": "932eb4a91653730a4d1185a3fcb7819141792bd5f6918ec2983f8abfe0f37562"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_91/P2_paired.jpg",
+          "sha256": "d3ec94bbd40b59d46adc02035917f0bbc67205bec091529adc79f2b81586dedd"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room2/row_91/P3_paired.jpg",
+          "sha256": "04f8c62b1f8abd617da0af4806708644ba89756e3b85b33db2fd2ef1518690bd"
+        }
+      ],
+      "prompt_sha256": "0b1a6e1df9d6dbf267761d6ecefa622c734599b15c13f15ed3214ef08c74188b"
+    },
+    {
+      "event": "scene4_room3_row_108.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P1_paired.jpg",
+          "sha256": "aaf13c44596e4e465d0acd2acc46aa2dab7490fffa5f53b88b7b5e5a04c9f02b"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P2_paired.jpg",
+          "sha256": "65987d5358c8a2d42b2072f0b21f2e637aceb80cd2bebd7d8bb38bd86235c675"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_108/P3_paired.jpg",
+          "sha256": "ea558076c15a31cceab7d67bfda4f129a70247c1dd2c77c44e75b2d0c9884fe6"
+        }
+      ],
+      "prompt_sha256": "62bed44a7a52771d8eb59fec31ff9c51a86b204edfccbd92666498273f6072db"
+    },
+    {
+      "event": "scene4_room3_row_114.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P1_paired.jpg",
+          "sha256": "51496a1e31468457c502fab7a5e541e763f7fe610961e5fc7e06971481afcc02"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P2_paired.jpg",
+          "sha256": "555d72ca470c7a1baf81af17ff966b0d1c4867952364c633e8ab8d88969a328d"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_114/P3_paired.jpg",
+          "sha256": "358294ad7a5886229c5d8a4a0a6e67430749b9c8875879e76ff224956ef54069"
+        }
+      ],
+      "prompt_sha256": "bb6d37152175f9354c2034e0e7b59a452c5dc17933b650e103baa87b63535a00"
+    },
+    {
+      "event": "scene4_room3_row_159.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_159/P1_paired.jpg",
+          "sha256": "4480d2d2ecbf6639675741b5330722d12c814ef53c98d2ec67709e0712f3b8d1"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_159/P2_paired.jpg",
+          "sha256": "2416bfd71788d35877c9b2262f9e74d7435857458166bda876e2be53a627b5cc"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_159/P3_paired.jpg",
+          "sha256": "9342ac04220d8a7d73b4927dd80e171960f9975229b11532a9e6067848468343"
+        }
+      ],
+      "prompt_sha256": "49fc125aefe64920a4b8458594e9f46290338d1e2b3a0428c0f06e85f35695c4"
+    },
+    {
+      "event": "scene4_room3_row_59.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_59/P1_paired.jpg",
+          "sha256": "ff10307864f8d32e938f39f7e7e42b524ea5e3d1016d22df36e57c5271fceacc"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_59/P2_paired.jpg",
+          "sha256": "3e6ffea61afc0850b646eaf2135538fb9cdedc0fa362ad57e7ba205500632a08"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room3/row_59/P3_paired.jpg",
+          "sha256": "6c697b76d32d218f6eb2c275dae45c72910a13e22e73aab7f36523abcfb4e46d"
+        }
+      ],
+      "prompt_sha256": "8cec6575006fd66cff02f381934b87ffa37d2a5b6b800301083ced8f0fa6596e"
+    },
+    {
+      "event": "scene4_room4_row_176.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_176/P1_paired.jpg",
+          "sha256": "e11495fa334b48a1f0bfb04f465aec55c1c2d05f0b24832ca15099d7a59a64cf"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_176/P2_paired.jpg",
+          "sha256": "92ba768fc40c3c6a588ef851685250dc8871c9b0d91f1d42a79524f9a0a1b397"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_176/P3_paired.jpg",
+          "sha256": "504988d3c1e1e0e22c39faf6f26eb21af0afffa224197b13a645c388fa2041a3"
+        }
+      ],
+      "prompt_sha256": "cfb11c96504b3ecf5acfb11dccfd6ab501f2f63aea464b8bec7bea4c57a9dd11"
+    },
+    {
+      "event": "scene4_room4_row_182.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_182/P1_paired.jpg",
+          "sha256": "d88c71af1239d9f2233ea2d742bdf790c0cc5056d215e012d251836b62e91199"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_182/P2_paired.jpg",
+          "sha256": "8ad0aeecbe9e826bb7f75c8922fc45e8881a7c34f1f1efdbada9e31d15828085"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_182/P3_paired.jpg",
+          "sha256": "1f23a3b4b10493535b62ae5658d49dc9105a8284d295fc451320b6df5a9def28"
+        }
+      ],
+      "prompt_sha256": "8b825bb5c0cd8d257b127197e7d1489bc6d88a90a86bf2ebc6e9e6f21a46aec9"
+    },
+    {
+      "event": "scene4_room4_row_194.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_194/P1_paired.jpg",
+          "sha256": "9300f7ef5313002fb17d9f32e577fc7700954b4836aa30863606cdeceacc29d1"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_194/P2_paired.jpg",
+          "sha256": "13e97dcd272e058dce609f263af00d58a268a6d1907cb68800804cffa86c8f48"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_194/P3_paired.jpg",
+          "sha256": "0d52c77f073bdea3730206a74dbb6df6520637228e12b324f482881ecd6a395c"
+        }
+      ],
+      "prompt_sha256": "0410faaeee548f960fefa85d0db899c3efb134485b6153b226920df426842fe1"
+    },
+    {
+      "event": "scene4_room4_row_72.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_72/P1_paired.jpg",
+          "sha256": "0d875aaf0b3742964d6fb7af33384353f9e1d70a2ee7dbdf812ae211e60a2d85"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_72/P2_paired.jpg",
+          "sha256": "d2a32dcf13bc2c1133924930e77564953a5051baed60eeb642542c7a450b4a04"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene4_room4/row_72/P3_paired.jpg",
+          "sha256": "ae8a875435d89bc65ea101ae9ae9a6e3a72b1caa10986d396e495abad382fbb5"
+        }
+      ],
+      "prompt_sha256": "63051f0ee553e6a7f32ac3853cb14577e2a1e09716a849f8d8a3d9a12f2fe2c2"
+    },
+    {
+      "event": "scene5_row_226.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_226/P1_paired.jpg",
+          "sha256": "7e8b313e47edeab4e744627072f3d6bb8848d93f7fed005f871a685b6159627b"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_226/P2_paired.jpg",
+          "sha256": "31831d431cc7ab703a98ebee3fc6be10882b152de17ba76ae2ed2cb074a88f4a"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_226/P3_paired.jpg",
+          "sha256": "34e05b8fc85b10719d098064db0331c0ebcb1b100b3a51305fa99d352cc18f60"
+        }
+      ],
+      "prompt_sha256": "835e152477ee74e7b32ad47129b507c036b45f6bdfa6d5e5b3dabdcc2f86686b"
+    },
+    {
+      "event": "scene5_row_664.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_664/P1_paired.jpg",
+          "sha256": "a24ef7062aba0895f9a50d5b4511877fbe285b51f95cb1273204b7c2a7c10ec3"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_664/P2_paired.jpg",
+          "sha256": "78dd002d7e32f7d4cb553642095dd7becf4030a8451607f74a57b8e673596295"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_664/P3_paired.jpg",
+          "sha256": "d9758b259444bfe2528fc63522dfa71793836a5859b6b110492ed92b0b8963ad"
+        }
+      ],
+      "prompt_sha256": "e28147c7f4fadf8c6ef76a5bb6ca64476660ef6bf560bd7642ad45582096a052"
+    },
+    {
+      "event": "scene5_row_712.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_712/P1_paired.jpg",
+          "sha256": "3604bb330b5b61968a6cee4d2820969016a74e5c2674b31b16a4bda3ef6902eb"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_712/P2_paired.jpg",
+          "sha256": "fd184658605c4a7570100c0f633ca57cc6afae40232782cff05aa141343ee92c"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_712/P3_paired.jpg",
+          "sha256": "6466924e4ced6123c1384f3f1127b4f5f54889df8695a3627a6fe9f236fd8df6"
+        }
+      ],
+      "prompt_sha256": "caf9e7435f1a7b6fe654f489fbbd06f92521ecdbb1d01746714786e1c1d89ba3"
+    },
+    {
+      "event": "scene5_row_743.json",
+      "images": [
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_743/P1_paired.jpg",
+          "sha256": "b08ec26f8832c3e49609bf8e1676871ecfb7a3bbe44f77c74c09ffad58efee9c"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_743/P2_paired.jpg",
+          "sha256": "6aa10890fb58bd1755a7e88e53da5016a4358bdcc1ebcb72c7e87ec7654b0861"
+        },
+        {
+          "path": "/ai/data/MultiAgent/.local-sync/2d_original_wrapper_recovery_20261109/model_inputs/paired_full_crop/scene5/row_743/P3_paired.jpg",
+          "sha256": "752d6875aab07c442ae272e56cd7619beb3c17d6b2994fa971789acbe48047a8"
+        }
+      ],
+      "prompt_sha256": "07e0ca942c685642ad882f5ada575240c1caa107f1a3de82a10f9378c6c24f49"
+    }
+  ],
+  "system_prompt_source_sha256": "515a3d0db53cc28880eb021e11a27f7ffc2324097bdcdab912a6828a7c8cacc1",
+  "purpose": "Native original wrapper outputs and exact paired-image hashes. No tensor provenance was retroactively attributed to native original run."
+}

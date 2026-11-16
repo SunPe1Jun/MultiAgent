@@ -1,0 +1,27 @@
+{
+  "experiment_date": "2026-11-09",
+  "timezone": "Asia/Hong_Kong",
+  "objective": "Improve original projected-2D visual grounding using gaze heatmap and foveation while retaining a matched original baseline.",
+  "best_current": "HEAT_CROP",
+  "point100_f1": 0.2518518518518519,
+  "joint100_f1": 0.22222222222222224,
+  "joint_exact100": "6/30",
+  "sample": "32 previously seen interactions; not full4000 or heldout",
+  "task_contract": "Restored original physical-referent output and GT-derived expected_count equally in baseline and all interventions. Original P panels, evaluator and paired_canvas_map. No GT identity or point in visual rendering.",
+  "unresolved": [
+    "Current native wrapper does not exactly reproduce older released predictions.",
+    "Independent contribution of history heatmap relative to crop scale/mirror not established.",
+    "Tested heatmap+foveation combinations lose performance relative to heat-crop alone.",
+    "Gaze/GT projection remains a geometric proxy without complete absolute calibration/occlusion validation.",
+    "Per-mention single-main-image protocol is a different experiment; do not mix its metrics."
+  ],
+  "next_steps": [
+    "Freeze truly new interactions and matched original-wrapper/candidate/control inputs before scoring.",
+    "Use HEAT_CROP as incumbent and preserve original paired full-RGB plus local details.",
+    "Test foveation changes singly with source-detail and aperture evidence, instead of replacing baseline task.",
+    "Use target GT only for original expected_count parity and frozen evaluation; never use GT positions to render attention."
+  ],
+  "authoritative_report_archive_path": "snapshot/MultiAgent/.local-sync/2d_original_visual_results32_20261109/FINAL_VERIFIED_REPORT.json",
+  "frozen_responses_verified": 318,
+  "new_model_calls_for_archiving": 0
+}

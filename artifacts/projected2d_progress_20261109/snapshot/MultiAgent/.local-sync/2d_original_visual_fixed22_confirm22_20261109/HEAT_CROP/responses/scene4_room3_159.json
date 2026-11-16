@@ -1,0 +1,181 @@
+{
+  "event": "scene4_room3_159",
+  "fingerprint": "fd2d4d4f3f54a67099914741ac59e5f26f547cd5cf68024400cd7df8c8453865",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"a book\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.47,\n      \"y_norm\": 0.65,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"a shelf\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.47,\n      \"y_norm\": 0.65,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"a desk\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"gaze_crop\",\n      \"x_norm\": 0.65,\n      \"y_norm\": 0.55,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "a book",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.47,
+        "y_norm": 0.65,
+        "confidence": 0.95
+      },
+      {
+        "mention": "a shelf",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.47,
+        "y_norm": 0.65,
+        "confidence": 0.95
+      },
+      {
+        "mention": "a desk",
+        "panel_id": "P2",
+        "coordinate_space": "gaze_crop",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.65,
+        "y_norm": 0.55,
+        "confidence": 0.95
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "a book",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.9510156249999999,
+        "y_norm": 0.65,
+        "confidence": 0.95,
+        "raw_x_norm": 0.47,
+        "raw_y_norm": 0.65,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "a shelf",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.9510156249999999,
+        "y_norm": 0.65,
+        "confidence": 0.95,
+        "raw_x_norm": 0.47,
+        "raw_y_norm": 0.65,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "a desk",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.425036953125,
+        "y_norm": 0.5349900000000001,
+        "confidence": 0.95,
+        "raw_x_norm": 0.65,
+        "raw_y_norm": 0.55,
+        "raw_coordinate_space": "gaze_crop",
+        "coordinate_transform": "paired_canvas_right_crop_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_159.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4300
+        ],
+        "dtype": "torch.int64",
+        "sha256": "d3de15c18a979f11e2b7ade45167f4f06aad25c7698c9327c4a93482976c8c06",
+        "bytes": 34400
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4300
+        ],
+        "dtype": "torch.int64",
+        "sha256": "54669e4e5e84b4ad99c45848f33803505f4c1ab4d74a410162b83fd451413362",
+        "bytes": 34400
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4300
+        ],
+        "dtype": "torch.int64",
+        "sha256": "267864697d21376ff47ba2f141f6a841251d8792db8d494b67adff26a2d37604",
+        "bytes": 34400
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "54d29e04be538914fe8b783dc34a074a183ba11a8d4309cd48a8e696caa9f420",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_159.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "5bca9f910d5e41fdaa76616d150a96295e9de4735d58accd313325e165949b45",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_159.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_159.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_fixed22_confirm22_20261109/HEAT_CROP/responses/scene4_room3_159.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "5bca9f910d5e41fdaa76616d150a96295e9de4735d58accd313325e165949b45",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 9.07226579496637,
+  "generated_tokens": 198
+}

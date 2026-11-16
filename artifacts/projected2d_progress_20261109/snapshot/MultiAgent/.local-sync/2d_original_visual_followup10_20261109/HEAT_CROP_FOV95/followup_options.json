@@ -1,0 +1,6 @@
+{
+  "condition": "HEAT_CROP_FOV95",
+  "scope": "dev",
+  "heatmaps": "/ai/data/MultiAgent/.local-sync/2d_original_gaze_cache32_20261109",
+  "change": "Heat crop plus foveation, RGB peripheral weight floor raised from .80 to .95; same 12 degree aperture"
+}

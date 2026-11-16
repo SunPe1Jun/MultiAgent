@@ -1,0 +1,11 @@
+﻿scene,row_index,event_id,gt_referent_count,time_evaluable_referent_count,prediction_count,time_matched,point_matched_50,point_matched_100,point_matched_150,point_matched_200,joint_matched_50,joint_matched_100,joint_matched_150,joint_matched_200,time_tp,time_fp,time_fn,point_tp_50,point_fp_50,point_fn_50,point_tp_100,point_fp_100,point_fn_100,point_tp_150,point_fp_150,point_fn_150,point_tp_200,point_fp_200,point_fn_200,joint_tp_50,joint_fp_50,joint_fn_50,joint_tp_100,joint_fp_100,joint_fn_100,joint_tp_150,joint_fp_150,joint_fn_150,joint_tp_200,joint_fp_200,joint_fn_200,min_point_distance_px,mean_joint_distance_px_100,parse_ok,error_message
+scene1,495,scene1_496,2,2,2,2,0,0,0,0,0,0,0,0,2,0,0,0,2,2,0,2,2,0,2,2,0,2,2,0,2,2,0,2,2,0,2,2,0,2,2,243.53,,True,
+scene2,369,scene2_370,3,3,2,2,0,0,0,0,0,0,0,0,2,0,1,0,2,3,0,2,3,0,2,3,0,2,3,0,2,3,0,2,3,0,2,3,0,2,3,224.88,,True,
+scene2,412,scene2_413,4,4,4,3,0,0,0,0,0,0,0,0,3,1,1,0,4,4,0,4,4,0,4,4,0,4,4,0,4,4,0,4,4,0,4,4,0,4,4,413.06,,True,
+scene2,482,scene2_483,6,6,5,4,1,1,2,2,1,1,2,2,4,1,2,1,4,5,1,4,5,2,3,4,2,3,4,1,4,5,1,4,5,2,3,4,2,3,4,33.36,33.36,True,
+scene3,161,scene3_162,3,3,3,3,0,1,2,2,0,1,2,2,3,0,0,0,3,3,1,2,2,2,1,1,2,1,1,0,3,3,1,2,2,2,1,1,2,1,1,52.42,52.42,True,
+scene4_room1,1,scene4_2,2,2,2,2,1,1,1,1,1,1,1,1,2,0,0,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,35.32,35.32,True,
+scene4_room2,19,scene4_20,2,2,2,2,0,1,1,1,0,1,1,1,2,0,0,0,2,2,1,1,1,1,1,1,1,1,1,0,2,2,1,1,1,1,1,1,1,1,1,92.31,92.31,True,
+scene4_room3,108,scene4_109,2,2,2,2,1,2,2,2,1,2,2,2,2,0,0,1,1,1,2,0,0,2,0,0,2,0,0,1,1,1,2,0,0,2,0,0,2,0,0,18.52,34.33,True,
+scene4_room4,72,scene4_73,2,2,2,1,0,0,0,0,0,0,0,0,1,1,1,0,2,2,0,2,2,0,2,2,0,2,2,0,2,2,0,2,2,0,2,2,0,2,2,703.81,,True,
+scene5,226,scene5_227,1,1,1,0,0,0,0,0,0,0,0,0,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,0,1,1,210.60,,True,

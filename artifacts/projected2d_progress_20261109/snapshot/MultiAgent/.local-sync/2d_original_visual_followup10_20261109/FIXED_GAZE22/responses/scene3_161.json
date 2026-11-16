@@ -1,0 +1,181 @@
+{
+  "event": "scene3_161",
+  "fingerprint": "bda7b5ecfd21c76299e4fa067c06404dd6905220c6b943f3f7b2a555be2b1475",
+  "raw_response": "{\n  \"referents\": [\n    {\n      \"mention\": \"truck\",\n      \"panel_id\": \"P1\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.1875,\n      \"y_norm\": 0.4375,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"truck\",\n      \"panel_id\": \"P2\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.1875,\n      \"y_norm\": 0.4375,\n      \"confidence\": 0.95\n    },\n    {\n      \"mention\": \"truck\",\n      \"panel_id\": \"P3\",\n      \"coordinate_space\": \"full_panel\",\n      \"x_norm\": 0.1875,\n      \"y_norm\": 0.4375,\n      \"confidence\": 0.95\n    }\n  ]\n}",
+  "raw_parsed": {
+    "referents": [
+      {
+        "mention": "truck",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.1875,
+        "y_norm": 0.4375,
+        "confidence": 0.95
+      },
+      {
+        "mention": "truck",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.1875,
+        "y_norm": 0.4375,
+        "confidence": 0.95
+      },
+      {
+        "mention": "truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.1875,
+        "y_norm": 0.4375,
+        "confidence": 0.95
+      }
+    ]
+  },
+  "parsed": {
+    "referents": [
+      {
+        "mention": "truck",
+        "panel_id": "P1",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.37939453125,
+        "y_norm": 0.4375,
+        "confidence": 0.95,
+        "raw_x_norm": 0.1875,
+        "raw_y_norm": 0.4375,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "truck",
+        "panel_id": "P2",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.37939453125,
+        "y_norm": 0.4375,
+        "confidence": 0.95,
+        "raw_x_norm": 0.1875,
+        "raw_y_norm": 0.4375,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      },
+      {
+        "mention": "truck",
+        "panel_id": "P3",
+        "coordinate_space": "full_panel",
+        "sheet_x_norm": null,
+        "sheet_y_norm": null,
+        "x_norm": 0.37939453125,
+        "y_norm": 0.4375,
+        "confidence": 0.95,
+        "raw_x_norm": 0.1875,
+        "raw_y_norm": 0.4375,
+        "raw_coordinate_space": "full_panel",
+        "coordinate_transform": "paired_canvas_left_to_full_panel"
+      }
+    ]
+  },
+  "status": "COMPLETE",
+  "vision_verified": true,
+  "visual_tensor_trace": {
+    "trace_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene3_161.tensor_trace/trace.json",
+    "kind": "image",
+    "capture_scope": "processor tensors + real vision forward input",
+    "processor_tensors": {
+      "input_ids": {
+        "shape": [
+          1,
+          4297
+        ],
+        "dtype": "torch.int64",
+        "sha256": "a1461f2161bdde17881f55e18563fac3a62a1c2348fa9197ef1205c83ce6f25e",
+        "bytes": 34376
+      },
+      "attention_mask": {
+        "shape": [
+          1,
+          4297
+        ],
+        "dtype": "torch.int64",
+        "sha256": "003c770db880beb4890a0e00d96d2272d59c3a5f1ea1dc71d1e39e77a4008a5d",
+        "bytes": 34376
+      },
+      "mm_token_type_ids": {
+        "shape": [
+          1,
+          4297
+        ],
+        "dtype": "torch.int64",
+        "sha256": "096e922fe62b140a146d6aac656e360be5a4a85c637e205722f20adfe96ea453",
+        "bytes": 34376
+      },
+      "pixel_values": {
+        "shape": [
+          14112,
+          1536
+        ],
+        "dtype": "torch.float32",
+        "sha256": "35d915b63743a74b757a2de721bea82923ce128374d9922bc13506a676ee5bcf",
+        "bytes": 86704128
+      },
+      "image_grid_thw": {
+        "shape": [
+          3,
+          3
+        ],
+        "dtype": "torch.int64",
+        "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+        "bytes": 72
+      }
+    },
+    "processor_inputs_path": "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene3_161.tensor_trace/processor_inputs.pt",
+    "vision_forward_calls": [
+      {
+        "input": {
+          "shape": [
+            14112,
+            1536
+          ],
+          "dtype": "torch.bfloat16",
+          "sha256": "f4b0b583e1d16dfe8680d4c0f2b375ac998f7420578f25a82a6a3a22be8173d6",
+          "bytes": 43352064
+        },
+        "grid": {
+          "shape": [
+            3,
+            3
+          ],
+          "dtype": "torch.int64",
+          "sha256": "39ce6d04b9116df0c7d9467d04bb6e68e43649b887d6d9c7d730d6f6ab938ead",
+          "bytes": 72
+        },
+        "input_matches_processor_after_dtype_cast": true,
+        "grid_matches_processor": true
+      }
+    ],
+    "restored_frame_paths": [
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene3_161.tensor_trace/processor_rgb_00_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene3_161.tensor_trace/processor_rgb_01_000.png",
+      "/ai/data/MultiAgent/.local-sync/2d_original_visual_followup10_20261109/FIXED_GAZE22/responses/scene3_161.tensor_trace/processor_rgb_02_000.png"
+    ],
+    "input_consumption_verified": true,
+    "expected_vision_tensor": {
+      "shape": [
+        14112,
+        1536
+      ],
+      "dtype": "torch.bfloat16",
+      "sha256": "f4b0b583e1d16dfe8680d4c0f2b375ac998f7420578f25a82a6a3a22be8173d6",
+      "bytes": 43352064
+    }
+  },
+  "elapsed_seconds": 12.3442349168472,
+  "generated_tokens": 206
+}
